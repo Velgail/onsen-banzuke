@@ -1,0 +1,516 @@
+{
+  "region": {
+    "id": "otemachi",
+    "name": "大手町温泉",
+    "kana": "おおてまちおんせん",
+    "prefecture": "東京都",
+    "municipality": "千代田区",
+    "official_url": "https://spa-otemachi.jp/",
+    "scope_note": "大手町1丁目の大手町温泉利用施設集合。確認対象はSPA大手町と星のや東京。東京全域の施設を含めない。全営業利用施設の網羅性は未確定。"
+  },
+  "study": {
+    "reviewed_at": "2026-10-03",
+    "status": "partial",
+    "scope_note": "現行施設公式と権利元を照合した初回独立検証。源泉分析・特定加工・全施設網羅・活動網羅・口コミ・188アクセス条件は未完了。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。",
+    "uninvestigated": [
+      "源泉分析書の全文と採水日・浴槽供給対応",
+      "加水・加温・循環・ろ過・消毒・添加と時間割合の運用掲示",
+      "SPA個別浴槽の識別と必須レンタル費",
+      "温泉むすめの現地展示・販売・企画の現行全件台帳",
+      "直接体験レビューの所定抽出",
+      "47起点×平日土曜×公共交通車の188アクセス条件",
+      "指定日時の宿泊料金・予約成立"
+    ]
+  },
+  "sources": [
+    {
+      "id": "otemachi-spa-price",
+      "url": "https://spa-otemachi.jp/price",
+      "title": "料金・営業案内",
+      "publisher": "SPA大手町",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "ビジター・レンタル・営業案内",
+      "summary": "温泉のみ90分は平日1,100円、土日祝1,300円。税込。ビジター10～19時。16歳以上、所定日休館、タトゥー等の入館制限がある。タオルは440円レンタル。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-spa-facilities",
+      "url": "https://spa-otemachi.jp/facilities",
+      "title": "施設案内",
+      "publisher": "SPA大手町",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "スパゾーン／大手町温泉",
+      "summary": "大手町温泉をナトリウム―塩化物強塩温泉と紹介。男女別サウナの案内がある。分析数値や特定浴槽での加工をこのページから確定できない。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-spa-access",
+      "url": "https://spa-otemachi.jp/access",
+      "title": "アクセス",
+      "publisher": "SPA大手町",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "所在地",
+      "summary": "東京都千代田区大手町1-9-2グランキューブ地下1階。大手町駅から地下通路の接続が案内される。起点別の所要・費用は未調査。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-character",
+      "url": "https://onsen-musume.jp/character/otemachi_ririn",
+      "title": "大手町梨稟",
+      "publisher": "株式会社エンバウンド／温泉むすめプロジェクト",
+      "retrieved_at": "2026-10-03",
+      "publication_date": "2017-12-12",
+      "locator": "キャラクター名・紹介・公開日",
+      "summary": "公式キャラクターとして大手町梨稟を掲載。現在の現地パネル・販売・イベントの存在や件数まではこの紹介で確認できない。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-hoshinoya-onsen",
+      "url": "https://hoshinoresorts.com/ja/hotels/hoshinoyatokyo/sp/onsen/",
+      "title": "星のや東京 温泉・スパ",
+      "publisher": "星野リゾート",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "地下1,500mから湧く天然温泉／最上階の露天風呂",
+      "summary": "大手町温泉を使用する最上階の内風呂と、それに続く露天風呂を案内する。分析試料の数値・特定の加工方法は掲載されない。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-hoshinoya-home",
+      "url": "https://hoshinoresorts.com/ja/hotels/hoshinoyatokyo/",
+      "title": "星のや東京 基本情報",
+      "publisher": "星野リゾート",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "アクセス・基本情報",
+      "summary": "大手町1-9-1。84室、全客室・共用エリア無料Wi-Fi、ペット不可、全館禁煙等を案内する。広告の最低宿泊額を指定日見積へ流用しない。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-hoshinoya-faq",
+      "url": "https://hoshinoresorts.com/ja/sp/faq/hotelinfo/",
+      "title": "ホテルについて 温泉・大浴場・プール",
+      "publisher": "星野リゾート",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "日帰り利用できますか",
+      "summary": "星のや・界・リゾナーレの温泉・大浴場は宿泊者専用と明示する。ホテル一覧の案内に基づき星のや東京を対象とする。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-spa-old-price",
+      "url": "https://spa-otemachi.jp/topics/7182",
+      "title": "ビジター料金及びレンタル品 一部改訂のお知らせ",
+      "publisher": "SPA大手町",
+      "retrieved_at": "2026-10-03",
+      "publication_date": "2022-10-23",
+      "locator": "2022年11月1日改定内容",
+      "summary": "2022年の土日祝1,250円告知を現在の料金表1,300円と区別。旧価格を現行料金に採用しない。",
+      "source_type": "operator_official"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "otemachi-spa",
+      "name": "SPA大手町",
+      "url": "https://spa-otemachi.jp/",
+      "source_ids": [
+        "otemachi-spa-price",
+        "otemachi-spa-facilities",
+        "otemachi-spa-access"
+      ]
+    },
+    {
+      "id": "otemachi-hoshinoya",
+      "name": "星のや東京",
+      "url": "https://hoshinoresorts.com/ja/hotels/hoshinoyatokyo/",
+      "source_ids": [
+        "otemachi-hoshinoya-onsen",
+        "otemachi-hoshinoya-home",
+        "otemachi-hoshinoya-faq"
+      ]
+    }
+  ],
+  "region_metrics": {
+    "I01": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "有無",
+      "evidence_ids": [
+        "otemachi-spa-access",
+        "otemachi-hoshinoya-onsen"
+      ],
+      "reason": "実在住所と大手町温泉利用を施設公式で確認。対象成立。",
+      "condition": ""
+    },
+    "M01[project_id=onsen_musume]": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "有無",
+      "evidence_ids": [
+        "otemachi-character"
+      ],
+      "reason": "権利元の公式キャラクターとの地域対応。現地活動の現行性は別。",
+      "condition": ""
+    }
+  },
+  "plans": [
+    {
+      "id": "otemachi-spa-weekday",
+      "regionId": "otemachi",
+      "facility_id": "otemachi-spa",
+      "bath_id": null,
+      "entity_scope": "facility_scope",
+      "day_type": "weekday",
+      "label": "SPA大手町 温泉入浴のみ（平日）",
+      "modality": "daytrip",
+      "condition_label": "大人1人・90分以内・16歳以上／ビジター10:00～19:00退館・休館日を除く。個別浴槽の識別は未完了。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 1100,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "公表基本料金を費用下限に保存。自前タオル持参可・必須レンタル等を公開資料で確定できず、通常入浴の必須総額上限は未確定。料金が無料という意味ではない。",
+          "condition": ""
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 9,
+          "rawUpper": 9,
+          "unit": "時間",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "会員の平日7～22時と区別し、一般ビジター10～19時の公開窓を採用。1回滞在90分上限とは別。",
+          "condition": "休館日を除く"
+        },
+        "Y11": {
+          "status": "C",
+          "rawLower": 90,
+          "rawUpper": 90,
+          "unit": "分",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "温泉のみ券の入館から退館までの90分上限。入浴だけの実使用時間を保証しない。",
+          "condition": "ロッカー・着替え等を含む利用枠"
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "条件付き一般ビジター向け温泉入浴券が掲載。",
+          "condition": "16歳以上、入館規則、営業時間、休館日を満たす場合"
+        },
+        "B06": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "有無",
+          "evidence_ids": [],
+          "reason": "個別浴槽の露天/内湯の掲示・図面対応を未調査。温泉街全体に露天がないとは判定しない。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [],
+          "reason": "特定浴槽の五条件運用資料は未取得。施設ページの天然温泉表記から無加工率を作らない。",
+          "condition": ""
+        }
+      }
+    },
+    {
+      "id": "otemachi-spa-weekend",
+      "regionId": "otemachi",
+      "facility_id": "otemachi-spa",
+      "bath_id": null,
+      "entity_scope": "facility_scope",
+      "day_type": "weekend",
+      "label": "SPA大手町 温泉入浴のみ（土日祝）",
+      "modality": "daytrip",
+      "condition_label": "大人1人・90分以内・16歳以上／ビジター10:00～19:00退館・休館日を除く。個別浴槽の識別は未完了。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 1300,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "公表基本料金を費用下限に保存。自前タオル持参可・必須レンタル等を公開資料で確定できず、通常入浴の必須総額上限は未確定。料金が無料という意味ではない。",
+          "condition": ""
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 9,
+          "rawUpper": 9,
+          "unit": "時間",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "会員の平日7～22時と区別し、一般ビジター10～19時の公開窓を採用。1回滞在90分上限とは別。",
+          "condition": "休館日を除く"
+        },
+        "Y11": {
+          "status": "C",
+          "rawLower": 90,
+          "rawUpper": 90,
+          "unit": "分",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "温泉のみ券の入館から退館までの90分上限。入浴だけの実使用時間を保証しない。",
+          "condition": "ロッカー・着替え等を含む利用枠"
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "条件付き一般ビジター向け温泉入浴券が掲載。",
+          "condition": "16歳以上、入館規則、営業時間、休館日を満たす場合"
+        },
+        "B06": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "有無",
+          "evidence_ids": [],
+          "reason": "個別浴槽の露天/内湯の掲示・図面対応を未調査。温泉街全体に露天がないとは判定しない。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [],
+          "reason": "特定浴槽の五条件運用資料は未取得。施設ページの天然温泉表記から無加工率を作らない。",
+          "condition": ""
+        }
+      }
+    },
+    {
+      "id": "otemachi-hoshinoya-indoor-stay",
+      "regionId": "otemachi",
+      "facility_id": "otemachi-hoshinoya",
+      "bath_id": "otemachi-hoshinoya:otemachi-hoshinoya-indoor",
+      "entity_scope": "bath_group",
+      "day_type": "all",
+      "label": "星のや東京 最上階内風呂（宿泊者）",
+      "modality": "stay",
+      "condition_label": "星のや東京の宿泊者専用。日時・人数・客室・食事未指定、宿泊見積・空室は未取得。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "B06": {
+          "status": "K",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "公式に内風呂と、それに続く露天風呂を別に案内。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "Y01": {
+          "status": "A",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "日帰り入浴を提供しない浴槽。生値0円ではなく適用外。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "星のやの大浴場は宿泊者専用と明示。",
+          "condition": ""
+        },
+        "Z01[equipment=wifi]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "共用エリアと客室で提供。浴室内の通信品質や会議可否は未確認。",
+          "condition": "客室・共用エリアに限定"
+        },
+        "Z18[place=bath]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "公式基本情報で全館禁煙を確認。",
+          "condition": ""
+        }
+      },
+      "original_bath_id": "otemachi-hoshinoya-indoor",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "otemachi-hoshinoya-outdoor-stay",
+      "regionId": "otemachi",
+      "facility_id": "otemachi-hoshinoya",
+      "bath_id": "otemachi-hoshinoya:otemachi-hoshinoya-outdoor",
+      "entity_scope": "bath_group",
+      "day_type": "all",
+      "label": "星のや東京 最上階露天風呂（宿泊者）",
+      "modality": "stay",
+      "condition_label": "星のや東京の宿泊者専用。日時・人数・客室・食事未指定、宿泊見積・空室は未取得。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "公式に内風呂と、それに続く露天風呂を別に案内。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "Y01": {
+          "status": "A",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "日帰り入浴を提供しない浴槽。生値0円ではなく適用外。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "星のやの大浴場は宿泊者専用と明示。",
+          "condition": ""
+        },
+        "Z01[equipment=wifi]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "共用エリアと客室で提供。浴室内の通信品質や会議可否は未確認。",
+          "condition": "客室・共用エリアに限定"
+        },
+        "Z18[place=bath]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "公式基本情報で全館禁煙を確認。",
+          "condition": ""
+        }
+      },
+      "original_bath_id": "otemachi-hoshinoya-outdoor",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    }
+  ],
+  "analysis_samples": [],
+  "findings": [
+    "現行SPA土日祝料金は1,300円。旧2022告知の1,250円と混同しない。",
+    "SPA一般外来客と星のや東京の宿泊者専用浴槽を別系列にする。",
+    "星のや東京の露天をSPAの1,100円日帰りプランへ結合しない。",
+    "大手町梨稟の公式対応と現地展示・企画の件数を分離する。",
+    "施設の塩化物泉という紹介を未確認の分析数値・臭い強度へ変換しない。"
+  ],
+  "issues": [
+    "部分調査。246基本項目の未調査を未開示や不存在へ変更しない。",
+    "訪問日未指定。掲載利用窓は予約や当日の営業を保証しない。"
+  ],
+  "excluded_facilities": [
+    {
+      "name": "星のや東京（日帰り）",
+      "reason": "公式共通FAQで温泉・大浴場は宿泊者専用。宿泊浴槽台帳は保持。",
+      "source_ids": [
+        "otemachi-hoshinoya-faq"
+      ]
+    }
+  ],
+  "search_log": [
+    {
+      "query": "site.spa-otemachi.jp 料金 施設案内 アクセス",
+      "outcome": "現行本文を確認",
+      "source_ids": [
+        "otemachi-spa-price",
+        "otemachi-spa-facilities",
+        "otemachi-spa-access"
+      ]
+    },
+    {
+      "query": "SPA大手町 温泉分析書 加水 加温 循環 消毒",
+      "outcome": "検索と温泉ページを確認。FAQ/掲示PDF等の必須探索は未完了なので加工・定量成分はE。",
+      "source_ids": [
+        "otemachi-spa-facilities"
+      ]
+    },
+    {
+      "query": "星のや東京 温泉 日帰り 宿泊 FAQ",
+      "outcome": "当該公式施設と運営公式FAQを開き対応確認",
+      "source_ids": [
+        "otemachi-hoshinoya-onsen",
+        "otemachi-hoshinoya-faq"
+      ]
+    },
+    {
+      "query": "site.onsen-musume.jp 大手町梨稟 グッズ パネル",
+      "outcome": "公式キャラクターを確認。全現地活動探索は未完了のため件数はE。",
+      "source_ids": [
+        "otemachi-character"
+      ]
+    }
+  ],
+  "source_entities": [],
+  "supply_entities": []
+}

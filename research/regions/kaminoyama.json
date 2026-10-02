@@ -1,0 +1,1117 @@
+{
+  "region": {
+    "id": "kaminoyama",
+    "name": "かみのやま温泉",
+    "kana": "かみのやまおんせん",
+    "prefecture": "山形県",
+    "municipality": "上山市",
+    "scope_note": "現在の地域公式かみのやま温泉の地区別加盟宿一覧にある新湯・湯町・高松・河崎・葉山と中心街の共同浴場を開始対象とする。上山市全域、蔵王坊平、蔵王ペンション村、金瓶地区の別温泉を自動包含しない。地理ポリゴン未確定、施設集合による暫定境界。",
+    "official_url": "https://kaminoyama-spa.com/news/stay/872.html"
+  },
+  "study": {
+    "reviewed_at": "2026-10-03",
+    "status": "partial",
+    "scope_note": "他温泉地の結果を参照しない固定尺度用原値調査。共同浴場の営業・料金、澤のゆ加工、古窯・有馬館の公式浴槽説明、権利元と自治体の温泉むすめ対応を調べた部分台帳。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。",
+    "uninvestigated": [
+      "全加盟宿の現在営業と加盟外施設の照合",
+      "全浴槽の源泉/混合/送湯系統、分析書全文と採水日",
+      "交通全行程・宿泊日付別見積と在庫・当日の来訪成立",
+      "全加工工程、年内営業実績/年間割合、現地体感",
+      "温泉むすめ展示の全件、現地見学購入条件、全店舗の販売在庫"
+    ]
+  },
+  "sources": [
+    {
+      "id": "kaminoyama-s01",
+      "url": "https://kaminoyama-spa.com/news/stay/872.html",
+      "title": "かみのやま温泉",
+      "publisher": "上山市観光物産協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "2025-04-01現在の旅館組合加盟宿泊施設欄",
+      "summary": "新湯、湯町、高松、河崎、葉山の5地区に分け加盟宿15施設を案内。加盟一覧を全営業施設とは扱わない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s02",
+      "url": "https://kaminoyama-spa.com/news/spa/2310.html",
+      "title": "かみのやま温泉 共同浴場",
+      "publisher": "上山市観光物産協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "共同浴場4施設の住所・営業・2026料金改定欄",
+      "summary": "4共同浴場を案内し、二日町の2026-05-01料金300円・洗髪込、澤の湯500円、新丁鶴の湯の閉鎖を明記。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s03",
+      "url": "https://yamagatakanko.com/attractions/detail_10389.html",
+      "title": "下大湯共同浴場",
+      "publisher": "山形県観光物産協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "浴槽説明・基本情報欄",
+      "summary": "あつゆ・ぬるゆの浴槽を案内。大人150円、洗髪100円、6〜22時・最終21:30、住所十日町9-30。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s04",
+      "url": "https://kaminoyama-landbank.com/sawanoyu",
+      "title": "澤のゆ",
+      "publisher": "NPO法人かみのやまランドバンク",
+      "retrieved_at": "2026-10-03",
+      "locator": "冒頭見出し・利用料金・営業・設備欄",
+      "summary": "掛け流し・塩素不使用を明示。500円一般入浴、曜日別営業、洗髪券なし・シャンプー類あり・シャワーなし。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s05",
+      "url": "https://www.city.kaminoyama.yamagata.jp/soshiki/64/nyutouzeikaitei.html",
+      "title": "入湯税額の改定のお知らせ",
+      "publisher": "上山市",
+      "retrieved_at": "2026-10-03",
+      "locator": "改定実施日・公衆浴場課税免除欄",
+      "summary": "2026-04-01から宿泊300円・日帰り150円へ改定。市内公衆浴場は入湯税免除。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s06",
+      "url": "https://www.koyoga.com/hotspring/",
+      "title": "温泉",
+      "publisher": "日本の宿 古窯",
+      "retrieved_at": "2026-10-03",
+      "locator": "浴槽・客室風呂・3号源泉の成分欄",
+      "summary": "8階展望、1階紅花、貸切、客室の浴槽条件を区別。客室は夏場加水があり得る。源泉成分の抜粋は採水日・分析主体が不明。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s07",
+      "url": "https://www.arimakan.com/onsen/",
+      "title": "お風呂",
+      "publisher": "有馬館",
+      "retrieved_at": "2026-10-03",
+      "locator": "金の湯・浪漫湯・3種の貸切・飲泉欄",
+      "summary": "浴槽を個別案内し源泉かけ流しを説明。飲泉設備、立ち湯・バリアフリー貸切などの条件を公開。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s08",
+      "url": "https://onsen-musume.jp/character/kaminoyama_an",
+      "title": "かみのやま 庵",
+      "publisher": "株式会社エンバウンド／温泉むすめプロジェクト",
+      "retrieved_at": "2026-10-03",
+      "locator": "キャラクター名・公開日欄",
+      "summary": "権利元がかみのやま庵を掲載。2023-02-28公開。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s09",
+      "url": "https://poka-onsen-musume.jp/character/kaminoyama-an",
+      "title": "かみのやま 庵のグッズ・パネル",
+      "publisher": "株式会社エンバウンド／温泉むすめ ぽかログ",
+      "retrieved_at": "2026-10-03",
+      "locator": "パネル一覧欄",
+      "summary": "上山城、観光案内所、天竜飯店、浄光寺のパネルを案内。個別所在地確認できた3地点を下限にする。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s10",
+      "url": "https://poka-onsen-musume.jp/business/772",
+      "title": "上山城郷土資料館",
+      "publisher": "株式会社エンバウンド／温泉むすめ ぽかログ",
+      "retrieved_at": "2026-10-03",
+      "locator": "住所・パネル一覧欄",
+      "summary": "元城内3-7に兜版パネルと御泉印商品を掲載。現地見学条件・在庫は未照会。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s11",
+      "url": "https://poka-onsen-musume.jp/business/109",
+      "title": "かみのやま温泉観光案内所",
+      "publisher": "株式会社エンバウンド／温泉むすめ ぽかログ",
+      "retrieved_at": "2026-10-03",
+      "locator": "住所・パネル・グッズ欄",
+      "summary": "矢来1-2-1にサイン入り通常パネル。缶バッジ完売・ステッカー配布終了も明示。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s12",
+      "url": "https://poka-onsen-musume.jp/business/114",
+      "title": "天竜飯店",
+      "publisher": "株式会社エンバウンド／温泉むすめ ぽかログ",
+      "retrieved_at": "2026-10-03",
+      "locator": "住所・パネル一覧欄",
+      "summary": "二日町8-2にチャイナウエイトレスSDのパネルと商品を掲載。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s13",
+      "url": "https://www.city.kaminoyama.yamagata.jp/soshiki/3/officialambassador.html",
+      "title": "かみのやまアンバサダー",
+      "publisher": "上山市",
+      "retrieved_at": "2026-10-03",
+      "locator": "主な活動・アンバサダー一覧欄",
+      "summary": "任期2年の制度にかみのやま庵と担当声優が2026-02-10から就任したことを現在一覧で確認。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s14",
+      "url": "https://onsen-musume.jp/news/387595",
+      "title": "山形県・上山市 かみのやまアンバサダーに就任しました",
+      "publisher": "株式会社エンバウンド／温泉むすめプロジェクト",
+      "retrieved_at": "2026-10-03",
+      "locator": "2026-02-10本文。Web取得失敗後HTTPS直接取得で確認",
+      "summary": "2026-02-10にキャラクターと声優の就任を権利元が報告。将来の発信予定を実施済みイベント件数へ展開しない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s15",
+      "url": "https://kaminoyama-landbank.com/project-list",
+      "title": "活動紹介について",
+      "publisher": "NPO法人かみのやまランドバンク",
+      "retrieved_at": "2026-10-03",
+      "locator": "事業再生承継共同浴場 澤のゆ欄",
+      "summary": "NPOが澤のゆの建物所有権と温泉権を取得し改修して2022年5月再開した運営主体の説明。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "kaminoyama-s16",
+      "url": "https://www.koyoga.com/higaeri/",
+      "title": "日帰りプラン",
+      "publisher": "日本の宿 古窯",
+      "retrieved_at": "2026-10-03",
+      "locator": "利用時間・入浴のみ不可・料金問合せ欄",
+      "summary": "古窯は入浴のみの日帰りを受け付けず食事と客室付きで案内。11〜14時、料金は問合せであり公開通常入浴価格へ転用しない。",
+      "source_type": "official_web"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "kaminoyama-shimooyu",
+      "name": "下大湯共同浴場",
+      "url": "https://yamagatakanko.com/attractions/detail_10389.html",
+      "source_ids": [
+        "kaminoyama-s02",
+        "kaminoyama-s03"
+      ]
+    },
+    {
+      "id": "kaminoyama-futsukamachi",
+      "name": "二日町共同浴場 親子集いの湯",
+      "url": "https://kaminoyama-spa.com/news/spa/2310.html",
+      "source_ids": [
+        "kaminoyama-s02"
+      ]
+    },
+    {
+      "id": "kaminoyama-hayama",
+      "name": "葉山公衆浴場",
+      "url": "https://kaminoyama-spa.com/news/spa/2310.html",
+      "source_ids": [
+        "kaminoyama-s02"
+      ]
+    },
+    {
+      "id": "kaminoyama-sawanoyu",
+      "name": "新湯共同浴場 澤のゆ",
+      "url": "https://kaminoyama-landbank.com/sawanoyu",
+      "source_ids": [
+        "kaminoyama-s02",
+        "kaminoyama-s04",
+        "kaminoyama-s15"
+      ]
+    },
+    {
+      "id": "kaminoyama-koyo",
+      "name": "日本の宿 古窯",
+      "url": "https://www.koyoga.com/",
+      "source_ids": [
+        "kaminoyama-s01",
+        "kaminoyama-s06",
+        "kaminoyama-s16"
+      ]
+    },
+    {
+      "id": "kaminoyama-arimakan",
+      "name": "有馬館",
+      "url": "https://www.arimakan.com/",
+      "source_ids": [
+        "kaminoyama-s01",
+        "kaminoyama-s07"
+      ]
+    }
+  ],
+  "region_metrics": {
+    "I01": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "kaminoyama-s01",
+        "kaminoyama-s02"
+      ],
+      "reason": "公式地区別宿一覧と現在共同浴場が上山市のかみのやま温泉として対応。",
+      "condition": ""
+    },
+    "I02": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "kaminoyama-s01",
+        "kaminoyama-s02"
+      ],
+      "reason": "住所付き共同浴場一覧と地区別組合加盟宿一覧を公開。全営業施設網羅とは別。",
+      "condition": ""
+    },
+    "V03": {
+      "status": "C",
+      "rawLower": 4,
+      "rawUpper": null,
+      "unit": "places",
+      "evidence_ids": [
+        "kaminoyama-s02"
+      ],
+      "reason": "現在公式案内の共同浴場4件を下限として確認。地区外を含む全営業施設の照合は未完了。",
+      "condition": ""
+    },
+    "M01[project_id=onsen_musume]": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "kaminoyama-s08",
+        "kaminoyama-s13"
+      ],
+      "reason": "権利元のキャラクターと自治体アンバサダー一覧が対象地域と対応。",
+      "condition": ""
+    },
+    "M02[project_id=onsen_musume]": {
+      "status": "C",
+      "rawLower": 3,
+      "rawUpper": null,
+      "unit": "places",
+      "evidence_ids": [
+        "kaminoyama-s09",
+        "kaminoyama-s10",
+        "kaminoyama-s11",
+        "kaminoyama-s12"
+      ],
+      "reason": "上山城・観光案内所・天竜飯店の3所在地を現行公式掲載で確認した下限。浄光寺等の残る地点は未確認。",
+      "condition": "2026-10-03の公式掲載確認。現場視認・見学条件の確認は未実施。"
+    },
+    "M03[project_id=onsen_musume]": {
+      "status": "C",
+      "rawLower": 2,
+      "rawUpper": null,
+      "unit": "designs",
+      "evidence_ids": [
+        "kaminoyama-s10",
+        "kaminoyama-s12"
+      ],
+      "reason": "兜版とチャイナウエイトレスSDの地域固有2種を下限として確認。通常立ち絵の複製数を固有数にしない。",
+      "condition": ""
+    },
+    "M07[project_id=onsen_musume]": {
+      "status": "U",
+      "rawLower": null,
+      "rawUpper": null,
+      "unit": "places",
+      "evidence_ids": [
+        "kaminoyama-s10",
+        "kaminoyama-s11",
+        "kaminoyama-s12"
+      ],
+      "reason": "公式現行商品一覧を調査したが全店舗の在庫・継続販売は未開示。完売と配布終了を販売可能件数に含めない。",
+      "condition": ""
+    }
+  },
+  "plans": [
+    {
+      "id": "kaminoyama-shimooyu-atsuyu",
+      "regionId": "kaminoyama",
+      "facility_id": "kaminoyama-shimooyu",
+      "bath_id": "kaminoyama-shimooyu:kaminoyama-shimooyu-atsuyu",
+      "label": "下大湯 あつゆ",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "大人1名通常日帰り。浴槽名のみを確認し、実際の浴槽温度や源泉値は未確認。掲載営業は来訪成立の確定ではない。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 150,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03",
+            "kaminoyama-s05"
+          ],
+          "reason": "公表通常入浴額を最低額として保持。公衆浴場の入湯税は免除だが税込明記・タオル持参/必須費の最終確認が不足し総額上限は未確定。",
+          "condition": "大人1名・入浴のみ。任意の洗髪100円と2階休憩300円は含まない。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 16,
+          "rawUpper": 16,
+          "unit": "hours",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03"
+          ],
+          "reason": "一般客6〜22時の案内。冬季変更の有無は未照会。",
+          "condition": "通常公開営業時間、訪問日未指定。"
+        },
+        "Y08": {
+          "status": "K",
+          "rawLower": 21.5,
+          "rawUpper": 21.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03"
+          ],
+          "reason": "最終入館21:30。",
+          "condition": ""
+        },
+        "Y09": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s02"
+          ],
+          "reason": "6〜9時に一般日帰り営業の案内あり。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s02"
+          ],
+          "reason": "一般大人の通常日帰り料金を公開。",
+          "condition": ""
+        },
+        "B09[dimension=setting,type=indoor]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s03"
+          ],
+          "reason": "壁画のある共同浴室内のあつゆ/ぬるゆとして公開。",
+          "condition": ""
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03"
+          ],
+          "reason": "地域公式・県公式の本文に浴槽別の加水運用を発見できない。非公式サイトの加工一覧は採用しない。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03"
+          ],
+          "reason": "調査した公式案内では五条件の具体的加工を開示していない。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "kaminoyama-shimooyu-atsuyu",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "kaminoyama-shimooyu-nuruyu",
+      "regionId": "kaminoyama",
+      "facility_id": "kaminoyama-shimooyu",
+      "bath_id": "kaminoyama-shimooyu:kaminoyama-shimooyu-nuruyu",
+      "label": "下大湯 ぬるゆ",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "大人1名通常日帰り。浴槽名のみを確認し、実際の浴槽温度や源泉値は未確認。掲載営業は来訪成立の確定ではない。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 150,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03",
+            "kaminoyama-s05"
+          ],
+          "reason": "公表通常入浴額を最低額として保持。公衆浴場の入湯税は免除だが税込明記・タオル持参/必須費の最終確認が不足し総額上限は未確定。",
+          "condition": "大人1名・入浴のみ。任意の洗髪100円と2階休憩300円は含まない。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 16,
+          "rawUpper": 16,
+          "unit": "hours",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03"
+          ],
+          "reason": "一般客6〜22時の案内。冬季変更の有無は未照会。",
+          "condition": "通常公開営業時間、訪問日未指定。"
+        },
+        "Y08": {
+          "status": "K",
+          "rawLower": 21.5,
+          "rawUpper": 21.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03"
+          ],
+          "reason": "最終入館21:30。",
+          "condition": ""
+        },
+        "Y09": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s02"
+          ],
+          "reason": "6〜9時に一般日帰り営業の案内あり。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s02"
+          ],
+          "reason": "一般大人の通常日帰り料金を公開。",
+          "condition": ""
+        },
+        "B09[dimension=setting,type=indoor]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s03"
+          ],
+          "reason": "壁画のある共同浴室内のあつゆ/ぬるゆとして公開。",
+          "condition": ""
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03"
+          ],
+          "reason": "地域公式・県公式の本文に浴槽別の加水運用を発見できない。非公式サイトの加工一覧は採用しない。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03"
+          ],
+          "reason": "調査した公式案内では五条件の具体的加工を開示していない。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "kaminoyama-shimooyu-nuruyu",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "kaminoyama-futsukamachi-standard",
+      "regionId": "kaminoyama",
+      "facility_id": "kaminoyama-futsukamachi",
+      "bath_id": "kaminoyama-futsukamachi:kaminoyama-futsukamachi-main",
+      "label": "二日町 親子集いの湯",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "大人1名、2026-05-01以後の通常日帰り。年始特例・当日の営業は未照会。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 300,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s05"
+          ],
+          "reason": "公表通常入浴額を最低額として保持。公衆浴場の入湯税は免除だが税込明記・タオル持参/必須費の最終確認が不足し総額上限は未確定。",
+          "condition": "大人1名・2026-05-01以後、洗髪込。任意休憩室利用は含まない。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 15,
+          "rawUpper": 15,
+          "unit": "hours",
+          "evidence_ids": [
+            "kaminoyama-s02"
+          ],
+          "reason": "6:30〜21:30の公開案内。",
+          "condition": ""
+        },
+        "Y09": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s02"
+          ],
+          "reason": "6:30〜9時の一般入浴営業。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s02"
+          ],
+          "reason": "一般大人通常日帰り入浴300円を公開。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02"
+          ],
+          "reason": "公式共同浴場一覧に加工の具体的明示はない。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "kaminoyama-futsukamachi-main",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "kaminoyama-sawanoyu-weekday",
+      "regionId": "kaminoyama",
+      "facility_id": "kaminoyama-sawanoyu",
+      "bath_id": null,
+      "label": "澤のゆ 平日",
+      "modality": "daytrip",
+      "day_type": "weekday",
+      "condition_label": "大人1名通常日帰り。月・水・金15〜21時、非祝日。火木定休。浴室内の個別槽名とタオル条件は未確認。／施設範囲。個別浴槽の識別未完了。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 500,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04",
+            "kaminoyama-s05"
+          ],
+          "reason": "公表通常入浴額を最低額として保持。公衆浴場の入湯税は免除だが税込明記・タオル持参/必須費の最終確認が不足し総額上限は未確定。",
+          "condition": "高校生以上1名・1回通常入浴。1日券1300円・有料2階は含めない。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 6,
+          "rawUpper": 6,
+          "unit": "hours",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04"
+          ],
+          "reason": "曜日と祝日条件別の営業時間。",
+          "condition": "月・水・金15〜21時、非祝日。火木定休。"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s04"
+          ],
+          "reason": "一般向け1回券を案内。",
+          "condition": ""
+        },
+        "P21[method=chlorine]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s04"
+          ],
+          "reason": "管理するNPOの現行見出しが塩素不使用を明示。塩素以外の薬剤/UV/オゾン不使用へは広げない。",
+          "condition": "公表通常浴槽運用。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04"
+          ],
+          "reason": "調査した地域・管理者公式に加温の条件別運用が見当たらない。",
+          "condition": ""
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s04"
+          ],
+          "reason": "掛け流しという語のみで非循環時間率を確定しない。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04"
+          ],
+          "reason": "塩素不使用のみ確認。他の消毒と加水・加温・循環・人工添加は未開示。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "facility_scope",
+      "original_bath_id": "kaminoyama-sawanoyu-main"
+    },
+    {
+      "id": "kaminoyama-sawanoyu-saturday",
+      "regionId": "kaminoyama",
+      "facility_id": "kaminoyama-sawanoyu",
+      "bath_id": null,
+      "label": "澤のゆ 土曜",
+      "modality": "daytrip",
+      "day_type": "weekend",
+      "condition_label": "大人1名通常日帰り。土曜非祝日15〜21時。浴室内の個別槽名とタオル条件は未確認。／施設範囲。個別浴槽の識別未完了。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 500,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04",
+            "kaminoyama-s05"
+          ],
+          "reason": "公表通常入浴額を最低額として保持。公衆浴場の入湯税は免除だが税込明記・タオル持参/必須費の最終確認が不足し総額上限は未確定。",
+          "condition": "高校生以上1名・1回通常入浴。1日券1300円・有料2階は含めない。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 6,
+          "rawUpper": 6,
+          "unit": "hours",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04"
+          ],
+          "reason": "曜日と祝日条件別の営業時間。",
+          "condition": "土曜非祝日15〜21時。"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s04"
+          ],
+          "reason": "一般向け1回券を案内。",
+          "condition": ""
+        },
+        "P21[method=chlorine]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s04"
+          ],
+          "reason": "管理するNPOの現行見出しが塩素不使用を明示。塩素以外の薬剤/UV/オゾン不使用へは広げない。",
+          "condition": "公表通常浴槽運用。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04"
+          ],
+          "reason": "調査した地域・管理者公式に加温の条件別運用が見当たらない。",
+          "condition": ""
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s04"
+          ],
+          "reason": "掛け流しという語のみで非循環時間率を確定しない。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04"
+          ],
+          "reason": "塩素不使用のみ確認。他の消毒と加水・加温・循環・人工添加は未開示。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "facility_scope",
+      "original_bath_id": "kaminoyama-sawanoyu-main"
+    },
+    {
+      "id": "kaminoyama-sawanoyu-sunday-holiday",
+      "regionId": "kaminoyama",
+      "facility_id": "kaminoyama-sawanoyu",
+      "bath_id": null,
+      "label": "澤のゆ 日曜・祝日",
+      "modality": "daytrip",
+      "day_type": "weekend",
+      "condition_label": "大人1名通常日帰り。日曜・祝日10〜21時。火木が祝日なら営業し翌日休。浴室内の個別槽名とタオル条件は未確認。／施設範囲。個別浴槽の識別未完了。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 500,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04",
+            "kaminoyama-s05"
+          ],
+          "reason": "公表通常入浴額を最低額として保持。公衆浴場の入湯税は免除だが税込明記・タオル持参/必須費の最終確認が不足し総額上限は未確定。",
+          "condition": "高校生以上1名・1回通常入浴。1日券1300円・有料2階は含めない。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 11,
+          "rawUpper": 11,
+          "unit": "hours",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04"
+          ],
+          "reason": "曜日と祝日条件別の営業時間。",
+          "condition": "日曜・祝日10〜21時。火木が祝日なら営業し翌日休。"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s04"
+          ],
+          "reason": "一般向け1回券を案内。",
+          "condition": ""
+        },
+        "P21[method=chlorine]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s04"
+          ],
+          "reason": "管理するNPOの現行見出しが塩素不使用を明示。塩素以外の薬剤/UV/オゾン不使用へは広げない。",
+          "condition": "公表通常浴槽運用。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04"
+          ],
+          "reason": "調査した地域・管理者公式に加温の条件別運用が見当たらない。",
+          "condition": ""
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s04"
+          ],
+          "reason": "掛け流しという語のみで非循環時間率を確定しない。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04"
+          ],
+          "reason": "塩素不使用のみ確認。他の消毒と加水・加温・循環・人工添加は未開示。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "facility_scope",
+      "original_bath_id": "kaminoyama-sawanoyu-main"
+    },
+    {
+      "id": "kaminoyama-koyo-stay-8f",
+      "regionId": "kaminoyama",
+      "facility_id": "kaminoyama-koyo",
+      "bath_id": "kaminoyama-koyo:kaminoyama-koyo-8f-roten",
+      "label": "古窯 8階展望大浴場・露天",
+      "modality": "stay",
+      "day_type": "all",
+      "condition_label": "宿泊客の利用案内。女性4〜13時/男性13〜翌1時、木曜10:30〜14:30清掃。宿泊代・日付・人数・在庫未確認。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "B06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s06"
+          ],
+          "reason": "露天という構成設備の存在は確認できるが、内湯を含む複合浴槽群の全構成槽に共通する特性ではない。特定の露天1槽を未同定のため群の単槽点には用いない。",
+          "condition": ""
+        },
+        "B14": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s06"
+          ],
+          "reason": "男女時間交代と木曜清掃の時間条件を公開。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "kaminoyama-s06"
+          ],
+          "reason": "公式浴槽案内に8階の五条件加工の運用明示なし。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "kaminoyama-koyo-8f-roten",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "unapplied_component_observations": {
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "kaminoyama-s06"
+          ],
+          "reason": "8階展望大浴場に露天浴槽を明示。",
+          "condition": "",
+          "group_applicability": "common"
+        }
+      },
+      "member_selection_status": "E"
+    }
+  ],
+  "analysis_samples": [
+    {
+      "id": "kaminoyama-no3-web-undated",
+      "source_ids": [
+        "kaminoyama-s06"
+      ],
+      "source_name": "かみのやま温泉3号源泉（古窯公式掲載の抜粋）",
+      "sampling_date": null,
+      "measurements": {
+        "pH": 8.0,
+        "evaporation_residue_mg_per_kg": 2390,
+        "raw_component_excerpt": {
+          "Na": 591.9,
+          "Ca": 275.8,
+          "Mg": 0.2,
+          "Cl": 846.5,
+          "sulfate": 631.9,
+          "bicarbonate": 47.3,
+          "metasilicic_acid": 76.0,
+          "metaboric_acid": 7.3
+        }
+      },
+      "correspondence_note": "HTMLの源泉成分抜粋を本文で確認。蒸発残留物だけmg/kg表記が明示され、他の成分はイオン記号/kg等の表記で質量単位が明示されない。raw_component_excerptは未正規化の転記であり採点値ではない。採水日・発行日・分析者・現在浴槽への混合対応不明のため原分析書の代替にせず、現行浴槽の濃度へ転用しない。",
+      "source_entity_id": "kaminoyama:source-profile:kaminoyama-no3-web-undated",
+      "supply_entity_id": "kaminoyama:published-supply:kaminoyama-no3-web-undated",
+      "archived_metrics": {},
+      "identity_status": "C"
+    }
+  ],
+  "findings": [
+    "二日町は2026-05-01以降大人300円・洗髪込。旧200円＋洗髪券100円の状態を現在通常料金として採用しない。",
+    "澤のゆは塩素不使用を公式に公開するが、掛け流しだけから他の無加工条件を推定しない。",
+    "古窯の客室温泉は夏場に加水することがある。大浴場、貸切、客室の加工運用を一括適用しない。",
+    "かみのやま庵と担当声優は2026-02-10より市のアンバサダーとして現行名簿に掲載。告知上の将来PRを過去イベント回数へ変換しない。",
+    "古窯の通常入浴のみ日帰りは提供しない。食事・客室付き料金を通常入浴料と置き換えない。澤のゆのNPO所有・運営根拠も別公式ページで確認。"
+  ],
+  "issues": [
+    "非公式の共同浴場案内は澤のゆ350円、二日町200円等の旧料金を含むため料金・加工の根拠として採用していない。",
+    "地域公式の入湯税改定案内にある旧市役所URLは404。新しい市公式soshiki/64ページを検索し本文で再確認した。",
+    "一般公衆浴場の税込表記と必須タオル条件が不足し、入浴料だけを確定総費用と称さない。",
+    "原分析書の全文は見つからず古窯HTMLは部分転載。成分表記・採水時期不明が残る。",
+    "澤のゆ告知の一覧日付は2023/1/25で一律表示され本文に2025年改定が含まれるため一覧日付だけから最終更新日を確定しない。"
+  ],
+  "excluded_facilities": [
+    {
+      "name": "新丁温泉共同浴場 鶴の湯",
+      "reason": "地域公式が2024-02-29閉鎖を明記。現在利用可能施設と件数から除外。",
+      "source_ids": [
+        "kaminoyama-s02"
+      ]
+    },
+    {
+      "name": "日本の宿 古窯（入浴のみの日帰りサービス）",
+      "reason": "公式が入浴のみの日帰りを受け付けないと明示。施設の宿泊・食事客室付き日帰りは存在するため施設全体を閉業や利用不可と判定しない。",
+      "source_ids": [
+        "kaminoyama-s16"
+      ]
+    }
+  ],
+  "search_log": [
+    {
+      "query": "かみのやま温泉 公式 地区 共同浴場 一覧",
+      "outcome": "地域公式の5地区加盟宿と住所付き4共同浴場案内を本文確認。",
+      "source_ids": [
+        "kaminoyama-s01",
+        "kaminoyama-s02",
+        "kaminoyama-s03"
+      ]
+    },
+    {
+      "query": "澤のゆ 管理者 料金 加水 塩素 温泉",
+      "outcome": "NPO公式本文で曜日別営業・500円・塩素不使用を確認。他の処理条件は開示不足。",
+      "source_ids": [
+        "kaminoyama-s04"
+      ]
+    },
+    {
+      "query": "古窯 有馬館 公式 温泉 分析書 PDF",
+      "outcome": "2施設公式浴槽案内と古窯の3号源泉抜粋を確認。原分析書全文と採水日を発見できない。",
+      "source_ids": [
+        "kaminoyama-s06",
+        "kaminoyama-s07"
+      ]
+    },
+    {
+      "query": "上山市 入湯税 2026 改定 公衆浴場 免除",
+      "outcome": "リンク先404後、新市公式URLの本文で2026改定と免除を確認。",
+      "source_ids": [
+        "kaminoyama-s05"
+      ]
+    },
+    {
+      "query": "かみのやま庵 公式 パネル 2026 アンバサダー",
+      "outcome": "権利元の対応、3所在地のパネルと市現行アンバサダー名簿を本文確認。権利元就任ニュースはWeb取得失敗後HTTPSで本文取得。",
+      "source_ids": [
+        "kaminoyama-s08",
+        "kaminoyama-s09",
+        "kaminoyama-s10",
+        "kaminoyama-s11",
+        "kaminoyama-s12",
+        "kaminoyama-s13",
+        "kaminoyama-s14"
+      ]
+    },
+    {
+      "query": "古窯 日帰りのみ 澤のゆ 所有 運営 追加照合",
+      "outcome": "古窯の入浴のみ不可とNPOの事業再生所有・改修を公式本文で確認。タオル/税込の追加検索では確定資料を発見できない。",
+      "source_ids": [
+        "kaminoyama-s04",
+        "kaminoyama-s15",
+        "kaminoyama-s16"
+      ]
+    }
+  ],
+  "source_entities": [
+    {
+      "id": "kaminoyama:source-profile:kaminoyama-no3-web-undated",
+      "name": "かみのやま温泉3号源泉（古窯公式掲載の抜粋）",
+      "identity_status": "C",
+      "evidence_ids": [
+        "kaminoyama-s06"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {}
+    }
+  ],
+  "supply_entities": [
+    {
+      "id": "kaminoyama:published-supply:kaminoyama-no3-web-undated",
+      "name": "かみのやま温泉3号源泉（古窯公式掲載の抜粋）",
+      "identity_status": "C",
+      "evidence_ids": [
+        "kaminoyama-s06"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    }
+  ]
+}

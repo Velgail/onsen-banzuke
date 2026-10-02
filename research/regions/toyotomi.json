@@ -1,0 +1,2830 @@
+{
+  "region": {
+    "id": "toyotomi",
+    "name": "豊富温泉",
+    "kana": "とよとみおんせん",
+    "prefecture": "北海道",
+    "municipality": "天塩郡豊富町",
+    "scope_note": "町が紹介する豊富温泉街の利用施設群。初期境界は地域公式入浴一覧のふれあいセンター・川島旅館・ニュー温泉閣ホテル・ホテル豊富と、その温泉街内宿泊・交流施設による施設集合。同町中心街・サロベツ湿原センター・兜沼等を自動包含しない。",
+    "official_url": "https://toyotomi-onsen.com/"
+  },
+  "study": {
+    "reviewed_at": "2026-10-03",
+    "status": "partial",
+    "scope_note": "独立した初回調査。公式4入浴施設の識別可能な浴場群と通常外来条件、分析試料2件、公式温泉むすめ対応を確認。男女個別槽IDや全時間の処理ログまでは未確定。料金は一般大人1名・割引なし・通常入浴の公表額を下限とし、必須税費不明の場合は上限を確定しない。地域全件網羅・訪問日営業・予約枠・交通成立は未検証。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。",
+    "uninvestigated": [
+      "全246指標の網羅調査・施設別浴槽全件",
+      "2026-10-03以降の井戸工事と加水終了・実際の供給井構成",
+      "各浴槽の加水率・加温・循環・ろ過・冷却・各消毒方式・人工添加の全営業期間ログ",
+      "2026年の新しい完全分析書と現在の浴槽へ供給される試料の対応",
+      "一般大人の入湯税・消費税・必須タオル等の総額確認",
+      "基準訪問日別の営業カレンダーと予約在庫、宿泊日別見積、交通経路",
+      "温泉街全体の現在展示・デザイン・販売在庫と365日活動全件",
+      "温泉街内の未精査宿泊施設の個別営業と利用条件"
+    ]
+  },
+  "sources": [
+    {
+      "id": "toyotomi-s01",
+      "url": "https://www.town.toyotomi.hokkaido.jp/section/syoukoukankouka/a7cug60000001fqi.html",
+      "title": "豊富温泉",
+      "publisher": "豊富町",
+      "retrieved_at": "2026-10-03",
+      "locator": "世界でも珍しい油分を含む泉質・ふれあいセンター・温泉街案内図",
+      "summary": "豊富町の温泉街と町営浴場を紹介。温泉を供用する地域の実在を確認。古い感染症営業注記と泉質分類は現行条件へ転用しない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s02",
+      "url": "https://toyotomi-onsen.com/hotspring",
+      "title": "入浴施設",
+      "publisher": "豊富町観光協会温泉部会",
+      "retrieved_at": "2026-10-03",
+      "locator": "町営ふれあいセンター・川島旅館・ニュー温泉閣ホテル・ホテル豊富の各節",
+      "summary": "日帰り施設4件を掲載。一般浴場と湯治浴場を区別。施設ごとの公表料金と入浴時間があるが、全営業施設の網羅性は明示されない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s03",
+      "url": "https://toyotomi-onsen.com/hotel",
+      "title": "宿泊施設",
+      "publisher": "豊富町観光協会温泉部会",
+      "retrieved_at": "2026-10-03",
+      "locator": "温泉街の宿泊施設の節／温泉街以外の宿泊施設という別見出し",
+      "summary": "温泉街に9施設を掲載し、街外の宿泊施設を別に扱う。温泉浴槽がない宿や利用対象・最低泊数に条件がある施設を含むため、その件数を一般温泉入浴施設数へ転用しない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s04",
+      "url": "https://toyotomi-onsen.com/fureai-eigyo",
+      "title": "ふれあいセンター営業のご案内",
+      "publisher": "豊富町観光協会温泉部会",
+      "retrieved_at": "2026-10-03",
+      "locator": "ふれあいセンター営業時間等について",
+      "summary": "10時〜21時、最終受付20時30分、隔週木曜休館、曜日を問わず入浴券利用2回まで。サウナは利用停止中。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s05",
+      "url": "https://toyotomi-onsen.com/quality",
+      "title": "泉質・効能",
+      "publisher": "豊富町観光協会温泉部会",
+      "retrieved_at": "2026-10-03",
+      "locator": "泉質表・2件の温泉分析PDFへのリンク",
+      "summary": "ふれあいセンター・川島旅館・温泉閣は5井混合、ホテル豊富は2井混合と記載。前者は本文R-11号井に対し添付2020分析書R-10号井で不一致。効能の強さは採点しない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s06",
+      "url": "https://toyotomi-onsen.com/wp/wp-content/uploads/2020/10/2020bunsekisho_fureai.pdf",
+      "title": "温泉分析書 環境温泉報告書 第2020-0802／温泉分析書別表",
+      "publisher": "株式会社環境総合科学／北海道立衛生研究所",
+      "retrieved_at": "2026-10-03",
+      "locator": "PDF全2ページを1800pxで画像確認。採水2020-07-21、分析終了08-21、発行08-24、別表09-01",
+      "summary": "温泉水タンク試料はR-1A・R-4・R-8・R-9・R-10号井混合。pHと質量当たり成分を明瞭に判読。現行R-11を含む混合系との連続性未確認。",
+      "source_type": "official_analysis_pdf"
+    },
+    {
+      "id": "toyotomi-s07",
+      "url": "https://toyotomi-onsen.com/wp/wp-content/uploads/2021/11/2019bunsekisho2_hotel.pdf",
+      "title": "温泉分析書 ホクカン分析センター 温泉 第19-008号／別表",
+      "publisher": "株式会社ホクカン 環境化学分析センター／北海道立衛生研究所",
+      "retrieved_at": "2026-10-03",
+      "locator": "PDF全2ページを1800pxで画像確認。採水2019-08-27、分析終了09-18、発行09-19、別表09-24",
+      "summary": "R-9・R-11号井の混合槽試料。各成分のmg/kgと溶存物質g/kgを判読。2019年試料であり、現在浴槽内成分として表示しない。",
+      "source_type": "official_analysis_pdf"
+    },
+    {
+      "id": "toyotomi-s08",
+      "url": "https://toyotomi-onsen.com/news/47628",
+      "title": "ふれあいセンターの加水対応について",
+      "publisher": "豊富町観光協会温泉部会／豊富町商工観光課商工観光係",
+      "retrieved_at": "2026-10-03",
+      "locator": "2026-09-30本文。Web取得失敗後、公開URLのHTMLを読み取り取得して確認",
+      "summary": "温泉井戸工事のため当日は加水営業。終了日・割合・個別浴槽は明記されず、評価日や将来営業日に継続すると断定しない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s09",
+      "url": "https://toyotomi-onsen.com/faq",
+      "title": "湯治に関するＱ＆Ａ",
+      "publisher": "豊富町観光協会温泉部会",
+      "retrieved_at": "2026-10-03",
+      "locator": "塩素／原油／持ち物／時間帯の湯の質の回答",
+      "summary": "ふれあいセンターの湯治浴室内水風呂を除く温泉浴槽は塩素不使用と明記。湯治浴槽には天然油分を含む旨がある。タオルは持ち物。通常説明と臨時加水の運用を区別。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s10",
+      "url": "https://new-onsenkaku.com/day-use",
+      "title": "日帰り入浴",
+      "publisher": "ニュー温泉閣ホテル",
+      "retrieved_at": "2026-10-03",
+      "locator": "ご利用時間・入浴料・レンタル販売品",
+      "summary": "朝7時〜8時30分と13時〜21時の外来入浴。一般大人600円。タオルレンタルと購入は別料金で、税・必須性までは明記されない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s11",
+      "url": "https://new-onsenkaku.com/onsen",
+      "title": "豊富温泉",
+      "publisher": "ニュー温泉閣ホテル",
+      "retrieved_at": "2026-10-03",
+      "locator": "泉質・源泉名・知覚的試験",
+      "summary": "5井混合を紹介するが地域サイトおよび添付PDFと泉温・分類・構成が異なる。源泉知覚試験を浴槽の臭い強度に転用しない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s12",
+      "url": "https://hotel-toyotomi.co.jp/hot-spring",
+      "title": "温泉紹介",
+      "publisher": "ホテル豊富",
+      "retrieved_at": "2026-10-03",
+      "locator": "大浴場／日帰り入浴時間・料金",
+      "summary": "大浴場へ専用源泉から油分をろ過して引くと明記。茶褐色、ほのかな石油の香りを直接説明。外来11時〜21時30分、大人500円で地域一覧600円・20時終了と違う。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s13",
+      "url": "https://hotel-toyotomi.co.jp/",
+      "title": "ホテル豊富",
+      "publisher": "ホテル豊富",
+      "retrieved_at": "2026-10-03",
+      "locator": "アクセス／予約・ニュース",
+      "summary": "施設所在地は豊富町字上サロベツ1510-2。2026年Web更新とオンライン予約一時休止案内がある。予約案内を来訪成立の確認へ代用しない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s14",
+      "url": "https://kawashimaryokan.co.jp/spa",
+      "title": "温泉",
+      "publisher": "株式会社川島旅館",
+      "retrieved_at": "2026-10-03",
+      "locator": "湯どころ・日帰り入浴・住所",
+      "summary": "内風呂、露天、貸切露天を確認。日帰り13時〜20時、最終入場19時30分、大人1000円、混雑時人数制限。地域一般紹介の弱い石油臭は個別槽の強度に使わない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s15",
+      "url": "https://kawashimaryokan.co.jp/stay",
+      "title": "ご宿泊",
+      "publisher": "株式会社川島旅館",
+      "retrieved_at": "2026-10-03",
+      "locator": "施設詳細・温泉",
+      "summary": "男女交代の1階大浴場と各露天、貸切露天1か所を区別。通常日帰り1回60分・1日1回。予約制貸切は45分3000円、日帰り大浴場追加は1人200円。客室から行ける貸切を客室専用風呂としない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s16",
+      "url": "https://kawashimaryokan.co.jp/notice/2026/3597",
+      "title": "休館日についてのお知らせ",
+      "publisher": "株式会社川島旅館",
+      "retrieved_at": "2026-10-03",
+      "locator": "2026-09-17本文",
+      "summary": "10月27・28日と11月10・11・17・18日は入浴・売店・宿泊すべて休業と明記。一般の営業時間を休業日に適用しない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s17",
+      "url": "https://kawashimaryokan.co.jp/notice/2026/3586",
+      "title": "2027年の営業についてのお知らせ",
+      "publisher": "株式会社川島旅館",
+      "retrieved_at": "2026-10-03",
+      "locator": "2026-09-04本文",
+      "summary": "2027年1月初め〜中旬は全営業休止予定、その後3月末までは日帰り・売店のみ。宿泊休業を日帰り終日休業に拡張しない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "toyotomi-s18",
+      "url": "https://onsen-musume.jp/character/miyu_toyotomi",
+      "title": "豊富水由",
+      "publisher": "株式会社エンバウンド／温泉むすめプロジェクト",
+      "retrieved_at": "2026-10-03",
+      "locator": "キャラクター名と公開日2022-09-26",
+      "summary": "豊富温泉に対応する豊富水由を公式サイトで確認。キャラクター設定の効能や希少性の表現は温泉の採点事実にしない。",
+      "source_type": "official_ip"
+    },
+    {
+      "id": "toyotomi-s19",
+      "url": "https://www.town.toyotomi.hokkaido.jp/section/soumuka/ufvuj5000000huab.html",
+      "title": "豊富水由イベント・お知らせについて",
+      "publisher": "豊富町",
+      "retrieved_at": "2026-10-03",
+      "locator": "パネル一覧・ガスホルダー・マンホール・特別住民票・2026年大使企画",
+      "summary": "現行展示案内と2026年の地元企画を確認。町外観光地点を温泉街へ算入しない。2025年企画や2026年9月14日配布終了ステッカーを現在販売中とはしない。",
+      "source_type": "official_local_activity"
+    },
+    {
+      "id": "toyotomi-s20",
+      "url": "https://poka-onsen-musume.jp/character/toyotomi-miyu",
+      "title": "豊富水由",
+      "publisher": "株式会社エンバウンド／温泉むすめ ぽかログ",
+      "retrieved_at": "2026-10-03",
+      "locator": "パネル一覧・グッズ一覧",
+      "summary": "川島旅館の猫ふれあい、ふれあいセンター100周年、温泉閣SD等の地元デザインを確認。商品一覧と個別商品価格に不一致があり、当日在庫も不明。",
+      "source_type": "official_ip_catalog"
+    },
+    {
+      "id": "toyotomi-s21",
+      "url": "https://poka-onsen-musume.jp/panels?character_id=125",
+      "title": "豊富水由のパネル一覧",
+      "publisher": "株式会社エンバウンド／温泉むすめ ぽかログ",
+      "retrieved_at": "2026-10-03",
+      "locator": "1ページ目10件中の温泉街4施設",
+      "summary": "川島旅館、ふれあいセンター、湯の杜ぽっけ、温泉閣の展示場所と固有デザインを確認。14件はパネル数であり14所在地としない。",
+      "source_type": "official_ip_catalog"
+    },
+    {
+      "id": "toyotomi-s22",
+      "url": "https://toyotomi-onsen.com/policy",
+      "title": "プライバシーポリシー",
+      "publisher": "豊富町観光協会温泉部会",
+      "retrieved_at": "2026-10-03",
+      "locator": "団体名とコンシェルジュデスク所在地",
+      "summary": "地域サイト発行主体を豊富町観光協会温泉部会と確認。コンシェルジュデスクは豊富町字温泉ふれあいセンター2階。",
+      "source_type": "official_web"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "toyotomi-fureai",
+      "name": "豊富温泉ふれあいセンター",
+      "url": "https://toyotomi-onsen.com/fureai-eigyo",
+      "source_ids": [
+        "toyotomi-s01",
+        "toyotomi-s02",
+        "toyotomi-s04",
+        "toyotomi-s09"
+      ]
+    },
+    {
+      "id": "toyotomi-kawashima",
+      "name": "川島旅館",
+      "url": "https://kawashimaryokan.co.jp/",
+      "source_ids": [
+        "toyotomi-s02",
+        "toyotomi-s14",
+        "toyotomi-s15",
+        "toyotomi-s16"
+      ]
+    },
+    {
+      "id": "toyotomi-onsenkaku",
+      "name": "ニュー温泉閣ホテル",
+      "url": "https://new-onsenkaku.com/",
+      "source_ids": [
+        "toyotomi-s02",
+        "toyotomi-s10",
+        "toyotomi-s11"
+      ]
+    },
+    {
+      "id": "toyotomi-hotel",
+      "name": "ホテル豊富",
+      "url": "https://hotel-toyotomi.co.jp/",
+      "source_ids": [
+        "toyotomi-s02",
+        "toyotomi-s12",
+        "toyotomi-s13"
+      ]
+    },
+    {
+      "id": "toyotomi-pokke",
+      "name": "湯の杜ぽっけ（展示・交流施設）",
+      "url": "https://toyotomi-onsen.com/",
+      "source_ids": [
+        "toyotomi-s19",
+        "toyotomi-s21"
+      ]
+    },
+    {
+      "id": "toyotomi-win",
+      "name": "ウィークリーマンション型ホテル ウィン",
+      "url": "https://toyotomi-onsen.com/hotel",
+      "source_ids": [
+        "toyotomi-s03"
+      ]
+    },
+    {
+      "id": "toyotomi-yukaijuku",
+      "name": "豊富町温泉保養宿泊所 湯快宿",
+      "url": "https://toyotomi-onsen.com/hotel",
+      "source_ids": [
+        "toyotomi-s03"
+      ]
+    },
+    {
+      "id": "toyotomi-yunohanaso",
+      "name": "シェアハウス 湯の花荘",
+      "url": "https://toyotomi-onsen.com/hotel",
+      "source_ids": [
+        "toyotomi-s03"
+      ]
+    },
+    {
+      "id": "toyotomi-yado",
+      "name": "シェアハウス 宿〜YADO〜",
+      "url": "https://toyotomi-onsen.com/hotel",
+      "source_ids": [
+        "toyotomi-s03"
+      ]
+    },
+    {
+      "id": "toyotomi-ukasuy",
+      "name": "湯治の宿 ウカスイモシリ",
+      "url": "https://toyotomi-onsen.com/hotel",
+      "source_ids": [
+        "toyotomi-s03"
+      ]
+    },
+    {
+      "id": "toyotomi-azumashina",
+      "name": "Toji Stay アズマシーナ",
+      "url": "https://toyotomi-onsen.com/hotel",
+      "source_ids": [
+        "toyotomi-s03"
+      ]
+    }
+  ],
+  "region_metrics": {
+    "I01": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "toyotomi-s01",
+        "toyotomi-s02",
+        "toyotomi-s03"
+      ],
+      "reason": "自治体と地域公式一覧で温泉街・現在の利用施設を確認。",
+      "condition": ""
+    },
+    "I02": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "toyotomi-s02",
+        "toyotomi-s13",
+        "toyotomi-s14",
+        "toyotomi-s22"
+      ],
+      "reason": "公式入浴構成一覧と各施設公式所在地が対応する。",
+      "condition": "一覧公開の確認であり、全件網羅の確認ではない。"
+    },
+    "V01": {
+      "status": "C",
+      "rawLower": 4,
+      "rawUpper": null,
+      "unit": "count",
+      "evidence_ids": [
+        "toyotomi-s02",
+        "toyotomi-s04",
+        "toyotomi-s10",
+        "toyotomi-s12",
+        "toyotomi-s14"
+      ],
+      "reason": "一般外来を掲示する入浴施設4件を確認。地域全件探索は未完で件数下限。",
+      "condition": "現在公式営業案内がある確認施設集合。評価日当日や特定日の営業保証ではない。"
+    },
+    "V03": {
+      "status": "C",
+      "rawLower": 1,
+      "rawUpper": null,
+      "unit": "count",
+      "evidence_ids": [
+        "toyotomi-s01",
+        "toyotomi-s02",
+        "toyotomi-s04"
+      ],
+      "reason": "町営共同入浴施設ふれあいセンター1件を確認。ホテル大浴場は含めず、地域全件未網羅の下限。",
+      "condition": ""
+    },
+    "M01[project_id=onsen_musume]": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "toyotomi-s18",
+        "toyotomi-s19"
+      ],
+      "reason": "公式キャラクター豊富水由と温泉地の対応を確認。",
+      "condition": ""
+    },
+    "M02[project_id=onsen_musume]": {
+      "status": "C",
+      "rawLower": 4,
+      "rawUpper": null,
+      "unit": "count",
+      "evidence_ids": [
+        "toyotomi-s19",
+        "toyotomi-s20",
+        "toyotomi-s21"
+      ],
+      "reason": "温泉街内のふれあいセンター、川島旅館、温泉閣、湯の杜ぽっけの4所在地を確認。地域全展示未網羅の件数下限。",
+      "condition": "取得日の公式掲載上の公開展示。現地未訪問・当日開館未確認。町中心街や兜沼の地点は範囲外。"
+    },
+    "M03[project_id=onsen_musume]": {
+      "status": "C",
+      "rawLower": 3,
+      "rawUpper": null,
+      "unit": "count",
+      "evidence_ids": [
+        "toyotomi-s20",
+        "toyotomi-s21"
+      ],
+      "reason": "猫ふれあい・開湯100周年・ニュー温泉閣SDの異なる地域固有デザイン3種を確認。通常立ち絵と複製は含めず、全体未網羅の下限。",
+      "condition": "公式現行掲載、現地設置の実査なし。"
+    },
+    "M07[project_id=onsen_musume]": {
+      "status": "U",
+      "rawLower": null,
+      "rawUpper": null,
+      "unit": "count",
+      "evidence_ids": [
+        "toyotomi-s19",
+        "toyotomi-s20",
+        "toyotomi-s21"
+      ],
+      "reason": "取扱施設はあるが取得日・訪問日の在庫が未開示。過去イベント販売や終了ノベルティを現在購入可能としない。",
+      "condition": "閲覧した町現行案内・公式IP商品一覧の範囲。"
+    }
+  },
+  "plans": [
+    {
+      "id": "toyotomi-fureai-general-day",
+      "regionId": "toyotomi",
+      "facility_id": "toyotomi-fureai",
+      "bath_id": "toyotomi-fureai:toyotomi-fureai-general",
+      "label": "一般浴場（男女別の個別槽ID未確定） 日帰り",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "一般大人、通常営業日10時〜21時・最終20時30分、隔週木曜休館、券1枚当日2回まで。臨時加水の将来継続未確認。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 510,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s09"
+          ],
+          "reason": "入浴券510円を確認。タオル持参の案内あり。消費税・入湯税等を含む必須総額の明記が不足し、公表最低額を下限・総額上限未確定とする。",
+          "condition": "一般大人1名・通常外来。自前タオル利用を想定するが必須費未確定。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 11,
+          "rawUpper": 11,
+          "unit": "hour",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s09"
+          ],
+          "reason": "外来入浴の公表受付可能時間帯。定休・臨時休館・個別利用制限は別に保持。",
+          "condition": "通常営業日。訪問日成立未確認。"
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s09"
+          ],
+          "reason": "一般大人の外来入浴を公表。人数制限、臨時休館や利用規則の確認を別途要する。",
+          "condition": ""
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 20.5,
+          "rawUpper": 20.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s09"
+          ],
+          "reason": "外来入浴の公表最終受付時刻。",
+          "condition": "通常営業日。"
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P08": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P21[method=chlorine]": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s09"
+          ],
+          "reason": "水風呂を除く温泉浴槽は塩素なしと明記。臨時加水時の使用水・塩素条件は不明。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "通常の源泉提供時のみ。2026-09-30加水時と評価日当日の状態へ外挿しない。",
+          "group_applicability": "common"
+        },
+        "I09": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s08"
+          ],
+          "reason": "9月30日の施設加水営業は確認したが、この浴槽の加水割合・時間と復旧条件は未開示。",
+          "condition": ""
+        },
+        "I07": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "本文5井混合はR-11、添付2020試料はR-10。現行供給から個別浴槽までの対応を解消できない。",
+          "condition": ""
+        },
+        "I04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "地域公式から分析書全文と別表2ページを公開。全ページの列見出しと単位を画像で判読。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "source",
+          "entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-fureai:toyotomi-fureai-general"
+          }
+        },
+        "I05": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に採水日を明記。採水日を評価日または現在の測定日としない。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-fureai:toyotomi-fureai-general"
+          }
+        },
+        "I06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に分析機関・分析終了日・発行日を明記。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-fureai:toyotomi-fureai-general"
+          }
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "toyotomi-fureai-general",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "source_entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+      "supply_entity_id": "toyotomi-fureai:current-supply:toyotomi-fureai-general",
+      "analysis_sample_id": "toyotomi-sample-fureai-20200721",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "toyotomi-fureai-toji-day",
+      "regionId": "toyotomi",
+      "facility_id": "toyotomi-fureai",
+      "bath_id": "toyotomi-fureai:toyotomi-fureai-toji",
+      "label": "湯治浴場の温泉浴槽（水風呂除外、個別槽ID未確定） 日帰り",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "一般大人、通常営業日10時〜21時・最終20時30分、隔週木曜休館、券1枚当日2回まで。臨時加水の将来継続未確認。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 510,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s09"
+          ],
+          "reason": "入浴券510円を確認。タオル持参の案内あり。消費税・入湯税等を含む必須総額の明記が不足し、公表最低額を下限・総額上限未確定とする。",
+          "condition": "一般大人1名・通常外来。自前タオル利用を想定するが必須費未確定。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 11,
+          "rawUpper": 11,
+          "unit": "hour",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s09"
+          ],
+          "reason": "外来入浴の公表受付可能時間帯。定休・臨時休館・個別利用制限は別に保持。",
+          "condition": "通常営業日。訪問日成立未確認。"
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s09"
+          ],
+          "reason": "一般大人の外来入浴を公表。人数制限、臨時休館や利用規則の確認を別途要する。",
+          "condition": ""
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 20.5,
+          "rawUpper": 20.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s09"
+          ],
+          "reason": "外来入浴の公表最終受付時刻。",
+          "condition": "通常営業日。"
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P08": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s08",
+            "toyotomi-s09"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P21[method=chlorine]": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s09"
+          ],
+          "reason": "水風呂を除く温泉浴槽は塩素なしと明記。臨時加水時の使用水・塩素条件は不明。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "通常の源泉提供時のみ。2026-09-30加水時と評価日当日の状態へ外挿しない。",
+          "group_applicability": "common"
+        },
+        "I09": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s08"
+          ],
+          "reason": "9月30日の施設加水営業は確認したが、この浴槽の加水割合・時間と復旧条件は未開示。",
+          "condition": ""
+        },
+        "I07": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "本文5井混合はR-11、添付2020試料はR-10。現行供給から個別浴槽までの対応を解消できない。",
+          "condition": ""
+        },
+        "S12": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s09"
+          ],
+          "reason": "湯治浴槽に湯花がある旨を施設FAQで直接説明。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "通常提供の公式記述チャンネル。評価日・時刻の現地観測ではない。",
+          "group_applicability": "common"
+        },
+        "I04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "地域公式から分析書全文と別表2ページを公開。全ページの列見出しと単位を画像で判読。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "source",
+          "entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-fureai:toyotomi-fureai-toji"
+          }
+        },
+        "I05": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に採水日を明記。採水日を評価日または現在の測定日としない。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-fureai:toyotomi-fureai-toji"
+          }
+        },
+        "I06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に分析機関・分析終了日・発行日を明記。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-fureai:toyotomi-fureai-toji"
+          }
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "toyotomi-fureai-toji",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "source_entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+      "supply_entity_id": "toyotomi-fureai:current-supply:toyotomi-fureai-toji",
+      "analysis_sample_id": "toyotomi-sample-fureai-20200721",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "toyotomi-onsenkaku-general-day",
+      "regionId": "toyotomi",
+      "facility_id": "toyotomi-onsenkaku",
+      "bath_id": "toyotomi-onsenkaku:toyotomi-onsenkaku-public-bath",
+      "label": "ニュー温泉閣ホテル 通常日帰り（朝湯・昼夕湯）",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "一般大人・通常営業日、朝湯7時〜8時30分と昼夕湯13時〜21時。8時30分〜13時は閉鎖として除外。1購入で2時間帯をまたげるという確認ではない。男女個別槽、予約要否と訪問日の実営業は未確認。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 600,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s10"
+          ],
+          "reason": "一般大人600円の公表料金。税込・入湯税込みの明記とタオル持参／必須レンタルの明示が不足し、総額上限未確定。",
+          "condition": "一般大人1名・通常外来。自前タオル利用を想定するが必須費未確定。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 9.5,
+          "rawUpper": 9.5,
+          "unit": "hour",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s10"
+          ],
+          "reason": "一般外来の公表入浴窓1.5時間＋8時間＝9.5時間。中間の閉鎖時間を除外。1購入の許容滞在時間とは別。",
+          "condition": "通常営業日。訪問日成立未確認。"
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s10"
+          ],
+          "reason": "一般大人の外来入浴を公表。人数制限、臨時休館や利用規則の確認を別途要する。",
+          "condition": ""
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s10",
+            "toyotomi-s11"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s10",
+            "toyotomi-s11"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s10",
+            "toyotomi-s11"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s10",
+            "toyotomi-s11"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P08": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s10",
+            "toyotomi-s11"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s10",
+            "toyotomi-s11"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "I07": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s11"
+          ],
+          "reason": "施設本文と地域本文・PDFの分類・混合井構成・泉温が一致せず、現在浴槽への定量対応は未確定。",
+          "condition": ""
+        },
+        "Y09": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s10"
+          ],
+          "reason": "一般外来が7時〜8時30分に入浴できる旨を公表。",
+          "condition": "通常営業日の朝湯。"
+        },
+        "I04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "地域公式から分析書全文と別表2ページを公開。全ページの列見出しと単位を画像で判読。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "source",
+          "entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-onsenkaku:toyotomi-onsenkaku-public-bath"
+          }
+        },
+        "I05": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に採水日を明記。採水日を評価日または現在の測定日としない。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-onsenkaku:toyotomi-onsenkaku-public-bath"
+          }
+        },
+        "I06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に分析機関・分析終了日・発行日を明記。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-onsenkaku:toyotomi-onsenkaku-public-bath"
+          }
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "toyotomi-onsenkaku-public-bath",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "source_entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+      "supply_entity_id": "toyotomi-onsenkaku:current-supply:toyotomi-onsenkaku-public-bath",
+      "analysis_sample_id": "toyotomi-sample-fureai-20200721",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "toyotomi-hotel-main-day",
+      "regionId": "toyotomi",
+      "facility_id": "toyotomi-hotel",
+      "bath_id": "toyotomi-hotel:toyotomi-hotel-main-bath",
+      "label": "ホテル豊富 大浴場の日帰り",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "施設公式の11時〜21時30分・一般大人500円。地域一覧の時間と料金とは相違があり、各版の適用日不明。男女個別槽ID未確定。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 500,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "toyotomi-s12"
+          ],
+          "reason": "施設公式大人500円を採用。地域一覧600円は対象時点不明。税込・入湯税・必須タオルの総額が未確定で上限不明。",
+          "condition": "一般大人1名・通常外来。自前タオル利用を想定するが必須費未確定。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 10.5,
+          "rawUpper": 10.5,
+          "unit": "hour",
+          "evidence_ids": [
+            "toyotomi-s12"
+          ],
+          "reason": "外来入浴の公表受付可能時間帯。定休・臨時休館・個別利用制限は別に保持。",
+          "condition": "通常営業日。訪問日成立未確認。"
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s12"
+          ],
+          "reason": "一般大人の外来入浴を公表。人数制限、臨時休館や利用規則の確認を別途要する。",
+          "condition": ""
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07",
+            "toyotomi-s12"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07",
+            "toyotomi-s12"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07",
+            "toyotomi-s12"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07",
+            "toyotomi-s12"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P08": {
+          "status": "K",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s12"
+          ],
+          "reason": "大浴場へ供給する源泉は投入前に油分をろ過すると施設が明記。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "通常供給の大浴場。循環ろ過の有無はこの記述では確認していない。",
+          "group_applicability": "common"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07",
+            "toyotomi-s12"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P15": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s12"
+          ],
+          "reason": "供給前の油分ろ過工程を明示しており、天然油分除去工程なしは成立しない。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "I13": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s12"
+          ],
+          "reason": "対象は大浴場へ投入前の油分ろ過。循環ろ過と区別して開示されている。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "S01[color=brown]": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s12"
+          ],
+          "reason": "大浴場の湯を茶褐色と直接説明。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "公式浴場説明チャンネル。現地観測なし。",
+          "group_applicability": "common"
+        },
+        "I07": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07",
+            "toyotomi-s12"
+          ],
+          "reason": "地域はR-9・R-11混合をホテルへ対応させるが、専用源泉という施設説明から現在の個別大浴槽へ分析試料の定量値を移せる確認が不足。",
+          "condition": ""
+        },
+        "I04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07"
+          ],
+          "reason": "地域公式から分析書全文と別表2ページを公開。全ページの列見出しと単位を画像で判読。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2019-08-27 R-9・R-11混合槽試料。現在大浴場への分析対応はI07で未確認。",
+          "entity_scope": "source",
+          "entity_id": "toyotomi:source-profile:toyotomi-sample-hotel-20190827",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s07"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-hotel:toyotomi-hotel-main-bath"
+          }
+        },
+        "I05": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07"
+          ],
+          "reason": "公開分析書に採水日を明記。採水日を評価日または現在の測定日としない。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2019-08-27 R-9・R-11混合槽試料。現在大浴場への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-hotel-20190827",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s07"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-hotel:toyotomi-hotel-main-bath"
+          }
+        },
+        "I06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07"
+          ],
+          "reason": "公開分析書に分析機関・分析終了日・発行日を明記。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2019-08-27 R-9・R-11混合槽試料。現在大浴場への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-hotel-20190827",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s07"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-hotel:toyotomi-hotel-main-bath"
+          }
+        },
+        "S05[odor=petroleum]": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s12"
+          ],
+          "reason": "大浴場の湯に石油の香りがあると直接説明。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "公式浴場説明チャンネル。源泉知覚試験を転用しない。",
+          "group_applicability": "common"
+        },
+        "S06[odor=petroleum]": {
+          "status": "C",
+          "rawLower": 25,
+          "rawUpper": 25,
+          "unit": "INT",
+          "evidence_ids": [
+            "toyotomi-s12"
+          ],
+          "reason": "大浴場の石油の香りを「ほのか」と直接説明し固定辞書25に対応。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "公式浴場説明チャンネル。現地体験の集約値ではない。",
+          "group_applicability": "common"
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "toyotomi-hotel-main-bath",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "source_entity_id": "toyotomi:source-profile:toyotomi-sample-hotel-20190827",
+      "supply_entity_id": "toyotomi-hotel:current-supply:toyotomi-hotel-main-bath",
+      "analysis_sample_id": "toyotomi-sample-hotel-20190827",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "toyotomi-kawashima-indoor-day",
+      "regionId": "toyotomi",
+      "facility_id": "toyotomi-kawashima",
+      "bath_id": "toyotomi-kawashima:toyotomi-kawashima-indoor",
+      "label": "1階大浴場 内風呂 通常日帰り",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "通常営業日13時〜20時・最終19時30分、1回60分、1日1回、混雑時人数制限。10月27・28日等の告知休業日を除く。男女は毎日交代。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 1000,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15",
+            "toyotomi-s16"
+          ],
+          "reason": "一般大人1000円の公表料金。税込・入湯税・自前タオル可／必須費の表示が不足し、総額上限未確定。",
+          "condition": "一般大人1名・通常外来。自前タオル利用を想定するが必須費未確定。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 7,
+          "rawUpper": 7,
+          "unit": "hour",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15",
+            "toyotomi-s16"
+          ],
+          "reason": "外来入浴の公表受付可能時間帯。定休・臨時休館・個別利用制限は別に保持。",
+          "condition": "通常営業日。訪問日成立未確認。"
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15",
+            "toyotomi-s16"
+          ],
+          "reason": "一般大人の外来入浴を公表。人数制限、臨時休館や利用規則の確認を別途要する。",
+          "condition": ""
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 19.5,
+          "rawUpper": 19.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15",
+            "toyotomi-s16"
+          ],
+          "reason": "外来入浴の公表最終受付時刻。",
+          "condition": "通常営業日。"
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P08": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "Y11": {
+          "status": "K",
+          "rawLower": 60,
+          "rawUpper": 60,
+          "unit": "minute",
+          "evidence_ids": [
+            "toyotomi-s15"
+          ],
+          "reason": "通常日帰り1回60分・1日1回と明示。営業時間7時間を滞在許容時間に代用しない。",
+          "condition": ""
+        },
+        "I07": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "地域本文と添付試料の混合井相違を解消できず、現在の個別槽へ数値を転用しない。",
+          "condition": ""
+        },
+        "B09[dimension=setting,type=indoor]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "施設が内風呂と各大浴場の露天を区別して公表。",
+          "condition": "男女は毎日交代、今回個別槽IDは未確定。"
+        },
+        "I04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "地域公式から分析書全文と別表2ページを公開。全ページの列見出しと単位を画像で判読。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "source",
+          "entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-indoor"
+          }
+        },
+        "I05": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に採水日を明記。採水日を評価日または現在の測定日としない。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-indoor"
+          }
+        },
+        "I06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に分析機関・分析終了日・発行日を明記。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-indoor"
+          }
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "toyotomi-kawashima-indoor",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "source_entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+      "supply_entity_id": "toyotomi-kawashima:current-supply:toyotomi-kawashima-indoor",
+      "analysis_sample_id": "toyotomi-sample-fureai-20200721",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "toyotomi-kawashima-outdoor-day",
+      "regionId": "toyotomi",
+      "facility_id": "toyotomi-kawashima",
+      "bath_id": "toyotomi-kawashima:toyotomi-kawashima-outdoor",
+      "label": "1階大浴場に付く露天風呂 通常日帰り",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "通常営業日13時〜20時・最終19時30分、1回60分、1日1回、混雑時人数制限。10月27・28日等の告知休業日を除く。男女は毎日交代。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 1000,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15",
+            "toyotomi-s16"
+          ],
+          "reason": "一般大人1000円の公表料金。税込・入湯税・自前タオル可／必須費の表示が不足し、総額上限未確定。",
+          "condition": "一般大人1名・通常外来。自前タオル利用を想定するが必須費未確定。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 7,
+          "rawUpper": 7,
+          "unit": "hour",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15",
+            "toyotomi-s16"
+          ],
+          "reason": "外来入浴の公表受付可能時間帯。定休・臨時休館・個別利用制限は別に保持。",
+          "condition": "通常営業日。訪問日成立未確認。"
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15",
+            "toyotomi-s16"
+          ],
+          "reason": "一般大人の外来入浴を公表。人数制限、臨時休館や利用規則の確認を別途要する。",
+          "condition": ""
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 19.5,
+          "rawUpper": 19.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15",
+            "toyotomi-s16"
+          ],
+          "reason": "外来入浴の公表最終受付時刻。",
+          "condition": "通常営業日。"
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P08": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "Y11": {
+          "status": "K",
+          "rawLower": 60,
+          "rawUpper": 60,
+          "unit": "minute",
+          "evidence_ids": [
+            "toyotomi-s15"
+          ],
+          "reason": "通常日帰り1回60分・1日1回と明示。営業時間7時間を滞在許容時間に代用しない。",
+          "condition": ""
+        },
+        "I07": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06",
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "地域本文と添付試料の混合井相違を解消できず、現在の個別槽へ数値を転用しない。",
+          "condition": ""
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "日帰りで使う大浴場に付く露天風呂を明示。 B09の屋外種類は採点基準のredirectでB06と同じ正規評価軸なので一行に整理。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "貸切露天とは別設備。",
+          "group_applicability": "common"
+        },
+        "I04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "地域公式から分析書全文と別表2ページを公開。全ページの列見出しと単位を画像で判読。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "source",
+          "entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-outdoor"
+          }
+        },
+        "I05": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に採水日を明記。採水日を評価日または現在の測定日としない。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-outdoor"
+          }
+        },
+        "I06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に分析機関・分析終了日・発行日を明記。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-outdoor"
+          }
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "toyotomi-kawashima-outdoor",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "source_entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+      "supply_entity_id": "toyotomi-kawashima:current-supply:toyotomi-kawashima-outdoor",
+      "analysis_sample_id": "toyotomi-sample-fureai-20200721",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "toyotomi-kawashima-private-day",
+      "regionId": "toyotomi",
+      "facility_id": "toyotomi-kawashima",
+      "bath_id": "toyotomi-kawashima:toyotomi-kawashima-private-outdoor",
+      "label": "川島旅館 貸切露天45分・大人2名",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "13時以降・最終22時スタート、予約制、宿泊者とデラックス客室優先、天候により不可。冬季カラン撤去。大浴場を付けない貸切だけの通常外来。",
+      "metrics": {
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P08": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "Y02": {
+          "status": "C",
+          "rawLower": 3000,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "toyotomi-s15"
+          ],
+          "reason": "45分1回3000円を確認。大人2人の貸切自体の公表額。税・必須品込み総額は明記不足。大浴場を併用する場合は2名各200円を別途必要とし、基本貸切料金に勝手に含めない。",
+          "condition": "大人2名、45分、宿泊割引なしの外来貸切のみ。予約優先・天候条件あり。"
+        },
+        "Y11": {
+          "status": "K",
+          "rawLower": 45,
+          "rawUpper": 45,
+          "unit": "minute",
+          "evidence_ids": [
+            "toyotomi-s15"
+          ],
+          "reason": "貸切は45分1回の販売単位。",
+          "condition": ""
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "貸切露天として明示。",
+          "condition": ""
+        },
+        "B07": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s15"
+          ],
+          "reason": "予約制の独立した貸切露天。デラックス宿泊者優先で一般客の枠は未確認。",
+          "condition": ""
+        },
+        "Y06": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s15"
+          ],
+          "reason": "貸切は予約制と明示、予約不要は成立しない。",
+          "condition": ""
+        },
+        "I04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "地域公式から分析書全文と別表2ページを公開。全ページの列見出しと単位を画像で判読。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "source",
+          "entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-private-outdoor"
+          }
+        },
+        "I05": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に採水日を明記。採水日を評価日または現在の測定日としない。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-private-outdoor"
+          }
+        },
+        "I06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に分析機関・分析終了日・発行日を明記。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-private-outdoor"
+          }
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "toyotomi-kawashima-private-outdoor",
+      "source_entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+      "supply_entity_id": "toyotomi-kawashima:current-supply:toyotomi-kawashima-private-outdoor",
+      "analysis_sample_id": "toyotomi-sample-fureai-20200721"
+    },
+    {
+      "id": "toyotomi-kawashima-single-stay",
+      "regionId": "toyotomi",
+      "facility_id": "toyotomi-kawashima",
+      "bath_id": "toyotomi-kawashima:toyotomi-kawashima-public-bath-group",
+      "label": "川島旅館 Aタイプ1名室・大浴場利用（見積未調査）",
+      "modality": "stay",
+      "day_type": "all",
+      "condition_label": "定員1名のAタイプ、宿泊用浴場13時〜翌10時。価格・食事条件・特定日予約在庫未確認。2027年1〜3月の宿泊休止告知は別条件。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P08": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "reason": "対象浴槽・現在条件の明示が不足。かけ流しの名称だけでは無処理を確認できない。",
+          "condition": "調査済みの施設・地域公式案内の範囲。"
+        },
+        "Y03": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [],
+          "reason": "日付・1名客室条件を指定した予約見積は未調査。地域の最低料金を単独利用の実見積へ転用しない。",
+          "condition": ""
+        },
+        "B06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s15"
+          ],
+          "reason": "露天という構成設備の存在は確認できるが、内湯を含む複合浴槽群の全構成槽に共通する特性ではない。特定の露天1槽を未同定のため群の単槽点には用いない。",
+          "condition": ""
+        },
+        "B08": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s15"
+          ],
+          "reason": "Aタイプ単独客室に専用温泉風呂の明記なし。Cタイプからアクセスする貸切風呂をAタイプの客室風呂へ移さない。",
+          "condition": ""
+        },
+        "I04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "地域公式から分析書全文と別表2ページを公開。全ページの列見出しと単位を画像で判読。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "source",
+          "entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-public-bath-group"
+          }
+        },
+        "I05": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に採水日を明記。採水日を評価日または現在の測定日としない。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-public-bath-group"
+          }
+        },
+        "I06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に分析機関・分析終了日・発行日を明記。 既知資料についての事実は実体別archived_metricsへ保存。対象浴槽の現行供給との対応は未確認のため、このプランの採点値は未確認のまま保持する。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "toyotomi-s05",
+              "toyotomi-s06"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "toyotomi-kawashima:toyotomi-kawashima-public-bath-group"
+          }
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "toyotomi-kawashima-public-bath-group",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "source_entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+      "supply_entity_id": "toyotomi-kawashima:current-supply:toyotomi-kawashima-public-bath-group",
+      "analysis_sample_id": "toyotomi-sample-fureai-20200721",
+      "unapplied_component_observations": {
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s15"
+          ],
+          "reason": "宿泊利用できる大浴場に露天を併設。",
+          "condition": "",
+          "group_applicability": "common"
+        }
+      },
+      "member_selection_status": "E"
+    }
+  ],
+  "analysis_samples": [
+    {
+      "id": "toyotomi-sample-fureai-20200721",
+      "source_ids": [
+        "toyotomi-s06"
+      ],
+      "source_name": "温泉水タンク（R-1A・R-4・R-8・R-9・R-10号井混合泉）",
+      "sampling_date": "2020-07-21",
+      "measurements": {
+        "source_temperature_C": 34.2,
+        "ambient_temperature_C": 26,
+        "pH_field": 7.5,
+        "pH_laboratory": 7.38,
+        "density_relative_20_4": 1.0075,
+        "evaporation_residue_mg_kg": 11910,
+        "dissolved_excluding_gas_mg_kg": 13320,
+        "total_components_mg_kg": 13330,
+        "Na_mg_kg": 4432,
+        "K_mg_kg": 49.0,
+        "NH4_mg_kg": 37.9,
+        "Mg_mg_kg": 32.3,
+        "Ca_mg_kg": 96.7,
+        "FeII_mg_kg": 0.1,
+        "Cl_mg_kg": 5952,
+        "sulfate_mg_kg": 0.1,
+        "bicarbonate_mg_kg": 2136,
+        "carbonate_mg_kg": 10.8,
+        "Br_mg_kg": 21.3,
+        "iodide_mg_kg": 16.1,
+        "metasilicic_acid_mg_kg": 42.3,
+        "metaboric_acid_mg_kg": 494.6,
+        "free_CO2_mg_kg": 8.1,
+        "free_H2S_reported_mg_kg": 0.0,
+        "classification": "含よう素-ナトリウム-塩化物温泉（高張性弱アルカリ性温泉）",
+        "sensory_sample": "淡黄色白濁・カン味・石油臭",
+        "issuer": "株式会社環境総合科学",
+        "analysis_end_date": "2020-08-21",
+        "issued_at": "2020-08-24"
+      },
+      "correspondence_note": "現行地域本文はふれあい・川島・温泉閣へR-11を含む5井系と説明するが、この試料はR-10。現在浴槽のpH・成分・温度・臭い強度へ未転用。0.0表記の硫化水素も現行浴槽の正確なゼロを意味しない。",
+      "source_entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+      "supply_entity_id": "toyotomi:published-supply:toyotomi-sample-fureai-20200721",
+      "archived_metrics": {
+        "I05": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に採水日を明記。採水日を評価日または現在の測定日としない。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721"
+        },
+        "I06": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "公開分析書に分析機関・分析終了日・発行日を明記。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-fureai-20200721"
+        }
+      },
+      "identity_status": "K"
+    },
+    {
+      "id": "toyotomi-sample-hotel-20190827",
+      "source_ids": [
+        "toyotomi-s07"
+      ],
+      "source_name": "R-9号井・R-11号井の混合／温泉水混合槽",
+      "sampling_date": "2019-08-27",
+      "measurements": {
+        "source_temperature_C": 27.7,
+        "ambient_temperature_C": 20,
+        "pH_field": 8.0,
+        "pH_laboratory": 7.87,
+        "density_g_cm3_20_4": 1.0068,
+        "evaporation_residue_mg_kg": 9837,
+        "dissolved_excluding_gas_mg_kg": 11660,
+        "total_components_mg_kg": 11660,
+        "Na_mg_kg": 3859,
+        "K_mg_kg": 10.2,
+        "NH4_mg_kg": 18.0,
+        "Mg_mg_kg": 6.8,
+        "Ca_mg_kg": 5.7,
+        "FeII_mg_kg": 0.7,
+        "Cl_mg_kg": 3912,
+        "sulfate_mg_kg": 1.2,
+        "bicarbonate_mg_kg": 3494,
+        "carbonate_mg_kg": 26.7,
+        "Br_mg_kg": 14.1,
+        "iodide_mg_kg": 5.6,
+        "metasilicic_acid_mg_kg": 49.8,
+        "metaboric_acid_mg_kg": 253.3,
+        "free_CO2_reported_mg_kg": 0.0,
+        "free_H2S_reported_mg_kg": 0.0,
+        "classification": "ナトリウム-塩化物・炭酸水素塩温泉（高張性弱アルカリ性低温泉）",
+        "sensory_sample": "淡黄色白濁・カン味・石油臭",
+        "issuer": "株式会社ホクカン 環境化学分析センター",
+        "analysis_end_date": "2019-09-18",
+        "issued_at": "2019-09-19"
+      },
+      "correspondence_note": "地域はホテル豊富と対応づけるが、2019年源泉混合槽試料と現在投入前ろ過後の大浴場とは別の採水条件。現在浴槽の定量値へ未転用。g/kg表記をmg/kgへ1000倍で換算、蒸発残留物と溶存物質を分離。",
+      "source_entity_id": "toyotomi:source-profile:toyotomi-sample-hotel-20190827",
+      "supply_entity_id": "toyotomi:published-supply:toyotomi-sample-hotel-20190827",
+      "archived_metrics": {
+        "I05": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07"
+          ],
+          "reason": "公開分析書に採水日を明記。採水日を評価日または現在の測定日としない。",
+          "condition": "公開されている2019-08-27 R-9・R-11混合槽試料。現在大浴場への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-hotel-20190827"
+        },
+        "I06": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07"
+          ],
+          "reason": "公開分析書に分析機関・分析終了日・発行日を明記。",
+          "condition": "公開されている2019-08-27 R-9・R-11混合槽試料。現在大浴場への分析対応はI07で未確認。",
+          "entity_scope": "analysis_sample",
+          "entity_id": "toyotomi-sample-hotel-20190827"
+        }
+      },
+      "identity_status": "K"
+    }
+  ],
+  "findings": [
+    "地域公式の入浴構成4施設を一次本文で確認。ふれあい一般／湯治、川島内／露天／貸切、温泉閣朝／昼夕、ホテル豊富大浴場を条件別に区別。",
+    "ホテル豊富の投入前油分ろ過は明示されているが、油分が完全にないとは示されない。油臭の種類・ほのかな強度は同大浴場を説明する本文からのみ採用。",
+    "2026-09-30ふれあいセンターは井戸工事により当日加水。過去の加水終了告知を今回の復旧根拠に用いない。",
+    "分析PDF2件を全ページ画像確認し、採水年月日・発行者・質量単位・井構成を保管。地域・試料の数値を現在浴槽の値として点数化しない。",
+    "川島の外来60分制と45分貸切販売を区別。宿泊客室から貸切へ行けることは客室専用温泉風呂の有無と別。",
+    "豊富水由の対応と温泉街内4展示施設を公式IP掲載で確認。町中心街・湿原・兜沼の展示地点を温泉街の件数へ混ぜない。",
+    "公式の温泉街宿泊構成は川島旅館・ニュー温泉閣ホテル・ホテル豊富・ウィン・湯快宿・湯の花荘・宿〜YADO〜・ウカスイモシリ・アズマシーナ。後半6件は掲載上の構成だけ保存し個別現行営業や温泉浴槽を確認したとはしない。湯快宿は療養目的の2泊以上、シェアハウス等は最低期間条件があり、一般1泊プランへ置き換えない。"
+  ],
+  "issues": [
+    "5井混合の地域本文R-11に対し添付2020分析PDFR-10、温泉閣の施設本文は分類・温度も違う。時点差・井更新等を資料だけで解消できず、現行化学値の浴槽転用を保留。",
+    "ホテル豊富は施設公式500円・11時〜21時30分、地域一覧600円・11時〜20時で相違。現行施設ページを条件系列として採用し、適用日は未確定と明記。",
+    "全4施設で税込・入湯税・必須タオルまでの通常大人総額は確定できず、Y01上限不明。公表価格を確定総額や訪問見積として表示しない。",
+    "2026-09-30加水対応終了と評価日現在供給を未確認。温泉かけ流し説明から無加水・無加温・無循環・全方式無消毒へ展開しない。",
+    "温泉むすめ個別パネル詳細ページはWeb取得失敗。取得できた公式一覧と町本文を根拠にし、詳細未確認の制限を保持。商品一覧480円に対し開湯100周年個別ページ300円の価格不一致あり。在庫は別の未確認情報。",
+    "2023年川島価格改定記事の再入場可と現行宿泊施設詳細の1日1回条件は時点が異なる。今回通常利用には現行詳細の60分・1日1回を採用。"
+  ],
+  "excluded_facilities": [
+    {
+      "name": "豊富町中心街・サロベツ湿原センター・兜沼の温泉むすめ展示",
+      "reason": "町内であるだけでは豊富温泉街の境界に含めない。対象名との対応は確認するが地域M02に未算入。",
+      "source_ids": [
+        "toyotomi-s03",
+        "toyotomi-s19",
+        "toyotomi-s21"
+      ]
+    },
+    {
+      "name": "温泉街の自炊宿・シェアハウス群（未個別精査）",
+      "reason": "公式宿泊構成には保持するが、一般大人1泊・温泉浴槽付・現在営業を個別に確認していないので具体的入浴プランや一般温泉入浴施設数へ追加しない。",
+      "source_ids": [
+        "toyotomi-s03"
+      ]
+    }
+  ],
+  "search_log": [
+    {
+      "query": "豊富温泉 公式 ふれあいセンター 分析 料金／自治体本文／地域入浴・宿泊一覧",
+      "outcome": "所在地、入浴4施設、温泉街内外の構成境界、通常料金と時間を本文確認。地域一覧を全件営業確認とはしない。",
+      "source_ids": [
+        "toyotomi-s01",
+        "toyotomi-s02",
+        "toyotomi-s03",
+        "toyotomi-s04"
+      ]
+    },
+    {
+      "query": "地域泉質ページの分析書①・②PDF",
+      "outcome": "Web本文取得とスクリーンショット参照後、公開PDFを読み取り取得・Popplerで全4ページ画像確認。異なる混合井構成を発見。",
+      "source_ids": [
+        "toyotomi-s05",
+        "toyotomi-s06",
+        "toyotomi-s07"
+      ]
+    },
+    {
+      "query": "公式最新ふれあい加水告知／加温 ろ過 消毒 公式FAQ",
+      "outcome": "9月30日告知はWeb取得失敗後HTML直取得で確認成功。通常の塩素不使用範囲はFAQで確認し臨時加水には外挿しない。",
+      "source_ids": [
+        "toyotomi-s08",
+        "toyotomi-s09"
+      ]
+    },
+    {
+      "query": "施設公式日帰り／川島現行施設詳細／ホテル豊富大浴場",
+      "outcome": "各施設本文から入浴窓・60分制・貸切45分・油分ろ過を確認。価格・営業時間の公式間相違を保持。",
+      "source_ids": [
+        "toyotomi-s10",
+        "toyotomi-s11",
+        "toyotomi-s12",
+        "toyotomi-s14",
+        "toyotomi-s15",
+        "toyotomi-s16",
+        "toyotomi-s17"
+      ]
+    },
+    {
+      "query": "豊富町 入湯税 免除／各施設 税込 タオル 必須",
+      "outcome": "対象自治体の最新通常外来総額・免税条件は確定できず。他自治体の税ルールは採用しない。公表額を下限に保持。",
+      "source_ids": [
+        "toyotomi-s02",
+        "toyotomi-s10",
+        "toyotomi-s12",
+        "toyotomi-s14",
+        "toyotomi-s15"
+      ]
+    },
+    {
+      "query": "温泉むすめ公式 豊富水由／ぽかログ／豊富町現在案内",
+      "outcome": "地域対応、温泉街4展示所在地、固有デザインを確認。個別パネル922・915・25・26は取得失敗だが一覧本文取得成功。過去終了企画と当日在庫を区別。",
+      "source_ids": [
+        "toyotomi-s18",
+        "toyotomi-s19",
+        "toyotomi-s20",
+        "toyotomi-s21"
+      ]
+    }
+  ],
+  "source_entities": [
+    {
+      "id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721",
+      "name": "温泉水タンク（R-1A・R-4・R-8・R-9・R-10号井混合泉）",
+      "identity_status": "C",
+      "evidence_ids": [
+        "toyotomi-s06"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {
+        "I04": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s06"
+          ],
+          "reason": "地域公式から分析書全文と別表2ページを公開。全ページの列見出しと単位を画像で判読。",
+          "condition": "公開されている2020-07-21温泉水タンク試料。現行の供給井構成・浴槽への分析対応はI07で未確認。",
+          "entity_scope": "source",
+          "entity_id": "toyotomi:source-profile:toyotomi-sample-fureai-20200721"
+        }
+      }
+    },
+    {
+      "id": "toyotomi:source-profile:toyotomi-sample-hotel-20190827",
+      "name": "R-9号井・R-11号井の混合／温泉水混合槽",
+      "identity_status": "C",
+      "evidence_ids": [
+        "toyotomi-s07"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {
+        "I04": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "toyotomi-s05",
+            "toyotomi-s07"
+          ],
+          "reason": "地域公式から分析書全文と別表2ページを公開。全ページの列見出しと単位を画像で判読。",
+          "condition": "公開されている2019-08-27 R-9・R-11混合槽試料。現在大浴場への分析対応はI07で未確認。",
+          "entity_scope": "source",
+          "entity_id": "toyotomi:source-profile:toyotomi-sample-hotel-20190827"
+        }
+      }
+    }
+  ],
+  "supply_entities": [
+    {
+      "id": "toyotomi:published-supply:toyotomi-sample-fureai-20200721",
+      "name": "温泉水タンク（R-1A・R-4・R-8・R-9・R-10号井混合泉）",
+      "identity_status": "C",
+      "evidence_ids": [
+        "toyotomi-s06"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "toyotomi:published-supply:toyotomi-sample-hotel-20190827",
+      "name": "R-9号井・R-11号井の混合／温泉水混合槽",
+      "identity_status": "C",
+      "evidence_ids": [
+        "toyotomi-s07"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "toyotomi-fureai:current-supply:toyotomi-fureai-general",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "toyotomi-fureai:current-supply:toyotomi-fureai-toji",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "toyotomi-onsenkaku:current-supply:toyotomi-onsenkaku-public-bath",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "toyotomi-hotel:current-supply:toyotomi-hotel-main-bath",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "toyotomi-kawashima:current-supply:toyotomi-kawashima-indoor",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "toyotomi-kawashima:current-supply:toyotomi-kawashima-outdoor",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "toyotomi-kawashima:current-supply:toyotomi-kawashima-private-outdoor",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "toyotomi-kawashima:current-supply:toyotomi-kawashima-public-bath-group",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    }
+  ]
+}

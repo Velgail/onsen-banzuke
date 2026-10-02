@@ -1,0 +1,1203 @@
+{
+  "region": {
+    "id": "zao",
+    "name": "蔵王温泉",
+    "kana": "ざおうおんせん",
+    "prefecture": "山形県",
+    "municipality": "山形市",
+    "scope_note": "蔵王温泉観光協会が蔵王温泉として案内する山形市蔵王温泉の温泉施設群。宮城県の遠刈田温泉等を含めない。地理ポリゴン未確定のため公式施設集合を境界の開始点とする。",
+    "official_url": "https://zaomountainresort.com/about/"
+  },
+  "study": {
+    "reviewed_at": "2026-10-03",
+    "status": "partial",
+    "scope_note": "他地域の結果から独立した固定尺度用原値調査。地域施設一覧と3営業浴場・その中の浴槽条件を部分検証。全246項目・全施設を完了したとはしない。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。",
+    "uninvestigated": [
+      "全営業施設と一覧の網羅性、全浴槽の源泉・加工・営業の照合",
+      "全源泉の新分析書、現在浴槽と2004年分析の対応",
+      "交通全行程・宿泊見積と在庫・活動の全件・年間比率",
+      "現地体感の直接調査、展示見学条件と現場の設置状態"
+    ]
+  },
+  "sources": [
+    {
+      "id": "zao-s01",
+      "url": "https://zaomountainresort.com/about/",
+      "title": "蔵王温泉とは",
+      "publisher": "蔵王温泉観光協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "共同浴場・足湯・日帰り温泉施設欄",
+      "summary": "山形市蔵王温泉の施設群と共同浴場3施設を案内。総数表記と列挙数には差がある。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s02",
+      "url": "https://zaomountainresort.com/stay/",
+      "title": "泊まる",
+      "publisher": "蔵王温泉観光協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "宿泊施設の一覧と各施設詳細へのリンク",
+      "summary": "地域の宿泊施設一覧を掲載する。全営業施設を網羅するという証明は未確認。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s03",
+      "url": "https://zaomountainresort.com/author/kawaraya/",
+      "title": "すのこの湯 かわらや",
+      "publisher": "蔵王温泉観光協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "施設概要・住所・営業時間欄",
+      "summary": "山形市蔵王温泉43、9:30〜19:00、最終受付18:30、木曜休を案内。浴槽底のすのこから自然に湧く構造を説明。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s04",
+      "url": "https://www.kawarayaga.com/onsen_jiman.html",
+      "title": "すのこの湯",
+      "publisher": "すのこの湯 かわらや",
+      "retrieved_at": "2026-10-03",
+      "locator": "入浴料金・自家自噴天然掛け流し・温泉成分表欄",
+      "summary": "大人入浴券600円。川原の湧出点にすのこ底の湯船を設置。2004年分析書画像へリンク。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s05",
+      "url": "https://www.kawarayaga.com/sisetsu.html",
+      "title": "施設案内",
+      "publisher": "すのこの湯 かわらや",
+      "retrieved_at": "2026-10-03",
+      "locator": "入浴料金・施設案内欄",
+      "summary": "大人入浴600円と券売機での購入を案内。料金の税込表示と必須タオル条件は確認できない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s06",
+      "url": "https://www.kawarayaga.com/images/onsen/bunseki_syo2.gif",
+      "title": "温泉分析書 川原屋源泉",
+      "publisher": "日本環境科学株式会社／かわらや公開",
+      "retrieved_at": "2026-10-03",
+      "locator": "分析書全1画像。原寸画像で源泉名・採水日・単位を視認",
+      "summary": "2004年10月7日採水、10月19日分析の川原屋源泉試料。源泉温度48.1℃、pH1.7、非ガス溶存物質3735mg/kgを記録。",
+      "source_type": "official_analysis_image"
+    },
+    {
+      "id": "zao-s07",
+      "url": "https://zaospa.co.jp/",
+      "title": "山形蔵王温泉 湯の花茶屋 新左衛門の湯",
+      "publisher": "新左衛門の湯",
+      "retrieved_at": "2026-10-03",
+      "locator": "ご利用案内・料金・休館日・アクセス欄",
+      "summary": "大人通常入浴1000円税込、10〜18時、最終受付17:30。10月は7・14・21・28日休館。所在地は蔵王温泉川前905。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s08",
+      "url": "https://zaospa.co.jp/oyudokoro",
+      "title": "お湯処 新左衛門の湯／あらたまの湯",
+      "publisher": "新左衛門の湯",
+      "retrieved_at": "2026-10-03",
+      "locator": "もがみ高湯・四六の湯・冷やし温泉・内湯欄",
+      "summary": "浴槽別に源泉100%の湯、単水ブレンドの湯、冷やし温泉、温泉に該当しない人工内湯を区別。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s09",
+      "url": "https://zaospa.co.jp/kiyaku",
+      "title": "ご入館に際して",
+      "publisher": "新左衛門の湯",
+      "retrieved_at": "2026-10-03",
+      "locator": "入浴券・最終受付・タオル・入館制限欄",
+      "summary": "タオルは持参、販売レンタルは任意。成人区分と入館制限、退館18時、返却式ロッカーを明示。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s10",
+      "url": "https://zaospa.co.jp/archives/1286",
+      "title": "予約制ボックスサウナ おこもりサウナ",
+      "publisher": "新左衛門の湯",
+      "retrieved_at": "2026-10-03",
+      "locator": "2026-07-25告知、冷やし温泉と利用方法欄",
+      "summary": "冷やし温泉は露天にあり一般入浴客も利用可。高温時には利用者が水道水で調温できる。サウナは別料金予約制。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s11",
+      "url": "https://www.jupeer-zao.com/roten/",
+      "title": "蔵王温泉大露天風呂",
+      "publisher": "蔵王温泉観光株式会社",
+      "retrieved_at": "2026-10-03",
+      "locator": "2026営業案内・詳細情報欄",
+      "summary": "2026年4月25日開始、通常大人850円、平日9:30〜17時、休日9:30〜18時、受付は各30分前。タオル販売あり。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s12",
+      "url": "https://zaomountainresort.com/author/dairoten/",
+      "title": "蔵王温泉大露天風呂",
+      "publisher": "蔵王温泉観光協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "施設概要・営業時間欄",
+      "summary": "蔵王温泉荒敷853-3の露天浴場。営業時間の開始9時という協会表記は運営者の2026案内9:30と差がある。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s13",
+      "url": "https://onsen-musume.jp/character/zao_tomoe",
+      "title": "蔵王 巴",
+      "publisher": "株式会社エンバウンド／温泉むすめプロジェクト",
+      "retrieved_at": "2026-10-03",
+      "locator": "キャラクター名・公開日欄",
+      "summary": "蔵王巴を蔵王の公式キャラクターとして掲載。公開日は2018年2月27日。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s14",
+      "url": "https://poka-onsen-musume.jp/character/zao-tomoe",
+      "title": "蔵王 巴のグッズ・パネル",
+      "publisher": "株式会社エンバウンド／温泉むすめ ぽかログ",
+      "retrieved_at": "2026-10-03",
+      "locator": "グッズ・パネル一覧欄",
+      "summary": "蔵王プラザホテルの通常立ち絵とカモシカSD2種のパネル、関連商品を掲載。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s15",
+      "url": "https://poka-onsen-musume.jp/business/106",
+      "title": "源泉湯宿 蔵王プラザホテル",
+      "publisher": "株式会社エンバウンド／温泉むすめ ぽかログ",
+      "retrieved_at": "2026-10-03",
+      "locator": "住所・取り扱いパネル一覧欄",
+      "summary": "山形市蔵王温泉2を展示所在地として掲載。キャラクター一覧と商品価格が異なるため在庫・価格は確定しない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s16",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/zeikin/1006483/1004320.html",
+      "title": "入湯税について",
+      "publisher": "山形市",
+      "retrieved_at": "2026-10-03",
+      "locator": "税率・特別徴収の手引きへのリンク欄",
+      "summary": "日帰りの原則入湯税75円と現行手引きを公開。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "zao-s17",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/004/320/nilyutou.pdf",
+      "title": "入湯税 特別徴収の手引き 令和6年2月改訂",
+      "publisher": "山形市",
+      "retrieved_at": "2026-10-03",
+      "locator": "PDF p.2〜3／課税免除・利用料金の考え方",
+      "summary": "通常入湯だけで税抜1000円以下なら課税免除。必須セット費は判定に含み、別購入の料理等は入浴料と区別。",
+      "source_type": "official_tax_pdf"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "zao-kawaraya",
+      "name": "すのこの湯 かわらや",
+      "url": "https://www.kawarayaga.com/",
+      "source_ids": [
+        "zao-s03",
+        "zao-s04",
+        "zao-s05"
+      ]
+    },
+    {
+      "id": "zao-shinzaemon",
+      "name": "湯の花茶屋 新左衛門の湯",
+      "url": "https://zaospa.co.jp/",
+      "source_ids": [
+        "zao-s07",
+        "zao-s08",
+        "zao-s09"
+      ]
+    },
+    {
+      "id": "zao-dairoten",
+      "name": "蔵王温泉大露天風呂",
+      "url": "https://www.jupeer-zao.com/roten/",
+      "source_ids": [
+        "zao-s11",
+        "zao-s12"
+      ]
+    },
+    {
+      "id": "zao-plaza",
+      "name": "源泉湯宿 蔵王プラザホテル",
+      "url": "https://poka-onsen-musume.jp/business/106",
+      "source_ids": [
+        "zao-s15"
+      ]
+    },
+    {
+      "id": "zao-kamiyu",
+      "name": "上湯共同浴場",
+      "url": "https://zaomountainresort.com/about/",
+      "source_ids": [
+        "zao-s01"
+      ]
+    },
+    {
+      "id": "zao-shimoyu",
+      "name": "下湯共同浴場",
+      "url": "https://zaomountainresort.com/about/",
+      "source_ids": [
+        "zao-s01"
+      ]
+    },
+    {
+      "id": "zao-kawarayu",
+      "name": "川原湯共同浴場",
+      "url": "https://zaomountainresort.com/about/",
+      "source_ids": [
+        "zao-s01"
+      ]
+    }
+  ],
+  "region_metrics": {
+    "I01": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "zao-s01",
+        "zao-s03",
+        "zao-s07",
+        "zao-s11"
+      ],
+      "reason": "山形市の蔵王温泉として公式地域ページと営業施設住所が対応。",
+      "condition": ""
+    },
+    "I02": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "zao-s01",
+        "zao-s02",
+        "zao-s03",
+        "zao-s12"
+      ],
+      "reason": "公式施設一覧があり個別施設詳細には住所を公開。一覧の全営業施設網羅性は未確認。",
+      "condition": ""
+    },
+    "V03": {
+      "status": "C",
+      "rawLower": 3,
+      "rawUpper": null,
+      "unit": "places",
+      "evidence_ids": [
+        "zao-s01"
+      ],
+      "reason": "公式に上湯・下湯・川原湯の3共同浴場を確認した下限。地域全件の営業確認は未完了。",
+      "condition": ""
+    },
+    "M01[project_id=onsen_musume]": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "zao-s13"
+      ],
+      "reason": "権利元公式の蔵王巴と対象温泉地の対応。",
+      "condition": ""
+    },
+    "M02[project_id=onsen_musume]": {
+      "status": "C",
+      "rawLower": 1,
+      "rawUpper": null,
+      "unit": "places",
+      "evidence_ids": [
+        "zao-s14",
+        "zao-s15"
+      ],
+      "reason": "公式の現行掲載で蔵王プラザホテル1所在地を確認した下限。全展示地点の網羅、見学条件、当日の設置は未照会。",
+      "condition": "2026-10-03の掲載確認。物理的現地確認ではない。"
+    },
+    "M03[project_id=onsen_musume]": {
+      "status": "C",
+      "rawLower": 2,
+      "rawUpper": null,
+      "unit": "designs",
+      "evidence_ids": [
+        "zao-s14",
+        "zao-s15"
+      ],
+      "reason": "カモシカ立ち・座りSDの地域固有2デザインを確認した下限。通常立ち絵は固有デザインとして数えない。",
+      "condition": ""
+    },
+    "M07[project_id=onsen_musume]": {
+      "status": "U",
+      "rawLower": null,
+      "rawUpper": null,
+      "unit": "places",
+      "evidence_ids": [
+        "zao-s14",
+        "zao-s15"
+      ],
+      "reason": "権利元2ページで商品と完売表示を調査したが、値段の差と在庫時点未記載のため販売継続・在庫を確定できない。",
+      "condition": ""
+    }
+  },
+  "plans": [
+    {
+      "id": "zao-kawaraya-standard",
+      "regionId": "zao",
+      "facility_id": "zao-kawaraya",
+      "bath_id": "zao-kawaraya:zao-kawaraya-sunoko",
+      "label": "かわらや すのこの湯",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "大人1名、木曜以外の通常日帰り。営業掲載確認であり来訪成立の確定ではない。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 600,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "zao-s04",
+            "zao-s05",
+            "zao-s17"
+          ],
+          "reason": "公表入浴券600円を最低額とする。税込明記とタオル持参可・必須追加費の確認が不足し通常必須総費用の上限未確定。",
+          "condition": "大人1名通常入浴、タオル持参を想定するが許可未確認。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 9.5,
+          "rawUpper": 9.5,
+          "unit": "hours",
+          "evidence_ids": [
+            "zao-s03"
+          ],
+          "reason": "9:30〜19:00の一般日帰り案内。",
+          "condition": "木曜休、臨時休業未照会。"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 18.5,
+          "rawUpper": 18.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "zao-s03"
+          ],
+          "reason": "最終受付18:30。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s03",
+            "zao-s04"
+          ],
+          "reason": "通常日帰り入浴券を一般向けに案内。",
+          "condition": ""
+        },
+        "O04": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s04"
+          ],
+          "reason": "川原の自然湧出点の上にすのこ底の湯船があると施設が明示。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "P19[method=direct_natural_upwelling]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s04"
+          ],
+          "reason": "自然湧出点が直接浴槽を満たす構造。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s04",
+            "zao-s05"
+          ],
+          "reason": "公式温泉・施設案内を調査したが掛け流し100%表現だけで加水運用を確定できない。",
+          "condition": ""
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s04",
+            "zao-s05"
+          ],
+          "reason": "加温の有無・適用期間の明示を発見できない。",
+          "condition": ""
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s04",
+            "zao-s05"
+          ],
+          "reason": "掛け流しという語のみで非循環時間率を確定しない。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s04",
+            "zao-s05"
+          ],
+          "reason": "五条件の具体的運用の明示が不足。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "zao-kawaraya-sunoko",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "zao-shinzaemon-mogami",
+      "regionId": "zao",
+      "facility_id": "zao-shinzaemon",
+      "bath_id": "zao-shinzaemon:zao-shinzaemon-mogami",
+      "label": "新左衛門の湯 もがみ高湯",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "大人1名・通常日帰り・タオル持参。男女別浴室にある同名浴槽群。掲載営業であり枠や当日の運用は未照会。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "K",
+          "rawLower": 1000,
+          "rawUpper": 1000,
+          "unit": "JPY",
+          "evidence_ids": [
+            "zao-s07",
+            "zao-s09",
+            "zao-s17"
+          ],
+          "reason": "税込入浴料1000円。タオル持参、ロッカー硬貨は返却。通常入浴のみの税抜1000円以下免除を自治体手引きで照合。",
+          "condition": "大人1名通常入浴。食事・有料休憩室・サウナ・任意タオル購入なし。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 8,
+          "rawUpper": 8,
+          "unit": "hours",
+          "evidence_ids": [
+            "zao-s07",
+            "zao-s09"
+          ],
+          "reason": "10〜18時、18時退館。",
+          "condition": "10月の公表休館日は7・14・21・28日。"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 17.5,
+          "rawUpper": 17.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "zao-s07",
+            "zao-s09"
+          ],
+          "reason": "最終受付17:30。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s09"
+          ],
+          "reason": "一般客が通常入浴券を購入できる。入館制限は別条件で保持。",
+          "condition": "タトゥー等の施設規約を満たす成人。"
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s08"
+          ],
+          "reason": "男女の天然温泉露天浴槽を明記。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "P02": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s08"
+          ],
+          "reason": "対象浴槽に源泉100%と明示。消毒・循環等の別工程を示す証明にはしない。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "公表通常運用。利用者による調温可否・例外運用は未確認。",
+          "group_applicability": "common"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s08",
+            "zao-s10"
+          ],
+          "reason": "浴槽の添加水・冷却は個別説明があるが加温・循環・消毒・添加全条件の同時運用は未確定。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "zao-shinzaemon-mogami",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "zao-shinzaemon-shiroku",
+      "regionId": "zao",
+      "facility_id": "zao-shinzaemon",
+      "bath_id": "zao-shinzaemon:zao-shinzaemon-shiroku",
+      "label": "新左衛門の湯 四・六の湯",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "大人1名・通常日帰り・タオル持参。男女別浴室にある同名浴槽群。掲載営業であり枠や当日の運用は未照会。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "K",
+          "rawLower": 1000,
+          "rawUpper": 1000,
+          "unit": "JPY",
+          "evidence_ids": [
+            "zao-s07",
+            "zao-s09",
+            "zao-s17"
+          ],
+          "reason": "税込入浴料1000円。タオル持参、ロッカー硬貨は返却。通常入浴のみの税抜1000円以下免除を自治体手引きで照合。",
+          "condition": "大人1名通常入浴。食事・有料休憩室・サウナ・任意タオル購入なし。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 8,
+          "rawUpper": 8,
+          "unit": "hours",
+          "evidence_ids": [
+            "zao-s07",
+            "zao-s09"
+          ],
+          "reason": "10〜18時、18時退館。",
+          "condition": "10月の公表休館日は7・14・21・28日。"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 17.5,
+          "rawUpper": 17.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "zao-s07",
+            "zao-s09"
+          ],
+          "reason": "最終受付17:30。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s09"
+          ],
+          "reason": "一般客が通常入浴券を購入できる。入館制限は別条件で保持。",
+          "condition": "タトゥー等の施設規約を満たす成人。"
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s08"
+          ],
+          "reason": "男女の天然温泉露天浴槽を明記。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s08"
+          ],
+          "reason": "単水ブレンドは確認済みだが時間別の加水有無と割合は開示されない。名称から4:6の比率を創作しない。",
+          "condition": ""
+        },
+        "I09": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s08"
+          ],
+          "reason": "四六の湯は刺激を緩めるため単水をブレンドするという対象と用途を開示。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s08",
+            "zao-s10"
+          ],
+          "reason": "浴槽の添加水・冷却は個別説明があるが加温・循環・消毒・添加全条件の同時運用は未確定。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "zao-shinzaemon-shiroku",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "zao-shinzaemon-cooled",
+      "regionId": "zao",
+      "facility_id": "zao-shinzaemon",
+      "bath_id": "zao-shinzaemon:zao-shinzaemon-cooled",
+      "label": "新左衛門の湯 冷やし温泉",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "大人1名・通常日帰り・タオル持参。男女別浴室にある同名浴槽群。掲載営業であり枠や当日の運用は未照会。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "K",
+          "rawLower": 1000,
+          "rawUpper": 1000,
+          "unit": "JPY",
+          "evidence_ids": [
+            "zao-s07",
+            "zao-s09",
+            "zao-s17"
+          ],
+          "reason": "税込入浴料1000円。タオル持参、ロッカー硬貨は返却。通常入浴のみの税抜1000円以下免除を自治体手引きで照合。",
+          "condition": "大人1名通常入浴。食事・有料休憩室・サウナ・任意タオル購入なし。"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 8,
+          "rawUpper": 8,
+          "unit": "hours",
+          "evidence_ids": [
+            "zao-s07",
+            "zao-s09"
+          ],
+          "reason": "10〜18時、18時退館。",
+          "condition": "10月の公表休館日は7・14・21・28日。"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 17.5,
+          "rawUpper": 17.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "zao-s07",
+            "zao-s09"
+          ],
+          "reason": "最終受付17:30。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s09"
+          ],
+          "reason": "一般客が通常入浴券を購入できる。入館制限は別条件で保持。",
+          "condition": "タトゥー等の施設規約を満たす成人。"
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s08"
+          ],
+          "reason": "男女の天然温泉露天浴槽を明記。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "B01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "degC",
+          "evidence_ids": [
+            "zao-s08",
+            "zao-s10"
+          ],
+          "reason": "公式が冷やし温泉を約25℃前後と案内するが、測定日時・変動幅を開示せず高温日には水温が下がりきらないと説明。厳密な浴槽温度区間を拘束できないため25℃の確定点へ変換しない。",
+          "condition": "公表目安は約25℃前後。外気温・利用者の加水調温条件がある。"
+        },
+        "P01": {
+          "status": "C",
+          "rawLower": 0,
+          "rawUpper": 1,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s08",
+            "zao-s10"
+          ],
+          "reason": "通常は薄めず冷やすが高温日には利用者が水道水で調温可能。営業時間における無加水比率は0〜1でしか拘束できない。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "I09": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s10"
+          ],
+          "reason": "高温日に利用者が水道水を足せる適用浴槽と用途を開示。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "I11": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s08",
+            "zao-s10"
+          ],
+          "reason": "冷やすという事実はあるが自然放冷・機械冷却等の方式を調査資料から確定できない。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s08",
+            "zao-s10"
+          ],
+          "reason": "浴槽の添加水・冷却は個別説明があるが加温・循環・消毒・添加全条件の同時運用は未確定。",
+          "condition": ""
+        },
+        "B04": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s10"
+          ],
+          "reason": "冷やし温泉は気温の高い日にホースの水道水で利用者が調節できると管理者が明示。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "当該冷やし温泉浴槽、高温で水温が下がりきらない場合。",
+          "group_applicability": "common"
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "zao-shinzaemon-cooled",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "zao-dairoten-weekday",
+      "regionId": "zao",
+      "facility_id": "zao-dairoten",
+      "bath_id": "zao-dairoten:zao-dairoten-main",
+      "label": "蔵王温泉大露天風呂 平日",
+      "modality": "daytrip",
+      "day_type": "weekday",
+      "condition_label": "大人1名通常昼間日帰り。男女別大露天浴槽群。夜間特別営業券は含めない。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 850,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "zao-s11",
+            "zao-s17"
+          ],
+          "reason": "公表大人850円が最低額。料金欄は税込の明記なし、タオル持参条件とロッカー必須性が不明で総費用上限未確定。",
+          "condition": ""
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 7.5,
+          "rawUpper": 7.5,
+          "unit": "hours",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "2026年運営者の営業時間を採用。協会9時開始ではなく運営者9:30開始。",
+          "condition": "4月25日〜11月下旬ごろの予定、天候・臨時休館あり。"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 16.5,
+          "rawUpper": 16.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "運営者が最終受付を明示。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "一般日帰りの大人入浴料金を案内。",
+          "condition": ""
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "渓流沿いの大露天浴槽。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "S05[odor=sulfur]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "運営者の対象浴場説明に硫黄の匂いを直接記述。強度は不明。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "B11": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "飲泉はできないと運営者が明示。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "掛け流し表現のみ。五条件の無処理運用は未開示。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "zao-dairoten-main",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    },
+    {
+      "id": "zao-dairoten-weekend",
+      "regionId": "zao",
+      "facility_id": "zao-dairoten",
+      "bath_id": "zao-dairoten:zao-dairoten-main",
+      "label": "蔵王温泉大露天風呂 土日祝",
+      "modality": "daytrip",
+      "day_type": "weekend",
+      "condition_label": "大人1名通常昼間日帰り。男女別大露天浴槽群。夜間特別営業券は含めない。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 850,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "zao-s11",
+            "zao-s17"
+          ],
+          "reason": "公表大人850円が最低額。料金欄は税込の明記なし、タオル持参条件とロッカー必須性が不明で総費用上限未確定。",
+          "condition": ""
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 8.5,
+          "rawUpper": 8.5,
+          "unit": "hours",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "2026年運営者の営業時間を採用。協会9時開始ではなく運営者9:30開始。",
+          "condition": "4月25日〜11月下旬ごろの予定、天候・臨時休館あり。"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 17.5,
+          "rawUpper": 17.5,
+          "unit": "hour_of_day",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "運営者が最終受付を明示。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "一般日帰りの大人入浴料金を案内。",
+          "condition": ""
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "渓流沿いの大露天浴槽。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "S05[odor=sulfur]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "運営者の対象浴場説明に硫黄の匂いを直接記述。強度は不明。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common"
+        },
+        "B11": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "boolean",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "飲泉はできないと運営者が明示。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "ratio",
+          "evidence_ids": [
+            "zao-s11"
+          ],
+          "reason": "掛け流し表現のみ。五条件の無処理運用は未開示。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath_group",
+      "original_bath_id": "zao-dairoten-main",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E"
+    }
+  ],
+  "analysis_samples": [
+    {
+      "id": "zao-kawaraya-20041007",
+      "source_ids": [
+        "zao-s06"
+      ],
+      "source_name": "川原屋源泉",
+      "sampling_date": "2004-10-07",
+      "measurements": {
+        "temperature_C": 48.1,
+        "pH_field": 1.7,
+        "pH_lab": 1.7,
+        "density_20C": 1.0001,
+        "evaporation_residue_mg_per_kg": 3970,
+        "dissolved_non_gas_mg_per_kg": 3735,
+        "component_total_mg_per_kg": 4060,
+        "Na_mg_per_kg": 49.3,
+        "K_mg_per_kg": 30.6,
+        "Ca_mg_per_kg": 89.8,
+        "Mg_mg_per_kg": 52.0,
+        "FeII_mg_per_kg": 28.0,
+        "Cl_mg_per_kg": 447.9,
+        "sulfate_mg_per_kg": 1492,
+        "HSO4_mg_per_kg": 1100,
+        "metasilicic_acid_mg_per_kg": 152.0,
+        "metaboric_acid_mg_per_kg": 6.9,
+        "free_CO2_mg_per_kg": 314.9,
+        "free_H2S_mg_per_kg": 10.1,
+        "Li_mg_per_kg": 0.03,
+        "bromide_mg_per_kg": 0.8,
+        "iodide_mg_per_kg": 1.6,
+        "bicarbonate_mg_per_kg": {
+          "lower": 0,
+          "upper": 0.1,
+          "upper_exclusive": true
+        },
+        "carbonate_mg_per_kg": {
+          "lower": 0,
+          "upper": 0.1,
+          "upper_exclusive": true
+        }
+      },
+      "correspondence_note": "2004-10-19発行の分析書を原寸画像で確認。湧出地は山形市蔵王温泉字川原43番地。現在のすのこの湯との施設所在地は一致するが系統の継続確認はなく、源泉試料値を現行浴槽値へ転用しない。Web本文の湧出量4000 L/分は分析書の湧出量欄にはなく採用しない。",
+      "source_entity_id": "zao:source-profile:zao-kawaraya-20041007",
+      "supply_entity_id": "zao:published-supply:zao-kawaraya-20041007",
+      "archived_metrics": {},
+      "identity_status": "K"
+    }
+  ],
+  "findings": [
+    "新左衛門の湯は同施設で源泉100%のもがみ高湯、単水を混ぜる四六の湯、調温加水があり得る冷やし温泉、温泉でない人工内湯が共存する。施設単位の一括無加水判定は不適切。",
+    "かわらやは自然足下湧出の浴槽構造を公式本文で確認。掛け流し表現から無加水・無加温・非循環・無消毒を推定しない。",
+    "通常1000円の新左衛門の湯はタオル持参・入湯税免除条件を照合して税込総費用を記録。",
+    "冷やし温泉の約25℃前後は管理者の公表目安として保持し、実測値や確定点の温度スコアにはしない。"
+  ],
+  "issues": [
+    "協会の総数5日帰り施設という文章と掲載個別一覧の数は一致しない。地域全件数を断定しない。",
+    "大露天の協会開始9時と運営者2026開始9:30は差がある。現在条件には具体的な運営者2026案内を優先。",
+    "新左衛門の湯の入館規約と浴槽紹介で子供の混浴年齢表記に差がある。大人1名条件に影響はないが子供同行時には再確認が必要。",
+    "地域紹介のpH・湧出量と施設の源泉紹介値は対象不一致や採水時点不明のため現行浴槽の化学値に使わない。"
+  ],
+  "excluded_facilities": [
+    {
+      "name": "新左衛門の湯 内湯",
+      "reason": "施設が天然温泉ではない人工泉と明記。温泉化学・加工の浴槽対象から除外し、通常入浴券で利用する付帯浴槽という事実のみ保持。",
+      "source_ids": [
+        "zao-s08"
+      ]
+    }
+  ],
+  "search_log": [
+    {
+      "query": "蔵王温泉観光協会 温泉とは 泊まる 一覧",
+      "outcome": "本文と一覧を確認。全営業施設の網羅性は未確定。",
+      "source_ids": [
+        "zao-s01",
+        "zao-s02"
+      ]
+    },
+    {
+      "query": "かわらや 公式 温泉 施設案内 分析書",
+      "outcome": "本文と分析画像を取得・視認。加工詳細と総費用条件の開示は不足。",
+      "source_ids": [
+        "zao-s03",
+        "zao-s04",
+        "zao-s05",
+        "zao-s06"
+      ]
+    },
+    {
+      "query": "新左衛門の湯 公式 料金 規約 四六 冷やし温泉",
+      "outcome": "税込料金、持参タオル、浴槽別加水条件を確認。",
+      "source_ids": [
+        "zao-s07",
+        "zao-s08",
+        "zao-s09",
+        "zao-s10"
+      ]
+    },
+    {
+      "query": "山形市 入湯税 手引き 課税免除 日帰り",
+      "outcome": "市公式本文と手引きp.2〜3を確認。1000円以下通常入浴の免除条件を照合。",
+      "source_ids": [
+        "zao-s16",
+        "zao-s17"
+      ]
+    },
+    {
+      "query": "温泉むすめ 蔵王巴 ぽかログ パネル 現在",
+      "outcome": "権利元キャラクターと蔵王プラザホテルの掲載を確認。全地点・無料見学条件・在庫は未確定。",
+      "source_ids": [
+        "zao-s13",
+        "zao-s14",
+        "zao-s15"
+      ]
+    }
+  ],
+  "source_entities": [
+    {
+      "id": "zao:source-profile:zao-kawaraya-20041007",
+      "name": "川原屋源泉",
+      "identity_status": "C",
+      "evidence_ids": [
+        "zao-s06"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {}
+    }
+  ],
+  "supply_entities": [
+    {
+      "id": "zao:published-supply:zao-kawaraya-20041007",
+      "name": "川原屋源泉",
+      "identity_status": "C",
+      "evidence_ids": [
+        "zao-s06"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    }
+  ]
+}

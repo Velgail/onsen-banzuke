@@ -1,0 +1,1011 @@
+{
+  "region": {
+    "id": "kusatsu",
+    "name": "草津温泉",
+    "kana": "くさつおんせん",
+    "prefecture": "群馬県",
+    "municipality": "吾妻郡草津町",
+    "scope_note": "草津町の現役温泉地。草津三湯を入口とする部分調査で、旅館・共同浴場全件網羅ではない。",
+    "official_url": "https://www.kusatsu-onsen.ne.jp/"
+  },
+  "study": {
+    "reviewed_at": "2026-10-03",
+    "status": "partial",
+    "scope_note": "大滝乃湯の男性露天と男性合わせ湯第1槽、西の河原の女性露天を個別浴槽候補とした。御座之湯は施設台帳に残す。各温泉地を独立に固定尺度で調査。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。",
+    "uninvestigated": [
+      "地域全施設・全浴槽・源泉の網羅照合",
+      "全文分析書と採水条件",
+      "実測浴槽温度・体感強度",
+      "宿泊総額・指定日の販売枠",
+      "47起点の経路",
+      "現在の展示全地点・商品在庫",
+      "全加工方式・清掃閉鎖・入浴者の調温操作"
+    ]
+  },
+  "sources": [
+    {
+      "id": "ks-01",
+      "url": "https://onsen-kusatsu.com/",
+      "title": "草津三湯めぐり",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "施設案内・末尾の所在地",
+      "summary": "大滝乃湯、御座之湯、西の河原露天風呂の住所付き一覧。地域全件の一覧ではない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-02",
+      "url": "https://onsen-kusatsu.com/ohtakinoyu/",
+      "title": "大滝乃湯",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "浴場紹介",
+      "summary": "大浴場、露天、合わせ湯に煮川源泉を供給すると案内。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-03",
+      "url": "https://onsen-kusatsu.com/ohtakinoyu/hot-spring/",
+      "title": "大滝乃湯 温泉",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "合わせ湯・露天・泉質",
+      "summary": "男性合わせ湯5槽を自然冷却した湯が順に流れる。水で薄めないと説明。男女別露天と予約制貸切がある。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-04",
+      "url": "https://onsen-kusatsu.com/ohtakinoyu/guide/",
+      "title": "大滝乃湯 ご利用案内",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "営業時間・入館料・貸切",
+      "summary": "通常大人1200円、9〜21時、最終20時。貸切1時間2000円は入館料別。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-05",
+      "url": "https://onsen-kusatsu.com/ohtakinoyu/faq/",
+      "title": "大滝乃湯 よくある質問",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "施設・温泉・タオル",
+      "summary": "タオル持参可、営業時間内の時間制限なし。合わせ湯の自然冷却を説明。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-06",
+      "url": "https://onsen-kusatsu.com/gozanoyu/hot-spring/",
+      "title": "御座之湯 温泉",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "木之湯・石之湯・泉質",
+      "summary": "2浴室と湯畑・万代源泉を紹介。記載pHは源泉紹介値。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-07",
+      "url": "https://onsen-kusatsu.com/gozanoyu/guide/",
+      "title": "御座之湯 ご利用案内",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "料金・営業時間",
+      "summary": "通常大人900円。4〜11月7〜21時、12〜3月8〜21時、最終20時30分。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-08",
+      "url": "https://onsen-kusatsu.com/gozanoyu/faq/",
+      "title": "御座之湯 よくある質問",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "浴場・タオル",
+      "summary": "内湯のみ、露天・貸切・サウナなし。タオル持参可。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-09",
+      "url": "https://www.town.kusatsu.gunma.jp/s002/040/020/1485304325175/index.html",
+      "title": "大滝乃湯",
+      "publisher": "草津町",
+      "retrieved_at": "2026-10-03",
+      "locator": "2025年9月19日更新・料金・営業時間",
+      "summary": "通常大人1200円と9〜21時、最終20時を掲載。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-10",
+      "url": "https://onsen-musume.jp/character/kusatsu_yuina",
+      "title": "草津結衣奈",
+      "publisher": "エンバウンド／温泉むすめ公式",
+      "retrieved_at": "2026-10-03",
+      "locator": "キャラクター見出し・地域リンク",
+      "summary": "権利元が草津結衣奈を掲載。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-11",
+      "url": "https://www.hotelvillage.co.jp/topics/onsenmusume",
+      "title": "草津結衣奈コラボ",
+      "publisher": "中沢ヴィレッジ",
+      "retrieved_at": "2026-10-03",
+      "locator": "2026年9月1日付・コラボ宿泊プラン・グッズ",
+      "summary": "11月29日宿泊分までの販売案内。現地グッズ一覧があり夕食会場の新パネルはプラン条件付き。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-12",
+      "url": "https://skylandhotel.jp/2026/04/09/event-135/",
+      "title": "草津結衣奈スタンプラリー2026",
+      "publisher": "草津スカイランドホテル",
+      "retrieved_at": "2026-10-03",
+      "locator": "期間・参加8施設・条件",
+      "summary": "4月12日〜6月30日の活動予定期間は評価日には終了。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-13",
+      "url": "https://www.kusatsu-onsen.ne.jp/pamphlet/pdf/kusatsu_26S_26A.pdf",
+      "title": "草津温泉MAGAZINE2026春〜秋",
+      "publisher": "草津温泉観光協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "検索で資料名確認、本文取得失敗",
+      "summary": "再取得、wwwなし代替URL、同主体施設カテゴリを試しても本文取得不能。内容根拠に使わない。",
+      "source_type": "official_pdf_fetch_failed"
+    },
+    {
+      "id": "ks-14",
+      "url": "https://onsen-kusatsu.com/sainokawara/hot-spring/",
+      "title": "西の河原露天風呂 温泉",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "男女別露天・万代源泉",
+      "summary": "男女別に各1つの大きい露天浴槽があり、万代源泉を使う。金曜夕方男性露天は条件付き混浴。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-15",
+      "url": "https://onsen-kusatsu.com/sainokawara/guide/",
+      "title": "西の河原露天風呂 ご利用案内",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "料金・季節別営業時間",
+      "summary": "大人800円、4〜11月7〜20時、12〜3月9〜20時。最終19時30分。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "ks-16",
+      "url": "https://onsen-kusatsu.com/sainokawara/faq/",
+      "title": "西の河原露天風呂 よくある質問",
+      "publisher": "草津観光公社",
+      "retrieved_at": "2026-10-03",
+      "locator": "温泉・タオル・施設",
+      "summary": "タオル持参可。露天のみで貸切・洗い場・ドライヤー・休憩場なし。",
+      "source_type": "official_web"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "ohtakinoyu",
+      "name": "大滝乃湯",
+      "url": "https://onsen-kusatsu.com/ohtakinoyu/",
+      "source_ids": [
+        "ks-01",
+        "ks-02",
+        "ks-03",
+        "ks-04",
+        "ks-05",
+        "ks-09"
+      ]
+    },
+    {
+      "id": "gozanoyu",
+      "name": "御座之湯",
+      "url": "https://onsen-kusatsu.com/gozanoyu/",
+      "source_ids": [
+        "ks-01",
+        "ks-06",
+        "ks-07",
+        "ks-08"
+      ]
+    },
+    {
+      "id": "sainokawara",
+      "name": "西の河原露天風呂",
+      "url": "https://onsen-kusatsu.com/sainokawara/",
+      "source_ids": [
+        "ks-01",
+        "ks-14",
+        "ks-15",
+        "ks-16"
+      ]
+    },
+    {
+      "id": "hotel-village",
+      "name": "草津温泉ホテルヴィレッジ",
+      "url": "https://www.hotelvillage.co.jp/",
+      "source_ids": [
+        "ks-11"
+      ]
+    }
+  ],
+  "region_metrics": {
+    "I01": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "有無",
+      "evidence_ids": [
+        "ks-01",
+        "ks-09"
+      ],
+      "reason": "現役施設と草津町内所在地が公式に対応。",
+      "condition": "草津温泉地域"
+    },
+    "I02": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "有無",
+      "evidence_ids": [
+        "ks-01"
+      ],
+      "reason": "草津三湯の住所付き公式一覧がある。公開の確認と地域全件網羅は別。",
+      "condition": "草津観光公社3施設一覧"
+    },
+    "M01[project_id=onsen_musume]": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "有無",
+      "evidence_ids": [
+        "ks-10",
+        "ks-11"
+      ],
+      "reason": "権利元プロフィールと現地ホテルの現行コラボを確認。",
+      "condition": "草津温泉と温泉むすめ"
+    },
+    "M02[project_id=onsen_musume]": {
+      "status": "E",
+      "rawLower": null,
+      "rawUpper": null,
+      "unit": "地点",
+      "evidence_ids": [
+        "ks-11"
+      ],
+      "reason": "夕食会場の新パネル案内はあるが現時点の展示公開条件・全地点は未調査。",
+      "condition": "現在の公開展示地点数"
+    }
+  },
+  "plans": [
+    {
+      "regionId": "kusatsu",
+      "modality": "daytrip",
+      "day_type": "all",
+      "id": "kusatsu-ohtaki-male-outdoor",
+      "facility_id": "ohtakinoyu",
+      "bath_id": "ohtakinoyu:ohtaki-male-outdoor",
+      "label": "大滝乃湯 男性露天風呂",
+      "condition_label": "男性用・通常営業日・タオル持参・実測浴槽温度未確認",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 1200,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "ks-04",
+            "ks-05",
+            "ks-09"
+          ],
+          "reason": "通常公表入館料を最低額とする。タオル持参可。税込・入湯税の包括表記を今回の一次本文で確認できず総額上限は未確定。",
+          "condition": "男性用・通常営業日・タオル持参・実測浴槽温度未確認"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 12,
+          "rawUpper": 12,
+          "unit": "時間",
+          "evidence_ids": [
+            "ks-04",
+            "ks-05"
+          ],
+          "reason": "公表通常入浴時間9〜21時。個別日の臨時閉館・清掃閉鎖は未確認。",
+          "condition": "男性用・通常営業日・タオル持参・実測浴槽温度未確認"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 20,
+          "rawUpper": 20,
+          "unit": "時",
+          "evidence_ids": [
+            "ks-04"
+          ],
+          "reason": "最終入館20時。",
+          "condition": "男性用・通常営業日・タオル持参・実測浴槽温度未確認"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-04"
+          ],
+          "reason": "一般日帰り料金を公開。日時指定の入館保証ではない。",
+          "condition": "男性用・通常営業日・タオル持参・実測浴槽温度未確認"
+        },
+        "I07": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-02"
+          ],
+          "reason": "露天・合わせ湯を含む供給案内で煮川源泉と対応。",
+          "condition": "男性露天風呂"
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-03"
+          ],
+          "reason": "露天と屋内合わせ湯を公式案内が区別。",
+          "condition": "男性露天風呂"
+        },
+        "I04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05",
+            "ks-09"
+          ],
+          "reason": "分析全文を今回の所定公式探索で確認できない。 温泉ページ、FAQ、利用案内、町案内と項目別検索を確認した範囲の結論。",
+          "condition": "男性露天風呂",
+          "entity_scope": "source",
+          "entity_id": "kusatsu:source-profile:kusatsu-nikawa-description",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "ks-03",
+              "ks-05",
+              "ks-09"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "ohtakinoyu:ohtaki-male-outdoor"
+          }
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05",
+            "ks-09"
+          ],
+          "reason": "営業中加温の有無・時間率未確認。 温泉ページ、FAQ、利用案内、町案内と項目別検索を確認した範囲の結論。",
+          "condition": "男性露天風呂"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05",
+            "ks-09"
+          ],
+          "reason": "かけ流しという語以外に再投入経路・循環条件未確認。 温泉ページ、FAQ、利用案内、町案内と項目別検索を確認した範囲の結論。",
+          "condition": "男性露天風呂"
+        },
+        "P21[method=chlorine]": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05",
+            "ks-09"
+          ],
+          "reason": "営業中塩素消毒の条件・時間率未確認。 温泉ページ、FAQ、利用案内、町案内と項目別検索を確認した範囲の結論。",
+          "condition": "男性露天風呂"
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05"
+          ],
+          "reason": "合わせ湯の無加水記載を露天に転用しない。",
+          "condition": "男性露天風呂"
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "ohtaki-male-outdoor",
+      "source_entity_id": "kusatsu:source-profile:kusatsu-nikawa-description",
+      "supply_entity_id": "ohtakinoyu:current-supply:ohtaki-male-outdoor",
+      "analysis_sample_id": "kusatsu-nikawa-description"
+    },
+    {
+      "regionId": "kusatsu",
+      "modality": "daytrip",
+      "day_type": "all",
+      "id": "kusatsu-ohtaki-male-awase-1",
+      "facility_id": "ohtakinoyu",
+      "bath_id": "ohtakinoyu:ohtaki-male-awase-1",
+      "label": "大滝乃湯 男性合わせ湯 第1槽",
+      "condition_label": "男性用・通常営業日・タオル持参・実測浴槽温度未確認",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 1200,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "ks-04",
+            "ks-05",
+            "ks-09"
+          ],
+          "reason": "通常公表入館料を最低額とする。タオル持参可。税込・入湯税の包括表記を今回の一次本文で確認できず総額上限は未確定。",
+          "condition": "男性用・通常営業日・タオル持参・実測浴槽温度未確認"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 12,
+          "rawUpper": 12,
+          "unit": "時間",
+          "evidence_ids": [
+            "ks-04",
+            "ks-05"
+          ],
+          "reason": "公表通常入浴時間9〜21時。個別日の臨時閉館・清掃閉鎖は未確認。",
+          "condition": "男性用・通常営業日・タオル持参・実測浴槽温度未確認"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 20,
+          "rawUpper": 20,
+          "unit": "時",
+          "evidence_ids": [
+            "ks-04"
+          ],
+          "reason": "最終入館20時。",
+          "condition": "男性用・通常営業日・タオル持参・実測浴槽温度未確認"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-04"
+          ],
+          "reason": "一般日帰り料金を公開。日時指定の入館保証ではない。",
+          "condition": "男性用・通常営業日・タオル持参・実測浴槽温度未確認"
+        },
+        "I07": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-02"
+          ],
+          "reason": "露天・合わせ湯を含む供給案内で煮川源泉と対応。",
+          "condition": "男性合わせ湯 第1槽"
+        },
+        "B06": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-03"
+          ],
+          "reason": "露天と屋内合わせ湯を公式案内が区別。",
+          "condition": "男性合わせ湯 第1槽"
+        },
+        "I04": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05",
+            "ks-09"
+          ],
+          "reason": "分析全文を今回の所定公式探索で確認できない。 温泉ページ、FAQ、利用案内、町案内と項目別検索を確認した範囲の結論。",
+          "condition": "男性合わせ湯 第1槽",
+          "entity_scope": "source",
+          "entity_id": "kusatsu:source-profile:kusatsu-nikawa-description",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "ks-03",
+              "ks-05",
+              "ks-09"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "ohtakinoyu:ohtaki-male-awase-1"
+          }
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05",
+            "ks-09"
+          ],
+          "reason": "営業中加温の有無・時間率未確認。 温泉ページ、FAQ、利用案内、町案内と項目別検索を確認した範囲の結論。",
+          "condition": "男性合わせ湯 第1槽"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05",
+            "ks-09"
+          ],
+          "reason": "かけ流しという語以外に再投入経路・循環条件未確認。 温泉ページ、FAQ、利用案内、町案内と項目別検索を確認した範囲の結論。",
+          "condition": "男性合わせ湯 第1槽"
+        },
+        "P21[method=chlorine]": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05",
+            "ks-09"
+          ],
+          "reason": "営業中塩素消毒の条件・時間率未確認。 温泉ページ、FAQ、利用案内、町案内と項目別検索を確認した範囲の結論。",
+          "condition": "男性合わせ湯 第1槽"
+        },
+        "P01": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "割合",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05"
+          ],
+          "reason": "水で薄めない通常供給運用を明示。入浴者の個別操作等、記載を超える条件は未検証。",
+          "condition": "公式記載の通常供給運用"
+        },
+        "P05": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-03",
+            "ks-05"
+          ],
+          "reason": "自然冷却しながら各槽へ流す。",
+          "condition": "男性合わせ湯 第1槽"
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "ohtaki-male-awase-1",
+      "source_entity_id": "kusatsu:source-profile:kusatsu-nikawa-description",
+      "supply_entity_id": "ohtakinoyu:current-supply:ohtaki-male-awase-1",
+      "analysis_sample_id": "kusatsu-nikawa-description"
+    },
+    {
+      "regionId": "kusatsu",
+      "modality": "daytrip",
+      "day_type": "all",
+      "id": "kusatsu-sainokawara-female-apr-nov",
+      "facility_id": "sainokawara",
+      "bath_id": "sainokawara:sainokawara-female-outdoor",
+      "label": "西の河原 女性露天風呂",
+      "condition_label": "4月1日〜11月30日・女性用・通常営業・タオル持参",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 800,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "ks-15",
+            "ks-16"
+          ],
+          "reason": "タオル持参で通常公表入館料800円。税込・入湯税の包括表記未確認、総額上限未確定。",
+          "condition": "大人1人・通常日帰り・タオル持参"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 13,
+          "rawUpper": 13,
+          "unit": "時間",
+          "evidence_ids": [
+            "ks-15",
+            "ks-16"
+          ],
+          "reason": "季節別公表入浴時間。指定日の臨時閉鎖未確認。",
+          "condition": "4月1日〜11月30日"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 19.5,
+          "rawUpper": 19.5,
+          "unit": "時",
+          "evidence_ids": [
+            "ks-15"
+          ],
+          "reason": "最終入館19時30分。",
+          "condition": "4月1日〜11月30日"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-15",
+            "ks-16"
+          ],
+          "reason": "一般入浴を公開。",
+          "condition": "通常日帰り一般客"
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-14"
+          ],
+          "reason": "女性用の大きい露天1槽を公式紹介で確認。",
+          "condition": "女性露天風呂"
+        },
+        "B07": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-16"
+          ],
+          "reason": "貸切風呂なしを明示。",
+          "condition": "女性露天風呂"
+        },
+        "I07": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-14"
+          ],
+          "reason": "男女各露天への万代源泉供給を明示。",
+          "condition": "女性露天風呂"
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "sainokawara-female-outdoor"
+    },
+    {
+      "regionId": "kusatsu",
+      "modality": "daytrip",
+      "day_type": "all",
+      "id": "kusatsu-sainokawara-female-dec-mar",
+      "facility_id": "sainokawara",
+      "bath_id": "sainokawara:sainokawara-female-outdoor",
+      "label": "西の河原 女性露天風呂",
+      "condition_label": "12月1日〜3月31日・女性用・通常営業・タオル持参",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 800,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "ks-15",
+            "ks-16"
+          ],
+          "reason": "タオル持参で通常公表入館料800円。税込・入湯税の包括表記未確認、総額上限未確定。",
+          "condition": "大人1人・通常日帰り・タオル持参"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 11,
+          "rawUpper": 11,
+          "unit": "時間",
+          "evidence_ids": [
+            "ks-15",
+            "ks-16"
+          ],
+          "reason": "季節別公表入浴時間。指定日の臨時閉鎖未確認。",
+          "condition": "12月1日〜3月31日"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 19.5,
+          "rawUpper": 19.5,
+          "unit": "時",
+          "evidence_ids": [
+            "ks-15"
+          ],
+          "reason": "最終入館19時30分。",
+          "condition": "12月1日〜3月31日"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-15",
+            "ks-16"
+          ],
+          "reason": "一般入浴を公開。",
+          "condition": "通常日帰り一般客"
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-14"
+          ],
+          "reason": "女性用の大きい露天1槽を公式紹介で確認。",
+          "condition": "女性露天風呂"
+        },
+        "B07": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-16"
+          ],
+          "reason": "貸切風呂なしを明示。",
+          "condition": "女性露天風呂"
+        },
+        "I07": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "ks-14"
+          ],
+          "reason": "男女各露天への万代源泉供給を明示。",
+          "condition": "女性露天風呂"
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "sainokawara-female-outdoor"
+    }
+  ],
+  "analysis_samples": [
+    {
+      "id": "kusatsu-nikawa-description",
+      "source_ids": [
+        "ks-03"
+      ],
+      "source_name": "煮川源泉",
+      "sampling_date": null,
+      "measurements": {
+        "pH": {
+          "value": 2.1,
+          "unit": "pH",
+          "measurement_place": "源泉紹介、測定条件未開示"
+        }
+      },
+      "correspondence_note": "主要浴槽への供給対応は公式に確認できるが源泉紹介値であり浴槽pHに転用しない。全文分析書ではない。",
+      "source_entity_id": "kusatsu:source-profile:kusatsu-nikawa-description",
+      "supply_entity_id": "kusatsu:published-supply:kusatsu-nikawa-description",
+      "archived_metrics": {},
+      "identity_status": "C"
+    },
+    {
+      "id": "kusatsu-goza-descriptions",
+      "source_ids": [
+        "ks-06"
+      ],
+      "source_name": "湯畑源泉・万代源泉",
+      "sampling_date": null,
+      "measurements": {
+        "湯畑源泉_pH": 2.08,
+        "万代源泉_pH": 1.7
+      },
+      "correspondence_note": "源泉紹介値。石之湯・木之湯内の個別槽と採水条件は未確定。",
+      "source_entity_id": "kusatsu:source-profile:kusatsu-goza-descriptions",
+      "supply_entity_id": "kusatsu:published-supply:kusatsu-goza-descriptions",
+      "archived_metrics": {},
+      "identity_status": "C"
+    },
+    {
+      "id": "kusatsu-bandai-description",
+      "source_ids": [
+        "ks-14"
+      ],
+      "source_name": "万代源泉",
+      "sampling_date": null,
+      "measurements": {
+        "pH": 1.7,
+        "source_temperature_celsius": {
+          "lower": 94,
+          "upper": 95
+        }
+      },
+      "correspondence_note": "女性露天への供給は対応するが数値は源泉紹介値。浴槽温度・pHに転用しない。",
+      "source_entity_id": "kusatsu:source-profile:kusatsu-bandai-description",
+      "supply_entity_id": "kusatsu:published-supply:kusatsu-bandai-description",
+      "archived_metrics": {},
+      "identity_status": "C"
+    }
+  ],
+  "findings": [
+    "異なる2施設の実在浴槽を候補化。大滝乃湯の露天と合わせ湯は同一料金でも別浴槽として扱う。",
+    "御座之湯は通常900円、内湯のみ、タオル持参可。個別槽と源泉の対応を特定し切れずランキング浴槽候補にはしない。",
+    "3施設とも時間制限なしは営業時間内という条件。指定日の利用枠や営業の保証ではない。",
+    "草津結衣奈の2026年ホテルコラボを確認。4〜6月スタンプラリーを現行活動と混同しない。"
+  ],
+  "issues": [
+    "税込・入湯税込の総額明示を今回の一次本文で確認できずY01上限未確定。",
+    "公式観光サイト本文と2026パンフレットは再取得・代替探索でも取得できず、その本文は根拠にしない。",
+    "かけ流しを五条件無加工、硫黄泉を臭い強度に置換しない。"
+  ],
+  "excluded_facilities": [],
+  "search_log": [
+    {
+      "query": "草津三湯公式・草津町大滝乃湯",
+      "outcome": "運営者と町の現行案内を本文で照合。住所付き3施設一覧を取得。",
+      "source_ids": [
+        "ks-01",
+        "ks-09"
+      ]
+    },
+    {
+      "query": "大滝乃湯 分析書 加水 加温 循環 消毒／御座之湯 分析書 加水 消毒",
+      "outcome": "温泉・FAQ・利用案内、町案内、項目別検索を確認。分析全文と多くの営業中加工条件は未確認。古いブログは採用せず。",
+      "source_ids": [
+        "ks-03",
+        "ks-05",
+        "ks-06",
+        "ks-08",
+        "ks-09"
+      ]
+    },
+    {
+      "query": "御座之湯 税込900／大滝乃湯 税込1200",
+      "outcome": "第三者の税込表記を一次資料へ転用せず総額上限を未確定にした。",
+      "source_ids": [
+        "ks-04",
+        "ks-07"
+      ]
+    },
+    {
+      "query": "草津結衣奈2026公式・スタンプラリー2026",
+      "outcome": "権利元と現地運営者の本文で現在販売案内と終了期間を区別。",
+      "source_ids": [
+        "ks-10",
+        "ks-11",
+        "ks-12"
+      ]
+    },
+    {
+      "query": "草津公式施設一覧・2026春秋PDF",
+      "outcome": "原URL再取得、wwwなし代替、同主体施設カテゴリを試して取得不能。内容を使わない。",
+      "source_ids": [
+        "ks-13"
+      ]
+    },
+    {
+      "query": "西の河原公式 温泉 利用案内 FAQ",
+      "outcome": "女性露天1槽と季節別営業時間を確認。加工の所定追加探索は未実施のため未入力分はE。",
+      "source_ids": [
+        "ks-14",
+        "ks-15",
+        "ks-16"
+      ]
+    }
+  ],
+  "source_entities": [
+    {
+      "id": "kusatsu:source-profile:kusatsu-nikawa-description",
+      "name": "煮川源泉",
+      "identity_status": "C",
+      "evidence_ids": [
+        "ks-03"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "kusatsu:source-profile:kusatsu-goza-descriptions",
+      "name": "湯畑源泉・万代源泉",
+      "identity_status": "C",
+      "evidence_ids": [
+        "ks-06"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "kusatsu:source-profile:kusatsu-bandai-description",
+      "name": "万代源泉",
+      "identity_status": "C",
+      "evidence_ids": [
+        "ks-14"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {}
+    }
+  ],
+  "supply_entities": [
+    {
+      "id": "kusatsu:published-supply:kusatsu-nikawa-description",
+      "name": "煮川源泉",
+      "identity_status": "C",
+      "evidence_ids": [
+        "ks-03"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "kusatsu:published-supply:kusatsu-goza-descriptions",
+      "name": "湯畑源泉・万代源泉",
+      "identity_status": "C",
+      "evidence_ids": [
+        "ks-06"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "kusatsu:published-supply:kusatsu-bandai-description",
+      "name": "万代源泉",
+      "identity_status": "C",
+      "evidence_ids": [
+        "ks-14"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "ohtakinoyu:current-supply:ohtaki-male-outdoor",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "ohtakinoyu:current-supply:ohtaki-male-awase-1",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    }
+  ]
+}

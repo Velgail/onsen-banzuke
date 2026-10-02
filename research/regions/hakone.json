@@ -1,0 +1,1205 @@
+{
+  "region": {
+    "id": "hakone",
+    "name": "箱根温泉",
+    "kana": "はこねおんせん",
+    "prefecture": "神奈川県",
+    "municipality": "足柄下郡箱根町",
+    "scope_note": "箱根町観光協会の箱根十七湯を含む広域地区群。箱根湯本だけのデータで全山を代表させない。",
+    "official_url": "https://www.hakone.or.jp/6882"
+  },
+  "study": {
+    "reviewed_at": "2026-10-03",
+    "status": "partial",
+    "scope_note": "箱根湯寮と姥子秀明館の実在浴槽・利用プランを確認。天山を施設・源泉資料台帳へ残す。全地区・施設を網羅した調査ではない。各地域を独立に固定尺度で調査。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。",
+    "uninvestigated": [
+      "17地区全施設・全浴槽の網羅",
+      "源泉試料の画像確認と採水場所・採水日",
+      "現在の浴槽実測値・感覚強度",
+      "宿泊総額と指定日の空室・貸切枠",
+      "47起点の経路",
+      "全公開展示地点と評価日現在の展示・在庫継続",
+      "秀明館の全加工条件と評価日当日の湧出"
+    ]
+  },
+  "sources": [
+    {
+      "id": "hk-01",
+      "url": "https://www.hakone.or.jp/6882",
+      "title": "箱根十七湯",
+      "publisher": "箱根町観光協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "17温泉場のエリア別見出し",
+      "summary": "湯本、塔之沢、大平台、宮ノ下、堂ヶ島、木賀、底倉、二ノ平、小涌谷、強羅、宮城野、仙石原、姥子、芦之湯、湯の花沢、蛸川、芦ノ湖の広域を紹介。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-02",
+      "url": "https://www.hakone.or.jp/?gana=member&p=30&sctg=%E6%97%A5%E5%B8%B0%E3%82%8Ade%E6%B8%A9%E6%B3%89",
+      "title": "日帰り温泉スポット一覧",
+      "publisher": "箱根町観光協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "18件一覧・施設詳細リンク",
+      "summary": "公式掲載一覧があり、詳細で住所を表示する。全施設網羅の保証ではない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-03",
+      "url": "https://www.hakone.or.jp/674?gana=member",
+      "title": "箱根湯寮",
+      "publisher": "箱根町観光協会",
+      "retrieved_at": "2026-10-03",
+      "locator": "施設所在地・概要",
+      "summary": "箱根町塔之澤4の現役日帰り施設を掲載。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-04",
+      "url": "https://www.hakoneyuryo.jp/price/",
+      "title": "箱根湯寮 料金・営業時間",
+      "publisher": "小田急リゾーツ",
+      "retrieved_at": "2026-10-03",
+      "locator": "大浴場・貸切料金表・税・曜日別営業時間",
+      "summary": "大浴場の公表料金は平日1700〜1800円、土休日2000〜2200円。貸切楓等は120分1室平日10400円・土休日11400円で税込・入湯税込・タオル付き。税の注記は貸切節にあり、本殿大浴場への適用範囲は未確定。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-05",
+      "url": "https://www.hakoneyuryo.jp/spa/public/",
+      "title": "大浴場 本殿湯楽庵大湯",
+      "publisher": "小田急リゾーツ",
+      "retrieved_at": "2026-10-03",
+      "locator": "女湯・男湯の見晴湯・内湯・岩風呂等",
+      "summary": "男女別の複数浴槽を個別名称で紹介。沢水風呂もあるため全浴槽が温泉との転用は避ける。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-06",
+      "url": "https://www.hakoneyuryo.jp/spa/hotspring/",
+      "title": "温泉について",
+      "publisher": "小田急リゾーツ",
+      "retrieved_at": "2026-10-03",
+      "locator": "源泉名・加水・加温・循環・その他",
+      "summary": "塔之沢温泉を使用。多客・緊急換水時の加水、適時保温、循環ろ過、塩素消毒、入浴剤不使用を明示。時間率は未公開。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-07",
+      "url": "https://www.hakoneyuryo.jp/qa/",
+      "title": "箱根湯寮 Q&A",
+      "publisher": "小田急リゾーツ",
+      "retrieved_at": "2026-10-03",
+      "locator": "時間制限・車椅子・利用年齢",
+      "summary": "大浴場は営業時間内時間制限なし。小学生未満・おむつ利用者の制約、大浴場入口より先の車椅子利用不可を明示。貸切銀杏は入口までの段差なし。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-08",
+      "url": "https://www.hakoneyuryo.jp/assets/file/seibun.pdf",
+      "title": "温泉の成分等掲示証",
+      "publisher": "小田急リゾーツ／掲示分析機関は神奈川県温泉地学研究所",
+      "retrieved_at": "2026-10-03",
+      "locator": "1ページ、本文抽出のみ・画像確認失敗",
+      "summary": "分析年月日と混合源泉番号、加工欄を含む。本文では加水なしと記載され現行Webの条件付き加水と異なる。ページ画像を確認できず化学値は採用しない。",
+      "source_type": "official_pdf_visual_unavailable"
+    },
+    {
+      "id": "hk-09",
+      "url": "https://www.hakoneyuryo.jp/spa/private/",
+      "title": "貸切個室露天風呂 離れ湯屋花伝",
+      "publisher": "小田急リゾーツ",
+      "retrieved_at": "2026-10-03",
+      "locator": "壱ノ巻・料金・アメニティ",
+      "summary": "壱ノ巻は2名まで、個別貸切露天付き。120分の室料金でタオル・アメニティを含む。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-10",
+      "url": "https://shumeikan.biz/",
+      "title": "姥子温泉 秀明館",
+      "publisher": "姥子温泉秀明館",
+      "retrieved_at": "2026-10-03",
+      "locator": "所在地・受付・休業・利用制限",
+      "summary": "元箱根110-1の岩盤自然湧出泉を利用。木曜と毎年2月休業。浴槽には必ず階段がある。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-11",
+      "url": "https://shumeikan.biz/spa/",
+      "title": "岩盤湧出泉",
+      "publisher": "姥子温泉秀明館",
+      "retrieved_at": "2026-10-03",
+      "locator": "男湯・女湯・自然湧出条件",
+      "summary": "男湯と女湯を設ける。湧出は雨量に左右され、湯枯れ時は敷地内揚湯泉に切替。日々湯量・温度が変わる。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-12",
+      "url": "https://shumeikan.biz/howto/",
+      "title": "ご利用方法",
+      "publisher": "姥子温泉秀明館",
+      "retrieved_at": "2026-10-03",
+      "locator": "湯床・入湯のみ・料金と包含物",
+      "summary": "湯床2時間1人2000円で入浴・席・浴衣・手拭を含む。入湯のみは15時以降1500円手拭付き。予約は受けない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-13",
+      "url": "https://shumeikan.biz/2026/09/11/%E6%B9%AF%E3%80%81%E5%87%BA%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82/",
+      "title": "湯、出ました。",
+      "publisher": "姥子温泉秀明館",
+      "retrieved_at": "2026-10-03",
+      "locator": "2026年9月11日告知",
+      "summary": "岩盤からの湧出開始を報告し10月末頃までと予想。雨量次第であり評価日当日の湧出確認ではない。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-14",
+      "url": "https://tenzan.jp/tenzan/",
+      "title": "天山",
+      "publisher": "天山湯治郷",
+      "retrieved_at": "2026-10-03",
+      "locator": "料金・男女浴場・住所",
+      "summary": "大人1450円入湯税・消費税込、9〜23時最終22時。男女それぞれ内湯・外湯がある。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-15",
+      "url": "https://tenzan.jp/gensen/",
+      "title": "源泉浴",
+      "publisher": "天山湯治郷",
+      "retrieved_at": "2026-10-03",
+      "locator": "無加水熱交換・7源泉・3分析表リンク",
+      "summary": "源泉を貯めず直結し、加水なしで熱交換冷却。浴槽で泉質と温度が異なる。個別槽と源泉番号の対応はこの本文では未確定。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-16",
+      "url": "https://tenzan.jp/point/",
+      "title": "ご利用案内",
+      "publisher": "天山湯治郷",
+      "retrieved_at": "2026-10-03",
+      "locator": "持参物",
+      "summary": "手拭の持参を推奨し必須とする。自前タオルを使える。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-17",
+      "url": "https://onsen-musume.jp/character/hakone_saya",
+      "title": "箱根彩耶",
+      "publisher": "エンバウンド／温泉むすめ公式",
+      "retrieved_at": "2026-10-03",
+      "locator": "プロフィールと地域リンク",
+      "summary": "箱根彩耶を公式キャラクターとして掲載。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-18",
+      "url": "https://www.hakone-yuransen.jp/news/article/onsenmusume20230429.html",
+      "title": "箱根彩耶コラボ開始",
+      "publisher": "箱根遊船",
+      "retrieved_at": "2026-10-03",
+      "locator": "2023年4月29日告知・展示所在地",
+      "summary": "元箱根港・箱根関所跡港にパネルを設置した開始案内。現地公式対応は確認できるが現在の展示確認とは分ける。",
+      "source_type": "official_web"
+    },
+    {
+      "id": "hk-19",
+      "url": "https://onsen-musume.jp/news/405758",
+      "title": "2026夏周遊キャンペーン",
+      "publisher": "エンバウンド／温泉むすめ公式",
+      "retrieved_at": "2026-10-03",
+      "locator": "期間・元箱根港フォトスポット・物販",
+      "summary": "7月18日〜9月23日の活動案内。10月3日時点では終了した期間で、商品在庫や展示継続は別確認が必要。",
+      "source_type": "official_web"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "hakone-yuryo",
+      "name": "箱根湯寮",
+      "url": "https://www.hakoneyuryo.jp/",
+      "source_ids": [
+        "hk-02",
+        "hk-03",
+        "hk-04",
+        "hk-05",
+        "hk-06",
+        "hk-07",
+        "hk-08",
+        "hk-09"
+      ]
+    },
+    {
+      "id": "shumeikan",
+      "name": "姥子温泉 秀明館",
+      "url": "https://shumeikan.biz/",
+      "source_ids": [
+        "hk-10",
+        "hk-11",
+        "hk-12",
+        "hk-13"
+      ]
+    },
+    {
+      "id": "tenzan",
+      "name": "天山湯治郷 天山",
+      "url": "https://tenzan.jp/tenzan/",
+      "source_ids": [
+        "hk-14",
+        "hk-15",
+        "hk-16"
+      ]
+    },
+    {
+      "id": "motohakone-port",
+      "name": "箱根遊船 元箱根港",
+      "url": "https://www.hakone-yuransen.jp/",
+      "source_ids": [
+        "hk-18",
+        "hk-19"
+      ]
+    }
+  ],
+  "region_metrics": {
+    "I01": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "有無",
+      "evidence_ids": [
+        "hk-01",
+        "hk-03",
+        "hk-10"
+      ],
+      "reason": "公式17地区群と現役利用施設所在地を確認。",
+      "condition": "箱根広域"
+    },
+    "I02": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "有無",
+      "evidence_ids": [
+        "hk-02",
+        "hk-03"
+      ],
+      "reason": "公式日帰り18件一覧と住所付き施設詳細を確認。一覧公開と全件性は別。",
+      "condition": "観光協会掲載の部分一覧"
+    },
+    "M01[project_id=onsen_musume]": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "有無",
+      "evidence_ids": [
+        "hk-17",
+        "hk-18",
+        "hk-19"
+      ],
+      "reason": "権利元の箱根彩耶と現地事業者の公式展開が対応。",
+      "condition": "箱根広域の温泉むすめ展開"
+    },
+    "M02[project_id=onsen_musume]": {
+      "status": "U",
+      "rawLower": null,
+      "rawUpper": null,
+      "unit": "地点",
+      "evidence_ids": [
+        "hk-18",
+        "hk-19"
+      ],
+      "reason": "権利元、運営者の掲示・2026活動・現在検索を確認したが9月23日以降の展示継続の確定資料を確認できず。2023設置2地点を現在件数に転用しない。",
+      "condition": "現在公開される異なる所在地数"
+    }
+  },
+  "plans": [
+    {
+      "id": "hakone-yuryo-female-miharashi-weekday",
+      "regionId": "hakone",
+      "facility_id": "hakone-yuryo",
+      "bath_id": "hakone-yuryo:yuryo-female-miharashi",
+      "label": "箱根湯寮 女性見晴湯",
+      "modality": "daytrip",
+      "day_type": "weekday",
+      "condition_label": "大人1人・女性見晴湯・通常大浴場料金・タオル持参・weekday",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 1700,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "hk-04"
+          ],
+          "reason": "通常大浴場の公表料金範囲は平日1700〜1800円、土休日2000〜2200円。税の包括注記が貸切節に置かれ、本殿大浴場への適用範囲を今回の本文では確定できないため、必須総額は公開最低額を下限にして上限未確定。タオル持参条件。日付別料金PDFの画像確認も未達。",
+          "condition": "大人1人・女性見晴湯・通常大浴場料金・タオル持参・weekday"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 10,
+          "rawUpper": 10,
+          "unit": "時間",
+          "evidence_ids": [
+            "hk-04",
+            "hk-07"
+          ],
+          "reason": "通常公表入浴時間。臨時休館・個別槽の清掃閉鎖は未確認。",
+          "condition": "大人1人・女性見晴湯・通常大浴場料金・タオル持参・weekday"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 19,
+          "rawUpper": 19,
+          "unit": "時",
+          "evidence_ids": [
+            "hk-04"
+          ],
+          "reason": "大浴場の最終受付。貸切の最終受付とは異なる。",
+          "condition": "大人1人・女性見晴湯・通常大浴場料金・タオル持参・weekday"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-04",
+            "hk-07"
+          ],
+          "reason": "一般外来入浴を掲載。個別日の入場保証ではない。",
+          "condition": "大人1人・女性見晴湯・通常大浴場料金・タオル持参・weekday"
+        },
+        "I07": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-05",
+            "hk-06"
+          ],
+          "reason": "温泉ページの供給対象として本殿の温泉浴槽を対応。混合源泉番号・詳細系統は画像資料での確定未了。",
+          "condition": "女性見晴湯（沢水浴槽は除く）"
+        },
+        "I04": {
+          "status": "F",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-08"
+          ],
+          "reason": "PDF本文は取得できたが画像取得再試行・wwwなし・ローカルcurl・ブラウザ代替でも判読確認できず全文画像を検証できない。",
+          "condition": "掲示証全文の可読性",
+          "entity_scope": "source",
+          "entity_id": "hakone:source-profile:hakone-yuryo-published-notice",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "hk-08"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "hakone-yuryo:yuryo-female-miharashi"
+          }
+        },
+        "P01": {
+          "status": "C",
+          "rawLower": 0,
+          "rawUpper": 1,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-06",
+            "hk-08"
+          ],
+          "reason": "Webは多客・緊急換水時に加水、掲示証本文は加水なし。適用時期未確定で営業時間率を拘束できない。",
+          "condition": "現在の運用条件を優先し比率は未確定"
+        },
+        "I09": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "方式・適用条件を公式温泉本文が説明。ただし年間の実施時間率を示す値ではない。",
+          "condition": "本殿の温泉浴槽に対する公式供給運用説明"
+        },
+        "I10": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "方式・適用条件を公式温泉本文が説明。ただし年間の実施時間率を示す値ではない。",
+          "condition": "本殿の温泉浴槽に対する公式供給運用説明"
+        },
+        "I12": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "方式・適用条件を公式温泉本文が説明。ただし年間の実施時間率を示す値ではない。",
+          "condition": "本殿の温泉浴槽に対する公式供給運用説明"
+        },
+        "I13": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "方式・適用条件を公式温泉本文が説明。ただし年間の実施時間率を示す値ではない。",
+          "condition": "本殿の温泉浴槽に対する公式供給運用説明"
+        },
+        "I14": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "方式・適用条件を公式温泉本文が説明。ただし年間の実施時間率を示す値ではない。",
+          "condition": "本殿の温泉浴槽に対する公式供給運用説明"
+        },
+        "P03": {
+          "status": "C",
+          "rawLower": 0,
+          "rawUpper": 1,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "加温・循環ろ過・塩素の実施は明示されるが無処理の営業時間率は未公開。常時という数値は作らない。",
+          "condition": "一般運用の実施有無と時間率を区別"
+        },
+        "P06": {
+          "status": "C",
+          "rawLower": 0,
+          "rawUpper": 1,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "加温・循環ろ過・塩素の実施は明示されるが無処理の営業時間率は未公開。常時という数値は作らない。",
+          "condition": "一般運用の実施有無と時間率を区別"
+        },
+        "P21[method=chlorine]": {
+          "status": "C",
+          "rawLower": 0,
+          "rawUpper": 1,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "加温・循環ろ過・塩素の実施は明示されるが無処理の営業時間率は未公開。常時という数値は作らない。",
+          "condition": "一般運用の実施有無と時間率を区別"
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "yuryo-female-miharashi",
+      "source_entity_id": "hakone:source-profile:hakone-yuryo-published-notice",
+      "supply_entity_id": "hakone-yuryo:current-supply:yuryo-female-miharashi",
+      "analysis_sample_id": "hakone-yuryo-published-notice"
+    },
+    {
+      "id": "hakone-yuryo-female-miharashi-weekend",
+      "regionId": "hakone",
+      "facility_id": "hakone-yuryo",
+      "bath_id": "hakone-yuryo:yuryo-female-miharashi",
+      "label": "箱根湯寮 女性見晴湯",
+      "modality": "daytrip",
+      "day_type": "weekend",
+      "condition_label": "大人1人・女性見晴湯・通常大浴場料金・タオル持参・weekend",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 2000,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "hk-04"
+          ],
+          "reason": "通常大浴場の公表料金範囲は平日1700〜1800円、土休日2000〜2200円。税の包括注記が貸切節に置かれ、本殿大浴場への適用範囲を今回の本文では確定できないため、必須総額は公開最低額を下限にして上限未確定。タオル持参条件。日付別料金PDFの画像確認も未達。",
+          "condition": "大人1人・女性見晴湯・通常大浴場料金・タオル持参・weekend"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 11,
+          "rawUpper": 11,
+          "unit": "時間",
+          "evidence_ids": [
+            "hk-04",
+            "hk-07"
+          ],
+          "reason": "通常公表入浴時間。臨時休館・個別槽の清掃閉鎖は未確認。",
+          "condition": "大人1人・女性見晴湯・通常大浴場料金・タオル持参・weekend"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 20,
+          "rawUpper": 20,
+          "unit": "時",
+          "evidence_ids": [
+            "hk-04"
+          ],
+          "reason": "大浴場の最終受付。貸切の最終受付とは異なる。",
+          "condition": "大人1人・女性見晴湯・通常大浴場料金・タオル持参・weekend"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-04",
+            "hk-07"
+          ],
+          "reason": "一般外来入浴を掲載。個別日の入場保証ではない。",
+          "condition": "大人1人・女性見晴湯・通常大浴場料金・タオル持参・weekend"
+        },
+        "I07": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-05",
+            "hk-06"
+          ],
+          "reason": "温泉ページの供給対象として本殿の温泉浴槽を対応。混合源泉番号・詳細系統は画像資料での確定未了。",
+          "condition": "女性見晴湯（沢水浴槽は除く）"
+        },
+        "I04": {
+          "status": "F",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-08"
+          ],
+          "reason": "PDF本文は取得できたが画像取得再試行・wwwなし・ローカルcurl・ブラウザ代替でも判読確認できず全文画像を検証できない。",
+          "condition": "掲示証全文の可読性",
+          "entity_scope": "source",
+          "entity_id": "hakone:source-profile:hakone-yuryo-published-notice",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "hk-08"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "hakone-yuryo:yuryo-female-miharashi"
+          }
+        },
+        "P01": {
+          "status": "C",
+          "rawLower": 0,
+          "rawUpper": 1,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-06",
+            "hk-08"
+          ],
+          "reason": "Webは多客・緊急換水時に加水、掲示証本文は加水なし。適用時期未確定で営業時間率を拘束できない。",
+          "condition": "現在の運用条件を優先し比率は未確定"
+        },
+        "I09": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "方式・適用条件を公式温泉本文が説明。ただし年間の実施時間率を示す値ではない。",
+          "condition": "本殿の温泉浴槽に対する公式供給運用説明"
+        },
+        "I10": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "方式・適用条件を公式温泉本文が説明。ただし年間の実施時間率を示す値ではない。",
+          "condition": "本殿の温泉浴槽に対する公式供給運用説明"
+        },
+        "I12": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "方式・適用条件を公式温泉本文が説明。ただし年間の実施時間率を示す値ではない。",
+          "condition": "本殿の温泉浴槽に対する公式供給運用説明"
+        },
+        "I13": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "方式・適用条件を公式温泉本文が説明。ただし年間の実施時間率を示す値ではない。",
+          "condition": "本殿の温泉浴槽に対する公式供給運用説明"
+        },
+        "I14": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "方式・適用条件を公式温泉本文が説明。ただし年間の実施時間率を示す値ではない。",
+          "condition": "本殿の温泉浴槽に対する公式供給運用説明"
+        },
+        "P03": {
+          "status": "C",
+          "rawLower": 0,
+          "rawUpper": 1,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "加温・循環ろ過・塩素の実施は明示されるが無処理の営業時間率は未公開。常時という数値は作らない。",
+          "condition": "一般運用の実施有無と時間率を区別"
+        },
+        "P06": {
+          "status": "C",
+          "rawLower": 0,
+          "rawUpper": 1,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "加温・循環ろ過・塩素の実施は明示されるが無処理の営業時間率は未公開。常時という数値は作らない。",
+          "condition": "一般運用の実施有無と時間率を区別"
+        },
+        "P21[method=chlorine]": {
+          "status": "C",
+          "rawLower": 0,
+          "rawUpper": 1,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-06"
+          ],
+          "reason": "加温・循環ろ過・塩素の実施は明示されるが無処理の営業時間率は未公開。常時という数値は作らない。",
+          "condition": "一般運用の実施有無と時間率を区別"
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "yuryo-female-miharashi",
+      "source_entity_id": "hakone:source-profile:hakone-yuryo-published-notice",
+      "supply_entity_id": "hakone-yuryo:current-supply:yuryo-female-miharashi",
+      "analysis_sample_id": "hakone-yuryo-published-notice"
+    },
+    {
+      "id": "hakone-yuryo-kaede-weekday",
+      "regionId": "hakone",
+      "facility_id": "hakone-yuryo",
+      "bath_id": "hakone-yuryo:yuryo-kaede-private",
+      "label": "箱根湯寮 壱ノ巻 楓",
+      "modality": "daytrip",
+      "day_type": "weekday",
+      "condition_label": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekday",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 10400,
+          "rawUpper": 10400,
+          "unit": "円",
+          "evidence_ids": [
+            "hk-04",
+            "hk-09"
+          ],
+          "reason": "大人1人が1室を専用利用する通常最低120分総額。人数割りしない。税込・入湯税込、タオル付き。大浴場追加利用なし。",
+          "condition": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekday"
+        },
+        "Y11": {
+          "status": "K",
+          "rawLower": 120,
+          "rawUpper": 120,
+          "unit": "分",
+          "evidence_ids": [
+            "hk-04",
+            "hk-09"
+          ],
+          "reason": "購入する最低120分枠。延長は別料金。",
+          "condition": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekday"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 10,
+          "rawUpper": 10,
+          "unit": "時間",
+          "evidence_ids": [
+            "hk-04"
+          ],
+          "reason": "貸切の公表営業時間。予約枠を確認した値ではない。",
+          "condition": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekday"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 18,
+          "rawUpper": 18,
+          "unit": "時",
+          "evidence_ids": [
+            "hk-04"
+          ],
+          "reason": "貸切専用の最終受付。",
+          "condition": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekday"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-04",
+            "hk-09"
+          ],
+          "reason": "一般客へ貸切販売案内あり。18歳未満のみの利用不可、予約枠未確認。",
+          "condition": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekday"
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-04",
+            "hk-09"
+          ],
+          "reason": "個室専用の露天浴槽を明示。",
+          "condition": "壱ノ巻 楓"
+        },
+        "B07": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-04",
+            "hk-09"
+          ],
+          "reason": "楓を含む個別部屋名と貸切料金を公開。",
+          "condition": "壱ノ巻 楓"
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "yuryo-kaede-private"
+    },
+    {
+      "id": "hakone-yuryo-kaede-weekend",
+      "regionId": "hakone",
+      "facility_id": "hakone-yuryo",
+      "bath_id": "hakone-yuryo:yuryo-kaede-private",
+      "label": "箱根湯寮 壱ノ巻 楓",
+      "modality": "daytrip",
+      "day_type": "weekend",
+      "condition_label": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekend",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 11400,
+          "rawUpper": 11400,
+          "unit": "円",
+          "evidence_ids": [
+            "hk-04",
+            "hk-09"
+          ],
+          "reason": "大人1人が1室を専用利用する通常最低120分総額。人数割りしない。税込・入湯税込、タオル付き。大浴場追加利用なし。",
+          "condition": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekend"
+        },
+        "Y11": {
+          "status": "K",
+          "rawLower": 120,
+          "rawUpper": 120,
+          "unit": "分",
+          "evidence_ids": [
+            "hk-04",
+            "hk-09"
+          ],
+          "reason": "購入する最低120分枠。延長は別料金。",
+          "condition": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekend"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 11,
+          "rawUpper": 11,
+          "unit": "時間",
+          "evidence_ids": [
+            "hk-04"
+          ],
+          "reason": "貸切の公表営業時間。予約枠を確認した値ではない。",
+          "condition": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekend"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 19,
+          "rawUpper": 19,
+          "unit": "時",
+          "evidence_ids": [
+            "hk-04"
+          ],
+          "reason": "貸切専用の最終受付。",
+          "condition": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekend"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-04",
+            "hk-09"
+          ],
+          "reason": "一般客へ貸切販売案内あり。18歳未満のみの利用不可、予約枠未確認。",
+          "condition": "大人1人・壱ノ巻 楓・120分・貸切のみ・通常料金・weekend"
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-04",
+            "hk-09"
+          ],
+          "reason": "個室専用の露天浴槽を明示。",
+          "condition": "壱ノ巻 楓"
+        },
+        "B07": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-04",
+            "hk-09"
+          ],
+          "reason": "楓を含む個別部屋名と貸切料金を公開。",
+          "condition": "壱ノ巻 楓"
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "yuryo-kaede-private"
+    },
+    {
+      "id": "hakone-shumeikan-male-yudoko2h",
+      "regionId": "hakone",
+      "facility_id": "shumeikan",
+      "bath_id": "shumeikan:shumeikan-male-rock",
+      "label": "姥子秀明館 男性岩風呂",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "木曜・2月休業を除く営業日・大人1人・男性岩風呂・湯床2時間・当日案内・源泉切替あり",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 2000,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "hk-12"
+          ],
+          "reason": "席・入浴・貸浴衣・手拭を含む通常公表額。税込・入湯税の明示を今回の公式本文で確認できず総額上限未確定。",
+          "condition": "木曜・2月休業を除く営業日・大人1人・男性岩風呂・湯床2時間・当日案内・源泉切替あり"
+        },
+        "Y11": {
+          "status": "K",
+          "rawLower": 120,
+          "rawUpper": 120,
+          "unit": "分",
+          "evidence_ids": [
+            "hk-12"
+          ],
+          "reason": "湯床2時間購入条件。",
+          "condition": "木曜・2月休業を除く営業日・大人1人・男性岩風呂・湯床2時間・当日案内・源泉切替あり"
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 7,
+          "rawUpper": 7,
+          "unit": "時間",
+          "evidence_ids": [
+            "hk-10",
+            "hk-12"
+          ],
+          "reason": "湯床利用10〜17時、最終受付14時。入湯のみ15〜17時とは別系列。",
+          "condition": "木曜・2月休業を除く営業日・大人1人・男性岩風呂・湯床2時間・当日案内・源泉切替あり"
+        },
+        "Y08": {
+          "status": "C",
+          "rawLower": 14,
+          "rawUpper": 14,
+          "unit": "時",
+          "evidence_ids": [
+            "hk-10",
+            "hk-12"
+          ],
+          "reason": "湯床の最終受付。",
+          "condition": "木曜・2月休業を除く営業日・大人1人・男性岩風呂・湯床2時間・当日案内・源泉切替あり"
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-10",
+            "hk-12"
+          ],
+          "reason": "個人湯治の一般客は利用可能。団体、療養以外の会議等、おむつ利用者、3歳以下、タトゥー等の制約を保持。",
+          "condition": "木曜・2月休業を除く営業日・大人1人・男性岩風呂・湯床2時間・当日案内・源泉切替あり"
+        },
+        "I07": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-11",
+            "hk-13"
+          ],
+          "reason": "岩盤自然湧出と湯枯れ時の敷地内揚湯泉を浴場に対応。9月11日開始報告を評価日当日の湧出確認へ置換しない。",
+          "condition": "男性岩風呂・自然湧出時／揚湯泉切替時"
+        },
+        "B07": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "hk-12"
+          ],
+          "reason": "借りる湯床は休憩席であり個室露天風呂ではない。",
+          "condition": "男性岩風呂の湯床プラン"
+        },
+        "P01": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-10",
+            "hk-11",
+            "hk-12"
+          ],
+          "reason": "温泉・利用案内・最新告知・項目別加工検索の範囲で営業中の方式・時間率は確認できない。自然湧出から無加工へ補完しない。",
+          "condition": "男性岩風呂の各供給状態"
+        },
+        "P03": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-10",
+            "hk-11",
+            "hk-12"
+          ],
+          "reason": "温泉・利用案内・最新告知・項目別加工検索の範囲で営業中の方式・時間率は確認できない。自然湧出から無加工へ補完しない。",
+          "condition": "男性岩風呂の各供給状態"
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-10",
+            "hk-11",
+            "hk-12"
+          ],
+          "reason": "温泉・利用案内・最新告知・項目別加工検索の範囲で営業中の方式・時間率は確認できない。自然湧出から無加工へ補完しない。",
+          "condition": "男性岩風呂の各供給状態"
+        },
+        "P21[method=chlorine]": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [
+            "hk-10",
+            "hk-11",
+            "hk-12"
+          ],
+          "reason": "温泉・利用案内・最新告知・項目別加工検索の範囲で営業中の方式・時間率は確認できない。自然湧出から無加工へ補完しない。",
+          "condition": "男性岩風呂の各供給状態"
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "shumeikan-male-rock"
+    }
+  ],
+  "analysis_samples": [
+    {
+      "id": "hakone-yuryo-published-notice",
+      "source_ids": [
+        "hk-08"
+      ],
+      "source_name": "塔之沢温泉（湯本58・75・87号混合、掲示本文での識別）",
+      "sampling_date": null,
+      "measurements": {},
+      "correspondence_note": "分析年月日と採水日は異なる。本文抽出はできたが画像確認不可のため化学値・使用位置温度を未採用。浴槽実測値に転用しない。",
+      "source_entity_id": "hakone:source-profile:hakone-yuryo-published-notice",
+      "supply_entity_id": "hakone:published-supply:hakone-yuryo-published-notice",
+      "archived_metrics": {},
+      "identity_status": "C"
+    },
+    {
+      "id": "hakone-tenzan74-description",
+      "source_ids": [
+        "hk-14",
+        "hk-15"
+      ],
+      "source_name": "湯本74号源泉",
+      "sampling_date": null,
+      "measurements": {
+        "pH": {
+          "value": 9.3,
+          "unit": "pH",
+          "measurement_place": "源泉紹介値、採水条件未開示"
+        }
+      },
+      "correspondence_note": "食事用飲泉許可源泉の紹介。天山の全浴槽への供給対応が未確定なので浴槽pHへ転用しない。3分析表画像へのリンクは取得したが画像判読は未了。",
+      "source_entity_id": "hakone:source-profile:hakone-tenzan74-description",
+      "supply_entity_id": "hakone:published-supply:hakone-tenzan74-description",
+      "archived_metrics": {},
+      "identity_status": "C"
+    }
+  ],
+  "findings": [
+    "大浴場、特定の貸切楓、個人湯治の岩風呂を条件別に分離。貸切料金を最大人数で割って大人1人料金にしない。",
+    "箱根湯寮のWeb本文は加工条件を明示するが時間率は公開しない。年中無加工・常時加工の割合は作らない。",
+    "秀明館の岩盤湧出は降水量依存で湯枯れ時には揚湯泉へ切替。10月末までという予想を当日の供給確定としない。",
+    "天山は1450円入湯税・税込、タオル持参可、無加水熱交換を確認。しかし各浴槽と7源泉対応を特定し切れず浴槽ランキング候補から保留。",
+    "2026夏の温泉むすめ活動を確認したが期間は9月23日に終了。新グッズ在庫・展示継続を10月3日現在確定としない。"
+  ],
+  "issues": [
+    "箱根湯寮掲示証の加水なしとWebの条件付き加水で資料の適用時期が不明。本文の現在条件を保持し割合は全域。",
+    "分析PDF画像確認がweb再取得・wwwなし・ローカル取得・ブラウザ代替でも不能。化学数値を採用しない。",
+    "秀明館の税込総額が未確定。箱根湯寮の通常料金は日付料金範囲を保持。",
+    "営業案内・無予約案内は評価日の入館や予約成立を保証しない。",
+    "箱根湯寮の税包括注記は貸切節内にある。本殿大浴場への包括適用は未確定のため、大浴場Y01の総額上限はnullとして公表最低額だけを下限保持した。"
+  ],
+  "excluded_facilities": [],
+  "search_log": [
+    {
+      "query": "箱根全山 十七湯・日帰り温泉一覧",
+      "outcome": "公式17地区定義、18件の公開一覧と施設詳細を読んだ。全件網羅としない。",
+      "source_ids": [
+        "hk-01",
+        "hk-02",
+        "hk-03"
+      ]
+    },
+    {
+      "query": "箱根湯寮 温泉分析書 加水 加温 循環 消毒",
+      "outcome": "温泉・浴場・利用・FAQ本文と掲示証本文を照合。PDF画像再取得と代替手段を試して取得できず化学値未採用。",
+      "source_ids": [
+        "hk-04",
+        "hk-05",
+        "hk-06",
+        "hk-07",
+        "hk-08"
+      ]
+    },
+    {
+      "query": "秀明館 温泉分析書 加水 加温 循環 消毒 税込",
+      "outcome": "温泉・利用・最新供給告知と項目別検索を確認。分析画像未判読、加工時間率・税込総額を今回の公式情報で確認できず。",
+      "source_ids": [
+        "hk-10",
+        "hk-11",
+        "hk-12",
+        "hk-13"
+      ]
+    },
+    {
+      "query": "天山 源泉浴 分析表 加水 加温 循環 消毒 タオル持参",
+      "outcome": "7源泉の供給、無加水熱交換、分析画像リンク、税と持参を確認。個別槽対応未確定。",
+      "source_ids": [
+        "hk-14",
+        "hk-15",
+        "hk-16"
+      ]
+    },
+    {
+      "query": "箱根彩耶2026 公式 パネル 遊覧船",
+      "outcome": "権利元と現地遊船の本文を確認。2023開始と2026夏期間を区別。評価日の展示・在庫継続は未確認。",
+      "source_ids": [
+        "hk-17",
+        "hk-18",
+        "hk-19"
+      ]
+    }
+  ],
+  "source_entities": [
+    {
+      "id": "hakone:source-profile:hakone-yuryo-published-notice",
+      "name": "塔之沢温泉（湯本58・75・87号混合、掲示本文での識別）",
+      "identity_status": "C",
+      "evidence_ids": [
+        "hk-08"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "hakone:source-profile:hakone-tenzan74-description",
+      "name": "湯本74号源泉",
+      "identity_status": "C",
+      "evidence_ids": [
+        "hk-14",
+        "hk-15"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {}
+    }
+  ],
+  "supply_entities": [
+    {
+      "id": "hakone:published-supply:hakone-yuryo-published-notice",
+      "name": "塔之沢温泉（湯本58・75・87号混合、掲示本文での識別）",
+      "identity_status": "C",
+      "evidence_ids": [
+        "hk-08"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "hakone:published-supply:hakone-tenzan74-description",
+      "name": "湯本74号源泉",
+      "identity_status": "C",
+      "evidence_ids": [
+        "hk-14",
+        "hk-15"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "hakone-yuryo:current-supply:yuryo-female-miharashi",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    }
+  ]
+}

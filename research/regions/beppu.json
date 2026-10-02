@@ -1,0 +1,875 @@
+{
+  "region": {
+    "id": "beppu",
+    "name": "別府温泉",
+    "kana": "べっぷおんせん",
+    "prefecture": "大分県",
+    "municipality": "別府市",
+    "scope_note": "別府八湯（別府・浜脇・亀川・鉄輪・観海寺・堀田・柴石・明礬）全域。狭義別府地区の値を八湯の代表値にしない。",
+    "official_url": "https://www.city.beppu.oita.jp/sangyou/onsen/detail1.html"
+  },
+  "study": {
+    "reviewed_at": "2026-10-03",
+    "status": "partial",
+    "scope_note": "竹瓦男女普通浴とひょうたんの特定2浴槽を初回調査。八湯全施設の網羅ではない。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。",
+    "uninvestigated": [
+      "八湯全域の住所付き施設一覧・現行利用可否",
+      "浴槽の温度・pH・感覚強度の現在値、供給系統と分析時点対応",
+      "残る加工条件・全消毒方式・五条件同時時間率",
+      "通常入浴税込総必須費の上限と税の施設対応",
+      "宿泊プランの確定比較日見積りと客室/食事条件",
+      "標準アクセス188条件、現行パネル・活動全件調査"
+    ]
+  },
+  "sources": [
+    {
+      "id": "be-s01",
+      "url": "https://www.city.beppu.oita.jp/sangyou/onsen/detail1.html",
+      "title": "別府八湯ガイド",
+      "publisher": "別府市",
+      "retrieved_at": "2026-10-03",
+      "locator": "2024-01-04更新／八湯定義・各地区紹介",
+      "summary": "市内8温泉地の総称を説明。今回の別府は八湯全域を対象とする。",
+      "source_type": "municipality"
+    },
+    {
+      "id": "be-s02",
+      "url": "https://www.city.beppu.oita.jp/sisetu/shieionsen/detail4.html",
+      "title": "竹瓦温泉",
+      "publisher": "別府市",
+      "retrieved_at": "2026-10-03",
+      "locator": "施設概要・種別・営業・料金・備品・男女普通浴泉質",
+      "summary": "普通浴男女と砂湯を別に掲載。普通浴300円、6:30〜22:30、第三水曜休。",
+      "source_type": "municipality"
+    },
+    {
+      "id": "be-s03",
+      "url": "https://www.hyotan-onsen.com/onsen/daiyokujou.html",
+      "title": "大浴場と瀧湯のご案内",
+      "publisher": "ひょうたん温泉",
+      "retrieved_at": "2026-10-03",
+      "locator": "女湯風の露天風呂・男湯檜風呂／温泉概要／利用料金",
+      "summary": "実在浴槽を列挙。大人税込1160円、タオル持参可。源泉概要は1994年分析。",
+      "source_type": "official_operator"
+    },
+    {
+      "id": "be-s04",
+      "url": "https://www.hyotan-onsen.com/price/index.html",
+      "title": "料金・営業時間",
+      "publisher": "ひょうたん温泉",
+      "retrieved_at": "2026-10-03",
+      "locator": "大浴場・家族風呂・アメニティ料金",
+      "summary": "大浴場1160円と家族風呂の部屋基本料金を区別。任意タオルは別売。",
+      "source_type": "official_operator"
+    },
+    {
+      "id": "be-s05",
+      "url": "https://www.hyotan-onsen.com/facilities/index.html",
+      "title": "温泉施設のご案内",
+      "publisher": "ひょうたん温泉",
+      "retrieved_at": "2026-10-03",
+      "locator": "大浴場エリア・冷却方法・所在地",
+      "summary": "鉄輪159-2。竹製装置で源泉を冷却する説明。温泉全て源泉十割と公表。",
+      "source_type": "official_operator"
+    },
+    {
+      "id": "be-s06",
+      "url": "https://www.hyotan-onsen.com/faq/index.html",
+      "title": "よくある質問",
+      "publisher": "ひょうたん温泉",
+      "retrieved_at": "2026-10-03",
+      "locator": "Q06・Q10・Q12・Q17・Q19・Q32",
+      "summary": "日帰り専用、タオル持参可能、毎日入れ替え清掃。Wi-Fiなしを明示。全消毒方式の不使用は確認できない。",
+      "source_type": "official_operator"
+    },
+    {
+      "id": "be-s07",
+      "url": "https://hyotan-onsen.com/",
+      "title": "ひょうたん温泉お知らせ",
+      "publisher": "ひょうたん温泉",
+      "retrieved_at": "2026-10-03",
+      "locator": "営業時間変更および臨時休業のお知らせ（2026年10月）",
+      "summary": "10月5日短縮、10月9日臨時休業を掲載。通常時間から個別日の入浴成立を断定しない。",
+      "source_type": "official_operator"
+    },
+    {
+      "id": "be-s08",
+      "url": "https://www.city.beppu.oita.jp/seikatu/zeikin/nyuutouzei/nyuto_index.html",
+      "title": "入湯税",
+      "publisher": "別府市",
+      "retrieved_at": "2026-10-03",
+      "locator": "2026-02-24更新／4税率・5免除",
+      "summary": "共同浴場等の免除と宿泊飲食条件の税率を掲載。施設別徴収実態を照会していない。",
+      "source_type": "municipality"
+    },
+    {
+      "id": "be-s09",
+      "url": "https://onsen-musume.jp/character/beppu_tamaki",
+      "title": "別府環綺",
+      "publisher": "温泉むすめ公式（エンバウンド）",
+      "retrieved_at": "2026-10-03",
+      "locator": "公式キャラクター見出し・別府八湯への対応",
+      "summary": "別府環綺と別府八湯への公式対応を確認。現在の展示地点は別調査。",
+      "source_type": "rights_holder"
+    },
+    {
+      "id": "be-s10",
+      "url": "https://www.hyotan-onsen.com/assets/pdf/onsen-analysis.pdf",
+      "title": "ひょうたん温泉 温泉分析書",
+      "publisher": "ひょうたん温泉",
+      "retrieved_at": "2026-10-03",
+      "locator": "公式リンク先1頁PDF／画像取得試行",
+      "summary": "PDFの存在は確認したが画像が取得できず判読確認不能。数値未採用。",
+      "source_type": "official_pdf"
+    },
+    {
+      "id": "be-s11",
+      "url": "https://www.hyotan-onsen.com/assets/pdf/onsen-record-jp.pdf",
+      "title": "ひょうたん温泉 温泉カルテ",
+      "publisher": "ひょうたん温泉",
+      "retrieved_at": "2026-10-03",
+      "locator": "公式リンク先1頁PDF／画像取得試行",
+      "summary": "PDF画像未取得。加工五条件の証明として使用しない。",
+      "source_type": "official_pdf"
+    },
+    {
+      "id": "be-s12",
+      "url": "https://www.city.beppu.oita.jp/doc/sisetu/sieionsen/04/bunseki_men.pdf",
+      "title": "竹瓦普通浴男湯 温泉分析書",
+      "publisher": "別府市",
+      "retrieved_at": "2026-10-03",
+      "locator": "竹瓦公式施設ページ普通浴男湯の分析書リンク",
+      "summary": "PDF画像未取得で全文判読不能。成分数値を浴槽へ転用しない。",
+      "source_type": "official_pdf"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "beppu-takegawara",
+      "name": "竹瓦温泉",
+      "address": "大分県別府市元町16-23",
+      "district": "別府",
+      "url": "https://www.city.beppu.oita.jp/sisetu/shieionsen/detail4.html",
+      "source_ids": [
+        "be-s02"
+      ]
+    },
+    {
+      "id": "beppu-hyotan",
+      "name": "ひょうたん温泉",
+      "address": "大分県別府市鉄輪159-2",
+      "district": "鉄輪",
+      "url": "https://www.hyotan-onsen.com/facilities/index.html",
+      "source_ids": [
+        "be-s03",
+        "be-s05"
+      ]
+    }
+  ],
+  "region_metrics": {
+    "I01": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "be-s01"
+      ],
+      "reason": "今回の対象を別府八湯全域として固定。狭義の別府地区と区別。",
+      "condition": ""
+    },
+    "I02": {
+      "status": "E",
+      "rawLower": null,
+      "rawUpper": null,
+      "unit": "",
+      "evidence_ids": [],
+      "reason": "八湯全域の住所付き構成施設一覧と全件性は未調査。",
+      "condition": ""
+    },
+    "M01[project_id=onsen_musume]": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "boolean",
+      "evidence_ids": [
+        "be-s09"
+      ],
+      "reason": "権利元の別府環綺公式対応。",
+      "condition": ""
+    }
+  },
+  "plans": [
+    {
+      "id": "beppu-takegawara-male",
+      "regionId": "beppu",
+      "facility_id": "beppu-takegawara",
+      "bath_id": "beppu-takegawara:takegawara-ordinary-male",
+      "label": "竹瓦温泉 普通浴男湯",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "大人1名の通常普通浴。砂湯別料金・別実体を含まない。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 300,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "be-s02",
+            "be-s08"
+          ],
+          "reason": "普通浴公表300円を下限とする。税込表示・必須追加費・タオル持参条件の上限確認は未了。",
+          "condition": ""
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 16,
+          "rawUpper": 16,
+          "unit": "hours",
+          "evidence_ids": [
+            "be-s02"
+          ],
+          "reason": "通常普通浴6:30〜22:30。臨時休業・槽別閉鎖未照会。",
+          "condition": "第三水曜休、祝日なら翌日"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "be-s02"
+          ],
+          "reason": "普通浴を一般向けに案内。",
+          "condition": ""
+        },
+        "B06": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [],
+          "reason": "露天/内湯の明示と浴槽空間を今回未調査。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s02"
+          ],
+          "reason": "源泉かけ流しの語だけでは五条件同時成立率を確定できない。",
+          "condition": ""
+        },
+        "I04": {
+          "status": "F",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s12"
+          ],
+          "reason": "公式分析書の全文画像が取得できず数値未採用。",
+          "condition": "",
+          "entity_scope": "source",
+          "entity_id": "beppu:source-profile:beppu-takegawara:analysis-unresolved:takegawara-ordinary-male",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "be-s12"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "beppu-takegawara:takegawara-ordinary-male"
+          }
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "takegawara-ordinary-male",
+      "source_entity_id": "beppu:source-profile:beppu-takegawara:analysis-unresolved:takegawara-ordinary-male",
+      "supply_entity_id": "beppu-takegawara:current-supply:takegawara-ordinary-male",
+      "analysis_sample_id": "beppu-takegawara:analysis-unresolved:takegawara-ordinary-male"
+    },
+    {
+      "id": "beppu-takegawara-female",
+      "regionId": "beppu",
+      "facility_id": "beppu-takegawara",
+      "bath_id": "beppu-takegawara:takegawara-ordinary-female",
+      "label": "竹瓦温泉 普通浴女湯",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "大人1名の通常普通浴。砂湯別料金・別実体を含まない。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 300,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "be-s02",
+            "be-s08"
+          ],
+          "reason": "普通浴公表300円を下限とする。税込表示・必須追加費・タオル持参条件の上限確認は未了。",
+          "condition": ""
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 16,
+          "rawUpper": 16,
+          "unit": "hours",
+          "evidence_ids": [
+            "be-s02"
+          ],
+          "reason": "通常普通浴6:30〜22:30。臨時休業・槽別閉鎖未照会。",
+          "condition": "第三水曜休、祝日なら翌日"
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "be-s02"
+          ],
+          "reason": "普通浴を一般向けに案内。",
+          "condition": ""
+        },
+        "B06": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [],
+          "reason": "露天/内湯の明示と浴槽空間を今回未調査。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s02"
+          ],
+          "reason": "源泉かけ流しの語だけでは五条件同時成立率を確定できない。",
+          "condition": ""
+        },
+        "I04": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s02"
+          ],
+          "reason": "女湯の分析書画像確認は今回未実施。",
+          "condition": "",
+          "entity_scope": "source",
+          "entity_id": "beppu:source-profile:beppu-takegawara:analysis-unresolved:takegawara-ordinary-female",
+          "target_correspondence": {
+            "status": "E",
+            "evidence_ids": [
+              "be-s02"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "beppu-takegawara:takegawara-ordinary-female"
+          }
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "takegawara-ordinary-female",
+      "source_entity_id": "beppu:source-profile:beppu-takegawara:analysis-unresolved:takegawara-ordinary-female",
+      "supply_entity_id": "beppu-takegawara:current-supply:takegawara-ordinary-female",
+      "analysis_sample_id": "beppu-takegawara:analysis-unresolved:takegawara-ordinary-female"
+    },
+    {
+      "id": "beppu-hyotan-female-wind",
+      "regionId": "beppu",
+      "facility_id": "beppu-hyotan",
+      "bath_id": "beppu-hyotan:hyotan-female-wind",
+      "label": "ひょうたん温泉 女湯 風の露天風呂",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "13歳以上1名・大浴場通常利用・タオル持参・砂湯/飲食/家族風呂を含まない。2026-10-09臨時休業。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 1160,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "be-s03",
+            "be-s04",
+            "be-s06",
+            "be-s08"
+          ],
+          "reason": "大人税込1160円、タオル持参可。別府市入湯税の施設別徴収と追加必須費の照合未了なので総額上限は保留。",
+          "condition": ""
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 15,
+          "rawUpper": 16,
+          "unit": "hours",
+          "evidence_ids": [
+            "be-s03",
+            "be-s05",
+            "be-s07"
+          ],
+          "reason": "詳細ページ大浴場24時までとヘッダ/受付1時までの終了範囲を保持。清掃中閉鎖・現行最終終了を要再確認。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "be-s06"
+          ],
+          "reason": "公式FAQで日帰り専用・一般1名利用可。",
+          "condition": ""
+        },
+        "P01": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "ratio",
+          "evidence_ids": [
+            "be-s03",
+            "be-s05"
+          ],
+          "reason": "水道水を加えず竹製装置で源泉を冷却、全温泉へ供給と管理者が明示。現地観測ではない。",
+          "condition": ""
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s03",
+            "be-s05",
+            "be-s06"
+          ],
+          "reason": "源泉十割かけ流しと日々清掃は掲載するが循環系統の詳細と時間率は未確認。",
+          "condition": ""
+        },
+        "P21[method=chlorine]": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s03",
+            "be-s05",
+            "be-s06"
+          ],
+          "reason": "公式Webでは営業中塩素運用の明示を確認できず、PDF画像も取得不能。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s03",
+            "be-s05",
+            "be-s06",
+            "be-s11"
+          ],
+          "reason": "無加水以外の五条件について同時成立の確認不足。",
+          "condition": ""
+        },
+        "Z01[equipment=wifi]": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "boolean",
+          "evidence_ids": [
+            "be-s06"
+          ],
+          "reason": "Q32でWi-Fi接続設備を用意しないと施設が明示。",
+          "condition": "施設内通信設備の有無。通信品質値ではない。"
+        },
+        "I04": {
+          "status": "F",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s10"
+          ],
+          "reason": "現在の公式分析書PDFの画像を取得できず全文判読確認不能。",
+          "condition": "",
+          "entity_scope": "source",
+          "entity_id": "beppu:source-profile:hyotan-web-1994",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "be-s10"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "beppu-hyotan:hyotan-female-wind"
+          }
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "be-s03"
+          ],
+          "reason": "女湯の実在露天浴槽を公式名称と外気説明で対応。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "hyotan-female-wind",
+      "source_entity_id": "beppu:source-profile:hyotan-web-1994",
+      "supply_entity_id": "beppu-hyotan:current-supply:hyotan-female-wind",
+      "analysis_sample_id": "hyotan-web-1994"
+    },
+    {
+      "id": "beppu-hyotan-male-hinoki",
+      "regionId": "beppu",
+      "facility_id": "beppu-hyotan",
+      "bath_id": "beppu-hyotan:hyotan-male-hinoki",
+      "label": "ひょうたん温泉 男湯 檜風呂",
+      "modality": "daytrip",
+      "day_type": "all",
+      "condition_label": "13歳以上1名・大浴場通常利用・タオル持参・砂湯/飲食/家族風呂を含まない。2026-10-09臨時休業。",
+      "metrics": {
+        "Y01": {
+          "status": "C",
+          "rawLower": 1160,
+          "rawUpper": null,
+          "unit": "JPY",
+          "evidence_ids": [
+            "be-s03",
+            "be-s04",
+            "be-s06",
+            "be-s08"
+          ],
+          "reason": "大人税込1160円、タオル持参可。別府市入湯税の施設別徴収と追加必須費の照合未了なので総額上限は保留。",
+          "condition": ""
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 15,
+          "rawUpper": 16,
+          "unit": "hours",
+          "evidence_ids": [
+            "be-s03",
+            "be-s05",
+            "be-s07"
+          ],
+          "reason": "詳細ページ大浴場24時までとヘッダ/受付1時までの終了範囲を保持。清掃中閉鎖・現行最終終了を要再確認。",
+          "condition": ""
+        },
+        "Y17": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "boolean",
+          "evidence_ids": [
+            "be-s06"
+          ],
+          "reason": "公式FAQで日帰り専用・一般1名利用可。",
+          "condition": ""
+        },
+        "P01": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "ratio",
+          "evidence_ids": [
+            "be-s03",
+            "be-s05"
+          ],
+          "reason": "水道水を加えず竹製装置で源泉を冷却、全温泉へ供給と管理者が明示。現地観測ではない。",
+          "condition": ""
+        },
+        "P06": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s03",
+            "be-s05",
+            "be-s06"
+          ],
+          "reason": "源泉十割かけ流しと日々清掃は掲載するが循環系統の詳細と時間率は未確認。",
+          "condition": ""
+        },
+        "P21[method=chlorine]": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s03",
+            "be-s05",
+            "be-s06"
+          ],
+          "reason": "公式Webでは営業中塩素運用の明示を確認できず、PDF画像も取得不能。",
+          "condition": ""
+        },
+        "P17": {
+          "status": "U",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s03",
+            "be-s05",
+            "be-s06",
+            "be-s11"
+          ],
+          "reason": "無加水以外の五条件について同時成立の確認不足。",
+          "condition": ""
+        },
+        "Z01[equipment=wifi]": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "boolean",
+          "evidence_ids": [
+            "be-s06"
+          ],
+          "reason": "Q32でWi-Fi接続設備を用意しないと施設が明示。",
+          "condition": "施設内通信設備の有無。通信品質値ではない。"
+        },
+        "I04": {
+          "status": "F",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [
+            "be-s10"
+          ],
+          "reason": "現在の公式分析書PDFの画像を取得できず全文判読確認不能。",
+          "condition": "",
+          "entity_scope": "source",
+          "entity_id": "beppu:source-profile:hyotan-web-1994",
+          "target_correspondence": {
+            "status": "U",
+            "evidence_ids": [
+              "be-s10"
+            ],
+            "reason": "この資料・試料と、対象浴槽の現行供給との対応を確定していない。既知資料の値を浴槽に移さない。",
+            "target_entity_id": "beppu-hyotan:hyotan-male-hinoki"
+          }
+        },
+        "B06": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "",
+          "evidence_ids": [],
+          "reason": "檜風呂の内外空間は未確定。",
+          "condition": ""
+        }
+      },
+      "entity_scope": "bath",
+      "original_bath_id": "hyotan-male-hinoki",
+      "source_entity_id": "beppu:source-profile:hyotan-web-1994",
+      "supply_entity_id": "beppu-hyotan:current-supply:hyotan-male-hinoki",
+      "analysis_sample_id": "hyotan-web-1994"
+    }
+  ],
+  "analysis_samples": [
+    {
+      "id": "hyotan-web-1994",
+      "source_ids": [
+        "be-s03"
+      ],
+      "source_name": "ひょうたん温泉源泉（Web概要）",
+      "sampling_date": null,
+      "analysis_date": "1994-02-22",
+      "measurements": [
+        {
+          "name": "pH",
+          "value": 3.1,
+          "unit": "pH"
+        },
+        {
+          "name": "源泉温度",
+          "value": 100.4,
+          "unit": "℃"
+        }
+      ],
+      "correspondence_note": "旧時点Web概要のみ。現行PDF画像未確認・供給系統未確定なので現在浴槽のC01/B01へ転用しない。",
+      "adopted_for_bath_scoring": false,
+      "source_entity_id": "beppu:source-profile:hyotan-web-1994",
+      "supply_entity_id": "beppu:published-supply:hyotan-web-1994",
+      "archived_metrics": {},
+      "identity_status": "C"
+    },
+    {
+      "id": "beppu-takegawara:analysis-unresolved:takegawara-ordinary-male",
+      "source_ids": [
+        "be-s12"
+      ],
+      "source_name": null,
+      "sampling_date": null,
+      "measurements": {},
+      "identity_status": "U",
+      "correspondence_note": "未確定の分析対象を識別する調査用ID。実在する採水試料・源泉名の確認や、現行浴槽への対応を意味しない。",
+      "archived_metrics": {},
+      "source_entity_id": "beppu:source-profile:beppu-takegawara:analysis-unresolved:takegawara-ordinary-male",
+      "supply_entity_id": "beppu:published-supply:beppu-takegawara:analysis-unresolved:takegawara-ordinary-male"
+    },
+    {
+      "id": "beppu-takegawara:analysis-unresolved:takegawara-ordinary-female",
+      "source_ids": [
+        "be-s02"
+      ],
+      "source_name": null,
+      "sampling_date": null,
+      "measurements": {},
+      "identity_status": "U",
+      "correspondence_note": "未確定の分析対象を識別する調査用ID。実在する採水試料・源泉名の確認や、現行浴槽への対応を意味しない。",
+      "archived_metrics": {},
+      "source_entity_id": "beppu:source-profile:beppu-takegawara:analysis-unresolved:takegawara-ordinary-female",
+      "supply_entity_id": "beppu:published-supply:beppu-takegawara:analysis-unresolved:takegawara-ordinary-female"
+    }
+  ],
+  "findings": [
+    "別府は八湯全域を対象にし、竹瓦の別府地区とひょうたんの鉄輪地区を個別に記録。",
+    "竹瓦は男湯と女湯で公式泉質区分が異なる。成分や源泉値の寄せ集めを行わない。",
+    "ひょうたん女湯は特定露天と無加水説明を対応できるが、五条件同時無加工率は未確定。",
+    "ひょうたん10月9日臨時休業を確認。通常営業説明を予約/来訪成立保証にしない。"
+  ],
+  "issues": [
+    "ひょうたんの大浴場終了は詳細欄24時とヘッダ1時で不一致。現行FAQのタオル価格も料金欄より旧額のため任意品価格は採点未使用。",
+    "分析PDF画像返却なし。PDFの存在と全文判読済みを区別。",
+    "ひょうたんの現行分析書未検証につき1994年Web概要を浴槽値にしない。"
+  ],
+  "excluded_facilities": [],
+  "search_log": [
+    {
+      "query": "別府市公式 八湯定義・竹瓦・入湯税",
+      "outcome": "対象地域と普通浴運用本文を確認",
+      "source_ids": [
+        "be-s01",
+        "be-s02",
+        "be-s08"
+      ]
+    },
+    {
+      "query": "ひょうたん温泉公式 大浴場・FAQ・料金・臨時休業・PDF画像",
+      "outcome": "2浴槽と無加水説明・日帰り条件確認。PDF画像取得不能",
+      "source_ids": [
+        "be-s03",
+        "be-s04",
+        "be-s05",
+        "be-s06",
+        "be-s07",
+        "be-s10",
+        "be-s11"
+      ]
+    }
+  ],
+  "source_entities": [
+    {
+      "id": "beppu:source-profile:hyotan-web-1994",
+      "name": "ひょうたん温泉源泉（Web概要）",
+      "identity_status": "C",
+      "evidence_ids": [
+        "be-s03"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "beppu:source-profile:beppu-takegawara:analysis-unresolved:takegawara-ordinary-male",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [
+        "be-s12"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "beppu:source-profile:beppu-takegawara:analysis-unresolved:takegawara-ordinary-female",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [
+        "be-s02"
+      ],
+      "reason": "公表資料内の源泉・混合源泉プロフィールを区別するローカルID。現行の特定浴槽への供給同一性は別途未確定。",
+      "archived_metrics": {}
+    }
+  ],
+  "supply_entities": [
+    {
+      "id": "beppu:published-supply:hyotan-web-1994",
+      "name": "ひょうたん温泉源泉（Web概要）",
+      "identity_status": "C",
+      "evidence_ids": [
+        "be-s03"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "beppu:published-supply:beppu-takegawara:analysis-unresolved:takegawara-ordinary-male",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [
+        "be-s12"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "beppu-takegawara:current-supply:takegawara-ordinary-male",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "beppu:published-supply:beppu-takegawara:analysis-unresolved:takegawara-ordinary-female",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [
+        "be-s02"
+      ],
+      "reason": "この資料で記述される供給・混合プロフィール。現行の浴槽系統と同一とはしない。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "beppu-takegawara:current-supply:takegawara-ordinary-female",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "beppu-hyotan:current-supply:hyotan-female-wind",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    },
+    {
+      "id": "beppu-hyotan:current-supply:hyotan-male-hinoki",
+      "name": null,
+      "identity_status": "U",
+      "evidence_ids": [],
+      "reason": "対象浴槽/浴槽群で説明される供給区分のローカルID。固有源泉番号、配管、現在の試料対応が未確定の場合は、その未確定を維持する。",
+      "archived_metrics": {}
+    }
+  ]
+}

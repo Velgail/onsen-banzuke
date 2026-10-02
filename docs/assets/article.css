@@ -11,5 +11,8 @@
 .article-shell pre { max-width: 100%; overflow-x: auto; background: #eaece3; padding: 1.2rem; line-height: 1.65; }
 .article-shell code { font-size: .9em; overflow-wrap: anywhere; }
 .article-shell a { color: #153e35; text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
+.article-shell td, .article-shell th { overflow-wrap: anywhere; }
+.report-table-wrap { max-width: 100%; overflow-x: auto; }
+.report-table-wrap table { min-width: 640px; }
 .article-links { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
 @media (max-width: 650px) { .article-shell { padding: 0 1rem; margin-top: 2rem; } .article-shell table { font-size: .8rem; } .article-shell th, .article-shell td { padding: .5rem; } }
