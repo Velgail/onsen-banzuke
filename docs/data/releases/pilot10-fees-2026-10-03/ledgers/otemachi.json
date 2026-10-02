@@ -1,0 +1,5429 @@
+{
+  "region": {
+    "id": "otemachi",
+    "name": "大手町温泉",
+    "kana": "おおてまちおんせん",
+    "prefecture": "東京都",
+    "municipality": "千代田区",
+    "official_url": "https://spa-otemachi.jp/",
+    "scope_note": "大手町1丁目の大手町温泉利用施設集合。確認対象はSPA大手町と星のや東京。東京全域の施設を含めない。全営業利用施設の網羅性は未確定。"
+  },
+  "study": {
+    "reviewed_at": "2026-10-03",
+    "status": "partial",
+    "scope_note": "現行施設公式と権利元を照合した初回独立検証。源泉分析・特定加工・全施設網羅・活動網羅・口コミ・188アクセス条件は未完了。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。",
+    "uninvestigated": [
+      "源泉分析書の全文と採水日・浴槽供給対応",
+      "加水・加温・循環・ろ過・消毒・添加と時間割合の運用掲示",
+      "SPA個別浴槽の識別と必須レンタル費",
+      "温泉むすめの現地展示・販売・企画の現行全件台帳",
+      "直接体験レビューの所定抽出",
+      "47起点×平日土曜×公共交通車の188アクセス条件",
+      "指定日時の宿泊料金・予約成立"
+    ]
+  },
+  "sources": [
+    {
+      "id": "otemachi-spa-price",
+      "url": "https://spa-otemachi.jp/price",
+      "title": "料金・営業案内",
+      "publisher": "SPA大手町",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "ビジター・レンタル・営業案内",
+      "summary": "温泉のみ90分は平日1,100円、土日祝1,300円。税込。ビジター10～19時。16歳以上、所定日休館、タトゥー等の入館制限がある。タオルは440円レンタル。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-spa-facilities",
+      "url": "https://spa-otemachi.jp/facilities",
+      "title": "施設案内",
+      "publisher": "SPA大手町",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "スパゾーン／大手町温泉",
+      "summary": "大手町温泉をナトリウム―塩化物強塩温泉と紹介。男女別サウナの案内がある。分析数値や特定浴槽での加工をこのページから確定できない。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-spa-access",
+      "url": "https://spa-otemachi.jp/access",
+      "title": "アクセス",
+      "publisher": "SPA大手町",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "所在地",
+      "summary": "東京都千代田区大手町1-9-2グランキューブ地下1階。大手町駅から地下通路の接続が案内される。起点別の所要・費用は未調査。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-character",
+      "url": "https://onsen-musume.jp/character/otemachi_ririn",
+      "title": "大手町梨稟",
+      "publisher": "株式会社エンバウンド／温泉むすめプロジェクト",
+      "retrieved_at": "2026-10-03",
+      "publication_date": "2017-12-12",
+      "locator": "キャラクター名・紹介・公開日",
+      "summary": "公式キャラクターとして大手町梨稟を掲載。現在の現地パネル・販売・イベントの存在や件数まではこの紹介で確認できない。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-hoshinoya-onsen",
+      "url": "https://hoshinoresorts.com/ja/hotels/hoshinoyatokyo/sp/onsen/",
+      "title": "星のや東京 温泉・スパ",
+      "publisher": "星野リゾート",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "地下1,500mから湧く天然温泉／最上階の露天風呂",
+      "summary": "大手町温泉を使用する最上階の内風呂と、それに続く露天風呂を案内する。分析試料の数値・特定の加工方法は掲載されない。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-hoshinoya-home",
+      "url": "https://hoshinoresorts.com/ja/hotels/hoshinoyatokyo/",
+      "title": "星のや東京 基本情報",
+      "publisher": "星野リゾート",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "アクセス・基本情報",
+      "summary": "大手町1-9-1。84室、全客室・共用エリア無料Wi-Fi、ペット不可、全館禁煙等を案内する。広告の最低宿泊額を指定日見積へ流用しない。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-hoshinoya-faq",
+      "url": "https://hoshinoresorts.com/ja/sp/faq/hotelinfo/",
+      "title": "ホテルについて 温泉・大浴場・プール",
+      "publisher": "星野リゾート",
+      "retrieved_at": "2026-10-03",
+      "publication_date": null,
+      "locator": "日帰り利用できますか",
+      "summary": "星のや・界・リゾナーレの温泉・大浴場は宿泊者専用と明示する。ホテル一覧の案内に基づき星のや東京を対象とする。",
+      "source_type": "operator_official"
+    },
+    {
+      "id": "otemachi-spa-old-price",
+      "url": "https://spa-otemachi.jp/topics/7182",
+      "title": "ビジター料金及びレンタル品 一部改訂のお知らせ",
+      "publisher": "SPA大手町",
+      "retrieved_at": "2026-10-03",
+      "publication_date": "2022-10-23",
+      "locator": "2022年11月1日改定内容",
+      "summary": "2022年の土日祝1,250円告知を現在の料金表1,300円と区別。旧価格を現行料金に採用しない。",
+      "source_type": "operator_official"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "otemachi-spa",
+      "name": "SPA大手町",
+      "url": "https://spa-otemachi.jp/",
+      "source_ids": [
+        "otemachi-spa-price",
+        "otemachi-spa-facilities",
+        "otemachi-spa-access"
+      ]
+    },
+    {
+      "id": "otemachi-hoshinoya",
+      "name": "星のや東京",
+      "url": "https://hoshinoresorts.com/ja/hotels/hoshinoyatokyo/",
+      "source_ids": [
+        "otemachi-hoshinoya-onsen",
+        "otemachi-hoshinoya-home",
+        "otemachi-hoshinoya-faq"
+      ]
+    }
+  ],
+  "region_metrics": {
+    "I01": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "有無",
+      "evidence_ids": [
+        "otemachi-spa-access",
+        "otemachi-hoshinoya-onsen"
+      ],
+      "reason": "実在住所と大手町温泉利用を施設公式で確認。対象成立。",
+      "condition": "",
+      "lower": 100,
+      "upper": 100,
+      "formula": "B",
+      "metricKey": "I01",
+      "catalog_scope": "地域",
+      "entity_id": "otemachi",
+      "entity_scope": "region",
+      "applies_to_plan": true
+    },
+    "M01[project_id=onsen_musume]": {
+      "status": "K",
+      "rawLower": 1,
+      "rawUpper": 1,
+      "unit": "有無",
+      "evidence_ids": [
+        "otemachi-character"
+      ],
+      "reason": "権利元の公式キャラクターとの地域対応。現地活動の現行性は別。",
+      "condition": "",
+      "lower": 100,
+      "upper": 100,
+      "formula": "B",
+      "metricKey": "M01[project_id=onsen_musume]",
+      "catalog_scope": "地域",
+      "entity_id": "otemachi",
+      "entity_scope": "region",
+      "applies_to_plan": true
+    }
+  },
+  "plans": [
+    {
+      "id": "otemachi-spa-weekday",
+      "regionId": "otemachi",
+      "facility_id": "otemachi-spa",
+      "bath_id": null,
+      "entity_scope": "facility_scope",
+      "day_type": "weekday",
+      "label": "SPA大手町 温泉入浴のみ（平日）",
+      "modality": "daytrip",
+      "condition_label": "大人1人・90分以内・16歳以上／ビジター10:00～19:00退館・休館日を除く。個別浴槽の識別は未完了。",
+      "metrics": {
+        "I01": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-access",
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "実在住所と大手町温泉利用を施設公式で確認。対象成立。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "I01",
+          "catalog_scope": "地域",
+          "entity_id": "otemachi",
+          "entity_scope": "region",
+          "applies_to_plan": true
+        },
+        "M01[project_id=onsen_musume]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-character"
+          ],
+          "reason": "権利元の公式キャラクターとの地域対応。現地活動の現行性は別。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "M01[project_id=onsen_musume]",
+          "catalog_scope": "地域",
+          "entity_id": "otemachi",
+          "entity_scope": "region",
+          "applies_to_plan": true
+        },
+        "Y01": {
+          "status": "C",
+          "rawLower": 1100,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "公表基本料金を費用下限に保存。自前タオル持参可・必須レンタル等を公開資料で確定できず、通常入浴の必須総額上限は未確定。料金が無料という意味ではない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 45.0,
+          "formula": "D(0,2000)",
+          "metricKey": "Y01",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekday",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 9,
+          "rawUpper": 9,
+          "unit": "時間",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "会員の平日7～22時と区別し、一般ビジター10～19時の公開窓を採用。1回滞在90分上限とは別。",
+          "condition": "休館日を除く",
+          "lower": 56.25,
+          "upper": 56.25,
+          "formula": "U(0,16)",
+          "metricKey": "Y07",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekday",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        "Y11": {
+          "status": "C",
+          "rawLower": 90,
+          "rawUpper": 90,
+          "unit": "分",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "温泉のみ券の入館から退館までの90分上限。入浴だけの実使用時間を保証しない。",
+          "condition": "ロッカー・着替え等を含む利用枠",
+          "lower": 37.5,
+          "upper": 37.5,
+          "formula": "U(0,240)",
+          "metricKey": "Y11",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekday",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "条件付き一般ビジター向け温泉入浴券が掲載。",
+          "condition": "16歳以上、入館規則、営業時間、休館日を満たす場合",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Y17",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        "B06": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "有無",
+          "evidence_ids": [],
+          "reason": "個別浴槽の露天/内湯の掲示・図面対応を未調査。温泉街全体に露天がないとは判定しない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "B06",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility_scope",
+          "applies_to_plan": true
+        },
+        "P17": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [],
+          "reason": "特定浴槽の五条件運用資料は未取得。施設ページの天然温泉表記から無加工率を作らない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 100,
+          "formula": "INTERSECTION",
+          "metricKey": "P17",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility_scope",
+          "applies_to_plan": true
+        }
+      },
+      "evidence_note": "出典付きの初回独立検証。未調査はE。掲載候補内の暫定比較で、全浴槽の網羅や指定日の予約成立を表さない。"
+    },
+    {
+      "id": "otemachi-spa-weekend",
+      "regionId": "otemachi",
+      "facility_id": "otemachi-spa",
+      "bath_id": null,
+      "entity_scope": "facility_scope",
+      "day_type": "weekend",
+      "label": "SPA大手町 温泉入浴のみ（土日祝）",
+      "modality": "daytrip",
+      "condition_label": "大人1人・90分以内・16歳以上／ビジター10:00～19:00退館・休館日を除く。個別浴槽の識別は未完了。",
+      "metrics": {
+        "I01": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-access",
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "実在住所と大手町温泉利用を施設公式で確認。対象成立。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "I01",
+          "catalog_scope": "地域",
+          "entity_id": "otemachi",
+          "entity_scope": "region",
+          "applies_to_plan": true
+        },
+        "M01[project_id=onsen_musume]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-character"
+          ],
+          "reason": "権利元の公式キャラクターとの地域対応。現地活動の現行性は別。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "M01[project_id=onsen_musume]",
+          "catalog_scope": "地域",
+          "entity_id": "otemachi",
+          "entity_scope": "region",
+          "applies_to_plan": true
+        },
+        "Y01": {
+          "status": "C",
+          "rawLower": 1300,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "公表基本料金を費用下限に保存。自前タオル持参可・必須レンタル等を公開資料で確定できず、通常入浴の必須総額上限は未確定。料金が無料という意味ではない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 35.0,
+          "formula": "D(0,2000)",
+          "metricKey": "Y01",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekend",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        "Y07": {
+          "status": "C",
+          "rawLower": 9,
+          "rawUpper": 9,
+          "unit": "時間",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "会員の平日7～22時と区別し、一般ビジター10～19時の公開窓を採用。1回滞在90分上限とは別。",
+          "condition": "休館日を除く",
+          "lower": 56.25,
+          "upper": 56.25,
+          "formula": "U(0,16)",
+          "metricKey": "Y07",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekend",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        "Y11": {
+          "status": "C",
+          "rawLower": 90,
+          "rawUpper": 90,
+          "unit": "分",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "温泉のみ券の入館から退館までの90分上限。入浴だけの実使用時間を保証しない。",
+          "condition": "ロッカー・着替え等を含む利用枠",
+          "lower": 37.5,
+          "upper": 37.5,
+          "formula": "U(0,240)",
+          "metricKey": "Y11",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekend",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        "Y17": {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "条件付き一般ビジター向け温泉入浴券が掲載。",
+          "condition": "16歳以上、入館規則、営業時間、休館日を満たす場合",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Y17",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        "B06": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "有無",
+          "evidence_ids": [],
+          "reason": "個別浴槽の露天/内湯の掲示・図面対応を未調査。温泉街全体に露天がないとは判定しない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "B06",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility_scope",
+          "applies_to_plan": true
+        },
+        "P17": {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [],
+          "reason": "特定浴槽の五条件運用資料は未取得。施設ページの天然温泉表記から無加工率を作らない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 100,
+          "formula": "INTERSECTION",
+          "metricKey": "P17",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility_scope",
+          "applies_to_plan": true
+        }
+      },
+      "evidence_note": "出典付きの初回独立検証。未調査はE。掲載候補内の暫定比較で、全浴槽の網羅や指定日の予約成立を表さない。"
+    },
+    {
+      "id": "otemachi-hoshinoya-indoor-stay",
+      "regionId": "otemachi",
+      "facility_id": "otemachi-hoshinoya",
+      "bath_id": "otemachi-hoshinoya:otemachi-hoshinoya-indoor",
+      "entity_scope": "bath_group",
+      "day_type": "all",
+      "label": "星のや東京 最上階内風呂（宿泊者）",
+      "modality": "stay",
+      "condition_label": "星のや東京の宿泊者専用。日時・人数・客室・食事未指定、宿泊見積・空室は未取得。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "I01": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-access",
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "実在住所と大手町温泉利用を施設公式で確認。対象成立。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "I01",
+          "catalog_scope": "地域",
+          "entity_id": "otemachi",
+          "entity_scope": "region",
+          "applies_to_plan": true
+        },
+        "M01[project_id=onsen_musume]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-character"
+          ],
+          "reason": "権利元の公式キャラクターとの地域対応。現地活動の現行性は別。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "M01[project_id=onsen_musume]",
+          "catalog_scope": "地域",
+          "entity_id": "otemachi",
+          "entity_scope": "region",
+          "applies_to_plan": true
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "公式に内風呂と、それに続く露天風呂を別に案内。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common",
+          "lower": 0,
+          "upper": 0,
+          "formula": "B",
+          "metricKey": "B06",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-hoshinoya:otemachi-hoshinoya-indoor",
+          "entity_scope": "bath_group",
+          "applies_to_plan": true
+        },
+        "Y01": {
+          "status": "A",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "日帰り入浴を提供しない浴槽。生値0円ではなく適用外。",
+          "condition": "",
+          "lower": 0,
+          "upper": 0,
+          "formula": "D(0,2000)",
+          "metricKey": "Y01",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-hoshinoya-indoor-stay",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        "Y17": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "星のやの大浴場は宿泊者専用と明示。",
+          "condition": "",
+          "lower": 0,
+          "upper": 0,
+          "formula": "B",
+          "metricKey": "Y17",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        "Z01[equipment=wifi]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "共用エリアと客室で提供。浴室内の通信品質や会議可否は未確認。",
+          "condition": "客室・共用エリアに限定",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Z01[equipment=wifi]",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        "Z18[place=bath]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "公式基本情報で全館禁煙を確認。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Z18[place=bath]",
+          "catalog_scope": "施設・宿泊プラン",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        }
+      },
+      "original_bath_id": "otemachi-hoshinoya-indoor",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E",
+      "evidence_note": "出典付きの初回独立検証。未調査はE。掲載候補内の暫定比較で、全浴槽の網羅や指定日の予約成立を表さない。"
+    },
+    {
+      "id": "otemachi-hoshinoya-outdoor-stay",
+      "regionId": "otemachi",
+      "facility_id": "otemachi-hoshinoya",
+      "bath_id": "otemachi-hoshinoya:otemachi-hoshinoya-outdoor",
+      "entity_scope": "bath_group",
+      "day_type": "all",
+      "label": "星のや東京 最上階露天風呂（宿泊者）",
+      "modality": "stay",
+      "condition_label": "星のや東京の宿泊者専用。日時・人数・客室・食事未指定、宿泊見積・空室は未取得。／浴槽群（単槽未特定、別槽の項目別最高点を合成しない）。",
+      "metrics": {
+        "I01": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-access",
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "実在住所と大手町温泉利用を施設公式で確認。対象成立。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "I01",
+          "catalog_scope": "地域",
+          "entity_id": "otemachi",
+          "entity_scope": "region",
+          "applies_to_plan": true
+        },
+        "M01[project_id=onsen_musume]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-character"
+          ],
+          "reason": "権利元の公式キャラクターとの地域対応。現地活動の現行性は別。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "M01[project_id=onsen_musume]",
+          "catalog_scope": "地域",
+          "entity_id": "otemachi",
+          "entity_scope": "region",
+          "applies_to_plan": true
+        },
+        "B06": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "公式に内風呂と、それに続く露天風呂を別に案内。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "B06",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-hoshinoya:otemachi-hoshinoya-outdoor",
+          "entity_scope": "bath_group",
+          "applies_to_plan": true
+        },
+        "Y01": {
+          "status": "A",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "日帰り入浴を提供しない浴槽。生値0円ではなく適用外。",
+          "condition": "",
+          "lower": 0,
+          "upper": 0,
+          "formula": "D(0,2000)",
+          "metricKey": "Y01",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-hoshinoya-outdoor-stay",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        "Y17": {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "星のやの大浴場は宿泊者専用と明示。",
+          "condition": "",
+          "lower": 0,
+          "upper": 0,
+          "formula": "B",
+          "metricKey": "Y17",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        "Z01[equipment=wifi]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "共用エリアと客室で提供。浴室内の通信品質や会議可否は未確認。",
+          "condition": "客室・共用エリアに限定",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Z01[equipment=wifi]",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        "Z18[place=bath]": {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "公式基本情報で全館禁煙を確認。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Z18[place=bath]",
+          "catalog_scope": "施設・宿泊プラン",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        }
+      },
+      "original_bath_id": "otemachi-hoshinoya-outdoor",
+      "group_policy": "common_observations_only",
+      "group_note": "男女別の同名槽・浴場区分・複合浴槽を対象とする群。個別1槽の同定と全構成槽の網羅は未完了。属性ごとの別槽の最高点を合成せず、群に共通すると根拠づけられた行のみを使用する。",
+      "member_selection_status": "E",
+      "evidence_note": "出典付きの初回独立検証。未調査はE。掲載候補内の暫定比較で、全浴槽の網羅や指定日の予約成立を表さない。"
+    }
+  ],
+  "analysis_samples": [],
+  "findings": [
+    "現行SPA土日祝料金は1,300円。旧2022告知の1,250円と混同しない。",
+    "SPA一般外来客と星のや東京の宿泊者専用浴槽を別系列にする。",
+    "星のや東京の露天をSPAの1,100円日帰りプランへ結合しない。",
+    "大手町梨稟の公式対応と現地展示・企画の件数を分離する。",
+    "施設の塩化物泉という紹介を未確認の分析数値・臭い強度へ変換しない。"
+  ],
+  "issues": [
+    "部分調査。246基本項目の未調査を未開示や不存在へ変更しない。",
+    "訪問日未指定。掲載利用窓は予約や当日の営業を保証しない。"
+  ],
+  "excluded_facilities": [
+    {
+      "name": "星のや東京（日帰り）",
+      "reason": "公式共通FAQで温泉・大浴場は宿泊者専用。宿泊浴槽台帳は保持。",
+      "source_ids": [
+        "otemachi-hoshinoya-faq"
+      ]
+    }
+  ],
+  "search_log": [
+    {
+      "query": "site.spa-otemachi.jp 料金 施設案内 アクセス",
+      "outcome": "現行本文を確認",
+      "source_ids": [
+        "otemachi-spa-price",
+        "otemachi-spa-facilities",
+        "otemachi-spa-access"
+      ]
+    },
+    {
+      "query": "SPA大手町 温泉分析書 加水 加温 循環 消毒",
+      "outcome": "検索と温泉ページを確認。FAQ/掲示PDF等の必須探索は未完了なので加工・定量成分はE。",
+      "source_ids": [
+        "otemachi-spa-facilities"
+      ]
+    },
+    {
+      "query": "星のや東京 温泉 日帰り 宿泊 FAQ",
+      "outcome": "当該公式施設と運営公式FAQを開き対応確認",
+      "source_ids": [
+        "otemachi-hoshinoya-onsen",
+        "otemachi-hoshinoya-faq"
+      ]
+    },
+    {
+      "query": "site.onsen-musume.jp 大手町梨稟 グッズ パネル",
+      "outcome": "公式キャラクターを確認。全現地活動探索は未完了のため件数はE。",
+      "source_ids": [
+        "otemachi-character"
+      ]
+    }
+  ],
+  "source_entities": [],
+  "supply_entities": [],
+  "metric_inventory": [
+    {
+      "metric_id": "I01",
+      "name": "温泉地の実在・範囲の公開",
+      "scope": "地域",
+      "investigation_state": "partial_observations",
+      "views": [
+        "I01"
+      ],
+      "observations": [
+        {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-access",
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "実在住所と大手町温泉利用を施設公式で確認。対象成立。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "I01",
+          "catalog_scope": "地域",
+          "entity_id": "otemachi",
+          "entity_scope": "region",
+          "applies_to_plan": true
+        }
+      ],
+      "reason": "記載の実体・パラメータ・条件の行のみ調査。全件・全条件の完了とは異なる。"
+    },
+    {
+      "metric_id": "I02",
+      "name": "構成施設一覧の公開",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I03",
+      "name": "源泉の識別情報の公開",
+      "scope": "源泉",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I04",
+      "name": "分析書全文の公開",
+      "scope": "源泉",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I05",
+      "name": "採水年月日の公開",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I06",
+      "name": "分析機関・発行情報の公開",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I07",
+      "name": "源泉から浴槽への対応公開",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I08",
+      "name": "測定場所・条件の公開",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I09",
+      "name": "加水情報の公開",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I10",
+      "name": "加温情報の公開",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I11",
+      "name": "冷却方法の公開",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I12",
+      "name": "循環・再利用情報の公開",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I13",
+      "name": "ろ過情報の公開",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I14",
+      "name": "消毒情報の公開",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I15",
+      "name": "添加物情報の公開",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I16",
+      "name": "清掃・換水情報の公開",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I17",
+      "name": "量的運用情報の公開",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I18",
+      "name": "分析試料の新しさ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I19",
+      "name": "利用方法情報の更新確認",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I20",
+      "name": "変更・訂正履歴の公開",
+      "scope": "施設",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I21",
+      "name": "加工条件の開示率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I22",
+      "name": "予約・取消条件の公開",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I23",
+      "name": "活動成果情報の公開",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "I24",
+      "name": "活動情報の更新の新しさ",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C01",
+      "name": "酸性の強さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C02",
+      "name": "アルカリ性の強さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C04",
+      "name": "溶存物質の濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C05",
+      "name": "電気伝導率",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C06",
+      "name": "源泉温度の高さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C08",
+      "name": "現地分析の天然油分随伴",
+      "scope": "源泉",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C09",
+      "name": "植物由来有機質の確認",
+      "scope": "源泉",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C10",
+      "name": "自然由来の泥成分の確認",
+      "scope": "源泉",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C11",
+      "name": "ナトリウムイオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C12",
+      "name": "カルシウムイオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C13",
+      "name": "マグネシウムイオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C14",
+      "name": "塩化物イオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C15",
+      "name": "硫酸イオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C16",
+      "name": "炭酸水素イオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C17",
+      "name": "炭酸イオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C18",
+      "name": "総硫黄の濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C19",
+      "name": "遊離硫化水素の濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C20",
+      "name": "遊離二酸化炭素の濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C21",
+      "name": "総鉄イオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C22",
+      "name": "よう化物イオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C23",
+      "name": "臭化物イオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C24",
+      "name": "メタけい酸の濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C25",
+      "name": "メタほう酸の濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C26",
+      "name": "リチウムイオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C27",
+      "name": "ストロンチウムイオンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C28",
+      "name": "ラドンの濃さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C42",
+      "name": "酸化還元電位の低さ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C43",
+      "name": "溶存酸素の少なさ",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C44",
+      "name": "療養泉分類タグへの該当",
+      "scope": "供給系統",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "C45",
+      "name": "浸透圧分類への該当",
+      "scope": "分析試料",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O01",
+      "name": "自然露頭からの湧出",
+      "scope": "供給系統",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O02",
+      "name": "掘削孔からの自噴",
+      "scope": "供給系統",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O03",
+      "name": "ポンプを使わない取水",
+      "scope": "供給系統",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O04",
+      "name": "浴槽底・直近湧出口での入浴",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O05",
+      "name": "施設敷地内の源泉",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O06",
+      "name": "非運搬供給",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O07",
+      "name": "単一源泉による供給",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O08",
+      "name": "天然湧出液体の直接利用",
+      "scope": "供給系統",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O09",
+      "name": "天然蒸気等による造成",
+      "scope": "供給系統",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O10",
+      "name": "採取深度の大きさ",
+      "scope": "源泉",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "O11",
+      "name": "自家管理源泉の利用",
+      "scope": "施設・供給系統",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P01",
+      "name": "無加水時間率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P02",
+      "name": "源泉水体積率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P03",
+      "name": "無加温時間率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P04",
+      "name": "人為冷却なし時間率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P05",
+      "name": "自然放冷による調温",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P06",
+      "name": "非循環時間率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P07",
+      "name": "排出湯の非再利用",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P08",
+      "name": "無ろ過時間率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P13",
+      "name": "入浴剤・香料・着色料不使用",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P14",
+      "name": "人工炭酸・人工気泡不使用",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P15",
+      "name": "天然油分の除去なし",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P16",
+      "name": "天然沈殿・湯花の除去なし",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P17",
+      "name": "五条件同時無加工時間率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [
+        "P17"
+      ],
+      "observations": [
+        {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [],
+          "reason": "特定浴槽の五条件運用資料は未取得。施設ページの天然温泉表記から無加工率を作らない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 100,
+          "formula": "INTERSECTION",
+          "metricKey": "P17",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility_scope",
+          "applies_to_plan": true
+        },
+        {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "割合",
+          "evidence_ids": [],
+          "reason": "特定浴槽の五条件運用資料は未取得。施設ページの天然温泉表記から無加工率を作らない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 100,
+          "formula": "INTERSECTION",
+          "metricKey": "P17",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility_scope",
+          "applies_to_plan": true
+        }
+      ],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P19",
+      "name": "湯口の注湯方式",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P20",
+      "name": "機械的な浴槽内攪拌なし時間率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P21",
+      "name": "営業中の方式別消毒なし時間率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "P22",
+      "name": "供給工程の意図的な曝気・脱気なし時間率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "F01",
+      "name": "貯湯を介さない供給",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "F02",
+      "name": "源泉から浴槽までの到達の速さ",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "F03",
+      "name": "源泉からの送湯距離の短さ",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "F04",
+      "name": "容量当たり新湯投入量",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "F05",
+      "name": "浴槽／供給直前の成分濃度比",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "F06",
+      "name": "源泉の湧出・揚湯量",
+      "scope": "源泉",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "F07",
+      "name": "全量換水の頻度",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "F08",
+      "name": "新湯投入の継続時間率",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S01",
+      "name": "湯色の種類",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S02",
+      "name": "着色の強さ",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S03",
+      "name": "濁りの強さ",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S04",
+      "name": "透明性",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S05",
+      "name": "臭いの種類",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S06",
+      "name": "臭いの強さ",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S07",
+      "name": "ぬめりの強さ",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S08",
+      "name": "さらさら感",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S09",
+      "name": "きしみ感",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S10",
+      "name": "油膜・油性感",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S11",
+      "name": "自然の泡付き",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S12",
+      "name": "浮遊湯花",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S13",
+      "name": "析出・付着物",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S15",
+      "name": "刺激感",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S16",
+      "name": "浮遊感",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S17",
+      "name": "経時・季節の外観変化",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "S18",
+      "name": "味覚特性の記録",
+      "scope": "分析試料・許可された飲泉設備",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B01",
+      "name": "浴槽温度の高さ",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B03",
+      "name": "温度帯の選択肢",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B04",
+      "name": "利用者による温度調節",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B05",
+      "name": "観測した浴槽温度の変動幅",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B06",
+      "name": "露天風呂",
+      "scope": "浴槽条件",
+      "investigation_state": "partial_observations",
+      "views": [
+        "B06"
+      ],
+      "observations": [
+        {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "有無",
+          "evidence_ids": [],
+          "reason": "個別浴槽の露天/内湯の掲示・図面対応を未調査。温泉街全体に露天がないとは判定しない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "B06",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility_scope",
+          "applies_to_plan": true
+        },
+        {
+          "status": "E",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "有無",
+          "evidence_ids": [],
+          "reason": "個別浴槽の露天/内湯の掲示・図面対応を未調査。温泉街全体に露天がないとは判定しない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "B06",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility_scope",
+          "applies_to_plan": true
+        },
+        {
+          "status": "K",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "公式に内風呂と、それに続く露天風呂を別に案内。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common",
+          "lower": 0,
+          "upper": 0,
+          "formula": "B",
+          "metricKey": "B06",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-hoshinoya:otemachi-hoshinoya-indoor",
+          "entity_scope": "bath_group",
+          "applies_to_plan": true
+        },
+        {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-onsen"
+          ],
+          "reason": "公式に内風呂と、それに続く露天風呂を別に案内。 浴槽群に共通する公式説明の範囲のみを扱い、男女片側の測定値や別槽の特性を兼用しない。",
+          "condition": "",
+          "group_applicability": "common",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "B06",
+          "catalog_scope": "浴槽条件",
+          "entity_id": "otemachi-hoshinoya:otemachi-hoshinoya-outdoor",
+          "entity_scope": "bath_group",
+          "applies_to_plan": true
+        }
+      ],
+      "reason": "記載の実体・パラメータ・条件の行のみ調査。全件・全条件の完了とは異なる。"
+    },
+    {
+      "metric_id": "B07",
+      "name": "貸切風呂",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B08",
+      "name": "客室付き温泉浴槽",
+      "scope": "客室条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B09",
+      "name": "入浴形態の属性",
+      "scope": "体験条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B10",
+      "name": "足湯・手湯",
+      "scope": "体験条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B11",
+      "name": "飲泉設備",
+      "scope": "体験条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B12",
+      "name": "混浴の選択肢",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B13",
+      "name": "水着浴の選択肢",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B14",
+      "name": "季節限定・時間限定の湯",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B15",
+      "name": "入浴時の水深",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "B16",
+      "name": "浴槽の接触面の材質",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V01",
+      "name": "一般利用できる温泉入浴施設数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V02",
+      "name": "日帰り利用施設数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V03",
+      "name": "共同浴場の数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V04",
+      "name": "利用可能な供給源泉数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V05",
+      "name": "泉質分類タグの多様性",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V06",
+      "name": "供給泉質組合せの多様性",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V07",
+      "name": "浴槽での湯色の多様性",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V08",
+      "name": "液性の多様性",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V09",
+      "name": "入浴温度帯の多様性",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V10",
+      "name": "入浴形態の次元別多様性",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V11",
+      "name": "体験プロファイルの種類数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V12",
+      "name": "同一施設内での湯の選び分け",
+      "scope": "施設",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V13",
+      "name": "好みに合う湯のある施設数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "V14",
+      "name": "好みに合う湯のある施設割合",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "R01",
+      "name": "泉質組合せの希少性",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "R02",
+      "name": "入浴体験組合せの希少性",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "R03",
+      "name": "特徴の代替地までの距離",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H01",
+      "name": "湯巡りの歩行コンパクトさ",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H02",
+      "name": "源泉・噴気の公開見学",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H03",
+      "name": "温泉熱調理の体験",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H04",
+      "name": "温泉に由来する飲食の選択肢",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H05",
+      "name": "温泉資料館・公開展示",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H06",
+      "name": "史料で確認できる温泉利用の長さ",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H07",
+      "name": "開湯伝承・物語の公開",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H08",
+      "name": "現役の歴史的浴場・建築",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H09",
+      "name": "伝統入浴文化の継続",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H10",
+      "name": "自炊滞在の選択肢",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H11",
+      "name": "長期滞在の選択肢",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H12",
+      "name": "温泉街の外食の幅",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H13",
+      "name": "夜の街での選択肢",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H14",
+      "name": "徒歩で利用できる自然散策",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H15",
+      "name": "街の環境タイプ",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H16",
+      "name": "浴槽からの眺望タイプ",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H17",
+      "name": "混雑の少なさ",
+      "scope": "施設・時間帯",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H18",
+      "name": "静けさ",
+      "scope": "施設・時間帯",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H19",
+      "name": "湯治相談・交流拠点",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "H20",
+      "name": "地域の入込・利用規模",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A01",
+      "name": "実施済み企画数",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A02",
+      "name": "活動の継続月数",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A03",
+      "name": "参加事業者数",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A04",
+      "name": "地域への参加浸透率",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A05",
+      "name": "現在利用できる周遊企画",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A06",
+      "name": "現在利用できる共通利用券",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A07",
+      "name": "地域共通の案内地図",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A08",
+      "name": "現地限定商品・体験",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A09",
+      "name": "参加型の体験プログラム",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A10",
+      "name": "地域をまたぐ共同企画",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A11",
+      "name": "直近5年間の実施確認年数",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A12",
+      "name": "住民・利用者が参加できる運営",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A13",
+      "name": "空き施設の再活用実績",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "A15",
+      "name": "企画期間の利用増減",
+      "scope": "地域・活動タグ",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "M01",
+      "name": "地域IP・作品と対象地の公式な対応",
+      "scope": "地域",
+      "investigation_state": "partial_observations",
+      "views": [
+        "M01[project_id=onsen_musume]"
+      ],
+      "observations": [
+        {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-character"
+          ],
+          "reason": "権利元の公式キャラクターとの地域対応。現地活動の現行性は別。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "M01[project_id=onsen_musume]",
+          "catalog_scope": "地域",
+          "entity_id": "otemachi",
+          "entity_scope": "region",
+          "applies_to_plan": true
+        }
+      ],
+      "reason": "記載の実体・パラメータ・条件の行のみ調査。全件・全条件の完了とは異なる。"
+    },
+    {
+      "metric_id": "M02",
+      "name": "現地の公開展示地点数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "M03",
+      "name": "地域固有デザインの種類数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "M04",
+      "name": "追加購入なしで見られる展示割合",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "M05",
+      "name": "現地限定の音声・デジタル体験",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "M07",
+      "name": "現地商品を購入できる拠点数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "M08",
+      "name": "現地への参加・支援手段",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X01",
+      "name": "片道の速さ",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X02",
+      "name": "片道交通費の安さ",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X03",
+      "name": "乗換の少なさ",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X04",
+      "name": "経路中の徒歩の短さ",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X05",
+      "name": "到着側アクセスの便数",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X06",
+      "name": "帰りの選択肢",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X07",
+      "name": "日帰り滞在可能時間",
+      "scope": "往復経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X08",
+      "name": "公共交通だけでの到達",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X09",
+      "name": "一般客向け送迎",
+      "scope": "施設条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X11",
+      "name": "車の道路料金の安さ",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X12",
+      "name": "到着後の駐車しやすさ",
+      "scope": "施設条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X13",
+      "name": "冬季の到達可能日率",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X14",
+      "name": "経路の階段回避",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X15",
+      "name": "駐車費用の安さ",
+      "scope": "訪問プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "X16",
+      "name": "連続徒歩区間の短さ",
+      "scope": "経路条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y01",
+      "name": "日帰り入浴の安さ",
+      "scope": "利用プラン",
+      "investigation_state": "partial_observations",
+      "views": [
+        "Y01"
+      ],
+      "observations": [
+        {
+          "status": "C",
+          "rawLower": 1100,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "公表基本料金を費用下限に保存。自前タオル持参可・必須レンタル等を公開資料で確定できず、通常入浴の必須総額上限は未確定。料金が無料という意味ではない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 45.0,
+          "formula": "D(0,2000)",
+          "metricKey": "Y01",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekday",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        {
+          "status": "C",
+          "rawLower": 1300,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "公表基本料金を費用下限に保存。自前タオル持参可・必須レンタル等を公開資料で確定できず、通常入浴の必須総額上限は未確定。料金が無料という意味ではない。",
+          "condition": "",
+          "lower": 0,
+          "upper": 35.0,
+          "formula": "D(0,2000)",
+          "metricKey": "Y01",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekend",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        {
+          "status": "A",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "日帰り入浴を提供しない浴槽。生値0円ではなく適用外。",
+          "condition": "",
+          "lower": 0,
+          "upper": 0,
+          "formula": "D(0,2000)",
+          "metricKey": "Y01",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-hoshinoya-indoor-stay",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        {
+          "status": "A",
+          "rawLower": null,
+          "rawUpper": null,
+          "unit": "円",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "日帰り入浴を提供しない浴槽。生値0円ではなく適用外。",
+          "condition": "",
+          "lower": 0,
+          "upper": 0,
+          "formula": "D(0,2000)",
+          "metricKey": "Y01",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-hoshinoya-outdoor-stay",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        }
+      ],
+      "reason": "記載の実体・パラメータ・条件の行のみ調査。全件・全条件の完了とは異なる。"
+    },
+    {
+      "metric_id": "Y02",
+      "name": "貸切利用の安さ",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y03",
+      "name": "素泊まり1人利用の安さ",
+      "scope": "宿泊プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y04",
+      "name": "2名宿泊の安さ",
+      "scope": "宿泊プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y05",
+      "name": "宿泊価格帯の幅",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y06",
+      "name": "予約不要の日帰り入浴",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y07",
+      "name": "日帰り営業時間の長さ",
+      "scope": "利用プラン",
+      "investigation_state": "partial_observations",
+      "views": [
+        "Y07"
+      ],
+      "observations": [
+        {
+          "status": "C",
+          "rawLower": 9,
+          "rawUpper": 9,
+          "unit": "時間",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "会員の平日7～22時と区別し、一般ビジター10～19時の公開窓を採用。1回滞在90分上限とは別。",
+          "condition": "休館日を除く",
+          "lower": 56.25,
+          "upper": 56.25,
+          "formula": "U(0,16)",
+          "metricKey": "Y07",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekday",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        {
+          "status": "C",
+          "rawLower": 9,
+          "rawUpper": 9,
+          "unit": "時間",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "会員の平日7～22時と区別し、一般ビジター10～19時の公開窓を採用。1回滞在90分上限とは別。",
+          "condition": "休館日を除く",
+          "lower": 56.25,
+          "upper": 56.25,
+          "formula": "U(0,16)",
+          "metricKey": "Y07",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekend",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        }
+      ],
+      "reason": "記載の実体・パラメータ・条件の行のみ調査。全件・全条件の完了とは異なる。"
+    },
+    {
+      "metric_id": "Y08",
+      "name": "最終入浴受付の遅さ",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y09",
+      "name": "早朝入浴",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y10",
+      "name": "年間営業日率",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y11",
+      "name": "入浴可能時間の余裕",
+      "scope": "利用プラン",
+      "investigation_state": "partial_observations",
+      "views": [
+        "Y11"
+      ],
+      "observations": [
+        {
+          "status": "C",
+          "rawLower": 90,
+          "rawUpper": 90,
+          "unit": "分",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "温泉のみ券の入館から退館までの90分上限。入浴だけの実使用時間を保証しない。",
+          "condition": "ロッカー・着替え等を含む利用枠",
+          "lower": 37.5,
+          "upper": 37.5,
+          "formula": "U(0,240)",
+          "metricKey": "Y11",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekday",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        },
+        {
+          "status": "C",
+          "rawLower": 90,
+          "rawUpper": 90,
+          "unit": "分",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "温泉のみ券の入館から退館までの90分上限。入浴だけの実使用時間を保証しない。",
+          "condition": "ロッカー・着替え等を含む利用枠",
+          "lower": 37.5,
+          "upper": 37.5,
+          "formula": "U(0,240)",
+          "metricKey": "Y11",
+          "catalog_scope": "利用プラン",
+          "entity_id": "otemachi-spa-weekend",
+          "entity_scope": "plan",
+          "applies_to_plan": true
+        }
+      ],
+      "reason": "記載の実体・パラメータ・条件の行のみ調査。全件・全条件の完了とは異なる。"
+    },
+    {
+      "metric_id": "Y12",
+      "name": "一人で泊まれる施設数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y13",
+      "name": "食事なし滞在の選択肢",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y14",
+      "name": "連泊割引の公開",
+      "scope": "宿泊プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y15",
+      "name": "入浴料金体系の明瞭さ",
+      "scope": "施設",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y16",
+      "name": "支払いの選択肢",
+      "scope": "施設",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y17",
+      "name": "一般外来客の利用",
+      "scope": "施設条件",
+      "investigation_state": "partial_observations",
+      "views": [
+        "Y17"
+      ],
+      "observations": [
+        {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "条件付き一般ビジター向け温泉入浴券が掲載。",
+          "condition": "16歳以上、入館規則、営業時間、休館日を満たす場合",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Y17",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        {
+          "status": "C",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-spa-price"
+          ],
+          "reason": "条件付き一般ビジター向け温泉入浴券が掲載。",
+          "condition": "16歳以上、入館規則、営業時間、休館日を満たす場合",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Y17",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-spa",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "星のやの大浴場は宿泊者専用と明示。",
+          "condition": "",
+          "lower": 0,
+          "upper": 0,
+          "formula": "B",
+          "metricKey": "Y17",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        {
+          "status": "Z",
+          "rawLower": 0,
+          "rawUpper": 0,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq"
+          ],
+          "reason": "星のやの大浴場は宿泊者専用と明示。",
+          "condition": "",
+          "lower": 0,
+          "upper": 0,
+          "formula": "B",
+          "metricKey": "Y17",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        }
+      ],
+      "reason": "記載の実体・パラメータ・条件の行のみ調査。全件・全条件の完了とは異なる。"
+    },
+    {
+      "metric_id": "Y18",
+      "name": "宿泊施設の客室規模",
+      "scope": "施設",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y19",
+      "name": "宿泊施設の収容規模",
+      "scope": "施設",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y20",
+      "name": "訪問プラン総費用の安さ",
+      "scope": "訪問プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y21",
+      "name": "取消時の負担の少なさ",
+      "scope": "訪問プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y22",
+      "name": "指定日時の予約受付・必要枠充足",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y23",
+      "name": "温泉地の通常日帰り料金水準の安さ",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y24",
+      "name": "予算内で通常日帰り入浴できる施設数",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Y25",
+      "name": "予算内で通常日帰り入浴できる施設割合",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z01",
+      "name": "設備の有無",
+      "scope": "施設条件",
+      "investigation_state": "partial_observations",
+      "views": [
+        "Z01[equipment=wifi]"
+      ],
+      "observations": [
+        {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "共用エリアと客室で提供。浴室内の通信品質や会議可否は未確認。",
+          "condition": "客室・共用エリアに限定",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Z01[equipment=wifi]",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "共用エリアと客室で提供。浴室内の通信品質や会議可否は未確認。",
+          "condition": "客室・共用エリアに限定",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Z01[equipment=wifi]",
+          "catalog_scope": "施設条件",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        }
+      ],
+      "reason": "記載の実体・パラメータ・条件の行のみ調査。全件・全条件の完了とは異なる。"
+    },
+    {
+      "metric_id": "Z02",
+      "name": "サウナ等の種類",
+      "scope": "施設条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z03",
+      "name": "入浴場所の広さ",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z04",
+      "name": "入浴定員あたりの広さ",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z05",
+      "name": "客室の広さ",
+      "scope": "宿泊プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z06",
+      "name": "個室休憩の選択肢",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z07",
+      "name": "個別食事空間",
+      "scope": "宿泊・食事プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z08",
+      "name": "段差を回避した浴室到達",
+      "scope": "施設条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z09",
+      "name": "浴槽への移乗支援",
+      "scope": "浴槽条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z10",
+      "name": "介助者と利用できる浴室",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z11",
+      "name": "子どもの利用条件",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z12",
+      "name": "乳幼児用設備",
+      "scope": "施設条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z13",
+      "name": "刺青・タトゥーの利用条件",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z14",
+      "name": "プライバシーを確保した利用",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z15",
+      "name": "ペット同伴滞在",
+      "scope": "宿泊プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z16",
+      "name": "食事制約への対応",
+      "scope": "食事プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z18",
+      "name": "禁煙条件",
+      "scope": "施設・宿泊プラン",
+      "investigation_state": "partial_observations",
+      "views": [
+        "Z18[place=bath]"
+      ],
+      "observations": [
+        {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "公式基本情報で全館禁煙を確認。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Z18[place=bath]",
+          "catalog_scope": "施設・宿泊プラン",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        },
+        {
+          "status": "K",
+          "rawLower": 1,
+          "rawUpper": 1,
+          "unit": "有無",
+          "evidence_ids": [
+            "otemachi-hoshinoya-home"
+          ],
+          "reason": "公式基本情報で全館禁煙を確認。",
+          "condition": "",
+          "lower": 100,
+          "upper": 100,
+          "formula": "B",
+          "metricKey": "Z18[place=bath]",
+          "catalog_scope": "施設・宿泊プラン",
+          "entity_id": "otemachi-hoshinoya",
+          "entity_scope": "facility",
+          "applies_to_plan": true
+        }
+      ],
+      "reason": "記載の実体・パラメータ・条件の行のみ調査。全件・全条件の完了とは異なる。"
+    },
+    {
+      "metric_id": "Z19",
+      "name": "設備清潔感の直接報告",
+      "scope": "施設条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z20",
+      "name": "仕事用設備",
+      "scope": "施設・客室条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z21",
+      "name": "仕事・通話の利用条件",
+      "scope": "利用プラン",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z22",
+      "name": "通信速度",
+      "scope": "施設・客室条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z23",
+      "name": "許可された撮影機会",
+      "scope": "施設・体験条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z24",
+      "name": "指定言語・手段への対応",
+      "scope": "施設条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z25",
+      "name": "通信遅延の少なさ",
+      "scope": "施設・客室条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "Z26",
+      "name": "通信損失の少なさ",
+      "scope": "施設・客室条件",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "E04",
+      "name": "温泉熱の浴用外活用",
+      "scope": "施設・地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "E05",
+      "name": "排湯の管理方法の公開",
+      "scope": "施設・地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "E06",
+      "name": "保全活動の実施記録",
+      "scope": "地域",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    },
+    {
+      "metric_id": "E07",
+      "name": "源泉状態の定期モニタリング公開",
+      "scope": "地域・供給系統",
+      "investigation_state": "E",
+      "views": [],
+      "observations": [],
+      "reason": "基本項目の調査未完了。不存在・未開示を示す値ではない。"
+    }
+  ],
+  "coverage": {
+    "basic_metric_count": 249,
+    "basic_metrics_with_observations": 9,
+    "basic_metrics_not_investigated": 240,
+    "source_count": 8,
+    "source_count_definition": "資料台帳登録件数（地域別重複と取得失敗を含む）",
+    "investigation_count_definition": "調査行ありは原資料のみの確認と探索済み未確認を含む。候補への適用確認数・全槽の取得率ではない。",
+    "facility_count": 2,
+    "plan_count": 4,
+    "complete": false
+  },
+  "access_inventory": [
+    {
+      "origin_prefecture": "北海道",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "北海道",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "北海道",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "北海道",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "青森",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "青森",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "青森",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "青森",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岩手",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岩手",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岩手",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岩手",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "宮城",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "宮城",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "宮城",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "宮城",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "秋田",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "秋田",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "秋田",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "秋田",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山形",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山形",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山形",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山形",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "茨城",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "茨城",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "茨城",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "茨城",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "栃木",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "栃木",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "栃木",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "栃木",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "群馬",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "群馬",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "群馬",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "群馬",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "埼玉",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "埼玉",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "埼玉",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "埼玉",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "千葉",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "千葉",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "千葉",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "千葉",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "東京",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "東京",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "東京",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "東京",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "神奈川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "神奈川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "神奈川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "神奈川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "新潟",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "新潟",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "新潟",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "新潟",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "富山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "富山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "富山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "富山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "石川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "石川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "石川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "石川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福井",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福井",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福井",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福井",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山梨",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山梨",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山梨",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山梨",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "長野",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "長野",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "長野",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "長野",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岐阜",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岐阜",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岐阜",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岐阜",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "静岡",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "静岡",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "静岡",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "静岡",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "愛知",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "愛知",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "愛知",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "愛知",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "三重",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "三重",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "三重",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "三重",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "滋賀",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "滋賀",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "滋賀",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "滋賀",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "京都",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "京都",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "京都",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "京都",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "大阪",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "大阪",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "大阪",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "大阪",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "兵庫",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "兵庫",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "兵庫",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "兵庫",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "奈良",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "奈良",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "奈良",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "奈良",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "和歌山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "和歌山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "和歌山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "和歌山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "鳥取",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "鳥取",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "鳥取",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "鳥取",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "島根",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "島根",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "島根",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "島根",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岡山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岡山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岡山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "岡山",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "広島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "広島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "広島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "広島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山口",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山口",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山口",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "山口",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "徳島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "徳島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "徳島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "徳島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "香川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "香川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "香川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "香川",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "愛媛",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "愛媛",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "愛媛",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "愛媛",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "高知",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "高知",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "高知",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "高知",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福岡",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福岡",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福岡",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "福岡",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "佐賀",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "佐賀",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "佐賀",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "佐賀",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "長崎",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "長崎",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "長崎",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "長崎",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "熊本",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "熊本",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "熊本",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "熊本",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "大分",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "大分",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "大分",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "大分",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "宮崎",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "宮崎",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "宮崎",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "宮崎",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "鹿児島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "鹿児島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "鹿児島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "鹿児島",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "沖縄",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "沖縄",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-13",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "沖縄",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "public_transport",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    },
+    {
+      "origin_prefecture": "沖縄",
+      "origin_definition": "都道府県庁本庁舎一般来庁者入口（入口座標未確認）",
+      "date": "2026-10-10",
+      "departure": "09:00",
+      "mode": "car",
+      "status": "E",
+      "reason": "標準アクセス条件を未調査。距離からの概算は採用しない。"
+    }
+  ],
+  "comparison_dates": {
+    "access_weekday": "2026-10-13",
+    "access_saturday": "2026-10-10",
+    "stay_weekday": "2026-11-10",
+    "stay_saturday": "2026-10-31",
+    "holiday_source": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+    "note": "基準条件を定義しただけで、運行・営業・価格・空室は取得していない。11月3日は祝日のため宿泊平日基準から除く。"
+  },
+  "schema_version": "2",
+  "rubric_version": "1.2",
+  "dataset_kind": "evidence_pilot",
+  "snapshot_id": "pilot10-fees-2026-10-03",
+  "trial": {
+    "id": "otemachi-pilot10-fees-2026-10-03",
+    "independent": true,
+    "input_sha256": "c814a758b01178c65a56114c63cbce5f98cb784d2cb28a4e350619bc20eebf12",
+    "rubric_sha256": "f5005e7314bca078dad9c7dbcc100f07449168849ea203a6acc78620b5aa2b16",
+    "depends_on_regions": [],
+    "rarity_comparison_connected": false,
+    "note": "他温泉地の調査結果・標本の最大最小・順位を入力にしない。希少性は固定比較台帳未接続で未採点。",
+    "pricing_input_sha256": "07e815469e291d1415ab193237e91147e096bbff1682c9a08f9051c10c0ab9e1"
+  },
+  "fee_populations": [
+    {
+      "id": "otemachi-ordinary-weekday",
+      "regionId": "otemachi",
+      "day_type": "weekday",
+      "policy_id": "ordinary-adult-daytrip-v1",
+      "condition_key": "ordinary-adult-daytrip-v1:time-unspecified",
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。現行施設公式と権利元を照合した初回独立検証。源泉分析・特定加工・全施設網羅・活動網羅・口コミ・188アクセス条件は未完了。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "inventory_evidence_ids": [],
+      "condition_note": "曜日別公表通常料金・入場時刻の指定なし（公表入場時間内）。一般成人1名・非住民非会員・入浴のみ・自前タオル可なら持参。指定日の営業・枠・価格は未確認。",
+      "facilities": [
+        {
+          "facility_id": "otemachi-hoshinoya",
+          "name": "星のや東京",
+          "membership": "excluded",
+          "reason": "公式共通FAQが星のやの温泉・大浴場を宿泊者専用と明示。星のや東京の最上階内湯露天は宿泊系列へ保持し、通常外来入浴のみ料金母集団から除外。",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq",
+            "otemachi-hoshinoya-onsen"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "tariffs": []
+        },
+        {
+          "facility_id": "otemachi-spa",
+          "name": "SPA大手町",
+          "membership": "included",
+          "reason": "16歳以上一般ビジターの温泉入浴のみ90分券を平日1100円・土日祝1300円税込で販売。自前タオル可・必須レンタル未確認は総額上限へ保持し、会員料金を使わない。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "otemachi-spa-price",
+            "otemachi-spa-facilities"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "tariffs": [
+            {
+              "id": "otemachi-spa:ordinary-onsen-only-90min:weekday",
+              "status": "C",
+              "rawLower": 1100,
+              "rawUpper": null,
+              "evidence_ids": [
+                "otemachi-spa-price"
+              ],
+              "plan_ids": [
+                "otemachi-spa-weekday"
+              ],
+              "reason": "公表基本料金を費用下限に保存。自前タオル持参可・必須レンタル等を公開資料で確定できず、通常入浴の必須総額上限は未確定。料金が無料という意味ではない。",
+              "day_type": "weekday"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "otemachi-ordinary-weekend",
+      "regionId": "otemachi",
+      "day_type": "weekend",
+      "policy_id": "ordinary-adult-daytrip-v1",
+      "condition_key": "ordinary-adult-daytrip-v1:time-unspecified",
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。現行施設公式と権利元を照合した初回独立検証。源泉分析・特定加工・全施設網羅・活動網羅・口コミ・188アクセス条件は未完了。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "inventory_evidence_ids": [],
+      "condition_note": "曜日別公表通常料金・入場時刻の指定なし（公表入場時間内）。一般成人1名・非住民非会員・入浴のみ・自前タオル可なら持参。指定日の営業・枠・価格は未確認。",
+      "facilities": [
+        {
+          "facility_id": "otemachi-hoshinoya",
+          "name": "星のや東京",
+          "membership": "excluded",
+          "reason": "公式共通FAQが星のやの温泉・大浴場を宿泊者専用と明示。星のや東京の最上階内湯露天は宿泊系列へ保持し、通常外来入浴のみ料金母集団から除外。",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq",
+            "otemachi-hoshinoya-onsen"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "tariffs": []
+        },
+        {
+          "facility_id": "otemachi-spa",
+          "name": "SPA大手町",
+          "membership": "included",
+          "reason": "16歳以上一般ビジターの温泉入浴のみ90分券を平日1100円・土日祝1300円税込で販売。自前タオル可・必須レンタル未確認は総額上限へ保持し、会員料金を使わない。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "otemachi-spa-price",
+            "otemachi-spa-facilities"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "tariffs": [
+            {
+              "id": "otemachi-spa:ordinary-onsen-only-90min:weekend",
+              "status": "C",
+              "rawLower": 1300,
+              "rawUpper": null,
+              "evidence_ids": [
+                "otemachi-spa-price"
+              ],
+              "plan_ids": [
+                "otemachi-spa-weekend"
+              ],
+              "reason": "公表基本料金を費用下限に保存。自前タオル持参可・必須レンタル等を公開資料で確定できず、通常入浴の必須総額上限は未確定。料金が無料という意味ではない。",
+              "day_type": "weekend"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

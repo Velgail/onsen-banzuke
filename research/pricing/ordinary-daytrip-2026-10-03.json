@@ -1,0 +1,1195 @@
+{
+  "policy_id": "ordinary-adult-daytrip-v1",
+  "regions": {
+    "toyotomi": {
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。独立した初回調査。公式4入浴施設の識別可能な浴場群と通常外来条件、分析試料2件、公式温泉むすめ対応を確認。男女個別槽IDや全時間の処理ログまでは未確定。料金は一般大人1名・割引なし・通常入浴の公表額を下限とし、必須税費不明の場合は上限を確定しない。地域全件網羅・訪問日営業・予約枠・交通成立は未検証。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "facilities": {
+        "toyotomi-fureai": {
+          "membership": "included",
+          "reason": "一般大人の町営外来入浴券を公式に案内。一般浴場と湯治浴場は通常入浴券の利用対象として記録され、二つの浴槽群を二施設へ数えない。タオル持参案内あり。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s04",
+            "toyotomi-s09"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "toyotomi-fureai-general-day": {
+              "series": "ordinary",
+              "fee_unit_id": "toyotomi-fureai:ordinary-admission:all",
+              "reason": "一般浴場・湯治浴場を共通の通常入浴券にまとめる。入浴券の当日2回条件を別の料金単位数へ膨らませない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "toyotomi-s02",
+                "toyotomi-s04",
+                "toyotomi-s09"
+              ]
+            },
+            "toyotomi-fureai-toji-day": {
+              "series": "ordinary",
+              "fee_unit_id": "toyotomi-fureai:ordinary-admission:all",
+              "reason": "一般浴場・湯治浴場を共通の通常入浴券にまとめる。入浴券の当日2回条件を別の料金単位数へ膨らませない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "toyotomi-s02",
+                "toyotomi-s04",
+                "toyotomi-s09"
+              ]
+            }
+          }
+        },
+        "toyotomi-kawashima": {
+          "membership": "included",
+          "reason": "共用の1階大浴場・露天へ一般成人の通常日帰り入浴を販売。貸切45分と宿泊は別系列。持参タオル・税・必須品の未確認は費用区間に保持する。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "toyotomi-s14",
+            "toyotomi-s15"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "toyotomi-kawashima-indoor-day": {
+              "series": "ordinary",
+              "fee_unit_id": "toyotomi-kawashima:ordinary-main-bath-60min:all",
+              "reason": "内風呂と付随露天は同じ1階大浴場の通常60分券で、浴槽数ではなく一つの料金単位。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "toyotomi-s14",
+                "toyotomi-s15",
+                "toyotomi-s16"
+              ]
+            },
+            "toyotomi-kawashima-outdoor-day": {
+              "series": "ordinary",
+              "fee_unit_id": "toyotomi-kawashima:ordinary-main-bath-60min:all",
+              "reason": "内風呂と付随露天は同じ1階大浴場の通常60分券で、浴槽数ではなく一つの料金単位。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "toyotomi-s14",
+                "toyotomi-s15",
+                "toyotomi-s16"
+              ]
+            },
+            "toyotomi-kawashima-private-day": {
+              "series": "private",
+              "fee_unit_id": "toyotomi-kawashima:private-roten-45min-two-adults:all",
+              "reason": "予約貸切の室・時間単位の専用利用料金。通常共用浴槽の成人1名入浴券の母集団に含めず、人数割りで普通券価格にしない。 45分・大人2名の貸切のみ。任意大浴場追加各200円を共用浴場単独券としない。",
+              "evidence_ids": [
+                "toyotomi-s15"
+              ]
+            },
+            "toyotomi-kawashima-single-stay": {
+              "series": "stay",
+              "fee_unit_id": "toyotomi-kawashima:stay-a-single-unquoted:all",
+              "reason": "宿泊を条件とする浴槽利用で、非宿泊一般成人の通常入浴のみ券ではない。",
+              "evidence_ids": [
+                "toyotomi-s15"
+              ]
+            }
+          }
+        },
+        "toyotomi-onsenkaku": {
+          "membership": "included",
+          "reason": "朝及び昼夕に一般大人の通常外来入浴600円を案内。食事・宿泊必須とは記録されていない。タオルレンタル等の必須性は未確認として料金上限を保留。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "toyotomi-s02",
+            "toyotomi-s10"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "toyotomi-onsenkaku-general-day": {
+              "series": "ordinary",
+              "fee_unit_id": "toyotomi-onsenkaku:ordinary-admission:all",
+              "reason": "一般成人通常外来。朝と昼夕の営業時間を、1購入で両時間帯利用可能又は別料金との根拠にしない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "toyotomi-s02",
+                "toyotomi-s10"
+              ]
+            }
+          }
+        },
+        "toyotomi-hotel": {
+          "membership": "included",
+          "reason": "施設公式が共用大浴場の一般外来500円を案内。地域一覧600円との時点差及び必須総額は未解決だが、通常外来提供の事実とは分離する。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "toyotomi-s12",
+            "toyotomi-s02"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "toyotomi-hotel-main-day": {
+              "series": "ordinary",
+              "fee_unit_id": "toyotomi-hotel:ordinary-main-bath:all",
+              "reason": "共用大浴場の通常一般外来。施設公式の料金を保持し、地域一覧の別時点料金へ置換しない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "toyotomi-s12"
+              ]
+            }
+          }
+        },
+        "toyotomi-pokke": {
+          "membership": "excluded",
+          "reason": "既存施設実体は湯の杜ぽっけの展示・交流拠点として登録され、根拠も展示場所の資料である。通常温泉入浴券の料金主体ではなく、本料金母集団の施設実体から除く。あらゆる設備の不存在を断定する判定ではない。",
+          "evidence_ids": [
+            "toyotomi-s19",
+            "toyotomi-s21"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "toyotomi-win": {
+          "membership": "unknown",
+          "reason": "公式宿泊一覧への掲載のみ。個別の温泉浴槽・非宿泊一般成人の通常入浴のみ販売を探索していない。宿泊一覧掲載を外来不可又は外来可へ変換しない。",
+          "evidence_ids": [
+            "toyotomi-s03"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "toyotomi-yukaijuku": {
+          "membership": "unknown",
+          "reason": "公式宿泊一覧で療養目的や最低泊数の条件がある宿として記録。通常一般成人の入浴のみ外来条件は個別未探索で、宿泊条件から外来不可を導かない。",
+          "evidence_ids": [
+            "toyotomi-s03"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "toyotomi-yunohanaso": {
+          "membership": "unknown",
+          "reason": "シェアハウスの宿泊一覧掲載のみで、温泉浴槽と一般外来入浴のみ提供は個別未探索。宿泊プラン未収録を母集団除外の根拠にしない。",
+          "evidence_ids": [
+            "toyotomi-s03"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "toyotomi-yado": {
+          "membership": "unknown",
+          "reason": "シェアハウスの宿泊一覧掲載のみで、温泉浴槽と一般外来入浴のみ提供は個別未探索。最低滞在期間等を通常日帰りの条件へ転用しない。",
+          "evidence_ids": [
+            "toyotomi-s03"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "toyotomi-ukasuy": {
+          "membership": "unknown",
+          "reason": "湯治宿の宿泊一覧掲載を確認した範囲。非宿泊一般成人の通常入浴のみ利用と共用温泉浴槽は個別未探索。外来なしとは未確認。",
+          "evidence_ids": [
+            "toyotomi-s03"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "toyotomi-azumashina": {
+          "membership": "unknown",
+          "reason": "温泉街の宿泊構成への掲載のみ。個別の浴槽と通常一般外来提供を確認しておらず、宿泊限定との断定も行わない。",
+          "evidence_ids": [
+            "toyotomi-s03"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        }
+      }
+    },
+    "zao": {
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。他地域の結果から独立した固定尺度用原値調査。地域施設一覧と3営業浴場・その中の浴槽条件を部分検証。全246項目・全施設を完了したとはしない。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "facilities": {
+        "zao-kawaraya": {
+          "membership": "included",
+          "reason": "一般向けのすのこの湯通常入浴券600円を販売。共用浴槽の日帰り提供は確認し、税込・タオル持参可・必須追加費未確認は金額上限へ保持する。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "zao-s03",
+            "zao-s04",
+            "zao-s05"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "zao-kawaraya-standard": {
+              "series": "ordinary",
+              "fee_unit_id": "zao-kawaraya:ordinary-sunoko-admission:all",
+              "reason": "一般成人の通常すのこの湯入浴券。持参タオル・税の未確認は総額区間に残す。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "zao-s03",
+                "zao-s04",
+                "zao-s05",
+                "zao-s17"
+              ]
+            }
+          }
+        },
+        "zao-shinzaemon": {
+          "membership": "included",
+          "reason": "一般成人の通常共用浴場入浴1000円税込、タオル持参・返却式ロッカー・通常入浴の入湯税免除条件を照合。食事・有料休憩室・別料金サウナは任意で除く。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "zao-s07",
+            "zao-s09",
+            "zao-s17"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "zao-shinzaemon-mogami": {
+              "series": "ordinary",
+              "fee_unit_id": "zao-shinzaemon:ordinary-admission:all",
+              "reason": "もがみ高湯・四・六の湯・冷やし温泉は同じ通常入浴券。別料金サウナ、有料休憩、飲食を含めない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "zao-s09",
+                "zao-s07",
+                "zao-s17"
+              ]
+            },
+            "zao-shinzaemon-shiroku": {
+              "series": "ordinary",
+              "fee_unit_id": "zao-shinzaemon:ordinary-admission:all",
+              "reason": "もがみ高湯・四・六の湯・冷やし温泉は同じ通常入浴券。別料金サウナ、有料休憩、飲食を含めない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "zao-s09",
+                "zao-s07",
+                "zao-s17"
+              ]
+            },
+            "zao-shinzaemon-cooled": {
+              "series": "ordinary",
+              "fee_unit_id": "zao-shinzaemon:ordinary-admission:all",
+              "reason": "もがみ高湯・四・六の湯・冷やし温泉は同じ通常入浴券。別料金サウナ、有料休憩、飲食を含めない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "zao-s09",
+                "zao-s07",
+                "zao-s17"
+              ]
+            }
+          }
+        },
+        "zao-dairoten": {
+          "membership": "included",
+          "reason": "通常昼間の一般成人大露天風呂入浴券850円を案内。平日と土日祝は時間条件別。夜間特別営業券は通常券へ混ぜず、タオル・ロッカー等の必須費は未確認。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "zao-s11",
+            "zao-s12"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "zao-dairoten-weekday": {
+              "series": "ordinary",
+              "fee_unit_id": "zao-dairoten:ordinary-daytime-admission:weekday",
+              "reason": "通常昼間の共用露天入浴券。曜日別営業時間を保持し、夜間特別券や任意商品を混ぜない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "zao-s11",
+                "zao-s17"
+              ]
+            },
+            "zao-dairoten-weekend": {
+              "series": "ordinary",
+              "fee_unit_id": "zao-dairoten:ordinary-daytime-admission:weekend",
+              "reason": "通常昼間の共用露天入浴券。曜日別営業時間を保持し、夜間特別券や任意商品を混ぜない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "zao-s11",
+                "zao-s17"
+              ]
+            }
+          }
+        },
+        "zao-plaza": {
+          "membership": "unknown",
+          "reason": "今回の根拠は宿の展示所在地の確認で、通常入浴のみ外来・対象客・料金を調べていない。ホテルであることや外来プラン未収録を外来不可の根拠にしない。",
+          "evidence_ids": [
+            "zao-s15"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "zao-kamiyu": {
+          "membership": "unknown",
+          "reason": "上湯共同浴場の公式観光案内掲載は確認。非住民一般成人1名の現行通常利用条件・入浴券・必須費の個別確認を既存研究に収録していないため、共同浴場という名称だけで所属を確定しない。",
+          "evidence_ids": [
+            "zao-s01"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "zao-shimoyu": {
+          "membership": "unknown",
+          "reason": "下湯共同浴場の公式観光案内掲載は確認。非住民一般成人1名の現行通常利用条件・入浴券・必須費の個別確認を既存研究に収録していない。住民専用とも断定しない。",
+          "evidence_ids": [
+            "zao-s01"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "zao-kawarayu": {
+          "membership": "unknown",
+          "reason": "川原湯共同浴場の公式観光案内掲載は確認。非住民一般成人1名の現行通常利用条件・入浴券・必須費の個別確認を既存研究に収録していない。料金プラン未収録を不存在へ変換しない。",
+          "evidence_ids": [
+            "zao-s01"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        }
+      }
+    },
+    "kaminoyama": {
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。他温泉地の結果を参照しない固定尺度用原値調査。共同浴場の営業・料金、澤のゆ加工、古窯・有馬館の公式浴槽説明、権利元と自治体の温泉むすめ対応を調べた部分台帳。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "facilities": {
+        "kaminoyama-shimooyu": {
+          "membership": "included",
+          "reason": "大人1人の通常一般入浴150円を地域・県公式で案内。あつゆ・ぬるゆは同施設の共用入浴券で重複排除。任意洗髪券・休憩室を通常入浴必須額へ足さない。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s03"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "kaminoyama-shimooyu-atsuyu": {
+              "series": "ordinary",
+              "fee_unit_id": "kaminoyama-shimooyu:ordinary-admission-without-hairwash:all",
+              "reason": "あつゆ・ぬるゆは同じ通常入浴券。任意洗髪100円及び2階休憩を含めない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "kaminoyama-s02",
+                "kaminoyama-s03",
+                "kaminoyama-s05"
+              ]
+            },
+            "kaminoyama-shimooyu-nuruyu": {
+              "series": "ordinary",
+              "fee_unit_id": "kaminoyama-shimooyu:ordinary-admission-without-hairwash:all",
+              "reason": "あつゆ・ぬるゆは同じ通常入浴券。任意洗髪100円及び2階休憩を含めない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "kaminoyama-s02",
+                "kaminoyama-s03",
+                "kaminoyama-s05"
+              ]
+            }
+          }
+        },
+        "kaminoyama-futsukamachi": {
+          "membership": "included",
+          "reason": "2026-05-01以後の一般大人通常共同浴場入浴300円・洗髪込みを地域公式で案内。任意休憩室を除き、税込・タオル等の未確認は費用区間へ残す。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "kaminoyama-s02"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "kaminoyama-futsukamachi-standard": {
+              "series": "ordinary",
+              "fee_unit_id": "kaminoyama-futsukamachi:ordinary-admission-hairwash-included:all",
+              "reason": "2026-05-01以後の一般成人通常入浴・洗髪込み。旧料金又は任意休憩室を加算しない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "kaminoyama-s02",
+                "kaminoyama-s05"
+              ]
+            }
+          }
+        },
+        "kaminoyama-hayama": {
+          "membership": "unknown",
+          "reason": "現役共同浴場の地域公式一覧への掲載は確認したが、既存研究には当施設の一般成人通常入浴条件・券料金の個別理由を収録していない。名称と一覧掲載だけで非住民の提供条件を確定しない。",
+          "evidence_ids": [
+            "kaminoyama-s02"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "kaminoyama-sawanoyu": {
+          "membership": "included",
+          "reason": "一般の高校生以上1回入浴券500円を運営者が案内。曜日別営業時間は条件分離、1日券1300円と有料2階利用は当プランに混ぜない。タオル・必須費未確認は費用区間へ残す。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "kaminoyama-s02",
+            "kaminoyama-s04"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "kaminoyama-sawanoyu-weekday": {
+              "series": "ordinary",
+              "fee_unit_id": "kaminoyama-sawanoyu:ordinary-single-admission:weekday",
+              "reason": "一般成人1回券。1日券1300円と有料2階は当プラン外。同じ週末1回券の土曜及び日祝営業時間行は重複料金単位にしない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "kaminoyama-s04",
+                "kaminoyama-s02",
+                "kaminoyama-s05"
+              ]
+            },
+            "kaminoyama-sawanoyu-saturday": {
+              "series": "ordinary",
+              "fee_unit_id": "kaminoyama-sawanoyu:ordinary-single-admission:weekend",
+              "reason": "一般成人1回券。1日券1300円と有料2階は当プラン外。同じ週末1回券の土曜及び日祝営業時間行は重複料金単位にしない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "kaminoyama-s04",
+                "kaminoyama-s02",
+                "kaminoyama-s05"
+              ]
+            },
+            "kaminoyama-sawanoyu-sunday-holiday": {
+              "series": "ordinary",
+              "fee_unit_id": "kaminoyama-sawanoyu:ordinary-single-admission:weekend",
+              "reason": "一般成人1回券。1日券1300円と有料2階は当プラン外。同じ週末1回券の土曜及び日祝営業時間行は重複料金単位にしない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "kaminoyama-s04",
+                "kaminoyama-s02",
+                "kaminoyama-s05"
+              ]
+            }
+          }
+        },
+        "kaminoyama-koyo": {
+          "membership": "excluded",
+          "reason": "施設公式が入浴のみ日帰りを受け付けず、食事と客室付きの日帰りを案内。本母集団の通常入浴のみサービスは不提供で除外。宿泊及び食事客室付き日帰りの施設自体は実在する。",
+          "evidence_ids": [
+            "kaminoyama-s16"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "kaminoyama-koyo-stay-8f": {
+              "series": "stay",
+              "fee_unit_id": "kaminoyama-koyo:stay-accommodation-unquoted:all",
+              "reason": "宿泊を条件とする浴槽利用で、非宿泊一般成人の通常入浴のみ券ではない。",
+              "evidence_ids": [
+                "kaminoyama-s06",
+                "kaminoyama-s16"
+              ]
+            }
+          }
+        },
+        "kaminoyama-arimakan": {
+          "membership": "unknown",
+          "reason": "宿泊一覧と浴槽紹介を確認した範囲。貸切を含む浴槽の実在から、非宿泊一般成人1名の通常共用入浴のみ販売を導かない。外来料金・外来不提供は未確認。",
+          "evidence_ids": [
+            "kaminoyama-s01",
+            "kaminoyama-s07"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        }
+      }
+    },
+    "kusatsu": {
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。大滝乃湯の男性露天と男性合わせ湯第1槽、西の河原の女性露天を個別浴槽候補とした。御座之湯は施設台帳に残す。各温泉地を独立に固定尺度で調査。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "facilities": {
+        "ohtakinoyu": {
+          "membership": "included",
+          "reason": "通常一般成人の大浴場入館1200円・タオル持参可を公式に案内。男性露天・合わせ湯は同一入館料で、別売貸切を含めない。税の包括未確認は価格上限へ保持。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "ks-04",
+            "ks-05",
+            "ks-09"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "kusatsu-ohtaki-male-outdoor": {
+              "series": "ordinary",
+              "fee_unit_id": "ohtakinoyu:ordinary-admission:all",
+              "reason": "男性露天と合わせ湯第1槽は同一通常入館券で、浴槽別料金としない。貸切追加料は除く。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "ks-04",
+                "ks-05",
+                "ks-09"
+              ]
+            },
+            "kusatsu-ohtaki-male-awase-1": {
+              "series": "ordinary",
+              "fee_unit_id": "ohtakinoyu:ordinary-admission:all",
+              "reason": "男性露天と合わせ湯第1槽は同一通常入館券で、浴槽別料金としない。貸切追加料は除く。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "ks-04",
+                "ks-05",
+                "ks-09"
+              ]
+            }
+          }
+        },
+        "gozanoyu": {
+          "membership": "included",
+          "reason": "通常一般成人900円・共用内湯・タオル持参可を公式に案内。個別槽の源泉対応未確定で浴槽プラン未収録でも、通常日帰り提供自体は確認済み。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "ks-07",
+            "ks-08"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "sainokawara": {
+          "membership": "included",
+          "reason": "通常一般成人の共用露天入館800円・タオル持参可を公式に案内。季節で営業時間が異なる同一通常券を別施設へ数えない。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "ks-15",
+            "ks-16"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "kusatsu-sainokawara-female-apr-nov": {
+              "series": "ordinary",
+              "fee_unit_id": "sainokawara:ordinary-admission:all",
+              "reason": "女性露天の通常入館券。冬期と夏期は営業時間別の同一料金単位で二重計上しない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "ks-15",
+                "ks-16"
+              ]
+            },
+            "kusatsu-sainokawara-female-dec-mar": {
+              "series": "ordinary",
+              "fee_unit_id": "sainokawara:ordinary-admission:all",
+              "reason": "女性露天の通常入館券。冬期と夏期は営業時間別の同一料金単位で二重計上しない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "ks-15",
+                "ks-16"
+              ]
+            }
+          }
+        },
+        "hotel-village": {
+          "membership": "unknown",
+          "reason": "取得した根拠は宿泊コラボの販売・展示資料。一般外来の共用浴槽入浴のみ提供又は不提供を調べておらず、宿泊企画掲載だけで外来不可にしない。",
+          "evidence_ids": [
+            "ks-11"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        }
+      }
+    },
+    "hakone": {
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。箱根湯寮と姥子秀明館の実在浴槽・利用プランを確認。天山を施設・源泉資料台帳へ残す。全地区・施設を網羅した調査ではない。各地域を独立に固定尺度で調査。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "facilities": {
+        "hakone-yuryo": {
+          "membership": "included",
+          "reason": "通常一般成人の本殿大浴場入浴を販売し、タオル持参条件を既存プランに記録。壱ノ巻楓の貸切室料金は別系列。日付別料金表・本殿の必須税総額の未確認は価格区間へ保持。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "hk-04",
+            "hk-07"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "hakone-yuryo-female-miharashi-weekday": {
+              "series": "ordinary",
+              "fee_unit_id": "hakone-yuryo:ordinary-main-bath-admission:weekday",
+              "reason": "本殿共用大浴場の通常入浴。貸切楓、食事、割引は含めない。日付別料金未確定を固定総額にしない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "hk-04",
+                "hk-07"
+              ]
+            },
+            "hakone-yuryo-female-miharashi-weekend": {
+              "series": "ordinary",
+              "fee_unit_id": "hakone-yuryo:ordinary-main-bath-admission:weekend",
+              "reason": "本殿共用大浴場の通常入浴。貸切楓、食事、割引は含めない。日付別料金未確定を固定総額にしない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "hk-04",
+                "hk-07"
+              ]
+            },
+            "hakone-yuryo-kaede-weekday": {
+              "series": "private",
+              "fee_unit_id": "hakone-yuryo:private-kaede-room-120min-one-adult:weekday",
+              "reason": "予約貸切の室・時間単位の専用利用料金。通常共用浴槽の成人1名入浴券の母集団に含めず、人数割りで普通券価格にしない。",
+              "evidence_ids": [
+                "hk-04",
+                "hk-09"
+              ]
+            },
+            "hakone-yuryo-kaede-weekend": {
+              "series": "private",
+              "fee_unit_id": "hakone-yuryo:private-kaede-room-120min-one-adult:weekend",
+              "reason": "予約貸切の室・時間単位の専用利用料金。通常共用浴槽の成人1名入浴券の母集団に含めず、人数割りで普通券価格にしない。",
+              "evidence_ids": [
+                "hk-04",
+                "hk-09"
+              ]
+            }
+          }
+        },
+        "shumeikan": {
+          "membership": "included",
+          "reason": "施設公式が15時以降の入湯のみ1500円・手拭付きという一般利用条件を案内。収録プランは別の湯床2時間2000円で、通常券の新プランは今回追加しない。通常料金選択肢の取りこぼしあり。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "hk-10",
+            "hk-11",
+            "hk-12"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "hakone-shumeikan-male-yudoko2h": {
+              "series": "rest_package",
+              "fee_unit_id": "shumeikan:rest-package-yudoko-2h:all",
+              "reason": "席・入浴・貸浴衣・手拭を束ねた湯床2時間2000円の既知の休憩付パッケージ。資料hk-12の別売入湯のみ15時以降1500円とは別条件であり、本プランを通常入浴のみ券へ同一視しない。通常券のプランは今回未追加で料金選択肢の取りこぼしを保持する。",
+              "evidence_ids": [
+                "hk-12"
+              ]
+            }
+          }
+        },
+        "tenzan": {
+          "membership": "included",
+          "reason": "一般成人の入浴1450円・消費税入湯税込み、手拭持参可の共用内湯外湯を公式に案内。各槽と源泉の対応保留による浴槽プラン未収録を外来不提供と扱わない。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "hk-14",
+            "hk-16"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "motohakone-port": {
+          "membership": "excluded",
+          "reason": "既存施設実体は箱根遊船の元箱根港とキャラクター展示・周遊活動の地点。温泉入浴券の施設実体ではないため本料金母集団の対象外。港にあらゆる浴用設備がないとの断定ではない。",
+          "evidence_ids": [
+            "hk-18",
+            "hk-19"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        }
+      }
+    },
+    "shiobara": {
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。採点基準1.1に基づく独立一次資料再確認。rawのみ、スコアなし。塩原十一湯、公式住所付き一覧、3施設の外来浴槽（福のゆ内湯/露天、墨の湯、高尾の湯内湯/露天）、源泉公表資料と温泉むすめを部分調査。基準日は2026-10-13火曜・2026-10-10土曜（内閣府の祝日一覧と曜日計算）。指定日実旅行の成立確認ではない。全施設・全246基本項目・標準アクセスを網羅していない。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "facilities": {
+        "shiobara_gv": {
+          "membership": "included",
+          "reason": "一般成人の福のゆ共用内湯露天800円・タオル持参可を案内。65歳以上優遇や宿泊専用野天のゆを通常成人外来券へ混ぜない。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "SH-S08",
+            "SH-S09",
+            "SH-S12"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "shiobara_gv_fukunoyu_indoor_weekday": {
+              "series": "ordinary",
+              "fee_unit_id": "shiobara_gv:ordinary-fukunoyu-admission:weekday",
+              "reason": "内湯と露天は同じ福のゆ通常一般成人券。同曜日の2浴槽群を一つの料金単位にまとめ、65歳以上優遇を使わない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "SH-S08",
+                "SH-S09",
+                "SH-S12",
+                "SH-S22"
+              ]
+            },
+            "shiobara_gv_fukunoyu_indoor_saturday": {
+              "series": "ordinary",
+              "fee_unit_id": "shiobara_gv:ordinary-fukunoyu-admission:weekend",
+              "reason": "内湯と露天は同じ福のゆ通常一般成人券。同曜日の2浴槽群を一つの料金単位にまとめ、65歳以上優遇を使わない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "SH-S08",
+                "SH-S09",
+                "SH-S12",
+                "SH-S22"
+              ]
+            },
+            "shiobara_gv_fukunoyu_outdoor_weekday": {
+              "series": "ordinary",
+              "fee_unit_id": "shiobara_gv:ordinary-fukunoyu-admission:weekday",
+              "reason": "内湯と露天は同じ福のゆ通常一般成人券。同曜日の2浴槽群を一つの料金単位にまとめ、65歳以上優遇を使わない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "SH-S08",
+                "SH-S09",
+                "SH-S12",
+                "SH-S22"
+              ]
+            },
+            "shiobara_gv_fukunoyu_outdoor_saturday": {
+              "series": "ordinary",
+              "fee_unit_id": "shiobara_gv:ordinary-fukunoyu-admission:weekend",
+              "reason": "内湯と露天は同じ福のゆ通常一般成人券。同曜日の2浴槽群を一つの料金単位にまとめ、65歳以上優遇を使わない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "SH-S08",
+                "SH-S09",
+                "SH-S12",
+                "SH-S22"
+              ]
+            }
+          }
+        },
+        "shiobara_ooidekan": {
+          "membership": "included",
+          "reason": "15歳以上一般成人の通常外来1000円税込・タオル等持参を公式に案内。墨の湯の混浴及び女性専用時間は同じ通常入浴券。貸切藤の湯の一人利用不可条件は別実体。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "SH-S13",
+            "SH-S14",
+            "SH-S15"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "shiobara_ooidekan_sumi_mixed": {
+              "series": "ordinary",
+              "fee_unit_id": "shiobara_ooidekan:ordinary-daytrip-admission:all",
+              "reason": "通常外来の墨の湯入浴。混浴午前と女性専用時間は同じ通常券で、利用者属性・受付時刻は元条件を維持。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "SH-S13",
+                "SH-S22"
+              ]
+            },
+            "shiobara_ooidekan_sumi_women": {
+              "series": "ordinary",
+              "fee_unit_id": "shiobara_ooidekan:ordinary-daytrip-admission:all",
+              "reason": "通常外来の墨の湯入浴。混浴午前と女性専用時間は同じ通常券で、利用者属性・受付時刻は元条件を維持。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "SH-S13",
+                "SH-S22"
+              ]
+            }
+          }
+        },
+        "shiobara_gensenkan": {
+          "membership": "included",
+          "reason": "一般成人の高尾の湯共用大浴場と渓流露天の日帰り1000円税込を販売。館内の別の宿泊専用浴場は含めず、税包含・タオル必須費の未確認は費用上限へ残す。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "SH-S04",
+            "SH-S05"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "shiobara_gensenkan_takao_indoor": {
+              "series": "ordinary",
+              "fee_unit_id": "shiobara_gensenkan:ordinary-takaonoyu-2h:all",
+              "reason": "高尾の湯の共用大浴場・渓流露天は同じ受付後2時間通常券。別の宿泊専用浴場を加えない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "SH-S04",
+                "SH-S22"
+              ]
+            },
+            "shiobara_gensenkan_takao_roten": {
+              "series": "ordinary",
+              "fee_unit_id": "shiobara_gensenkan:ordinary-takaonoyu-2h:all",
+              "reason": "高尾の湯の共用大浴場・渓流露天は同じ受付後2時間通常券。別の宿泊専用浴場を加えない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "SH-S04",
+                "SH-S22"
+              ]
+            }
+          }
+        },
+        "shiobara_monogatari": {
+          "membership": "excluded",
+          "reason": "既存施設実体は塩原もの語り館の展示・観光協会窓口・売店地点として記録され、根拠もその役割の資料。通常温泉入浴券の料金主体としては扱わない。全設備の不存在を導く判定ではない。",
+          "evidence_ids": [
+            "SH-S20",
+            "SH-S24"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        }
+      }
+    },
+    "otemachi": {
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。現行施設公式と権利元を照合した初回独立検証。源泉分析・特定加工・全施設網羅・活動網羅・口コミ・188アクセス条件は未完了。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "facilities": {
+        "otemachi-spa": {
+          "membership": "included",
+          "reason": "16歳以上一般ビジターの温泉入浴のみ90分券を平日1100円・土日祝1300円税込で販売。自前タオル可・必須レンタル未確認は総額上限へ保持し、会員料金を使わない。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "otemachi-spa-price",
+            "otemachi-spa-facilities"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "otemachi-spa-weekday": {
+              "series": "ordinary",
+              "fee_unit_id": "otemachi-spa:ordinary-onsen-only-90min:weekday",
+              "reason": "一般ビジターの温泉のみ90分券。会員・施設全体利用券と混ぜず、未確認の必須レンタルは費用区間へ保持。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "otemachi-spa-price"
+              ]
+            },
+            "otemachi-spa-weekend": {
+              "series": "ordinary",
+              "fee_unit_id": "otemachi-spa:ordinary-onsen-only-90min:weekend",
+              "reason": "一般ビジターの温泉のみ90分券。会員・施設全体利用券と混ぜず、未確認の必須レンタルは費用区間へ保持。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "otemachi-spa-price"
+              ]
+            }
+          }
+        },
+        "otemachi-hoshinoya": {
+          "membership": "excluded",
+          "reason": "公式共通FAQが星のやの温泉・大浴場を宿泊者専用と明示。星のや東京の最上階内湯露天は宿泊系列へ保持し、通常外来入浴のみ料金母集団から除外。",
+          "evidence_ids": [
+            "otemachi-hoshinoya-faq",
+            "otemachi-hoshinoya-onsen"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "otemachi-hoshinoya-indoor-stay": {
+              "series": "stay",
+              "fee_unit_id": "otemachi-hoshinoya:stay-accommodation-unquoted:all",
+              "reason": "宿泊を条件とする浴槽利用で、非宿泊一般成人の通常入浴のみ券ではない。 内湯と露天は宿泊条件に付随する同じ料金系列で、独立した日帰り料金単位へ数えない。",
+              "evidence_ids": [
+                "otemachi-hoshinoya-onsen",
+                "otemachi-hoshinoya-faq"
+              ]
+            },
+            "otemachi-hoshinoya-outdoor-stay": {
+              "series": "stay",
+              "fee_unit_id": "otemachi-hoshinoya:stay-accommodation-unquoted:all",
+              "reason": "宿泊を条件とする浴槽利用で、非宿泊一般成人の通常入浴のみ券ではない。 内湯と露天は宿泊条件に付随する同じ料金系列で、独立した日帰り料金単位へ数えない。",
+              "evidence_ids": [
+                "otemachi-hoshinoya-onsen",
+                "otemachi-hoshinoya-faq"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "shirahone": {
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。独立一次資料再確認。泡の湯、公共野天、笹屋、煤香庵の浴槽・利用条件と温泉むすめを部分調査。全246基本軸・標準アクセス188行の網羅調査は未了。比較日は日帰り2026-10-10土曜/10-13火曜、宿泊10-31土曜/11-10火曜。電話営業確認・空室確認は未実施。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "facilities": {
+        "awanoyu": {
+          "membership": "included",
+          "reason": "中学生以上の本館通常外来1000円税込・持参バスタオル可を案内。内湯ぬる湯あつ湯及び男女共用大野天は同じ本館外来料金。電話確認・営業制限は来訪の別条件。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "S04"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "awanoyu_nuruyu_day_all": {
+              "series": "ordinary",
+              "fee_unit_id": "awanoyu:ordinary-main-building-admission:all",
+              "reason": "内湯ぬる湯・あつ湯・大野天は同じ本館通常外来入浴券。大野天のバスタオル持参条件を保持。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "S04",
+                "S20"
+              ]
+            },
+            "awanoyu_atsuyu_day_all": {
+              "series": "ordinary",
+              "fee_unit_id": "awanoyu:ordinary-main-building-admission:all",
+              "reason": "内湯ぬる湯・あつ湯・大野天は同じ本館通常外来入浴券。大野天のバスタオル持参条件を保持。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "S04",
+                "S20"
+              ]
+            },
+            "awanoyu_mixed_roten_day_all": {
+              "series": "ordinary",
+              "fee_unit_id": "awanoyu:ordinary-main-building-admission:all",
+              "reason": "内湯ぬる湯・あつ湯・大野天は同じ本館通常外来入浴券。大野天のバスタオル持参条件を保持。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "S04",
+                "S20"
+              ]
+            }
+          }
+        },
+        "public_roten": {
+          "membership": "included",
+          "reason": "地域公式が男女別共用野天の一般日帰り700円税込を案内。平日と休日は営業時間別で、税・タオル及び管理者取得失敗は総額未確認へ保持。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "S07"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "public_roten_day_weekday": {
+              "series": "ordinary",
+              "fee_unit_id": "public_roten:ordinary-admission:weekday",
+              "reason": "季節営業の通常共用野天券。曜日別営業時間を保持し、取得失敗した別価格候補を採用しない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "S07",
+                "S20"
+              ]
+            },
+            "public_roten_day_weekend": {
+              "series": "ordinary",
+              "fee_unit_id": "public_roten:ordinary-admission:weekend",
+              "reason": "季節営業の通常共用野天券。曜日別営業時間を保持し、取得失敗した別価格候補を採用しない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "S07",
+                "S20"
+              ]
+            }
+          }
+        },
+        "sasaya": {
+          "membership": "excluded",
+          "reason": "県公式が現在の日帰り入浴休止を明記。評価時点の通常外来母集団から除外し、宿泊内湯と宿泊者無料貸切は宿泊系列として保持。恒久的な不提供・施設閉業とは断定しない。",
+          "evidence_ids": [
+            "S12",
+            "S09",
+            "S10"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "sasaya_indoor_stay_all": {
+              "series": "stay",
+              "fee_unit_id": "sasaya:stay-accommodation-unquoted:all",
+              "reason": "宿泊を条件とする浴槽利用で、非宿泊一般成人の通常入浴のみ券ではない。",
+              "evidence_ids": [
+                "S09",
+                "S10",
+                "S12"
+              ]
+            },
+            "sasaya_private_roten_stay_all": {
+              "series": "stay",
+              "fee_unit_id": "sasaya:stay-accommodation-unquoted:all",
+              "reason": "宿泊を条件とする浴槽利用で、非宿泊一般成人の通常入浴のみ券ではない。 宿泊者の先着予約30分無料貸切は宿泊料金に付随する条件で、外来0円の貸切又は普通券へ変換しない。",
+              "evidence_ids": [
+                "S09",
+                "S10",
+                "S12"
+              ]
+            }
+          }
+        },
+        "baikoan": {
+          "membership": "included",
+          "reason": "地域公式が季節営業の一般露天日帰り800円、予約不要と案内。管理者本文取得失敗及び必須総額の不足は所属の不存在へ変換しない。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "S13"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "baikoan_roten_day_all": {
+              "series": "ordinary",
+              "fee_unit_id": "baikoan:ordinary-roten-admission:all",
+              "reason": "季節営業の一般露天入浴のみ。食事購入必須との根拠はなく、税・タオル必須費は未確認のまま。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "S13",
+                "S20"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "arima": {
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。金の湯の男性一の湯ぬるゆ/女性二のゆあつゆ、太閤の湯の太閤の岩風呂を個別浴槽候補として独立に調査。地域全施設の網羅調査ではない。銀の湯は浴槽対応未確定のため施設台帳に保存。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "facilities": {
+        "arima_kin": {
+          "membership": "included",
+          "reason": "一般成人の通常共用外湯650円平日・800円土日祝を公式に案内。男性ぬるゆと女性あつゆは同じ曜日別入浴券で重複排除。繁忙日・割引・足湯は当系列へ混ぜない。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "ar-04",
+            "ar-05",
+            "ar-07",
+            "ar-08"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "arima_kin_ichinoyu_nuruyu_weekday": {
+              "series": "ordinary",
+              "fee_unit_id": "arima_kin:ordinary-admission:weekday",
+              "reason": "通常一般成人の金の湯券。男女の別浴槽を同じ曜日の料金単位にまとめ、繁忙特別日・割引・足湯を除く。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "ar-05",
+                "ar-04",
+                "ar-07"
+              ]
+            },
+            "arima_kin_ichinoyu_nuruyu_weekend": {
+              "series": "ordinary",
+              "fee_unit_id": "arima_kin:ordinary-admission:weekend",
+              "reason": "通常一般成人の金の湯券。男女の別浴槽を同じ曜日の料金単位にまとめ、繁忙特別日・割引・足湯を除く。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "ar-05",
+                "ar-04",
+                "ar-07"
+              ]
+            },
+            "arima_kin_ninoyu_atsuyu_weekday": {
+              "series": "ordinary",
+              "fee_unit_id": "arima_kin:ordinary-admission:weekday",
+              "reason": "通常一般成人の金の湯券。男女の別浴槽を同じ曜日の料金単位にまとめ、繁忙特別日・割引・足湯を除く。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "ar-05",
+                "ar-04",
+                "ar-07"
+              ]
+            },
+            "arima_kin_ninoyu_atsuyu_weekend": {
+              "series": "ordinary",
+              "fee_unit_id": "arima_kin:ordinary-admission:weekend",
+              "reason": "通常一般成人の金の湯券。男女の別浴槽を同じ曜日の料金単位にまとめ、繁忙特別日・割引・足湯を除く。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "ar-05",
+                "ar-04",
+                "ar-07"
+              ]
+            }
+          }
+        },
+        "arima_gin": {
+          "membership": "included",
+          "reason": "一般成人の通常共用外湯550円平日・700円土日祝を公式に案内。個別湯船の対応未確定で浴槽プラン未収録だが、通常日帰り提供は確認済み。税・必須用品は未確定。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "ar-06",
+            "ar-07"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "arima_taiko": {
+          "membership": "included",
+          "reason": "一般外来の共用岩風呂を施設公式・FAQで案内。タオル館内着セット付き、家族風呂なし。通常料金本文取得失敗は費用未知として保持し、通常提供の事実を未提供へ変えない。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "ar-10",
+            "ar-11"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "arima_taiko_iwaburo_weekday": {
+              "series": "ordinary",
+              "fee_unit_id": "arima_taiko:ordinary-admission:weekday",
+              "reason": "一般外来の共用岩風呂利用。FAQのタオル館内着セット案内を保持し、料金取得失敗を0円としない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "ar-10",
+                "ar-11",
+                "ar-12"
+              ]
+            },
+            "arima_taiko_iwaburo_weekend": {
+              "series": "ordinary",
+              "fee_unit_id": "arima_taiko:ordinary-admission:weekend",
+              "reason": "一般外来の共用岩風呂利用。FAQのタオル館内着セット案内を保持し、料金取得失敗を0円としない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "ar-10",
+                "ar-11",
+                "ar-12"
+              ]
+            }
+          }
+        },
+        "arima_ryuusenkaku": {
+          "membership": "unknown",
+          "reason": "宿泊コラボ及び外来売店の案内のみを確認。売店の一般公開は外来温泉入浴の提供を意味せず、通常入浴のみの可否・料金は未探索。",
+          "evidence_ids": [
+            "ar-15",
+            "ar-16",
+            "ar-17"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        },
+        "arima_toji": {
+          "membership": "unknown",
+          "reason": "宿泊中の金の湯・銀の湯利用を案内する宿であり、自施設共用浴槽の通常外来入浴券は未確認。外湯券を当宿の独立した入浴施設料金へ二重計上せず、全サービスの不提供も断定しない。",
+          "evidence_ids": [
+            "ar-03"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {}
+        }
+      }
+    },
+    "beppu": {
+      "inventory_complete": false,
+      "inventory_reason": "対象は既存研究の部分調査集合。竹瓦男女普通浴とひょうたんの特定2浴槽を初回調査。八湯全施設の網羅ではない。 実体別の源泉・供給・分析資料IDはローカル調査識別子で、未確定の物理同一性や現行浴槽対応の確認を意味しない。 公式掲載一覧の全営業施設網羅及び全施設の通常一般成人日帰り所属判定は未完了。今回の施設・プラン件数を地域母集団総数としない。",
+      "facilities": {
+        "beppu-takegawara": {
+          "membership": "included",
+          "reason": "市公式が一般成人の男女別普通浴300円を案内。砂湯は別実体・別料金として除く。税込・持参タオル等の未確認は普通浴費用区間へ残す。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "be-s02"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "beppu-takegawara-male": {
+              "series": "ordinary",
+              "fee_unit_id": "beppu-takegawara:ordinary-bath-admission:all",
+              "reason": "通常普通浴の男女を一つの料金単位にまとめる。砂湯は別実体・料金で含めない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "be-s02",
+                "be-s08"
+              ]
+            },
+            "beppu-takegawara-female": {
+              "series": "ordinary",
+              "fee_unit_id": "beppu-takegawara:ordinary-bath-admission:all",
+              "reason": "通常普通浴の男女を一つの料金単位にまとめる。砂湯は別実体・料金で含めない。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "be-s02",
+                "be-s08"
+              ]
+            }
+          }
+        },
+        "beppu-hyotan": {
+          "membership": "included",
+          "reason": "13歳以上一般1名の大浴場1160円税込・タオル持参可を公式に案内。男女の特定槽は同じ大浴場料金。砂湯・飲食・家族風呂は別系列。 当該施設の通常料金全販売単位・時刻条件・必須費の棚卸しは未完了で、収録プランの総額確定と料金選択肢の網羅を区別する。",
+          "evidence_ids": [
+            "be-s03",
+            "be-s04",
+            "be-s06"
+          ],
+          "tariff_inventory_complete": false,
+          "tariff_inventory_evidence_ids": [],
+          "plan_classifications": {
+            "beppu-hyotan-female-wind": {
+              "series": "ordinary",
+              "fee_unit_id": "beppu-hyotan:ordinary-main-bath-admission:all",
+              "reason": "男女の特定浴槽は同じ通常大浴場入浴券。タオル持参、砂湯・飲食・貸切なし。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "be-s06",
+                "be-s03",
+                "be-s04",
+                "be-s08"
+              ]
+            },
+            "beppu-hyotan-male-hinoki": {
+              "series": "ordinary",
+              "fee_unit_id": "beppu-hyotan:ordinary-main-bath-admission:all",
+              "reason": "男女の特定浴槽は同じ通常大浴場入浴券。タオル持参、砂湯・飲食・貸切なし。 通常提供の分類であり、税込必須総額・自前タオル許可・指定日の来訪成立を未確認から確定へ変えるものではない。",
+              "evidence_ids": [
+                "be-s06",
+                "be-s03",
+                "be-s04",
+                "be-s08"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

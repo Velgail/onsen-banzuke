@@ -9,9 +9,9 @@ const published = [{ key: 'S06[odor=sulfur]', name: '硫黄の香り', positive:
 
 test('all declared basic items stay selectable independently of investigated observations', () => {
   const views = buildCatalogViews(catalog, published, observed);
-  assert.equal(catalog.basic_metric_count, 246);
+  assert.equal(catalog.basic_metric_count, catalog.metrics.length);
   for (const metric of catalog.metrics) assert.ok(views.some(view => view.key === metric.id), metric.id);
-  assert.equal(views.length, 247);
+  assert.equal(views.length, catalog.basic_metric_count + 1);
   assert.equal(views.find(view => view.key === 'S06').template, true);
   assert.equal(views.find(view => view.key === 'C11').template, false);
   assert.equal(views.find(view => view.key === 'S06[odor=sulfur]').name, '硫黄の香り');

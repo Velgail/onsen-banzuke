@@ -19,7 +19,7 @@ const datasets={'data/manifest.json':manifest,'test-data/regions.json':{...envel
 async function boot(url='http://127.0.0.1:8877/docs/',data=datasets){
   const dom=new JSDOM(await readAsset('index.html'),{url,runScripts:'outside-only'});
   const w=dom.window;w.structuredClone=value=>w.JSON.parse(w.JSON.stringify(value));
-  for(const [file,names] of [['scoring.mjs',['rankRegions','evaluateRequirement']],['catalog.mjs',['buildCatalogViews','parameterView','normalizeMetricKey']],['settings.mjs',['createSettings','validateConfig']],['comparison.mjs',['comparisonPlans']]]){
+  for(const [file,names] of [['scoring.mjs',['rankRegions','evaluateRequirement']],['catalog.mjs',['buildCatalogViews','parameterView','normalizeMetricKey']],['settings.mjs',['createSettings','validateConfig']],['comparison.mjs',['comparisonPlans']],['pricing.mjs',['summarizeRegionalFees']],['regional-features.mjs',['attachRegionalFeeMetrics','validateFeePopulations']]]){
     const module=(await readAsset('assets/'+file)).replace(/^import .*;\n/gm,'').replace(/export /g,'');
     Object.assign(w,w.eval('(()=>{'+module+';return {'+names.join(',')+'};})()'));
   }
@@ -44,7 +44,7 @@ async function share(w){click(w,'#share-settings');await new Promise(resolve=>se
 
 test('all catalogue axes, arbitrary weights, target scores and shared restoration work through the actual controls',async()=>{
   const dom=await boot(),w=dom.window,d=w.document;
-  assert.ok(d.querySelector('#metric-add').options.length>246);
+  assert.ok(d.querySelector('#metric-add').options.length>catalog.basic_metric_count);
   change(w,'#metric-search','C01','input');assert.equal(d.querySelector('#metric-add').options.length,2);
   pick(w,'C01');click(w,'#add-preference');
   assert.equal(d.querySelector(preference('C01','weight')).value,'0');assert.equal(d.querySelector('#result-title').textContent,'温泉地一覧');
@@ -105,7 +105,7 @@ test('arbitrary raw requirements, nested OR/NOT, incomplete groups and shared sc
 test('the published release loads through the UI and retains source evidence alongside preference calculations',async()=>{
   const current=JSON.parse(await readAsset('data/manifest.json'));
   const actual={'data/manifest.json':current};
-  for(const key of ['regions_url','ranking_url','views_url','rubric_url'])actual[current[key].slice(2)]=JSON.parse(await readAsset(current[key]));
+  for(const key of ['regions_url','ranking_url','views_url','rubric_url','fee_populations_url'].filter(key=>current[key]))actual[current[key].slice(2)]=JSON.parse(await readAsset(current[key]));
   const sourceRegions=actual[current.regions_url.slice(2)].regions;
   for(const region of sourceRegions){if(region.ledger_url)actual[region.ledger_url.slice(2)]=JSON.parse(await readAsset(region.ledger_url));}
   const dom=await boot(undefined,actual),w=dom.window,d=w.document;
@@ -132,4 +132,27 @@ test('the published release loads through the UI and retains source evidence alo
     assert.equal(d.querySelector('#count-unknown').textContent,'6');
   }
   dom.window.close();
+});
+
+
+test('regional affordable counts use a Japanese budget control, change with day type, and restore through sharing',async()=>{
+  const feeManifest={...manifest,fee_populations_url:'./test-data/fees.json',fee_policy_id:catalog.regional_daytrip_fee_policy.id};
+  const populations=regions.flatMap(region=>['weekday','weekend'].map(day=>({
+    id:region.id+'-'+day,regionId:region.id,day_type:day,
+    policy_id:feeManifest.fee_policy_id,condition_key:catalog.regional_daytrip_fee_policy.condition_key,inventory_complete:true,
+    facilities:[{facility_id:region.id+'-facility',membership:'included',evidence_ids:['test-source'],tariff_inventory_complete:true,tariff_inventory_evidence_ids:['test-source'],
+      tariffs:[{id:region.id+'-'+day+'-ticket',rawLower:day==='weekday'&&region.id==='test-b'?1500:500,rawUpper:day==='weekday'&&region.id==='test-b'?1500:500,status:'K',evidence_ids:['test-source'],plan_ids:[]}]}]
+  })));
+  const data={...datasets,'data/manifest.json':feeManifest,'test-data/fees.json':{...envelope,policy:catalog.regional_daytrip_fee_policy,populations}};
+  const dom=await boot(undefined,data),w=dom.window,d=w.document;
+  pick(w,'Y24');assert.equal(d.querySelector('#metric-budget-field').hidden,false);assert.equal(d.querySelector('#metric-parameters-field').hidden,true);
+  change(w,'#metric-budget','1000');click(w,'#add-preference');
+  change(w,preference('Y24[budget=1000]','weight'),'0.373','input');
+  assert.deepEqual([...d.querySelectorAll('.ranking-card')].map(card=>parseFloat(card.querySelector('.score-number').textContent)),[10,0]);
+  click(w,'#add-requirement');change(w,'[data-path="0"] [data-action="condition-value"]','1');
+  assert.equal(d.querySelector('#count-confirmed').textContent,'1');assert.equal(d.querySelector('#count-failed').textContent,'1');
+  change(w,'#day-type','weekend');assert.equal(d.querySelector('#count-confirmed').textContent,'2');
+  const config=await share(w);assert.equal(config.weights['Y24[budget=1000]'],.373);assert.equal(config.dayType,'weekend');
+  const restored=await boot(w.location.href,data);assert.equal(restored.window.document.querySelector('#count-confirmed').textContent,'2');assert.deepEqual(await share(restored.window),config);
+  dom.window.close();restored.window.close();
 });

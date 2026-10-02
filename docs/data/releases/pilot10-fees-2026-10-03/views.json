@@ -1,0 +1,712 @@
+{
+  "schema_version": "2",
+  "rubric_version": "1.2",
+  "snapshot_id": "pilot10-fees-2026-10-03",
+  "dataset_kind": "evidence_pilot",
+  "views": [
+    {
+      "key": "A01[tag=ONSEN_MUSUME]",
+      "name": "実施済み企画数 tag=ONSEN_MUSUME",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "直近365日で実施を確認した独立企画数。告知だけの未来企画は別の予定表へ。同じ企画の連日開催は1件。",
+      "group": "A"
+    },
+    {
+      "key": "A08[tag=onsen_musume]",
+      "name": "現地限定商品・体験 tag=onsen_musume",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "現在購入・利用できる限定商品・体験の種類数。同商品の色違い・サイズ違い・売切れ品で水増ししない。",
+      "group": "A"
+    },
+    {
+      "key": "B01",
+      "name": "浴槽温度の高さ",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "入浴時の実温度 ℃。設定値／実測値／利用者測定値を分ける。",
+      "group": "B"
+    },
+    {
+      "key": "B04",
+      "name": "利用者による温度調節",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "明示的に許可された調節手段。加水なら無加水運用との条件を分ける。",
+      "group": "B"
+    },
+    {
+      "key": "B06",
+      "name": "露天風呂",
+      "positive": "露天がある",
+      "negative": "露天を選ばない",
+      "description": "外気に接する露天浴槽。半露天は別タグ。",
+      "group": "B"
+    },
+    {
+      "key": "B07",
+      "name": "貸切風呂",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "一般利用者が予約等で専用利用できる。内湯／露天、利用料金、対象客を記録。",
+      "group": "B"
+    },
+    {
+      "key": "B08",
+      "name": "客室付き温泉浴槽",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "当該客室の浴槽に温泉を供給。大浴場だけ温泉の宿の客室風呂と混同しない。",
+      "group": "B"
+    },
+    {
+      "key": "B09[dimension=setting,type=indoor]",
+      "name": "入浴形態の属性 dimension=setting,type=indoor",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "媒体=温泉水／自然泥／砂／天然蒸気、姿勢=寝／座／立、流れ=静水・通常流入／打たせ／噴流、立地=一般浴室／露天／洞窟／河床／岩場。dimensionとtypeごと。異なる次元を一つの豪華点へ足さない。浴用が正式に可能な場所のみ。露天はB06、天然蒸気はZ02との重複を解決する。",
+      "group": "B"
+    },
+    {
+      "key": "B11",
+      "name": "飲泉設備",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "利用条件が掲示された営業中の飲泉設備。飲用可能な具体的設備を確認。泉質名だけで判断しない。",
+      "group": "B"
+    },
+    {
+      "key": "B12",
+      "name": "混浴の選択肢",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "混浴利用が提供されている。服装・湯浴み着・時間・入場条件を併記。",
+      "group": "B"
+    },
+    {
+      "key": "B14",
+      "name": "季節限定・時間限定の湯",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "限定条件が明示される入浴機会。限定であることへの好みの軸。営業日数の少なさと別。",
+      "group": "B"
+    },
+    {
+      "key": "C01",
+      "name": "酸性の強さ",
+      "positive": "酸性が強い",
+      "negative": "酸性が弱い",
+      "description": "pH。pHの尺度上の位置。水素イオン濃度への線形換算ではない。",
+      "group": "C"
+    },
+    {
+      "key": "C04",
+      "name": "溶存物質の濃さ",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "ガス性成分を除く溶存物質 mg/kg。蒸発残留物・成分総計で代用しない。",
+      "group": "C"
+    },
+    {
+      "key": "C06",
+      "name": "源泉温度の高さ",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "採水点の温度 ℃。浴槽温度ではない。",
+      "group": "C"
+    },
+    {
+      "key": "C44[tag=chloride]",
+      "name": "療養泉分類タグへの該当 tag=chloride",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "採用分類版に正規化した泉質タグの有無。tagごと。単純／塩化物／炭酸水素塩／硫酸塩／二酸化炭素／鉄／酸性／よう素／硫黄／放射能。分類外と未確認を区別。",
+      "group": "C"
+    },
+    {
+      "key": "C44[tag=hydrogen_carbonate]",
+      "name": "療養泉分類タグへの該当 tag=hydrogen_carbonate",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "採用分類版に正規化した泉質タグの有無。tagごと。単純／塩化物／炭酸水素塩／硫酸塩／二酸化炭素／鉄／酸性／よう素／硫黄／放射能。分類外と未確認を区別。",
+      "group": "C"
+    },
+    {
+      "key": "C44[tag=sulfate]",
+      "name": "療養泉分類タグへの該当 tag=sulfate",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "採用分類版に正規化した泉質タグの有無。tagごと。単純／塩化物／炭酸水素塩／硫酸塩／二酸化炭素／鉄／酸性／よう素／硫黄／放射能。分類外と未確認を区別。",
+      "group": "C"
+    },
+    {
+      "key": "C44[tag=sulfur]",
+      "name": "療養泉分類タグへの該当 tag=sulfur",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "採用分類版に正規化した泉質タグの有無。tagごと。単純／塩化物／炭酸水素塩／硫酸塩／二酸化炭素／鉄／酸性／よう素／硫黄／放射能。分類外と未確認を区別。",
+      "group": "C"
+    },
+    {
+      "key": "H18[place=bath]",
+      "name": "浴室の静けさ",
+      "positive": "静かな浴室",
+      "negative": "にぎやかな浴室",
+      "description": "直接体験記述中の騒音・騒がしさ。夜／昼、浴室／街路の場所を分離。",
+      "group": "H"
+    },
+    {
+      "key": "I01",
+      "name": "温泉地の実在・範囲の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "実在する所在地と利用施設が対応する公開資料。歴史資料だけの旧温泉地は現役の対象にしない。これは評価対象成立のゲートでもある。",
+      "group": "I"
+    },
+    {
+      "key": "I02",
+      "name": "構成施設一覧の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "住所付きの公式構成施設一覧。掲載一覧の公開と、その一覧が全件であることの確認は別。",
+      "group": "I"
+    },
+    {
+      "key": "I03",
+      "name": "源泉の識別情報の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "源泉名・登録番号等と所在地の組。同名別源泉を識別できること。",
+      "group": "I"
+    },
+    {
+      "key": "I04",
+      "name": "分析書全文の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "項目を判読できる分析書の全文。泉質名だけ、切れた画像、数項目の転載では満たさない。部分開示は他の個別開示項目で採点。",
+      "group": "I"
+    },
+    {
+      "key": "I05",
+      "name": "採水年月日の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "採水日。分析終了日、発行日、Web更新日と混同しない。",
+      "group": "I"
+    },
+    {
+      "key": "I06",
+      "name": "分析機関・発行情報の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "分析者・発行者と発行日。三つがそろった場合。個々の欠落箇所も記録。",
+      "group": "I"
+    },
+    {
+      "key": "I07",
+      "name": "源泉から浴槽への対応公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "供給源泉・混合系統を浴槽まで特定できる資料。旅館名との対応だけなら浴槽への適用範囲が明示されている必要がある。",
+      "group": "I"
+    },
+    {
+      "key": "I09",
+      "name": "加水情報の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "有無・適用範囲・条件の開示。なしと明示されれば条件欄は不要。有りでは用途・条件が判明すること。",
+      "group": "I"
+    },
+    {
+      "key": "I10",
+      "name": "加温情報の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "有無・適用範囲・条件の開示。夏冬、浴槽、営業時間を区別。",
+      "group": "I"
+    },
+    {
+      "key": "I11",
+      "name": "冷却方法の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "自然放冷・熱交換等の方法と範囲。冷却なしという明示も対象。",
+      "group": "I"
+    },
+    {
+      "key": "I12",
+      "name": "循環・再利用情報の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "再投入経路・循環の有無と範囲。掛け流しという語だけでは満たさない。",
+      "group": "I"
+    },
+    {
+      "key": "I13",
+      "name": "ろ過情報の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "有無と方式・範囲。循環ろ過と投入前の除砂を区別。",
+      "group": "I"
+    },
+    {
+      "key": "I14",
+      "name": "消毒情報の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "薬剤・非薬剤方式の有無、実施時点、範囲。営業中の湯と清掃時の設備消毒を区別。",
+      "group": "I"
+    },
+    {
+      "key": "I16",
+      "name": "清掃・換水情報の公開",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "清掃頻度と全量換水頻度。清潔感の広告では満たさない。",
+      "group": "I"
+    },
+    {
+      "key": "I24[tag=ONSEN_MUSUME]",
+      "name": "活動情報の更新の新しさ tag=ONSEN_MUSUME",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "最新の実施・利用条件更新からの日数。旧A16を移動。著作権年や共通フッターを更新日としない。",
+      "group": "I"
+    },
+    {
+      "key": "M01[project_id=onsen_musume]",
+      "name": "地域IP・作品と対象地の公式な対応 project_id=onsen_musume",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "権利元・運営主体等の公式資料で指定project_idと対象地の展開が対応。地域キャラクター／作品IP／地域アート企画等。温泉むすめもproject_idで扱う。単に舞台に似る・ファンが言及するだけでは不可。",
+      "group": "M"
+    },
+    {
+      "key": "M02[project_id=onsen_musume]",
+      "name": "現地の公開展示地点数 project_id=onsen_musume",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "現在見られるパネル・常設展示の異なる所在地数。project_idごと。同じ所在地の複数展示を別地点にせず、移設前を重複計数しない。",
+      "group": "M"
+    },
+    {
+      "key": "M03[project_id=onsen_musume]",
+      "name": "地域固有デザインの種類数 project_id=onsen_musume",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "現地で公開される独自衣装等の異なるデザイン数。project_idごと。同一絵柄・作品の複製数とは別。展示と商品に同じデザインがあっても1種類。",
+      "group": "M"
+    },
+    {
+      "key": "M04[project_id=onsen_musume]",
+      "name": "追加購入なしで見られる展示割合 project_id=onsen_musume",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "入場条件上、追加購入を要しない公開展示地点／全公開展示地点。project_idごと。入浴・宿泊・入場の購入条件を分け、全展示0地点はA。",
+      "group": "M"
+    },
+    {
+      "key": "M05[project_id=onsen_musume]",
+      "name": "現地限定の音声・デジタル体験 project_id=onsen_musume",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "利用可能な独自音声・AR・館内放送等の種類数。project_idごと。全国共通の公開紹介だけでは不可。A08/A09の同一体験との重複を明示。",
+      "group": "M"
+    },
+    {
+      "key": "M07[project_id=onsen_musume]",
+      "name": "現地商品を購入できる拠点数 project_id=onsen_musume",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "在庫・販売継続が確認できる異なる拠点数。project_idごと。在庫・販売継続の確認時点を保存。過去発売だけで常時在庫ありとしない。",
+      "group": "M"
+    },
+    {
+      "key": "O04",
+      "name": "浴槽底・直近湧出口での入浴",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "浴槽底または浴槽を直接満たす自然湧出口。源泉所在地が近いだけでは満たさない。",
+      "group": "O"
+    },
+    {
+      "key": "O07",
+      "name": "単一源泉による供給",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "供給する源泉IDが一つ。複数源泉の混合は、真水の加水とは別。",
+      "group": "O"
+    },
+    {
+      "key": "P01",
+      "name": "無加水時間率",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "営業中に真水等を添加しない時間の割合。入浴者による調温加水も別条件として含める。源泉同士の混合はO07。",
+      "group": "P"
+    },
+    {
+      "key": "P02",
+      "name": "源泉水体積率",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "投入液体中の源泉水体積／全投入液体体積。営業中の流量による加重値。時間率と混同しない。造成方式の水は製造段階を別記。",
+      "group": "P"
+    },
+    {
+      "key": "P03",
+      "name": "無加温時間率",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "営業中に人為加温を行わない時間の割合。熱交換・追い焚きも含む。",
+      "group": "P"
+    },
+    {
+      "key": "P04",
+      "name": "人為冷却なし時間率",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "強制冷却を行わない時間の割合。自然放冷・自然落下の放熱と機械式冷却を区別。",
+      "group": "P"
+    },
+    {
+      "key": "P05",
+      "name": "自然放冷による調温",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "自然放冷・湯もみ等を使う実際の調温方式。存在するという特性。無加水の自動証明にはしない。",
+      "group": "P"
+    },
+    {
+      "key": "P06",
+      "name": "非循環時間率",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "いったん浴槽に入った水を戻さない時間の割合。掛け流し併用循環も循環あり。",
+      "group": "P"
+    },
+    {
+      "key": "P07",
+      "name": "排出湯の非再利用",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "溢れ湯・排水を浴用に戻さない運用。別浴槽へカスケード利用する場合も流路を明示。",
+      "group": "P"
+    },
+    {
+      "key": "P08",
+      "name": "無ろ過時間率",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "浴用系統でろ過しない時間の割合。投入前ろ過と循環ろ過を下位タグに分ける。清掃時だけの処理を混ぜない。",
+      "group": "P"
+    },
+    {
+      "key": "P13",
+      "name": "入浴剤・香料・着色料不使用",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "人工添加物不使用。入浴剤／香料／着色料ごとに下位行を展開。",
+      "group": "P"
+    },
+    {
+      "key": "P14",
+      "name": "人工炭酸・人工気泡不使用",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "炭酸添加・微細気泡発生装置を使わない。炭酸添加／空気等の気泡化を分けた下位行も持つ。",
+      "group": "P"
+    },
+    {
+      "key": "P15",
+      "name": "天然油分の除去なし",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "油分除去工程を設けていない。油分を含まないと確認できる湯では工程なしとして記録可能。油分残存量とは別。",
+      "group": "P"
+    },
+    {
+      "key": "P16",
+      "name": "天然沈殿・湯花の除去なし",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "沈殿物の除去工程を設けていない。浴槽清掃の有無に読み替えない。",
+      "group": "P"
+    },
+    {
+      "key": "P17",
+      "name": "五条件同時無加工時間率",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "同じ時間に無加水・無加温・非循環・営業中消毒なし・人工添加なしが成立する割合。各条件の最大値を別浴槽・別季節から持ち寄らない。個別軸と重複するため初期重み0。",
+      "group": "P"
+    },
+    {
+      "key": "P19[method=direct_natural_upwelling]",
+      "name": "湯口の注湯方式 method=direct_natural_upwelling",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "水面上落下／水中配管投入／浴槽底配管投入／直接自然湧出等の現行供給方式。方式ごと。浴槽底の配管投入をO04の自然の足下湧出にしない。成分保持を方式だけから推定しない。",
+      "group": "P"
+    },
+    {
+      "key": "P20",
+      "name": "機械的な浴槽内攪拌なし時間率",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "営業中にジェット等の機械的攪拌を行わない時間割合。循環・人工気泡とは別。気泡なしのジェットや新湯だけの攪拌も区別。自然流入による流れは機械的攪拌にしない。",
+      "group": "P"
+    },
+    {
+      "key": "P21[method=chlorine]",
+      "name": "営業中の方式別消毒なし時間率 method=chlorine",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "指定methodの営業中消毒を行わない時間割合。chlorine／other_chemical／uv／ozone等の登録方式ごと。全方式不使用は管理者の包括的明示か全方式の確認が必要。",
+      "group": "P"
+    },
+    {
+      "key": "P21[method=other_chemical]",
+      "name": "営業中の方式別消毒なし時間率 method=other_chemical",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "指定methodの営業中消毒を行わない時間割合。chlorine／other_chemical／uv／ozone等の登録方式ごと。全方式不使用は管理者の包括的明示か全方式の確認が必要。",
+      "group": "P"
+    },
+    {
+      "key": "P21[method=ozone]",
+      "name": "営業中の方式別消毒なし時間率 method=ozone",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "指定methodの営業中消毒を行わない時間割合。chlorine／other_chemical／uv／ozone等の登録方式ごと。全方式不使用は管理者の包括的明示か全方式の確認が必要。",
+      "group": "P"
+    },
+    {
+      "key": "P21[method=uv]",
+      "name": "営業中の方式別消毒なし時間率 method=uv",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "指定methodの営業中消毒を行わない時間割合。chlorine／other_chemical／uv／ozone等の登録方式ごと。全方式不使用は管理者の包括的明示か全方式の確認が必要。",
+      "group": "P"
+    },
+    {
+      "key": "S01[color=black]",
+      "name": "湯色の種類 color=black",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "無色／白／青／緑／黄／赤褐／茶褐／黒／灰の明示。種類ごとの下位行。自然色・人工色・由来不明を分離。色が同時に併存するとは限らない。",
+      "group": "S"
+    },
+    {
+      "key": "S01[color=brown]",
+      "name": "湯色の種類 color=brown",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "無色／白／青／緑／黄／赤褐／茶褐／黒／灰の明示。種類ごとの下位行。自然色・人工色・由来不明を分離。色が同時に併存するとは限らない。",
+      "group": "S"
+    },
+    {
+      "key": "S01[color=colorless]",
+      "name": "湯色の種類 color=colorless",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "無色／白／青／緑／黄／赤褐／茶褐／黒／灰の明示。種類ごとの下位行。自然色・人工色・由来不明を分離。色が同時に併存するとは限らない。",
+      "group": "S"
+    },
+    {
+      "key": "S01[color=white]",
+      "name": "湯色の種類 color=white",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "無色／白／青／緑／黄／赤褐／茶褐／黒／灰の明示。種類ごとの下位行。自然色・人工色・由来不明を分離。色が同時に併存するとは限らない。",
+      "group": "S"
+    },
+    {
+      "key": "S01[color=yellow]",
+      "name": "湯色の種類 color=yellow",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "無色／白／青／緑／黄／赤褐／茶褐／黒／灰の明示。種類ごとの下位行。自然色・人工色・由来不明を分離。色が同時に併存するとは限らない。",
+      "group": "S"
+    },
+    {
+      "key": "S02",
+      "name": "着色の強さ",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "着色についての直接の強度表現。単に色名があるだけでは強度を確定しない。直接の知覚として存在が確実なら強度区間25～100。",
+      "group": "S"
+    },
+    {
+      "key": "S04",
+      "name": "透明性",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "透明・濁りなしとの直接記述。情報なしを透明としない。",
+      "group": "S"
+    },
+    {
+      "key": "S05[odor=petroleum]",
+      "name": "臭いの種類 odor=petroleum",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "硫黄／石油／金属／土・有機質／塩素／その他登録臭の直接記述。種類ごと。源泉試料の知覚試験と浴槽レビューは別系列。",
+      "group": "S"
+    },
+    {
+      "key": "S05[odor=sulfur]",
+      "name": "臭いの種類 odor=sulfur",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "硫黄／石油／金属／土・有機質／塩素／その他登録臭の直接記述。種類ごと。源泉試料の知覚試験と浴槽レビューは別系列。",
+      "group": "S"
+    },
+    {
+      "key": "S06[odor=petroleum]",
+      "name": "臭いの強さ odor=petroleum",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "臭い種類ごとの直接の強度表現。「硫黄泉」だけから硫黄臭の強度を推定しない。",
+      "group": "S"
+    },
+    {
+      "key": "S06[odor=sulfur]",
+      "name": "硫黄の香り",
+      "positive": "強い香り",
+      "negative": "弱い香り",
+      "description": "臭い種類ごとの直接の強度表現。「硫黄泉」だけから硫黄臭の強度を推定しない。",
+      "group": "S"
+    },
+    {
+      "key": "S07",
+      "name": "ぬめりの強さ",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "ぬめりの直接記述。高pHから自動加点しない。",
+      "group": "S"
+    },
+    {
+      "key": "S12",
+      "name": "浮遊湯花",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "自然由来の浮遊物を湯花と同定する直接記述。白い粒なら何でも湯花とはしない。",
+      "group": "S"
+    },
+    {
+      "key": "V01",
+      "name": "一般利用できる温泉入浴施設数",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "営業中かつ外来または宿泊で一般利用できる施設数。会員・住民限定は別。建物ではなく利用施設IDで重複排除。",
+      "group": "V"
+    },
+    {
+      "key": "V03",
+      "name": "共同浴場の数",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "一般利用できる共同浴場数。ホテル大浴場を共同浴場に数えない。運営者も保存。",
+      "group": "V"
+    },
+    {
+      "key": "Y01",
+      "name": "日帰り入浴料",
+      "positive": "手頃な料金",
+      "negative": "高い料金",
+      "description": "大人1人・通常入浴に必要な税込総額 円。平日／土日祝別。入湯税・必須レンタルを含む。自前タオル可なら持参。",
+      "group": "Y"
+    },
+    {
+      "key": "Y02",
+      "name": "貸切利用の安さ",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "大人2人・45分の貸切に必要な税込総額 円。45分が買えないときは45分以上を満たす最小の販売単位。時間比例で架空料金にしない。",
+      "group": "Y"
+    },
+    {
+      "key": "Y03",
+      "name": "素泊まり1人利用の安さ",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "1室1人1泊・素泊まりの必須費用総額 円。公開予約可能プラン。二名一室の一人額で代用しない。",
+      "group": "Y"
+    },
+    {
+      "key": "Y06",
+      "name": "予約不要の日帰り入浴",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "通常営業時間内に予約なしで入れる条件。満員時制限は別。予約不可を利用不可としない。",
+      "group": "Y"
+    },
+    {
+      "key": "Y07",
+      "name": "日帰り営業時間の長さ",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "対象曜日の入浴できる時間数。施設全体の営業ではなくビジター入浴時間。清掃閉鎖を差し引く。",
+      "group": "Y"
+    },
+    {
+      "key": "Y08",
+      "name": "最終入浴受付の遅さ",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "0時から最終受付までの時間。退館時刻と受付時刻を区別。翌日まで営業は上限24、日付越えタグも保存。",
+      "group": "Y"
+    },
+    {
+      "key": "Y09",
+      "name": "早朝入浴",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "6～9時に一般利用できる。宿泊客だけの場合は宿泊条件の行にする。",
+      "group": "Y"
+    },
+    {
+      "key": "Y11",
+      "name": "入浴可能時間の余裕",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "1回の購入で滞在可能な分数。時間無制限と明示される場合100。営業時間全体から推定しない。",
+      "group": "Y"
+    },
+    {
+      "key": "Y17",
+      "name": "一般外来客の利用",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "住民・会員・勤務先等によらず条件を満たせば利用可能。予約や料金の条件を併記。",
+      "group": "Y"
+    },
+    {
+      "key": "Y22[stage=availability]",
+      "name": "指定日時の予約受付・必要枠充足 stage=availability",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "指定日・人数・必要枠数に対する受付可能／空き枠充足の確認。stageごと。一般プラン掲載と区別し、公式照会条件と確認時刻を保存。検索結果数を空室数や将来確率にしない。",
+      "group": "Y"
+    },
+    {
+      "key": "Z01[equipment=wifi]",
+      "name": "設備の有無 equipment=wifi",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "洗い場／シャワー／備付洗浄剤／ドライヤー／鍵付き保管／休憩席／冷暖房休憩室／給水／トイレ／通信Wi-Fi／EV充電。設備ごと。EV充電は規格・利用条件・料金を保存。種類を恣意的な豪華点へまとめない。",
+      "group": "Z"
+    },
+    {
+      "key": "Z18[place=bath]",
+      "name": "禁煙条件 place=bath",
+      "positive": "特性が高い",
+      "negative": "特性が低い",
+      "description": "対象利用空間が禁煙。客室／共用部／飲食／浴室・脱衣で別行。",
+      "group": "Z"
+    }
+  ]
+}

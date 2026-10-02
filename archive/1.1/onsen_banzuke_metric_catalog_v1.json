@@ -1,7 +1,7 @@
 {
-  "version": "1.2",
+  "version": "1.1",
   "date": "2026-10-03",
-  "basic_metric_count": 249,
+  "basic_metric_count": 246,
   "default_weight": 0,
   "score_range": [
     0,
@@ -265,7 +265,7 @@
     "A": 14,
     "M": 7,
     "X": 15,
-    "Y": 25,
+    "Y": 22,
     "Z": 25,
     "E": 4
   },
@@ -363,16 +363,6 @@
       "legacy_aliases": [
         "Z17"
       ]
-    },
-    {
-      "id": "daytrip_cost_levels",
-      "metrics": [
-        "Y01",
-        "Y23",
-        "Y24",
-        "Y25"
-      ],
-      "rule": "Selected-plan expense, regional median, affordable count, and affordable share answer different questions. No implicit activation or double weighting."
     }
   ],
   "metrics": [
@@ -2330,33 +2320,6 @@
       "group": "Y"
     },
     {
-      "id": "Y23",
-      "name": "温泉地の通常日帰り料金水準の安さ",
-      "scope": "地域",
-      "raw": "施設ごとの同条件通常入浴最小税込総額の中央値 円",
-      "formula": "D(0,2000)",
-      "note": "第6.7節の施設母集団と料金単位を使う。偶数件は中央2件の平均。取得集合だけの参考中央値と地域値を混同しない。",
-      "group": "Y"
-    },
-    {
-      "id": "Y24",
-      "name": "予算内で通常日帰り入浴できる施設数",
-      "scope": "地域",
-      "raw": "指定予算以下の税込必須総額で利用できる通常日帰り入浴施設数 件",
-      "formula": "N(10)",
-      "note": "budgetパラメータを円で指定。1施設1件。予算内確認数を下限とし、母集団未確定時の上限は未確定。貸切・食事必須・割引は別系列。",
-      "group": "Y"
-    },
-    {
-      "id": "Y25",
-      "name": "予算内で通常日帰り入浴できる施設割合",
-      "scope": "地域",
-      "raw": "Y24の施設数区間を同条件の全対象施設数で割った割合",
-      "formula": "R",
-      "note": "budgetパラメータを円で指定。母集団と所属が未確定ならE・未知区間。料金未知を分母から除かない。全対象0施設はA。",
-      "group": "Y"
-    },
-    {
       "id": "Z01",
       "name": "設備の有無",
       "scope": "施設条件",
@@ -2664,43 +2627,6 @@
         "setting": 5,
         "privacy": 3
       }
-    },
-    "Y24": {
-      "budget": {
-        "type": "number",
-        "required": true,
-        "min": 0
-      }
-    },
-    "Y25": {
-      "budget": {
-        "type": "number",
-        "required": true,
-        "min": 0
-      }
     }
-  },
-  "regional_daytrip_fee_policy": {
-    "id": "ordinary-adult-daytrip-v1",
-    "reference": "onsen_banzuke_master_prompt_v1.md section 6.7",
-    "unit": "facility",
-    "series": "ordinary",
-    "adult_count": 1,
-    "pricing": "published regular price, nonresident, nonmember, tax and mandatory additions included",
-    "towel": "bring own if permitted",
-    "day_types": [
-      "weekday",
-      "weekend"
-    ],
-    "no_weight_defaults": true,
-    "incomplete_population": "regional median/share uncomputed; acquired subset explicitly separate",
-    "metrics": [
-      "Y01",
-      "Y23",
-      "Y24",
-      "Y25"
-    ],
-    "admission_time": "unspecified within published admission hours",
-    "condition_key": "ordinary-adult-daytrip-v1:time-unspecified"
   }
 }

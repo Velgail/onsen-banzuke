@@ -2,7 +2,7 @@
 """Build independent, source-backed region ledgers and the Pages release.
 
 No network I/O and no normalization against another region's observations.
-Raw research is authoritative; scoring scales come from rubric 1.1.
+Raw research is authoritative; scoring scales come from the versioned rubric.
 """
 import argparse
 import copy
@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 CATALOG_PATH = ROOT / 'onsen_banzuke_metric_catalog_v1.json'
-SNAPSHOT = 'pilot10-2026-10-03'
+SNAPSHOT = 'pilot10-fees-2026-10-03'
 TARGET_IDS = ['zao', 'kaminoyama', 'kusatsu', 'hakone', 'toyotomi', 'arima',
               'beppu', 'shiobara', 'otemachi', 'shirahone']
 STATES = {'K', 'C', 'Z', 'U', 'X', 'F', 'E', 'A'}
@@ -152,7 +152,95 @@ def normalize_row(row, metric, source_ids, key):
     return row
 
 
-def build_region(study, catalog):
+def build_fee_populations(ledger, classification, catalog):
+    """Explicit membership and ticket IDs; never infer a complete population."""
+    region_id = ledger['region']['id']
+    source_ids = {s['id'] for s in ledger['sources']}
+    facility_ids = {f['id'] for f in ledger['facilities']}
+    if set(classification['facilities']) != facility_ids:
+        raise ValueError(f'{region_id}: fee classification must cover every recorded facility')
+    if not isinstance(classification['inventory_complete'], bool) or not classification['inventory_reason']:
+        raise ValueError(f'{region_id}: explicit fee inventory completeness and reason are required')
+    if classification['inventory_complete'] and not classification.get('inventory_evidence_ids'):
+        raise ValueError(f'{region_id}: complete fee population requires inventory evidence')
+    if not set(classification.get('inventory_evidence_ids', [])) <= source_ids:
+        raise ValueError(f'{region_id}: dangling inventory evidence')
+    plan_map = {p['id']: p for p in ledger['plans']}
+    classified_plans = set()
+    populations = []
+    for day_type in ['weekday', 'weekend']:
+        facilities = []
+        for facility in sorted(ledger['facilities'], key=lambda item: item['id']):
+            definition = classification['facilities'][facility['id']]
+            membership = definition['membership']
+            if membership not in {'included', 'excluded', 'unknown'} or not definition['reason']:
+                raise ValueError(f'{facility["id"]}: invalid fee membership')
+            if not set(definition['evidence_ids']) <= source_ids:
+                raise ValueError(f'{facility["id"]}: dangling membership evidence')
+            if membership != 'unknown' and not definition['evidence_ids']:
+                raise ValueError(f'{facility["id"]}: confirmed fee membership needs evidence')
+            complete = definition['tariff_inventory_complete']
+            if not isinstance(complete, bool) or (complete and not definition['tariff_inventory_evidence_ids']):
+                raise ValueError(f'{facility["id"]}: complete tariff inventory needs evidence')
+            if not set(definition['tariff_inventory_evidence_ids']) <= source_ids:
+                raise ValueError(f'{facility["id"]}: dangling tariff inventory evidence')
+            units = {}
+            for plan_id, entry in definition['plan_classifications'].items():
+                if plan_id not in plan_map or plan_map[plan_id]['facility_id'] != facility['id']:
+                    raise ValueError(f'{facility["id"]}: dangling fee plan')
+                classified_plans.add(plan_id)
+                if entry['series'] not in {'ordinary', 'private', 'meal_required', 'rest_package', 'stay', 'unknown'}:
+                    raise ValueError(f'{plan_id}: invalid fee series')
+                if not entry['reason'] or not set(entry['evidence_ids']) <= source_ids:
+                    raise ValueError(f'{plan_id}: invalid fee classification evidence')
+                if entry['series'] != 'unknown' and not entry['evidence_ids']:
+                    raise ValueError(f'{plan_id}: confirmed fee series needs evidence')
+                plan = plan_map[plan_id]
+                if entry['series'] != 'ordinary':
+                    continue
+                if membership != 'included' or plan['modality'] != 'daytrip' or not entry['evidence_ids']:
+                    raise ValueError(f'{plan_id}: ordinary fee needs confirmed ordinary daytrip membership')
+                if plan['day_type'] not in {day_type, 'all'}:
+                    continue
+                row = plan['metrics'].get('Y01')
+                if row is None or row['status'] in {'A', 'Z'}:
+                    raise ValueError(f'{plan_id}: ordinary fee has no available numerical service')
+                if any(bound is not None and bound < 0 for bound in [row['rawLower'], row['rawUpper']]):
+                    raise ValueError(f'{plan_id}: ordinary monetary bounds must be nonnegative')
+                unit_id = entry['fee_unit_id']
+                if not unit_id or not isinstance(unit_id, str):
+                    raise ValueError(f'{plan_id}: fee unit ID is required')
+                tariff = {'id': unit_id, 'status': row['status'], 'rawLower': row['rawLower'],
+                          'rawUpper': row['rawUpper'], 'evidence_ids': sorted(set(row['evidence_ids'])),
+                          'plan_ids': [plan_id], 'reason': row['reason'], 'day_type': day_type}
+                previous = units.get(unit_id)
+                if previous:
+                    if any(previous[key] != tariff[key] for key in ['status', 'rawLower', 'rawUpper']):
+                        raise ValueError(f'{unit_id}: inconsistent copies of the same admission ticket')
+                    previous['plan_ids'] = sorted(previous['plan_ids'] + [plan_id])
+                    previous['evidence_ids'] = sorted(set(previous['evidence_ids']) | set(tariff['evidence_ids']))
+                else:
+                    units[unit_id] = tariff
+            facilities.append({'facility_id': facility['id'], 'name': facility['name'],
+                               'membership': membership, 'reason': definition['reason'],
+                               'evidence_ids': list(definition['evidence_ids']),
+                               'tariff_inventory_complete': complete,
+                               'tariff_inventory_evidence_ids': list(definition['tariff_inventory_evidence_ids']),
+                               'tariffs': [units[key] for key in sorted(units)]})
+        populations.append({'id': f'{region_id}-ordinary-{day_type}', 'regionId': region_id,
+                            'day_type': day_type, 'policy_id': catalog['regional_daytrip_fee_policy']['id'],
+                            'condition_key': catalog['regional_daytrip_fee_policy']['condition_key'],
+                            'inventory_complete': classification['inventory_complete'],
+                            'inventory_reason': classification['inventory_reason'],
+                            'inventory_evidence_ids': list(classification.get('inventory_evidence_ids', [])),
+                            'condition_note': '曜日別公表通常料金・入場時刻の指定なし（公表入場時間内）。一般成人1名・非住民非会員・入浴のみ・自前タオル可なら持参。指定日の営業・枠・価格は未確認。',
+                            'facilities': facilities})
+    if classified_plans != set(plan_map):
+        raise ValueError(f'{region_id}: fee series classification must cover every plan')
+    return populations
+
+
+def build_region(study, catalog, pricing=None):
     """Pure regional build: no other study or observed extrema are inputs."""
     region_id = study['region']['id']
     metrics = {m['id']: m for m in catalog['metrics']}
@@ -321,11 +409,14 @@ def build_region(study, catalog):
     ledger['rubric_version'] = catalog['version']
     ledger['dataset_kind'] = 'evidence_pilot'
     ledger['snapshot_id'] = SNAPSHOT
-    ledger['trial'] = {'id': f'{region_id}-2026-10-03-v1', 'independent': True,
+    ledger['trial'] = {'id': f'{region_id}-{SNAPSHOT}', 'independent': True,
                        'input_sha256': hashlib.sha256(json.dumps(study, ensure_ascii=False, sort_keys=True).encode()).hexdigest(),
                        'rubric_sha256': hashlib.sha256(json.dumps(catalog, ensure_ascii=False, sort_keys=True).encode()).hexdigest(),
                        'depends_on_regions': [], 'rarity_comparison_connected': False,
                        'note': '他温泉地の調査結果・標本の最大最小・順位を入力にしない。希少性は固定比較台帳未接続で未採点。'}
+    if pricing is not None:
+        ledger['fee_populations'] = build_fee_populations(ledger, pricing, catalog)
+        ledger['trial']['pricing_input_sha256'] = hashlib.sha256(json.dumps(pricing, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
     return ledger
 
 
@@ -358,7 +449,7 @@ def region_report(ledger):
     issues = ''.join(f'<li>{esc(x)}</li>' for x in ledger.get('issues', []))
     excluded = ''.join(f'<li><strong>{esc(f["name"])}</strong>：{esc(f["reason"])}</li>' for f in ledger.get('excluded_facilities', []))
     samples = esc(json.dumps(ledger.get('analysis_samples', []), ensure_ascii=False, indent=2))
-    return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(r['name'])} 独立検証台帳</title><link rel="stylesheet" href="../assets/styles.css"><link rel="stylesheet" href="../assets/article.css"></head><body><main class="article-shell"><nav class="article-links"><a href="../index.html">番付・一覧</a><a href="./pilot10.html">10温泉地の検証</a><a href="../data/releases/{SNAPSHOT}/ledgers/{r['id']}.json">全台帳JSON</a></nav><h1>{esc(r['name'])}：独立検証</h1><p>評価日 2026-10-03 ／ 採点基準 {ledger['rubric_version']} ／ 初回部分調査</p><p>{esc(r['scope_note'])}</p><div class="demo-notice"><strong>調査未完了</strong><span>{coverage['basic_metrics_with_observations']}/{coverage['basic_metric_count']}基本項目に調査行があります。原資料のみの確認・探索済み未確認も含み、候補への適用確認数ではありません。全施設・全パラメータの網羅ではありません。未調査 {coverage['basic_metrics_not_investigated']}項目、標準アクセス188条件はEです。</span></div><h2>確認した特徴・分岐</h2><ul>{findings}</ul><h2>利用候補と条件</h2><ul>{plans}</ul><h2>分析試料・供給対応</h2><pre>{samples}</pre><h2>資料の矛盾・取得制約</h2><ul>{issues}</ul><h2>対象から外した施設・条件</h2><ul>{excluded or "<li>今回の調査では追加除外の判定なし（全件調査は未完了）。</li>"}</ul><h2>調査残</h2><ul>{remaining}</ul><details><summary>246基本項目の全台帳を開く</summary><table><thead><tr><th>基本項目</th><th>実体・条件・原値・点・根拠</th></tr></thead><tbody>{''.join(inventory)}</tbody></table></details><h2>根拠一覧</h2><ul>{sources}</ul><p>試行ID {ledger['trial']['id']}。他温泉地の結果への依存なし。順位・希少性を入力にせず、公開範囲の拡張でも既存の素点は変わりません。</p></main></body></html>'''
+    return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(r['name'])} 独立検証台帳</title><link rel="stylesheet" href="../assets/styles.css"><link rel="stylesheet" href="../assets/article.css"></head><body><main class="article-shell"><nav class="article-links"><a href="../index.html">番付・一覧</a><a href="./pilot10.html">10温泉地の検証</a><a href="../fees.html">日帰り料金の比較</a><a href="../data/releases/{SNAPSHOT}/ledgers/{r['id']}.json">全台帳JSON</a></nav><h1>{esc(r['name'])}：独立検証</h1><p>評価日 2026-10-03 ／ 採点基準 {ledger['rubric_version']} ／ 初回部分調査</p><p>{esc(r['scope_note'])}</p><div class="demo-notice"><strong>調査未完了</strong><span>{coverage['basic_metrics_with_observations']}/{coverage['basic_metric_count']}基本項目に調査行があります。原資料のみの確認・探索済み未確認も含み、候補への適用確認数ではありません。全施設・全パラメータの網羅ではありません。未調査 {coverage['basic_metrics_not_investigated']}項目、標準アクセス188条件はEです。</span></div><h2>確認した特徴・分岐</h2><ul>{findings}</ul><h2>利用候補と条件</h2><ul>{plans}</ul><h2>分析試料・供給対応</h2><pre>{samples}</pre><h2>資料の矛盾・取得制約</h2><ul>{issues}</ul><h2>対象から外した施設・条件</h2><ul>{excluded or "<li>今回の調査では追加除外の判定なし（全件調査は未完了）。</li>"}</ul><h2>調査残</h2><ul>{remaining}</ul><details><summary>全基本項目の台帳を開く</summary><table><thead><tr><th>基本項目</th><th>実体・条件・原値・点・根拠</th></tr></thead><tbody>{''.join(inventory)}</tbody></table></details><h2>根拠一覧</h2><ul>{sources}</ul><p>試行ID {ledger['trial']['id']}。他温泉地の結果への依存なし。順位・希少性を入力にせず、公開範囲の拡張でも既存の素点は変わりません。</p></main></body></html>'''
 
 
 def publish_roster(release):
@@ -373,7 +464,7 @@ def publish_roster(release):
         parent = next((r['candidate_name'] for r in roster['region_candidates'] if r['id'] == region['parent_candidate_id']), '')
         rows.append(f'<tr><th>{esc(region["candidate_name"])}</th><td>{esc(region["prefecture"])}</td><td>{links}</td><td>{report}</td><td>{esc(parent)}<br>{esc(region["overlap_note"])}</td></tr>')
     policies = ''.join(f'<li>{esc(v)}</li>' for v in roster['policy'])
-    document = f'<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>温泉むすめ公式一覧からの対象整理</title><link rel="stylesheet" href="../assets/styles.css"><link rel="stylesheet" href="../assets/article.css"></head><body><main class="article-shell"><nav class="article-links"><a href="../index.html">番付</a><a href="./pilot10.html">10温泉地の検証</a><a href="../data/releases/{SNAPSHOT}/roster.json">対応台帳JSON</a></nav><h1>現行公式一覧から対象を整理する</h1><p>基準日 2026-10-03。<a href="{roster["source_url"]}">温泉むすめ公式の地方別キャラクター一覧</a>から全件を照合しました。</p><div class="demo-notice"><strong>人数と温泉地数は別に管理</strong><span>掲載137キャラクターのうち温泉キャラクター135、その他2。有馬の2人を同じ対象へ統合し、134の地域調査候補を作成しました。親地域と下位地区を含むため、互いに重ならない134温泉地の確定を意味しません。</span></div><p>指定10地域を初回部分調査、残る124候補はEです。130に件数を合わせた切り捨ては行いません。親子関係の施設集合を確認してから、全国の地域数と番付単位を確定します。</p><ul>{policies}</ul><p>地域名は調査用の候補名称です。キャラクター一覧だけでは地域境界・住所付き構成施設一覧・現在の入浴可否を確定できません。</p><div class="report-table-wrap"><table><thead><tr><th>地域調査候補</th><th>公式地方表記</th><th>公式対応キャラクター</th><th>調査状態</th><th>親地域・重なり</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div></main></body></html>'
+    document = f'<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>温泉むすめ公式一覧からの対象整理</title><link rel="stylesheet" href="../assets/styles.css"><link rel="stylesheet" href="../assets/article.css"></head><body><main class="article-shell"><nav class="article-links"><a href="../index.html">番付</a><a href="./pilot10.html">10温泉地の検証</a><a href="../fees.html">日帰り料金の比較</a><a href="../data/releases/{SNAPSHOT}/roster.json">対応台帳JSON</a></nav><h1>現行公式一覧から対象を整理する</h1><p>基準日 2026-10-03。<a href="{roster["source_url"]}">温泉むすめ公式の地方別キャラクター一覧</a>から全件を照合しました。</p><div class="demo-notice"><strong>人数と温泉地数は別に管理</strong><span>掲載137キャラクターのうち温泉キャラクター135、その他2。有馬の2人を同じ対象へ統合し、134の地域調査候補を作成しました。親地域と下位地区を含むため、互いに重ならない134温泉地の確定を意味しません。</span></div><p>指定10地域を初回部分調査、残る124候補はEです。130に件数を合わせた切り捨ては行いません。親子関係の施設集合を確認してから、全国の地域数と番付単位を確定します。</p><ul>{policies}</ul><p>地域名は調査用の候補名称です。キャラクター一覧だけでは地域境界・住所付き構成施設一覧・現在の入浴可否を確定できません。</p><div class="report-table-wrap"><table><thead><tr><th>地域調査候補</th><th>公式地方表記</th><th>公式対応キャラクター</th><th>調査状態</th><th>親地域・重なり</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div></main></body></html>'
     (ROOT / 'docs/reports/roster.html').write_text(document)
     return roster
 
@@ -384,10 +475,10 @@ def pilot_report(ledgers, roster):
     for ledger in ledgers:
         r, c = ledger['region'], ledger['coverage']
         findings = '<br>'.join(esc(v) for v in ledger.get('findings', [])[:2])
-        rows.append(f'<tr><th><a href="./{r["id"]}.html">{esc(r["name"])}</a></th><td>{c["source_count"]}</td><td>{c["facility_count"]}</td><td>{c["plan_count"]}</td><td>{c["basic_metrics_with_observations"]}/246</td><td>{findings}</td></tr>')
+        rows.append(f'<tr><th><a href="./{r["id"]}.html">{esc(r["name"])}</a></th><td>{c["source_count"]}</td><td>{c["facility_count"]}</td><td>{c["plan_count"]}</td><td>{c["basic_metrics_with_observations"]}/{c["basic_metric_count"]}</td><td>{findings}</td></tr>')
     total_sources = sum(l['coverage']['source_count'] for l in ledgers)
     total_plans = sum(l['coverage']['plan_count'] for l in ledgers)
-    return f'<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>10温泉地の独立検証</title><link rel="stylesheet" href="../assets/styles.css"><link rel="stylesheet" href="../assets/article.css"></head><body><main class="article-shell"><nav class="article-links"><a href="../index.html">番付をつくる</a><a href="./roster.html">現行公式一覧と対象整理</a><a href="../concept.html">公開設計</a></nav><h1>指定10温泉地を独立に検証する</h1><p>評価日 2026-10-03 ／ 採点基準1.1 ／ {SNAPSHOT}</p><div class="demo-notice"><strong>初回部分調査</strong><span>実在する10地域・{total_plans}利用プランを記録。資料台帳登録件数は{total_sources}件（地域別重複と取得失敗を含む）。各地域246基本項目の台帳と188標準アクセス条件を用意し、未調査をEとして残しました。全項目・全施設の完了や、現行一覧全地域の採点完了を表しません。</span></div><h2>今回の独立試行</h2><p>各温泉地の調査入力は別JSONです。同じ採点基準と固定尺度で変換し、他温泉地の得点・最大値・最小値・順位を入力にしません。1件だけ再生成でき、対象の追加で既存の素点は変わりません。希少性は固定比較台帳未接続のため未採点です。</p><p>調査行数は、少なくとも一つの実体・パラメータ・条件について調査した基本項目数です。原資料だけを確認して候補への適用が未確認の行と、探索済み未確認の行も含みます。全槽・全条件の取得率や候補への適用確認数とは異なります。施設数には営業掲載の確認のみで採点候補を作らなかった施設も含みます。</p><div class="report-table-wrap"><table><thead><tr><th>対象</th><th>資料登録</th><th>施設台帳</th><th>プラン</th><th>調査行あり</th><th>確認した分岐</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div><h2>基準運用で確認したこと</h2><ul><li>源泉試料のpH・温度・濃度は、採水日・供給対応の確認状態も含めて別台帳へ保存する。現在の浴槽値として一律転用しない。</li><li>浴槽・施設・料金プラン・地域IPの適用実体を記録する。安い日帰り施設と別施設の露天を一つの候補へまとめない。</li><li>税込・税・必須レンタルまで確定しない料金は、公表額の下限と未確定上限で保存する。安さの下限点を作らず、予算の必須条件は3状態で判定する。</li><li>かけ流し・源泉100%という表現だけから五条件同時無加工率を100%にしない。方式の存在と営業中の時間率を区別する。</li><li>油分の有無・油臭の強度・除去工程は別の特性。泉質名から感覚強度や現地体験を作らない。</li><li>営業休止・時間帯・男女別・宿泊限定・季節・貸切人数を利用条件へ保存する。閉業施設は根拠付きで外し、未調査を不存在に読み替えない。</li></ul><h2>項目の整理を判断する材料</h2><p>今回の調査で不足が目立ったのは項目数より、値に結び付く実体・時点・条件です。透明性項目I群と水の特性C/P群、感覚S群、利用条件Y/Z群は異なる問いに答えるため、今回は件数合わせの統合を行っていません。五条件合成P17と個別処理条件は同じ分野で重みを配分し、二重の重視を見直せる形にします。</p><p>次の基準改訂では、公式記述・分析測定・現地観測を識別する観測チャンネルと、公開時点の不一致を保持する形式を明文化するのが有効です。項目の追加・統合・整理は、その分離でも答えられない具体的リクエストを確認してから判断します。</p><h2>公開と次の対象</h2><p>架空のデモ6地域・9プランを公開フォルダから削除し、この独立検証へ置き換えました。現行公式一覧の温泉キャラクター{roster["onsen_character_count"]}人から整理した地域候補は{roster["region_candidate_count"]}件。<a href="./roster.html">対象対応表</a>では親地域と下位地区の重なり、台湾、未調査の入浴可否を保持しています。</p><h2>残る調査</h2><p>各地域の全構成施設・浴槽の網羅、現在の成分と供給系統、浴槽での感覚強度、平日/土曜の宿泊見積り、標準アクセス、現行IP展示全件は未完了です。残りは各地域台帳に明示しており、未知の値を補完した確定全国番付は出していません。</p></main></body></html>'
+    return f'<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>10温泉地の独立検証</title><link rel="stylesheet" href="../assets/styles.css"><link rel="stylesheet" href="../assets/article.css"></head><body><main class="article-shell"><nav class="article-links"><a href="../index.html">番付をつくる</a><a href="./roster.html">現行公式一覧と対象整理</a><a href="../concept.html">公開設計</a><a href="../fees.html">日帰り料金の比較</a></nav><h1>指定10温泉地を独立に検証する</h1><p>評価日 2026-10-03 ／ 採点基準{ledgers[0]['rubric_version']} ／ {SNAPSHOT}</p><div class="demo-notice"><strong>初回部分調査</strong><span>実在する10地域・{total_plans}利用プランを記録。資料台帳登録件数は{total_sources}件（地域別重複と取得失敗を含む）。各地域{ledgers[0]["coverage"]["basic_metric_count"]}基本項目の台帳と188標準アクセス条件を用意し、未調査をEとして残しました。全項目・全施設の完了や、現行一覧全地域の採点完了を表しません。</span></div><h2>今回の独立試行</h2><p>各温泉地の調査入力は別JSONです。同じ採点基準と固定尺度で変換し、他温泉地の得点・最大値・最小値・順位を入力にしません。1件だけ再生成でき、対象の追加で既存の素点は変わりません。希少性は固定比較台帳未接続のため未採点です。</p><p>調査行数は、少なくとも一つの実体・パラメータ・条件について調査した基本項目数です。原資料だけを確認して候補への適用が未確認の行と、探索済み未確認の行も含みます。全槽・全条件の取得率や候補への適用確認数とは異なります。施設数には営業掲載の確認のみで採点候補を作らなかった施設も含みます。</p><div class="report-table-wrap"><table><thead><tr><th>対象</th><th>資料登録</th><th>施設台帳</th><th>プラン</th><th>調査行あり</th><th>確認した分岐</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div><h2>基準運用で確認したこと</h2><ul><li>源泉試料のpH・温度・濃度は、採水日・供給対応の確認状態も含めて別台帳へ保存する。現在の浴槽値として一律転用しない。</li><li>浴槽・施設・料金プラン・地域IPの適用実体を記録する。安い日帰り施設と別施設の露天を一つの候補へまとめない。</li><li>税込・税・必須レンタルまで確定しない料金は、公表額の下限と未確定上限で保存する。安さの下限点を作らず、予算の必須条件は3状態で判定する。</li><li>かけ流し・源泉100%という表現だけから五条件同時無加工率を100%にしない。方式の存在と営業中の時間率を区別する。</li><li>油分の有無・油臭の強度・除去工程は別の特性。泉質名から感覚強度や現地体験を作らない。</li><li>営業休止・時間帯・男女別・宿泊限定・季節・貸切人数を利用条件へ保存する。閉業施設は根拠付きで外し、未調査を不存在に読み替えない。</li></ul><h2>項目の整理を判断する材料</h2><p>今回の調査で不足が目立ったのは項目数より、値に結び付く実体・時点・条件です。透明性項目I群と水の特性C/P群、感覚S群、利用条件Y/Z群は異なる問いに答えるため、今回は件数合わせの統合を行っていません。五条件合成P17と個別処理条件は同じ分野で重みを配分し、二重の重視を見直せる形にします。</p><p>次の基準改訂では、公式記述・分析測定・現地観測を識別する観測チャンネルと、公開時点の不一致を保持する形式を明文化するのが有効です。項目の追加・統合・整理は、その分離でも答えられない具体的リクエストを確認してから判断します。</p><h2>通常日帰り料金の地域集約</h2><p>基準1.2で施設一件・同じ通常利用条件による中央値Y23、指定予算内の施設数Y24・割合Y25を追加しました。同一券の複数浴槽は重複排除し、休憩付き券などは別系列です。10地域とも母集団は未完成のため、地域中央値・割合は未算出。<a href="../fees.html">料金の比較画面</a>では取得範囲の参考値、確認済み予算内件数の下限、施設別の対象所属と料金選択肢の調査残を分けて表示します。</p><h2>公開と次の対象</h2><p>架空のデモ6地域・9プランを公開フォルダから削除し、この独立検証へ置き換えました。現行公式一覧の温泉キャラクター{roster["onsen_character_count"]}人から整理した地域候補は{roster["region_candidate_count"]}件。<a href="./roster.html">対象対応表</a>では親地域と下位地区の重なり、台湾、未調査の入浴可否を保持しています。</p><h2>残る調査</h2><p>各地域の全構成施設・浴槽の網羅、現在の成分と供給系統、浴槽での感覚強度、平日/土曜の宿泊見積り、標準アクセス、現行IP展示全件は未完了です。残りは各地域台帳に明示しており、未知の値を補完した確定全国番付は出していません。</p></main></body></html>'
 
 
 def publish(ledgers, catalog):
@@ -395,7 +486,7 @@ def publish(ledgers, catalog):
         raise ValueError('publication requires all ten requested independent study files')
     release = ROOT / 'docs/data/releases' / SNAPSHOT
     envelope = {'schema_version': '2', 'rubric_version': catalog['version'], 'snapshot_id': SNAPSHOT, 'dataset_kind': 'evidence_pilot'}
-    regions, plans, all_views = [], [], set()
+    regions, plans, all_views, populations = [], [], set(), []
     for ledger in ledgers:
         r = copy.deepcopy(ledger['region'])
         r.update(summary=' '.join(ledger.get('findings', [])[:2]), landscape=r['prefecture'], coverage=ledger['coverage'],
@@ -403,6 +494,7 @@ def publish(ledgers, catalog):
                  study_status=ledger['study']['status'])
         regions.append(r)
         plans.extend(ledger['plans'])
+        populations.extend(ledger.get('fee_populations', []))
         for plan in ledger['plans']:
             all_views.update(plan['metrics'])
     # Keep the core water axes visible as missing, without inventing observations.
@@ -422,7 +514,9 @@ def publish(ledgers, catalog):
     write_json(release / 'regions.json', {**envelope, 'regions': regions})
     write_json(release / 'ranking.json', {**envelope, 'plans': plans})
     write_json(release / 'views.json', {**envelope, 'views': views})
+    write_json(release / 'fee-populations.json', {**envelope, 'policy': catalog['regional_daytrip_fee_policy'], 'populations': populations})
     write_json(release / f'rubric-{catalog["version"]}.json', catalog)
+    (ROOT / 'docs/criteria' / f'scoring-{catalog["version"]}.md').write_text((ROOT / 'onsen_banzuke_master_prompt_v1.md').read_text())
     counts = {'region_count': len(regions), 'plan_count': len(plans),
               'facility_count': sum(l['coverage']['facility_count'] for l in ledgers),
               'source_count': sum(l['coverage']['source_count'] for l in ledgers),
@@ -431,6 +525,8 @@ def publish(ledgers, catalog):
     write_json(ROOT / 'docs/data/manifest.json', {**envelope, **counts, 'published_at': '2026-10-03',
         'regions_url': f'./data/releases/{SNAPSHOT}/regions.json', 'ranking_url': f'./data/releases/{SNAPSHOT}/ranking.json',
         'views_url': f'./data/releases/{SNAPSHOT}/views.json', 'roster_url': f'./data/releases/{SNAPSHOT}/roster.json', 'rubric_url': f'./data/releases/{SNAPSHOT}/rubric-{catalog["version"]}.json',
+        'fee_populations_url': f'./data/releases/{SNAPSHOT}/fee-populations.json',
+        'fee_policy_id': catalog['regional_daytrip_fee_policy']['id'],
         'investigation_status': 'partial', 'requested_expansion_target_count': 130,
         'scope_note': 'ユーザー指定10温泉地の初回独立検証。130温泉地の網羅・各地域の全浴槽網羅・指定日の予約成立を表さない。'})
     roster = publish_roster(release)
@@ -444,11 +540,14 @@ def main():
     parser.add_argument('--publish', action='store_true', help='assemble the ten independently built studies')
     args = parser.parse_args()
     catalog = read_json(CATALOG_PATH)
+    pricing = read_json(ROOT / 'research/pricing/ordinary-daytrip-2026-10-03.json')
+    if pricing['policy_id'] != catalog['regional_daytrip_fee_policy']['id']:
+        raise ValueError('fee classification policy does not match the rubric')
     selected = [args.region] if args.region else TARGET_IDS
     ledgers = []
     for region_id in selected:
         path = ROOT / 'research/regions' / f'{region_id}.json'
-        ledger = build_region(read_json(path), catalog)
+        ledger = build_region(read_json(path), catalog, pricing['regions'][region_id])
         ledgers.append(ledger)
         write_json(ROOT / 'docs/data/releases' / SNAPSHOT / 'ledgers' / f'{region_id}.json', ledger)
         report = ROOT / 'docs/reports' / f'{region_id}.html'

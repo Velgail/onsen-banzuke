@@ -2,6 +2,7 @@ import { rankRegions, evaluateRequirement } from './scoring.mjs';
 import { buildCatalogViews, parameterView } from './catalog.mjs';
 import { createSettings, validateConfig } from './settings.mjs';
 import { comparisonPlans } from './comparison.mjs';
+import { attachRegionalFeeMetrics, validateFeePopulations } from './regional-features.mjs';
 
 const $ = id => document.getElementById(id);
 const html = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -20,7 +21,7 @@ const presets = {
   value:{Y01:1,B06:0.3},
   mild:{'S06[odor=sulfur]':-1,'H18[place=bath]':0.6,Y01:0.3},
 };
-let manifest, catalog, regions = [], plans = [], views = [], currentRows = [];
+let manifest, catalog, regions = [], plans = [], views = [], feePopulations = [], currentRows = [];
 let state = createSettings();
 let comparisonDayType = 'weekday';
 let pickerQuery = '', pickerGroup = '';
@@ -80,7 +81,9 @@ function renderPicker() {
 }
 function renderParameterHelp() {
   const view = viewFor($('metric-add').value);
-  $('metric-parameters-field').hidden = !view?.template;
+  const budget = ['Y24','Y25'].includes(view?.metricId);
+  $('metric-budget-field').hidden = !budget;
+  $('metric-parameters-field').hidden = !view?.template || budget;
   const entries = Object.entries(view?.parameters ?? {});
   $('metric-parameters-help').textContent = entries.map(([key,definition])=>`${key}: ${typeof definition==='string'?definition:JSON.stringify(definition)}`).join(' / ');
   $('add-preference').disabled = $('add-requirement').disabled = !view;
@@ -89,7 +92,8 @@ function selectedView() {
   const view = viewFor($('metric-add').value);
   if (!view) throw new Error('追加する特徴を選んでください。');
   if (!view.template) return view;
-  const created = parameterView(catalog,views,view.key,$('metric-parameters').value);
+  const parameterText = ['Y24','Y25'].includes(view.metricId) ? `budget=${$('metric-budget').value}` : $('metric-parameters').value;
+  const created = parameterView(catalog,views,view.key,parameterText);
   if (!viewFor(created.key)) views.push(created);
   return created;
 }
@@ -148,13 +152,19 @@ function showCalculationError(error) {
   ['count-confirmed','count-unknown','count-failed'].forEach(id=>$(id).textContent='—');
   $('result-message').textContent='不正な値を既定値に置き換えず、再計算を止めています。'; $('ranking-note').textContent=''; $('active-summary').innerHTML='';
 }
+function currentCandidates() {
+  const source = manifest.dataset_kind === 'synthetic_demo'
+    ? plans.map(plan => plan.day_type == null ? {...plan, day_type:'all'} : plan) : plans;
+  const candidates = comparisonPlans(source, {modality:state.modality, dayType:comparisonDayType});
+  return attachRegionalFeeMetrics(candidates, feePopulations,
+    [...state.selected, ...conditionLeaves(state.requirements).map(node => node.metricKey)],
+    {dayType:comparisonDayType});
+}
 function renderResults() {
   if (!manifest) return;
   try {
     validateConfig(configFor(),manifest,catalog,views);
-    const comparisonSource=manifest.dataset_kind==='synthetic_demo'
-      ? plans.map(plan=>plan.day_type==null?{...plan,day_type:'all'}:plan) : plans;
-    const candidates=comparisonPlans(comparisonSource,{modality:state.modality,dayType:comparisonDayType});
+    const candidates=currentCandidates();
     const result=rankRegions(regions,candidates,settingsFor());
     const pending=uniqueExcluded(result.unknown,new Set(result.confirmed.map(row=>row.id)));
     const candidateIds=new Set(candidates.map(plan=>plan.regionId));
@@ -179,7 +189,7 @@ function renderResults() {
       $('ranking-list').innerHTML=currentRows.map(row=>{
         const score=row.score, priceKey=row.bestPlan.modality==='stay'?['Y03','Y04'].find(key=>row.bestPlan.metrics[key]):'Y01';
         const price=priceKey?row.bestPlan.metrics[priceKey]:undefined;
-        const priceLabel=price?.rawLower!=null?`${nameFor(priceKey)} ${rawLabel(price)}`:'料金 未確認';
+        const priceLabel=price?.rawLower!=null?`${row.bestPlan.modality==='daytrip'?'採用候補の入浴料':nameFor(priceKey)} ${rawLabel(price)}`:'料金 未確認';
         return `<article class="ranking-card"><div class="rank-number">${row.rank??'—'}${row.rank!=null?'<small>位</small>':''}</div><div class="region-main"><span class="landscape-tag">${html(row.region.landscape)}</span><h3>${html(row.name)}</h3><p class="pool-label">採用候補 · ${html(row.bestPlan.label)}${['facility_scope','bath_group'].includes(row.bestPlan.entity_scope)?'（'+html(entityNames[row.bestPlan.entity_scope])+'）':''}</p><p class="price-label">${html(priceLabel)}</p>${result.unknown.some(item=>item.region.id===row.id)?'<small class="pending-alternative">未確認の別候補あり</small>':''}</div><div class="score-block"><span class="score-caption">${score?'適合点の下限':'まだ未採点'}</span><strong class="score-number">${score?decimal(score.lower):'—'}${score?'<small>点</small>':''}</strong><span class="score-range">${score?`幅 ${decimal(score.lower)}〜${decimal(score.upper)}`:'重みを指定してください'}</span>${score?`<div class="interval-track" aria-hidden="true"><span class="known-range" style="left:${score.lower}%;width:${Math.max(1,score.upper-score.lower)}%"></span><i style="width:${score.lower}%"></i></div>`:''}</div><div class="evidence-block"><span>根拠取得率</span><strong>${score?Math.round(score.coverage)+'%':'—'}</strong>${score?`<small>数値確定度 ${Math.round(score.certainty)}%</small>`:''}</div><button class="card-action" type="button" data-detail="${html(row.id)}">内訳を見る <span aria-hidden="true">↗</span></button></article>`;
       }).join('')||`<div class="empty-state"><h3>条件適合を確認できた候補はありません</h3><p>未確認 ${pending.length}温泉地、条件外 ${failed.length}温泉地。条件は自動で緩めません。</p></div>`;
     }else{
@@ -218,7 +228,7 @@ async function openDetail(id) {
       return `<tr><th scope="row">${escapeHtml(nameFor(key))}<small>${c?`${escapeHtml(preferenceLabel(key))}<br>重み ${c.weight} / 配分 ${decimal(c.coefficient*100)}%`:''}</small></th><td>${escapeHtml(rawLabel(m))}<small>${escapeHtml(entityNames[m?.entity_scope]??m?.entity_scope??'')} / ${escapeHtml(m?.entity_id??'')}</small></td><td>${escapeHtml(stateNames[m?.status??'E'])}</td><td>${c?decimal(c.lower)+'〜'+decimal(c.upper):m?decimal(m.lower)+'〜'+decimal(m.upper):'0〜100'}</td><td>${c?decimal(c.weightedLower):'—'}</td></tr><tr class="evidence-row"><td colspan="5">${escapeHtml(m?.reason??(m?'':'この条件の調査未完了。'))} ${escapeHtml(m?.condition??'')}<br>${refs}</td></tr>`;
     }).join('');
     const alternatives = plans.filter(plan=>plan.regionId===id).map(plan=>`${plan.label}（${plan.modality==='stay'?'宿泊':'日帰り'} / ${plan.day_type??'曜日未指定'}）`).join('、');
-    $('detail-content').innerHTML = `<p class="detail-note"><strong>${escapeHtml(row.bestPlan.label)}</strong><br>${escapeHtml(row.bestPlan.condition_label)}</p><p>${escapeHtml(row.region.summary)}</p>${ledger.coverage?`<p class="demo-notice">初回部分調査：${ledger.coverage.basic_metrics_with_observations}/246基本項目に調査行あり。全浴槽・全条件の網羅ではありません。</p>`:""}${row.region.report_url?`<p><a href="${escapeHtml(row.region.report_url)}">全246項目・分析試料・残課題・根拠一覧を読む ↗</a></p>`:""}<div class="detail-table-wrap"><table class="detail-table"><thead><tr><th>選んだ特徴</th><th>生値・適用実体</th><th>状態</th><th>適合点の幅</th><th>下限への寄与</th></tr></thead><tbody>${rows}</tbody></table></div><p class="detail-note">${row.score?`採用プラン下限 ${decimal(row.score.lower)}点 / 上限 ${decimal(row.score.upper)}点。根拠取得率 ${decimal(row.score.coverage)}%、数値確定度 ${decimal(row.score.certainty)}%。`:'好みが未設定のため総合点は算出していません。'}</p>${row.bestEnvelope&&row.score?`<p class="field-note">同条件候補集合から最良を選ぶ幅：${decimal(row.bestEnvelope.lower)}〜${decimal(row.bestEnvelope.upper)}点。上限側は別の候補の場合があります。</p>`:''}<p class="field-note">収録候補：${escapeHtml(alternatives)}</p><p class="field-note">${escapeHtml(row.bestPlan.evidence_note)}</p>`;
+    $('detail-content').innerHTML = `<p class="detail-note"><strong>${escapeHtml(row.bestPlan.label)}</strong><br>${escapeHtml(row.bestPlan.condition_label)}</p><p>${escapeHtml(row.region.summary)}</p>${ledger.coverage?`<p class="demo-notice">初回部分調査：${ledger.coverage.basic_metrics_with_observations}/${catalog.basic_metric_count}基本項目に調査行あり。全浴槽・全条件の網羅ではありません。</p>`:""}${row.region.report_url?`<p><a href="${escapeHtml(row.region.report_url)}">全項目・分析試料・残課題・根拠一覧を読む ↗</a></p>`:""}<div class="detail-table-wrap"><table class="detail-table"><thead><tr><th>選んだ特徴</th><th>生値・適用実体</th><th>状態</th><th>適合点の幅</th><th>下限への寄与</th></tr></thead><tbody>${rows}</tbody></table></div><p class="detail-note">${row.score?`採用プラン下限 ${decimal(row.score.lower)}点 / 上限 ${decimal(row.score.upper)}点。根拠取得率 ${decimal(row.score.coverage)}%、数値確定度 ${decimal(row.score.certainty)}%。`:'好みが未設定のため総合点は算出していません。'}</p>${row.bestEnvelope&&row.score?`<p class="field-note">同条件候補集合から最良を選ぶ幅：${decimal(row.bestEnvelope.lower)}〜${decimal(row.bestEnvelope.upper)}点。上限側は別の候補の場合があります。</p>`:''}<p class="field-note">収録候補：${escapeHtml(alternatives)}</p><p class="field-note">${escapeHtml(row.bestPlan.evidence_note)}</p>`;
   } catch(error) { $('detail-content').innerHTML=`<p>${escapeHtml(error.message)}</p><p><a href="${escapeHtml(row.region.report_url)}">調査台帳を読む</a></p>`; }
 }
 
@@ -230,7 +240,7 @@ function addChild(group,child){
 }
 $('metric-search').addEventListener('input',event=>{pickerQuery=event.target.value;renderPicker();});
 $('metric-group').addEventListener('change',event=>{pickerGroup=event.target.value;renderPicker();});
-$('metric-add').addEventListener('change',()=>{$('metric-parameters').value='';renderParameterHelp();});
+$('metric-add').addEventListener('change',()=>{$('metric-parameters').value='';$('metric-budget').value='';renderParameterHelp();});
 $('add-preference').addEventListener('click',()=>{
   try{const view=selectedView();if(state.selected.includes(view.key))throw new Error('この特徴はすでに採点に追加されています。');state.selected.push(view.key);state.weights[view.key]=0;state.preset=null;$('settings-message').textContent='重みを指定して採点してください。';render();}catch(error){reportSettingError(error);}
 });
@@ -301,7 +311,7 @@ $('detail-dialog').addEventListener('click',event=>{if(event.target===$('detail-
 $('share-settings').addEventListener('click',async()=>{
   if(!manifest)return;
   try{
-    const config=configFor();validateConfig(config,manifest,catalog,views);rankRegions(regions,plans,settingsFor());
+    const config=configFor();validateConfig(config,manifest,catalog,views);rankRegions(regions,currentCandidates(),settingsFor());
     const url=new URL(location.href);url.hash=new URLSearchParams({config:JSON.stringify(config)}).toString();history.replaceState(null,'',url);
     try{await navigator.clipboard.writeText(url.toString());$('share-link').hidden=true;$('settings-message').textContent='データ版・重み・希望帯・必須条件を含むリンクをコピーしました。';}
     catch{$('share-link').value=url.toString();$('share-link').hidden=false;$('share-link').select();$('settings-message').textContent='このリンクを選択してコピーしてください。';}
@@ -311,9 +321,10 @@ async function start(){
   try{
     manifest=await fetchJson('./data/manifest.json');
     if(!['1','2'].includes(manifest.schema_version)||!['synthetic_demo','evidence_pilot'].includes(manifest.dataset_kind))throw new Error('このページで扱える公開データ形式ではありません。');
-    const [regionData,rankingData,viewData,rubric]=await Promise.all([fetchJson(manifest.regions_url),fetchJson(manifest.ranking_url),fetchJson(manifest.views_url),fetchJson(manifest.rubric_url)]);
+    const [regionData,rankingData,viewData,rubric,feeData]=await Promise.all([fetchJson(manifest.regions_url),fetchJson(manifest.ranking_url),fetchJson(manifest.views_url),fetchJson(manifest.rubric_url),manifest.fee_populations_url?fetchJson(manifest.fee_populations_url):null]);
     [regionData,rankingData,viewData].forEach(verifyRelease);catalog=rubric;
     if(catalog.version!==manifest.rubric_version)throw new Error('採点カタログの版が一致しません。');
+    if(feeData){verifyRelease(feeData);if(feeData.policy.id!==manifest.fee_policy_id||feeData.policy.id!==catalog.regional_daytrip_fee_policy.id)throw new Error('日帰り料金の集約基準が一致しません。');feePopulations=feeData.populations;validateFeePopulations(feePopulations,regionData.regions,catalog.regional_daytrip_fee_policy);}
     regions=regionData.regions;plans=rankingData.plans;views=buildCatalogViews(catalog,viewData.views,plans);
     if(regions.length!==manifest.region_count||plans.length!==manifest.plan_count)throw new Error('索引と候補データの件数が一致しません。');
     $('snapshot-label').textContent=manifest.snapshot_id;

@@ -196,7 +196,7 @@ function inferUnit(metric) {
   if (/日数/.test(metric.raw ?? '')) return '日';
   if (/年数/.test(metric.raw ?? '')) return '年';
   if (/人数/.test(metric.raw ?? '')) return '人';
-  if (/件数|回数|企画数/.test(metric.raw ?? '')) return '件';
+  if (/件数|回数|企画数|施設数/.test(metric.raw ?? '')) return '件';
   return '';
 }
 

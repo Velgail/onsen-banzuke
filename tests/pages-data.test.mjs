@@ -9,7 +9,7 @@ const read = async url => JSON.parse(await readFile(url, 'utf8'));
 const manifest = await read(new URL('data/manifest.json', docs));
 const isPilot = manifest.dataset_kind === 'evidence_pilot';
 const pilotOnly = { skip: !isPilot };
-const artifactNames = ['regions','ranking','views','rubric',...(isPilot ? ['roster'] : [])];
+const artifactNames = ['regions','ranking','views','rubric',...(isPilot ? ['roster'] : []),...(manifest.fee_populations_url ? ['fee_populations'] : [])];
 const artifacts = Object.fromEntries(await Promise.all(artifactNames.map(async name=>{
   const path=manifest[`${name}_url`];assert.equal(typeof path,'string');assert.ok(path.startsWith(`./data/releases/${manifest.snapshot_id}/`));
   const url = new URL(path,docs);assert.ok(url.href.startsWith(docs.href), `${name} must stay inside docs`);
@@ -64,12 +64,12 @@ test('synthetic release identities and provenance cannot be mistaken for real re
 
 test('published criteria and fixed-scale catalogue match authoritative files',async()=>{
  assert.deepEqual(artifacts.rubric,catalog);assert.equal(manifest.rubric_version,catalog.version);
- assert.equal(await readFile(new URL('criteria/scoring-1.1.md',docs),'utf8'),await readFile(new URL('../onsen_banzuke_master_prompt_v1.md',import.meta.url),'utf8'));
+ assert.equal(await readFile(new URL('criteria/scoring-'+catalog.version+'.md',docs),'utf8'),await readFile(new URL('../onsen_banzuke_master_prompt_v1.md',import.meta.url),'utf8'));
 });
 
-test('all 246 axes remain selectable, with observed parameter combinations validated',()=>{
+test('all declared axes remain selectable, with observed parameter combinations validated',()=>{
  const views=catalogueViews;
- assert.equal(views.filter(v=>!v.key.includes('[')).length,246);
+ assert.equal(catalog.metrics.length,catalog.basic_metric_count);
  assert.equal(views.filter(v=>!v.key.includes('[')).length,catalog.basic_metric_count);
  for(const view of artifacts.views.views)assert.equal(normalizeMetricKey(catalog,view.key),view.key,`${view.key}: publish canonical keys`);
  for(const plan of plans)for(const [key,row] of Object.entries(plan.metrics)){
@@ -84,8 +84,8 @@ test('all 246 axes remain selectable, with observed parameter combinations valid
 
 test('each independent ledger covers the full basic inventory and uninvestigated access slots honestly',pilotOnly,()=>{
  for(const ledger of ledgers){
-  assert.equal(ledger.metric_inventory.length,246);assert.equal(ledger.coverage.complete,false);
-  assert.equal(ledger.coverage.basic_metrics_with_observations+ledger.coverage.basic_metrics_not_investigated,246);
+  assert.equal(ledger.metric_inventory.length,catalog.basic_metric_count);assert.equal(ledger.coverage.complete,false);
+  assert.equal(ledger.coverage.basic_metrics_with_observations+ledger.coverage.basic_metrics_not_investigated,catalog.basic_metric_count);
   assert.deepEqual(ledger.trial.depends_on_regions,[]);assert.equal(ledger.trial.independent,true);assert.equal(ledger.trial.rarity_comparison_connected,false);
   assert.match(ledger.trial.input_sha256,/^[a-f0-9]{64}$/);assert.equal(ledger.access_inventory.length,188);
   assert.ok(ledger.access_inventory.every(row=>row.status==='E'));
@@ -156,4 +156,38 @@ test('independent current official roster retains all characters, duplicates, ov
 test('initial names-only presentation produces no total scores or ranks',()=>{
  const result=rankRegions(regions,plans,{modality:'all'});assert.equal(result.confirmed.length,regions.length);
  assert.ok(result.confirmed.every(r=>r.score===null&&r.rank===null));
+});
+
+
+test('ordinary fee populations retain source-backed membership, shared ticket identities, and uninvestigated facilities',pilotOnly,()=>{
+ const data=artifacts.fee_populations;
+ for(const key of envelopeKeys)assert.equal(data[key],manifest[key]);
+ assert.deepEqual(data.policy,catalog.regional_daytrip_fee_policy);
+ assert.equal(data.populations.length,regions.length*2);
+ for(const ledger of ledgers){
+  const populations=data.populations.filter(p=>p.regionId===ledger.region.id);
+  assert.deepEqual(populations,ledger.fee_populations);
+  assert.deepEqual(populations.map(p=>p.day_type),['weekday','weekend']);
+  const sourceIds=new Set(ledger.sources.map(s=>s.id));
+  for(const population of populations){
+   assert.equal(population.inventory_complete,false);assert.equal(population.policy_id,manifest.fee_policy_id);
+   assert.equal(population.facilities.length,ledger.facilities.length);unique(population.facilities.map(f=>f.facility_id));
+   for(const facility of population.facilities){
+    assert.ok(facility.reason);unique(facility.tariffs.map(t=>t.id));assert.equal(facility.tariff_inventory_complete,false);
+    assert.ok(facility.evidence_ids.every(id=>sourceIds.has(id)));
+    if(facility.membership!=='unknown')assert.ok(facility.evidence_ids.length);
+    for(const tariff of facility.tariffs){
+     assert.equal(facility.membership,'included');assert.equal(tariff.day_type,population.day_type);
+     assert.ok(tariff.evidence_ids.every(id=>sourceIds.has(id)));
+     for(const planId of tariff.plan_ids){
+      const plan=ledger.plans.find(p=>p.id===planId);assert.ok(plan);assert.equal(plan.facility_id,facility.facility_id);
+      assert.equal(plan.metrics.Y01.rawLower,tariff.rawLower);assert.equal(plan.metrics.Y01.rawUpper,tariff.rawUpper);
+     }
+    }
+   }
+  }
+ }
+ const hakone=data.populations.find(p=>p.regionId==='hakone'&&p.day_type==='weekday');
+ const shy=hakone.facilities.find(f=>f.name.includes('秀明館'));
+ assert.equal(shy.membership,'included');assert.equal(shy.tariffs.length,0);
 });

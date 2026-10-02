@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {comparisonPlans} from '../docs/assets/comparison.mjs';
-const plans=JSON.parse(await readFile(new URL('../docs/data/releases/pilot10-2026-10-03/ranking.json',import.meta.url))).plans;
+const manifest=JSON.parse(await readFile(new URL('../docs/data/manifest.json',import.meta.url)));
+const plans=JSON.parse(await readFile(new URL('../docs/'+manifest.ranking_url.slice(2),import.meta.url))).plans;
 test('weekday, weekend and stay comparisons use coherent conditions before scoring',()=>{
  const weekday=comparisonPlans(plans,{modality:'daytrip',dayType:'weekday'});
  const weekend=comparisonPlans(plans,{modality:'daytrip',dayType:'weekend'});

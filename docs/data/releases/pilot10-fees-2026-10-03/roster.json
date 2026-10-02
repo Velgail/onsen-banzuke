@@ -1,0 +1,3703 @@
+{
+  "schema_version": "1",
+  "snapshot_id": "official-2026-10-03",
+  "source_url": "https://onsen-musume.jp/character/",
+  "source_title": "温泉むすめ公式 キャラクター一覧（地方別）",
+  "publisher": "エンバウンド",
+  "retrieved_at": "2026-10-03",
+  "status": "current_official_character_baseline_with_candidate_regions",
+  "linked_character_count": 137,
+  "onsen_character_count": 135,
+  "other_character_count": 2,
+  "region_candidate_count": 134,
+  "initial_study_region_count": 10,
+  "region_boundaries_complete": false,
+  "characters": [
+    {
+      "id": "noboribetsu_ayase",
+      "official_url": "https://onsen-musume.jp/character/noboribetsu_ayase",
+      "name": "登別綾瀬",
+      "prefecture": "北海道",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-noboribetsu_ayase",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yunokawa_seira",
+      "official_url": "https://onsen-musume.jp/character/yunokawa_seira",
+      "name": "湯の川聖羅",
+      "prefecture": "北海道",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yunokawa_seira",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "jozankei_izumi",
+      "official_url": "https://onsen-musume.jp/character/jozankei_izumi",
+      "name": "定山渓泉美",
+      "prefecture": "北海道",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-jozankei_izumi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "akanko_pirika",
+      "official_url": "https://onsen-musume.jp/character/akanko_pirika",
+      "name": "阿寒湖ぴりか",
+      "prefecture": "北海道",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-akanko_pirika",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "toyako_nonno",
+      "official_url": "https://onsen-musume.jp/character/toyako_nonno",
+      "name": "洞爺湖のんの",
+      "prefecture": "北海道",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-toyako_nonno",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yuki_canyon_sounkyo",
+      "official_url": "https://onsen-musume.jp/character/yuki_canyon_sounkyo",
+      "name": "雪･キャニオン･層雲峡",
+      "prefecture": "北海道",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yuki_canyon_sounkyo",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "miyu_toyotomi",
+      "official_url": "https://onsen-musume.jp/character/miyu_toyotomi",
+      "name": "豊富水由",
+      "prefecture": "北海道",
+      "kind": "onsen_character",
+      "region_candidate_id": "toyotomi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "akiu_nanako",
+      "official_url": "https://onsen-musume.jp/character/akiu_nanako",
+      "name": "秋保那菜子",
+      "prefecture": "宮城県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-akiu_nanako",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "ginzan_koyuki",
+      "official_url": "https://onsen-musume.jp/character/ginzan_koyuki",
+      "name": "銀山心雪",
+      "prefecture": "山形県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-ginzan_koyuki",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "hanamaki_suika",
+      "official_url": "https://onsen-musume.jp/character/hanamaki_suika",
+      "name": "花巻吹歌",
+      "prefecture": "岩手県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-hanamaki_suika",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "nyuto_nodoka",
+      "official_url": "https://onsen-musume.jp/character/nyuto_nodoka",
+      "name": "乳頭和",
+      "prefecture": "秋田県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-nyuto_nodoka",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "sukayu_sayuki",
+      "official_url": "https://onsen-musume.jp/character/sukayu_sayuki",
+      "name": "酸ヶ湯紗雪",
+      "prefecture": "青森県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-sukayu_sayuki",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "iwaki_aloha",
+      "official_url": "https://onsen-musume.jp/character/iwaki_aloha",
+      "name": "いわきあろは",
+      "prefecture": "福島県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-iwaki_aloha",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "asamushi_yuuna",
+      "official_url": "https://onsen-musume.jp/character/asamushi_yuuna",
+      "name": "浅虫夕凪",
+      "prefecture": "青森県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-asamushi_yuuna",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "atsumi_shizuru",
+      "official_url": "https://onsen-musume.jp/character/atsumi_shizuru",
+      "name": "あつみ詩鶴",
+      "prefecture": "山形県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-atsumi_shizuru",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "iizaka_mahiro",
+      "official_url": "https://onsen-musume.jp/character/iizaka_mahiro",
+      "name": "飯坂真尋",
+      "prefecture": "福島県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-iizaka_mahiro",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "naruko_kazuki",
+      "official_url": "https://onsen-musume.jp/character/naruko_kazuki",
+      "name": "鳴子夏月",
+      "prefecture": "宮城県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-naruko_kazuki",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "tamagawa_yuria",
+      "official_url": "https://onsen-musume.jp/character/tamagawa_yuria",
+      "name": "玉川百合亜",
+      "prefecture": "秋田県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-tamagawa_yuria",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "higashiyama_kirika",
+      "official_url": "https://onsen-musume.jp/character/higashiyama_kirika",
+      "name": "東山季利花",
+      "prefecture": "福島県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-higashiyama_kirika",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "zao_tomoe",
+      "official_url": "https://onsen-musume.jp/character/zao_tomoe",
+      "name": "蔵王巴",
+      "prefecture": "山形県",
+      "kind": "onsen_character",
+      "region_candidate_id": "zao",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yamanokami_satsuki",
+      "official_url": "https://onsen-musume.jp/character/yamanokami_satsuki",
+      "name": "山の神皐月",
+      "prefecture": "岩手県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yamanokami_satsuki",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "sakunami_nichika",
+      "official_url": "https://onsen-musume.jp/character/sakunami_nichika",
+      "name": "作並日果",
+      "prefecture": "宮城県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-sakunami_nichika",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "bandaiatami_hagi",
+      "official_url": "https://onsen-musume.jp/character/bandaiatami_hagi",
+      "name": "磐梯熱海萩",
+      "prefecture": "福島県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-bandaiatami_hagi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "matsushima_nazuki",
+      "official_url": "https://onsen-musume.jp/character/matsushima_nazuki",
+      "name": "松島名月",
+      "prefecture": "宮城県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-matsushima_nazuki",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "onogawa_komachi",
+      "official_url": "https://onsen-musume.jp/character/onogawa_komachi",
+      "name": "小野川小町",
+      "prefecture": "山形県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-onogawa_komachi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "nicchu_sayuri",
+      "official_url": "https://onsen-musume.jp/character/nicchu_sayuri",
+      "name": "日中早百合",
+      "prefecture": "福島県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-nicchu_sayuri",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kaminoyama_an",
+      "official_url": "https://onsen-musume.jp/character/kaminoyama_an",
+      "name": "かみのやま庵",
+      "prefecture": "山形県",
+      "kind": "onsen_character",
+      "region_candidate_id": "kaminoyama",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kusatsu_yuina",
+      "official_url": "https://onsen-musume.jp/character/kusatsu_yuina",
+      "name": "草津結衣奈",
+      "prefecture": "群馬県",
+      "kind": "onsen_character",
+      "region_candidate_id": "kusatsu",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "hakone_saya",
+      "official_url": "https://onsen-musume.jp/character/hakone_saya",
+      "name": "箱根彩耶",
+      "prefecture": "神奈川県",
+      "kind": "onsen_character",
+      "region_candidate_id": "hakone",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kinugawa_hinata",
+      "official_url": "https://onsen-musume.jp/character/kinugawa_hinata",
+      "name": "鬼怒川日向",
+      "prefecture": "栃木県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kinugawa_hinata",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "ikaho_hana",
+      "official_url": "https://onsen-musume.jp/character/ikaho_hana",
+      "name": "伊香保葉凪",
+      "prefecture": "群馬県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-ikaho_hana",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yugawara_iroha",
+      "official_url": "https://onsen-musume.jp/character/yugawara_iroha",
+      "name": "湯河原伊露羽",
+      "prefecture": "神奈川県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yugawara_iroha",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "nasu_ichiyo",
+      "official_url": "https://onsen-musume.jp/character/nasu_ichiyo",
+      "name": "那須一与",
+      "prefecture": "栃木県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-nasu_ichiyo",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "daigo_kureha",
+      "official_url": "https://onsen-musume.jp/character/daigo_kureha",
+      "name": "大子紅葉",
+      "prefecture": "茨城県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-daigo_kureha",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "shiobara_yaya",
+      "official_url": "https://onsen-musume.jp/character/shiobara_yaya",
+      "name": "塩原八弥",
+      "prefecture": "栃木県",
+      "kind": "onsen_character",
+      "region_candidate_id": "shiobara",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kamogawa_marin",
+      "official_url": "https://onsen-musume.jp/character/kamogawa_marin",
+      "name": "鴨川茉凛",
+      "prefecture": "千葉県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kamogawa_marin",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "manza_chitose",
+      "official_url": "https://onsen-musume.jp/character/manza_chitose",
+      "name": "万座千斗星",
+      "prefecture": "群馬県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-manza_chitose",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "gohra_kanna",
+      "official_url": "https://onsen-musume.jp/character/gohra_kanna",
+      "name": "強羅かんな",
+      "prefecture": "神奈川県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-gohra_kanna",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "otemachi_ririn",
+      "official_url": "https://onsen-musume.jp/character/otemachi_ririn",
+      "name": "大手町梨稟",
+      "prefecture": "東京都",
+      "kind": "onsen_character",
+      "region_candidate_id": "otemachi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "shima_haruka",
+      "official_url": "https://onsen-musume.jp/character/shima_haruka",
+      "name": "四万治佳",
+      "prefecture": "群馬県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-shima_haruka",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "minakami_riko",
+      "official_url": "https://onsen-musume.jp/character/minakami_riko",
+      "name": "水上凛心",
+      "prefecture": "群馬県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-minakami_riko",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "chichibu_matsuri",
+      "official_url": "https://onsen-musume.jp/character/chichibu_matsuri",
+      "name": "秩父美祭",
+      "prefecture": "埼玉県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-chichibu_matsuri",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "minamiboso_hiyumi",
+      "official_url": "https://onsen-musume.jp/character/minamiboso_hiyumi",
+      "name": "南房総日由美",
+      "prefecture": "千葉県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-minamiboso_hiyumi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "sengokuhara_mikasa",
+      "official_url": "https://onsen-musume.jp/character/sengokuhara_mikasa",
+      "name": "仙石原三香沙",
+      "prefecture": "神奈川県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-sengokuhara_mikasa",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "shirako_himari",
+      "official_url": "https://onsen-musume.jp/character/shirako_himari",
+      "name": "白子ひまり",
+      "prefecture": "千葉県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-shirako_himari",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "gero_mitsuki",
+      "official_url": "https://onsen-musume.jp/character/gero_mitsuki",
+      "name": "下呂美月",
+      "prefecture": "岐阜県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-gero_mitsuki",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "atami_uika",
+      "official_url": "https://onsen-musume.jp/character/atami_uika",
+      "name": "熱海初夏",
+      "prefecture": "静岡県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-atami_uika",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "wakura_mana",
+      "official_url": "https://onsen-musume.jp/character/wakura_mana",
+      "name": "和倉雅奈",
+      "prefecture": "石川県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-wakura_mana",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "shirahone_tomoe",
+      "official_url": "https://onsen-musume.jp/character/shirahone_tomoe",
+      "name": "白骨朋依",
+      "prefecture": "長野県",
+      "kind": "onsen_character",
+      "region_candidate_id": "shirahone",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "tsukioka_kurumi",
+      "official_url": "https://onsen-musume.jp/character/tsukioka_kurumi",
+      "name": "月岡来瑠碧",
+      "prefecture": "新潟県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-tsukioka_kurumi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "ito_tsubaki",
+      "official_url": "https://onsen-musume.jp/character/ito_tsubaki",
+      "name": "伊東椿月",
+      "prefecture": "静岡県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-ito_tsubaki",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "takayama_takumi",
+      "official_url": "https://onsen-musume.jp/character/takayama_takumi",
+      "name": "高山匠美",
+      "prefecture": "岐阜県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-takayama_takumi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "nozawa_nana",
+      "official_url": "https://onsen-musume.jp/character/nozawa_nana",
+      "name": "野沢菜々",
+      "prefecture": "長野県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-nozawa_nana",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "isawa_kou",
+      "official_url": "https://onsen-musume.jp/character/isawa_kou",
+      "name": "石和紅",
+      "prefecture": "山梨県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-isawa_kou",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kawaguchiko_takami",
+      "official_url": "https://onsen-musume.jp/character/kawaguchiko_takami",
+      "name": "河口湖多佳美",
+      "prefecture": "山梨県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kawaguchiko_takami",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "unazuki_akane",
+      "official_url": "https://onsen-musume.jp/character/unazuki_akane",
+      "name": "宇奈月明嶺",
+      "prefecture": "富山県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-unazuki_akane",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "hirugami_yozora",
+      "official_url": "https://onsen-musume.jp/character/hirugami_yozora",
+      "name": "昼神夜空",
+      "prefecture": "長野県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-hirugami_yozora",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yamanaka_sorara",
+      "official_url": "https://onsen-musume.jp/character/yamanaka_sorara",
+      "name": "山中そらら",
+      "prefecture": "石川県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yamanaka_sorara",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "shuzenji_toko",
+      "official_url": "https://onsen-musume.jp/character/shuzenji_toko",
+      "name": "修善寺透子",
+      "prefecture": "静岡県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-shuzenji_toko",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "echigo-yuzawa_kasumi",
+      "official_url": "https://onsen-musume.jp/character/echigo-yuzawa_kasumi",
+      "name": "越後湯沢かすみ",
+      "prefecture": "新潟県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-echigo-yuzawa_kasumi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "nagaragawa_kagari",
+      "official_url": "https://onsen-musume.jp/character/nagaragawa_kagari",
+      "name": "長良川かがり",
+      "prefecture": "岐阜県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-nagaragawa_kagari",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "awara_koume",
+      "official_url": "https://onsen-musume.jp/character/awara_koume",
+      "name": "芦原小梅",
+      "prefecture": "福井県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-awara_koume",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yudanakashibu_honami",
+      "official_url": "https://onsen-musume.jp/character/yudanakashibu_honami",
+      "name": "湯田中渋穂波",
+      "prefecture": "長野県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yudanakashibu_honami",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "okuhida_isuzu",
+      "official_url": "https://onsen-musume.jp/character/okuhida_isuzu",
+      "name": "奥飛騨五十鈴",
+      "prefecture": "岐阜県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-okuhida_isuzu",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "akakura_chisaki",
+      "official_url": "https://onsen-musume.jp/character/akakura_chisaki",
+      "name": "赤倉茅咲",
+      "prefecture": "新潟県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-akakura_chisaki",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "hirayu_mitsuba",
+      "official_url": "https://onsen-musume.jp/character/hirayu_mitsuba",
+      "name": "平湯みつば",
+      "prefecture": "岐阜県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-hirayu_mitsuba",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yamashiro_yata",
+      "official_url": "https://onsen-musume.jp/character/yamashiro_yata",
+      "name": "山代八咫",
+      "prefecture": "石川県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yamashiro_yata",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "minamichita_mayuno",
+      "official_url": "https://onsen-musume.jp/character/minamichita_mayuno",
+      "name": "南知多まゆの",
+      "prefecture": "愛知県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-minamichita_mayuno",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "matsunoyama_tanami",
+      "official_url": "https://onsen-musume.jp/character/matsunoyama_tanami",
+      "name": "松之山棚美",
+      "prefecture": "新潟県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-matsunoyama_tanami",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "shimoda_rika",
+      "official_url": "https://onsen-musume.jp/character/shimoda_rika",
+      "name": "下田莉華",
+      "prefecture": "静岡県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-shimoda_rika",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "toi_mayu",
+      "official_url": "https://onsen-musume.jp/character/toi_mayu",
+      "name": "土肥間由",
+      "prefecture": "静岡県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-toi_mayu",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kanzanji_moko",
+      "official_url": "https://onsen-musume.jp/character/kanzanji_moko",
+      "name": "舘山寺萌湖",
+      "prefecture": "静岡県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kanzanji_moko",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kamisuwa_shizune",
+      "official_url": "https://onsen-musume.jp/character/kamisuwa_shizune",
+      "name": "上諏訪雫音",
+      "prefecture": "長野県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kamisuwa_shizune",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "shimosuwa_watane",
+      "official_url": "https://onsen-musume.jp/character/shimosuwa_watane",
+      "name": "下諏訪綿音",
+      "prefecture": "長野県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-shimosuwa_watane",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yamanakako_shinobu",
+      "official_url": "https://onsen-musume.jp/character/yamanakako_shinobu",
+      "name": "山中湖忍",
+      "prefecture": "山梨県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yamanakako_shinobu",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "fukuji_sango",
+      "official_url": "https://onsen-musume.jp/character/fukuji_sango",
+      "name": "福地珊瑚",
+      "prefecture": "岐阜県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-fukuji_sango",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "inatori_hiname",
+      "official_url": "https://onsen-musume.jp/character/inatori_hiname",
+      "name": "稲取ひなめ",
+      "prefecture": "静岡県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-inatori_hiname",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "bessho_aise",
+      "official_url": "https://onsen-musume.jp/character/bessho_aise",
+      "name": "別所愛染",
+      "prefecture": "長野県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-bessho_aise",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kakeyu_banbi",
+      "official_url": "https://onsen-musume.jp/character/kakeyu_banbi",
+      "name": "鹿教湯万美",
+      "prefecture": "長野県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kakeyu_banbi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "gamagori_uta",
+      "official_url": "https://onsen-musume.jp/character/gamagori_uta",
+      "name": "蒲郡海詩",
+      "prefecture": "愛知県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-gamagori_uta",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "wajima_kasane",
+      "official_url": "https://onsen-musume.jp/character/wajima_kasane",
+      "name": "輪島かさね",
+      "prefecture": "石川県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-wajima_kasane",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "togurakamiyamada_azuki",
+      "official_url": "https://onsen-musume.jp/character/togurakamiyamada_azuki",
+      "name": "戸倉上山田杏月",
+      "prefecture": "長野県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-togurakamiyamada_azuki",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "atagawa_tomori",
+      "official_url": "https://onsen-musume.jp/character/atagawa_tomori",
+      "name": "熱川灯",
+      "prefecture": "静岡県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-atagawa_tomori",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "arima_rinka",
+      "official_url": "https://onsen-musume.jp/character/arima_rinka",
+      "name": "有馬輪花",
+      "prefecture": "兵庫県",
+      "kind": "onsen_character",
+      "region_candidate_id": "arima",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "arima_fuuka",
+      "official_url": "https://onsen-musume.jp/character/arima_fuuka",
+      "name": "有馬楓花",
+      "prefecture": "兵庫県",
+      "kind": "onsen_character",
+      "region_candidate_id": "arima",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "shirahama_honami",
+      "official_url": "https://onsen-musume.jp/character/shirahama_honami",
+      "name": "白浜帆南美",
+      "prefecture": "和歌山県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-shirahama_honami",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kinosaki_arisa",
+      "official_url": "https://onsen-musume.jp/character/kinosaki_arisa",
+      "name": "城崎亜莉咲",
+      "prefecture": "兵庫県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kinosaki_arisa",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "ogoto_nene",
+      "official_url": "https://onsen-musume.jp/character/ogoto_nene",
+      "name": "おごと寧々",
+      "prefecture": "滋賀県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-ogoto_nene",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "arashiyama_shigure",
+      "official_url": "https://onsen-musume.jp/character/arashiyama_shigure",
+      "name": "嵐山紫雨",
+      "prefecture": "京都府",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-arashiyama_shigure",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "ryujin_sei",
+      "official_url": "https://onsen-musume.jp/character/ryujin_sei",
+      "name": "龍神晴",
+      "prefecture": "和歌山県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-ryujin_sei",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "nankikatsuura_kiki",
+      "official_url": "https://onsen-musume.jp/character/nankikatsuura_kiki",
+      "name": "南紀勝浦樹紀",
+      "prefecture": "和歌山県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-nankikatsuura_kiki",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "sakakibara_ito",
+      "official_url": "https://onsen-musume.jp/character/sakakibara_ito",
+      "name": "榊原伊都",
+      "prefecture": "三重県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-sakakibara_ito",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "shima_mariya",
+      "official_url": "https://onsen-musume.jp/character/shima_mariya",
+      "name": "志摩茉莉也",
+      "prefecture": "三重県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-shima_mariya",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "totsukawa_asuka",
+      "official_url": "https://onsen-musume.jp/character/totsukawa_asuka",
+      "name": "十津川飛香",
+      "prefecture": "奈良県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-totsukawa_asuka",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "inunakiyama_mikoto",
+      "official_url": "https://onsen-musume.jp/character/inunakiyama_mikoto",
+      "name": "犬鳴山命",
+      "prefecture": "大阪府",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-inunakiyama_mikoto",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "dorogawa_ren",
+      "official_url": "https://onsen-musume.jp/character/dorogawa_ren",
+      "name": "洞川蓮",
+      "prefecture": "奈良県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-dorogawa_ren",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "toba_ayami",
+      "official_url": "https://onsen-musume.jp/character/toba_ayami",
+      "name": "鳥羽亜矢海",
+      "prefecture": "三重県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-toba_ayami",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yumura_chiyo",
+      "official_url": "https://onsen-musume.jp/character/yumura_chiyo",
+      "name": "湯村千代",
+      "prefecture": "兵庫県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yumura_chiyo",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "tamatsukuri_kei",
+      "official_url": "https://onsen-musume.jp/character/tamatsukuri_kei",
+      "name": "玉造彗",
+      "prefecture": "島根県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-tamatsukuri_kei",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yubara_sawa",
+      "official_url": "https://onsen-musume.jp/character/yubara_sawa",
+      "name": "湯原砂和",
+      "prefecture": "岡山県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yubara_sawa",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yunogo_misa",
+      "official_url": "https://onsen-musume.jp/character/yunogo_misa",
+      "name": "湯郷美彩",
+      "prefecture": "岡山県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yunogo_misa",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "nagato_sakura",
+      "official_url": "https://onsen-musume.jp/character/nagato_sakura",
+      "name": "長門櫻",
+      "prefecture": "山口県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-nagato_sakura",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kaike_nagisa",
+      "official_url": "https://onsen-musume.jp/character/kaike_nagisa",
+      "name": "皆生なぎさ",
+      "prefecture": "鳥取県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kaike_nagisa",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "miyahama_hitoka",
+      "official_url": "https://onsen-musume.jp/character/miyahama_hitoka",
+      "name": "宮浜仁佳",
+      "prefecture": "広島県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-miyahama_hitoka",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yunotsu_sama",
+      "official_url": "https://onsen-musume.jp/character/yunotsu_sama",
+      "name": "温泉津佐間",
+      "prefecture": "島根県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yunotsu_sama",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yuda_kaoru",
+      "official_url": "https://onsen-musume.jp/character/yuda_kaoru",
+      "name": "湯田薫",
+      "prefecture": "山口県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yuda_kaoru",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "misasa_karen",
+      "official_url": "https://onsen-musume.jp/character/misasa_karen",
+      "name": "三朝歌蓮",
+      "prefecture": "鳥取県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-misasa_karen",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "okutsu_kagami",
+      "official_url": "https://onsen-musume.jp/character/okutsu_kagami",
+      "name": "奥津かがみ",
+      "prefecture": "岡山県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-okutsu_kagami",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "matsueshinjiko_shijimi",
+      "official_url": "https://onsen-musume.jp/character/matsueshinjiko_shijimi",
+      "name": "松江しんじ湖しじみ",
+      "prefecture": "島根県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-matsueshinjiko_shijimi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "hawaitogo_ukino",
+      "official_url": "https://onsen-musume.jp/character/hawaitogo_ukino",
+      "name": "はわい東郷浮乃",
+      "prefecture": "鳥取県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-hawaitogo_ukino",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "dogo_izumi",
+      "official_url": "https://onsen-musume.jp/character/dogo_izumi",
+      "name": "道後泉海",
+      "prefecture": "愛媛県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-dogo_izumi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "konpira_momo",
+      "official_url": "https://onsen-musume.jp/character/konpira_momo",
+      "name": "こんぴら桃萌",
+      "prefecture": "香川県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-konpira_momo",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "ashizuri_akari",
+      "official_url": "https://onsen-musume.jp/character/ashizuri_akari",
+      "name": "あしずり星",
+      "prefecture": "高知県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-ashizuri_akari",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "iya_meguri",
+      "official_url": "https://onsen-musume.jp/character/iya_meguri",
+      "name": "祖谷メグリ",
+      "prefecture": "徳島県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-iya_meguri",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "shionoe_shuko",
+      "official_url": "https://onsen-musume.jp/character/shionoe_shuko",
+      "name": "塩江修子",
+      "prefecture": "香川県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-shionoe_shuko",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "nibukawa_manami",
+      "official_url": "https://onsen-musume.jp/character/nibukawa_manami",
+      "name": "鈍川まなみ",
+      "prefecture": "愛媛県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-nibukawa_manami",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kanade_baden_yufuin",
+      "official_url": "https://onsen-musume.jp/character/kanade_baden_yufuin",
+      "name": "奏･バーデン･由布院",
+      "prefecture": "大分県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kanade_baden_yufuin",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "beppu_tamaki",
+      "official_url": "https://onsen-musume.jp/character/beppu_tamaki",
+      "name": "別府環綺",
+      "prefecture": "大分県",
+      "kind": "onsen_character",
+      "region_candidate_id": "beppu",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "ibusuki_erina",
+      "official_url": "https://onsen-musume.jp/character/ibusuki_erina",
+      "name": "指宿絵璃菜",
+      "prefecture": "鹿児島県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-ibusuki_erina",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kurokawa_kira",
+      "official_url": "https://onsen-musume.jp/character/kurokawa_kira",
+      "name": "黒川姫楽",
+      "prefecture": "熊本県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kurokawa_kira",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "ureshino_rikka",
+      "official_url": "https://onsen-musume.jp/character/ureshino_rikka",
+      "name": "嬉野六香",
+      "prefecture": "佐賀県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-ureshino_rikka",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "aso_homura",
+      "official_url": "https://onsen-musume.jp/character/aso_homura",
+      "name": "阿蘇ほむら",
+      "prefecture": "熊本県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-aso_homura",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kitago_konomi",
+      "official_url": "https://onsen-musume.jp/character/kitago_konomi",
+      "name": "北郷このみ",
+      "prefecture": "宮崎県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kitago_konomi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "harazuru_miya",
+      "official_url": "https://onsen-musume.jp/character/harazuru_miya",
+      "name": "原鶴美鵺",
+      "prefecture": "福岡県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-harazuru_miya",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "iriomotejima_yaeka",
+      "official_url": "https://onsen-musume.jp/character/iriomotejima_yaeka",
+      "name": "西表島八重夏",
+      "prefecture": "沖縄県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-iriomotejima_yaeka",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "kirishima_kuroe",
+      "official_url": "https://onsen-musume.jp/character/kirishima_kuroe",
+      "name": "霧島黒恵",
+      "prefecture": "鹿児島県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-kirishima_kuroe",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "hita_ayame",
+      "official_url": "https://onsen-musume.jp/character/hita_ayame",
+      "name": "日田絢芽",
+      "prefecture": "大分県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-hita_ayame",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "takeo_cecil",
+      "official_url": "https://onsen-musume.jp/character/takeo_cecil",
+      "name": "武雄星知",
+      "prefecture": "佐賀県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-takeo_cecil",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "hirado_motoe",
+      "official_url": "https://onsen-musume.jp/character/hirado_motoe",
+      "name": "平戸基恵",
+      "prefecture": "長崎県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-hirado_motoe",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "unzen_inori",
+      "official_url": "https://onsen-musume.jp/character/unzen_inori",
+      "name": "雲仙伊乃里",
+      "prefecture": "長崎県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-unzen_inori",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "hitoyoshi_aoi",
+      "official_url": "https://onsen-musume.jp/character/hitoyoshi_aoi",
+      "name": "人吉青井",
+      "prefecture": "熊本県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-hitoyoshi_aoi",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "yunohira_touka",
+      "official_url": "https://onsen-musume.jp/character/yunohira_touka",
+      "name": "湯平燈華",
+      "prefecture": "大分県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-yunohira_touka",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "tamana_mami",
+      "official_url": "https://onsen-musume.jp/character/tamana_mami",
+      "name": "玉名満美",
+      "prefecture": "熊本県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-tamana_mami",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "obama_amane",
+      "official_url": "https://onsen-musume.jp/character/obama_amane",
+      "name": "小浜あまね",
+      "prefecture": "長崎県",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-obama_amane",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    },
+    {
+      "id": "jianshih_neiwan",
+      "official_url": "https://onsen-musume.jp/character/jianshih_neiwan",
+      "name": "尖石内湾",
+      "prefecture": "台湾",
+      "kind": "onsen_character",
+      "region_candidate_id": "candidate-jianshih_neiwan",
+      "presence_status": "K",
+      "source_url": "https://onsen-musume.jp/character/",
+      "mapping_status": "C",
+      "mapping_note": "公式掲載名と地名に基づく候補対応。対象範囲・地理境界は別途独立検証。"
+    }
+  ],
+  "other_characters": [
+    {
+      "id": "sukunahiko",
+      "official_url": "https://onsen-musume.jp/character/sukunahiko",
+      "name": "スクナヒコ",
+      "prefecture": "",
+      "kind": "non_region_character",
+      "reason": "公式地方別一覧で都道府県なし。温泉地の件数に算入しない。"
+    },
+    {
+      "id": "urume_aria",
+      "official_url": "https://onsen-musume.jp/character/urume_aria",
+      "name": "潤目アリア",
+      "prefecture": "",
+      "kind": "non_region_character",
+      "reason": "公式地方別一覧で都道府県なし。温泉地の件数に算入しない。"
+    }
+  ],
+  "region_candidates": [
+    {
+      "id": "candidate-noboribetsu_ayase",
+      "candidate_name": "登別温泉",
+      "prefecture": "北海道",
+      "character_ids": [
+        "noboribetsu_ayase"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yunokawa_seira",
+      "candidate_name": "湯の川温泉",
+      "prefecture": "北海道",
+      "character_ids": [
+        "yunokawa_seira"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-jozankei_izumi",
+      "candidate_name": "定山渓温泉",
+      "prefecture": "北海道",
+      "character_ids": [
+        "jozankei_izumi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-akanko_pirika",
+      "candidate_name": "阿寒湖温泉",
+      "prefecture": "北海道",
+      "character_ids": [
+        "akanko_pirika"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-toyako_nonno",
+      "candidate_name": "洞爺湖温泉",
+      "prefecture": "北海道",
+      "character_ids": [
+        "toyako_nonno"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yuki_canyon_sounkyo",
+      "candidate_name": "層雲峡温泉",
+      "prefecture": "北海道",
+      "character_ids": [
+        "yuki_canyon_sounkyo"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "toyotomi",
+      "candidate_name": "豊富温泉",
+      "prefecture": "北海道",
+      "character_ids": [
+        "miyu_toyotomi"
+      ],
+      "target_definition_status": "K",
+      "study_status": "partial",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-akiu_nanako",
+      "candidate_name": "秋保温泉",
+      "prefecture": "宮城県",
+      "character_ids": [
+        "akiu_nanako"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-ginzan_koyuki",
+      "candidate_name": "銀山温泉",
+      "prefecture": "山形県",
+      "character_ids": [
+        "ginzan_koyuki"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-hanamaki_suika",
+      "candidate_name": "花巻温泉",
+      "prefecture": "岩手県",
+      "character_ids": [
+        "hanamaki_suika"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-nyuto_nodoka",
+      "candidate_name": "乳頭温泉郷",
+      "prefecture": "秋田県",
+      "character_ids": [
+        "nyuto_nodoka"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-sukayu_sayuki",
+      "candidate_name": "酸ヶ湯温泉",
+      "prefecture": "青森県",
+      "character_ids": [
+        "sukayu_sayuki"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-iwaki_aloha",
+      "candidate_name": "いわき湯本温泉",
+      "prefecture": "福島県",
+      "character_ids": [
+        "iwaki_aloha"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-asamushi_yuuna",
+      "candidate_name": "浅虫温泉",
+      "prefecture": "青森県",
+      "character_ids": [
+        "asamushi_yuuna"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-atsumi_shizuru",
+      "candidate_name": "あつみ温泉",
+      "prefecture": "山形県",
+      "character_ids": [
+        "atsumi_shizuru"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-iizaka_mahiro",
+      "candidate_name": "飯坂温泉",
+      "prefecture": "福島県",
+      "character_ids": [
+        "iizaka_mahiro"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-naruko_kazuki",
+      "candidate_name": "鳴子温泉",
+      "prefecture": "宮城県",
+      "character_ids": [
+        "naruko_kazuki"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-tamagawa_yuria",
+      "candidate_name": "玉川温泉",
+      "prefecture": "秋田県",
+      "character_ids": [
+        "tamagawa_yuria"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-higashiyama_kirika",
+      "candidate_name": "東山温泉",
+      "prefecture": "福島県",
+      "character_ids": [
+        "higashiyama_kirika"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "zao",
+      "candidate_name": "蔵王温泉",
+      "prefecture": "山形県",
+      "character_ids": [
+        "zao_tomoe"
+      ],
+      "target_definition_status": "K",
+      "study_status": "partial",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yamanokami_satsuki",
+      "candidate_name": "山の神温泉",
+      "prefecture": "岩手県",
+      "character_ids": [
+        "yamanokami_satsuki"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-sakunami_nichika",
+      "candidate_name": "作並温泉",
+      "prefecture": "宮城県",
+      "character_ids": [
+        "sakunami_nichika"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-bandaiatami_hagi",
+      "candidate_name": "磐梯熱海温泉",
+      "prefecture": "福島県",
+      "character_ids": [
+        "bandaiatami_hagi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-matsushima_nazuki",
+      "candidate_name": "松島温泉",
+      "prefecture": "宮城県",
+      "character_ids": [
+        "matsushima_nazuki"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-onogawa_komachi",
+      "candidate_name": "小野川温泉",
+      "prefecture": "山形県",
+      "character_ids": [
+        "onogawa_komachi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-nicchu_sayuri",
+      "candidate_name": "日中温泉",
+      "prefecture": "福島県",
+      "character_ids": [
+        "nicchu_sayuri"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "kaminoyama",
+      "candidate_name": "かみのやま温泉",
+      "prefecture": "山形県",
+      "character_ids": [
+        "kaminoyama_an"
+      ],
+      "target_definition_status": "K",
+      "study_status": "partial",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "kusatsu",
+      "candidate_name": "草津温泉",
+      "prefecture": "群馬県",
+      "character_ids": [
+        "kusatsu_yuina"
+      ],
+      "target_definition_status": "K",
+      "study_status": "partial",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "hakone",
+      "candidate_name": "箱根温泉",
+      "prefecture": "神奈川県",
+      "character_ids": [
+        "hakone_saya"
+      ],
+      "target_definition_status": "K",
+      "study_status": "partial",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kinugawa_hinata",
+      "candidate_name": "鬼怒川温泉",
+      "prefecture": "栃木県",
+      "character_ids": [
+        "kinugawa_hinata"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-ikaho_hana",
+      "candidate_name": "伊香保温泉",
+      "prefecture": "群馬県",
+      "character_ids": [
+        "ikaho_hana"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yugawara_iroha",
+      "candidate_name": "湯河原温泉",
+      "prefecture": "神奈川県",
+      "character_ids": [
+        "yugawara_iroha"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-nasu_ichiyo",
+      "candidate_name": "那須温泉郷",
+      "prefecture": "栃木県",
+      "character_ids": [
+        "nasu_ichiyo"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-daigo_kureha",
+      "candidate_name": "大子温泉",
+      "prefecture": "茨城県",
+      "character_ids": [
+        "daigo_kureha"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "shiobara",
+      "candidate_name": "塩原温泉",
+      "prefecture": "栃木県",
+      "character_ids": [
+        "shiobara_yaya"
+      ],
+      "target_definition_status": "K",
+      "study_status": "partial",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kamogawa_marin",
+      "candidate_name": "鴨川温泉",
+      "prefecture": "千葉県",
+      "character_ids": [
+        "kamogawa_marin"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-manza_chitose",
+      "candidate_name": "万座温泉",
+      "prefecture": "群馬県",
+      "character_ids": [
+        "manza_chitose"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-gohra_kanna",
+      "candidate_name": "強羅温泉",
+      "prefecture": "神奈川県",
+      "character_ids": [
+        "gohra_kanna"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": "hakone",
+      "overlap_note": "親地域の候補と施設集合が重なるため、同じ施設・浴槽の再計上と独立地域数の重複に注意。境界照合が必要。"
+    },
+    {
+      "id": "otemachi",
+      "candidate_name": "大手町温泉",
+      "prefecture": "東京都",
+      "character_ids": [
+        "otemachi_ririn"
+      ],
+      "target_definition_status": "K",
+      "study_status": "partial",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-shima_haruka",
+      "candidate_name": "四万温泉",
+      "prefecture": "群馬県",
+      "character_ids": [
+        "shima_haruka"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-minakami_riko",
+      "candidate_name": "みなかみ温泉",
+      "prefecture": "群馬県",
+      "character_ids": [
+        "minakami_riko"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-chichibu_matsuri",
+      "candidate_name": "秩父温泉",
+      "prefecture": "埼玉県",
+      "character_ids": [
+        "chichibu_matsuri"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-minamiboso_hiyumi",
+      "candidate_name": "南房総温泉",
+      "prefecture": "千葉県",
+      "character_ids": [
+        "minamiboso_hiyumi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-sengokuhara_mikasa",
+      "candidate_name": "仙石原温泉",
+      "prefecture": "神奈川県",
+      "character_ids": [
+        "sengokuhara_mikasa"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": "hakone",
+      "overlap_note": "親地域の候補と施設集合が重なるため、同じ施設・浴槽の再計上と独立地域数の重複に注意。境界照合が必要。"
+    },
+    {
+      "id": "candidate-shirako_himari",
+      "candidate_name": "白子温泉",
+      "prefecture": "千葉県",
+      "character_ids": [
+        "shirako_himari"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-gero_mitsuki",
+      "candidate_name": "下呂温泉",
+      "prefecture": "岐阜県",
+      "character_ids": [
+        "gero_mitsuki"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-atami_uika",
+      "candidate_name": "熱海温泉",
+      "prefecture": "静岡県",
+      "character_ids": [
+        "atami_uika"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-wakura_mana",
+      "candidate_name": "和倉温泉",
+      "prefecture": "石川県",
+      "character_ids": [
+        "wakura_mana"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "shirahone",
+      "candidate_name": "白骨温泉",
+      "prefecture": "長野県",
+      "character_ids": [
+        "shirahone_tomoe"
+      ],
+      "target_definition_status": "K",
+      "study_status": "partial",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-tsukioka_kurumi",
+      "candidate_name": "月岡温泉",
+      "prefecture": "新潟県",
+      "character_ids": [
+        "tsukioka_kurumi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-ito_tsubaki",
+      "candidate_name": "伊東温泉",
+      "prefecture": "静岡県",
+      "character_ids": [
+        "ito_tsubaki"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-takayama_takumi",
+      "candidate_name": "飛騨高山温泉",
+      "prefecture": "岐阜県",
+      "character_ids": [
+        "takayama_takumi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-nozawa_nana",
+      "candidate_name": "野沢温泉",
+      "prefecture": "長野県",
+      "character_ids": [
+        "nozawa_nana"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-isawa_kou",
+      "candidate_name": "石和温泉",
+      "prefecture": "山梨県",
+      "character_ids": [
+        "isawa_kou"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kawaguchiko_takami",
+      "candidate_name": "河口湖温泉",
+      "prefecture": "山梨県",
+      "character_ids": [
+        "kawaguchiko_takami"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-unazuki_akane",
+      "candidate_name": "宇奈月温泉",
+      "prefecture": "富山県",
+      "character_ids": [
+        "unazuki_akane"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-hirugami_yozora",
+      "candidate_name": "昼神温泉",
+      "prefecture": "長野県",
+      "character_ids": [
+        "hirugami_yozora"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yamanaka_sorara",
+      "candidate_name": "山中温泉",
+      "prefecture": "石川県",
+      "character_ids": [
+        "yamanaka_sorara"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-shuzenji_toko",
+      "candidate_name": "修善寺温泉",
+      "prefecture": "静岡県",
+      "character_ids": [
+        "shuzenji_toko"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-echigo-yuzawa_kasumi",
+      "candidate_name": "越後湯沢温泉",
+      "prefecture": "新潟県",
+      "character_ids": [
+        "echigo-yuzawa_kasumi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-nagaragawa_kagari",
+      "candidate_name": "長良川温泉",
+      "prefecture": "岐阜県",
+      "character_ids": [
+        "nagaragawa_kagari"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-awara_koume",
+      "candidate_name": "あわら温泉",
+      "prefecture": "福井県",
+      "character_ids": [
+        "awara_koume"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yudanakashibu_honami",
+      "candidate_name": "湯田中渋温泉郷",
+      "prefecture": "長野県",
+      "character_ids": [
+        "yudanakashibu_honami"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-okuhida_isuzu",
+      "candidate_name": "奥飛騨温泉郷",
+      "prefecture": "岐阜県",
+      "character_ids": [
+        "okuhida_isuzu"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-akakura_chisaki",
+      "candidate_name": "赤倉温泉",
+      "prefecture": "新潟県",
+      "character_ids": [
+        "akakura_chisaki"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-hirayu_mitsuba",
+      "candidate_name": "平湯温泉",
+      "prefecture": "岐阜県",
+      "character_ids": [
+        "hirayu_mitsuba"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": "candidate-okuhida_isuzu",
+      "overlap_note": "親地域の候補と施設集合が重なるため、同じ施設・浴槽の再計上と独立地域数の重複に注意。境界照合が必要。"
+    },
+    {
+      "id": "candidate-yamashiro_yata",
+      "candidate_name": "山代温泉",
+      "prefecture": "石川県",
+      "character_ids": [
+        "yamashiro_yata"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-minamichita_mayuno",
+      "candidate_name": "南知多温泉",
+      "prefecture": "愛知県",
+      "character_ids": [
+        "minamichita_mayuno"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-matsunoyama_tanami",
+      "candidate_name": "松之山温泉",
+      "prefecture": "新潟県",
+      "character_ids": [
+        "matsunoyama_tanami"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-shimoda_rika",
+      "candidate_name": "下田温泉",
+      "prefecture": "静岡県",
+      "character_ids": [
+        "shimoda_rika"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-toi_mayu",
+      "candidate_name": "土肥温泉",
+      "prefecture": "静岡県",
+      "character_ids": [
+        "toi_mayu"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kanzanji_moko",
+      "candidate_name": "舘山寺温泉",
+      "prefecture": "静岡県",
+      "character_ids": [
+        "kanzanji_moko"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kamisuwa_shizune",
+      "candidate_name": "上諏訪温泉",
+      "prefecture": "長野県",
+      "character_ids": [
+        "kamisuwa_shizune"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-shimosuwa_watane",
+      "candidate_name": "下諏訪温泉",
+      "prefecture": "長野県",
+      "character_ids": [
+        "shimosuwa_watane"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yamanakako_shinobu",
+      "candidate_name": "山中湖温泉",
+      "prefecture": "山梨県",
+      "character_ids": [
+        "yamanakako_shinobu"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-fukuji_sango",
+      "candidate_name": "福地温泉",
+      "prefecture": "岐阜県",
+      "character_ids": [
+        "fukuji_sango"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": "candidate-okuhida_isuzu",
+      "overlap_note": "親地域の候補と施設集合が重なるため、同じ施設・浴槽の再計上と独立地域数の重複に注意。境界照合が必要。"
+    },
+    {
+      "id": "candidate-inatori_hiname",
+      "candidate_name": "稲取温泉",
+      "prefecture": "静岡県",
+      "character_ids": [
+        "inatori_hiname"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-bessho_aise",
+      "candidate_name": "別所温泉",
+      "prefecture": "長野県",
+      "character_ids": [
+        "bessho_aise"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kakeyu_banbi",
+      "candidate_name": "鹿教湯温泉",
+      "prefecture": "長野県",
+      "character_ids": [
+        "kakeyu_banbi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-gamagori_uta",
+      "candidate_name": "蒲郡温泉",
+      "prefecture": "愛知県",
+      "character_ids": [
+        "gamagori_uta"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-wajima_kasane",
+      "candidate_name": "輪島温泉",
+      "prefecture": "石川県",
+      "character_ids": [
+        "wajima_kasane"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-togurakamiyamada_azuki",
+      "candidate_name": "戸倉上山田温泉",
+      "prefecture": "長野県",
+      "character_ids": [
+        "togurakamiyamada_azuki"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-atagawa_tomori",
+      "candidate_name": "熱川温泉",
+      "prefecture": "静岡県",
+      "character_ids": [
+        "atagawa_tomori"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "arima",
+      "candidate_name": "有馬温泉",
+      "prefecture": "兵庫県",
+      "character_ids": [
+        "arima_rinka",
+        "arima_fuuka"
+      ],
+      "target_definition_status": "K",
+      "study_status": "partial",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-shirahama_honami",
+      "candidate_name": "白浜温泉",
+      "prefecture": "和歌山県",
+      "character_ids": [
+        "shirahama_honami"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kinosaki_arisa",
+      "candidate_name": "城崎温泉",
+      "prefecture": "兵庫県",
+      "character_ids": [
+        "kinosaki_arisa"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-ogoto_nene",
+      "candidate_name": "おごと温泉",
+      "prefecture": "滋賀県",
+      "character_ids": [
+        "ogoto_nene"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-arashiyama_shigure",
+      "candidate_name": "嵐山温泉",
+      "prefecture": "京都府",
+      "character_ids": [
+        "arashiyama_shigure"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-ryujin_sei",
+      "candidate_name": "龍神温泉",
+      "prefecture": "和歌山県",
+      "character_ids": [
+        "ryujin_sei"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-nankikatsuura_kiki",
+      "candidate_name": "南紀勝浦温泉",
+      "prefecture": "和歌山県",
+      "character_ids": [
+        "nankikatsuura_kiki"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-sakakibara_ito",
+      "candidate_name": "榊原温泉",
+      "prefecture": "三重県",
+      "character_ids": [
+        "sakakibara_ito"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-shima_mariya",
+      "candidate_name": "志摩温泉郷",
+      "prefecture": "三重県",
+      "character_ids": [
+        "shima_mariya"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-totsukawa_asuka",
+      "candidate_name": "十津川温泉",
+      "prefecture": "奈良県",
+      "character_ids": [
+        "totsukawa_asuka"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-inunakiyama_mikoto",
+      "candidate_name": "犬鳴山温泉",
+      "prefecture": "大阪府",
+      "character_ids": [
+        "inunakiyama_mikoto"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-dorogawa_ren",
+      "candidate_name": "洞川温泉",
+      "prefecture": "奈良県",
+      "character_ids": [
+        "dorogawa_ren"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-toba_ayami",
+      "candidate_name": "鳥羽温泉",
+      "prefecture": "三重県",
+      "character_ids": [
+        "toba_ayami"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yumura_chiyo",
+      "candidate_name": "湯村温泉",
+      "prefecture": "兵庫県",
+      "character_ids": [
+        "yumura_chiyo"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-tamatsukuri_kei",
+      "candidate_name": "玉造温泉",
+      "prefecture": "島根県",
+      "character_ids": [
+        "tamatsukuri_kei"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yubara_sawa",
+      "candidate_name": "湯原温泉",
+      "prefecture": "岡山県",
+      "character_ids": [
+        "yubara_sawa"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yunogo_misa",
+      "candidate_name": "湯郷温泉",
+      "prefecture": "岡山県",
+      "character_ids": [
+        "yunogo_misa"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-nagato_sakura",
+      "candidate_name": "長門湯本温泉",
+      "prefecture": "山口県",
+      "character_ids": [
+        "nagato_sakura"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kaike_nagisa",
+      "candidate_name": "皆生温泉",
+      "prefecture": "鳥取県",
+      "character_ids": [
+        "kaike_nagisa"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-miyahama_hitoka",
+      "candidate_name": "宮浜温泉",
+      "prefecture": "広島県",
+      "character_ids": [
+        "miyahama_hitoka"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yunotsu_sama",
+      "candidate_name": "温泉津温泉",
+      "prefecture": "島根県",
+      "character_ids": [
+        "yunotsu_sama"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yuda_kaoru",
+      "candidate_name": "湯田温泉",
+      "prefecture": "山口県",
+      "character_ids": [
+        "yuda_kaoru"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-misasa_karen",
+      "candidate_name": "三朝温泉",
+      "prefecture": "鳥取県",
+      "character_ids": [
+        "misasa_karen"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-okutsu_kagami",
+      "candidate_name": "奥津温泉",
+      "prefecture": "岡山県",
+      "character_ids": [
+        "okutsu_kagami"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-matsueshinjiko_shijimi",
+      "candidate_name": "松江しんじ湖温泉",
+      "prefecture": "島根県",
+      "character_ids": [
+        "matsueshinjiko_shijimi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-hawaitogo_ukino",
+      "candidate_name": "はわい・東郷温泉",
+      "prefecture": "鳥取県",
+      "character_ids": [
+        "hawaitogo_ukino"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-dogo_izumi",
+      "candidate_name": "道後温泉",
+      "prefecture": "愛媛県",
+      "character_ids": [
+        "dogo_izumi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-konpira_momo",
+      "candidate_name": "こんぴら温泉",
+      "prefecture": "香川県",
+      "character_ids": [
+        "konpira_momo"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-ashizuri_akari",
+      "candidate_name": "あしずり温泉郷",
+      "prefecture": "高知県",
+      "character_ids": [
+        "ashizuri_akari"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-iya_meguri",
+      "candidate_name": "祖谷温泉",
+      "prefecture": "徳島県",
+      "character_ids": [
+        "iya_meguri"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-shionoe_shuko",
+      "candidate_name": "塩江温泉",
+      "prefecture": "香川県",
+      "character_ids": [
+        "shionoe_shuko"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-nibukawa_manami",
+      "candidate_name": "鈍川温泉",
+      "prefecture": "愛媛県",
+      "character_ids": [
+        "nibukawa_manami"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kanade_baden_yufuin",
+      "candidate_name": "由布院温泉",
+      "prefecture": "大分県",
+      "character_ids": [
+        "kanade_baden_yufuin"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "beppu",
+      "candidate_name": "別府温泉",
+      "prefecture": "大分県",
+      "character_ids": [
+        "beppu_tamaki"
+      ],
+      "target_definition_status": "K",
+      "study_status": "partial",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-ibusuki_erina",
+      "candidate_name": "指宿温泉",
+      "prefecture": "鹿児島県",
+      "character_ids": [
+        "ibusuki_erina"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kurokawa_kira",
+      "candidate_name": "黒川温泉",
+      "prefecture": "熊本県",
+      "character_ids": [
+        "kurokawa_kira"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-ureshino_rikka",
+      "candidate_name": "嬉野温泉",
+      "prefecture": "佐賀県",
+      "character_ids": [
+        "ureshino_rikka"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-aso_homura",
+      "candidate_name": "阿蘇温泉郷",
+      "prefecture": "熊本県",
+      "character_ids": [
+        "aso_homura"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kitago_konomi",
+      "candidate_name": "北郷温泉",
+      "prefecture": "宮崎県",
+      "character_ids": [
+        "kitago_konomi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-harazuru_miya",
+      "candidate_name": "原鶴温泉",
+      "prefecture": "福岡県",
+      "character_ids": [
+        "harazuru_miya"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-iriomotejima_yaeka",
+      "candidate_name": "西表島温泉",
+      "prefecture": "沖縄県",
+      "character_ids": [
+        "iriomotejima_yaeka"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-kirishima_kuroe",
+      "candidate_name": "霧島温泉",
+      "prefecture": "鹿児島県",
+      "character_ids": [
+        "kirishima_kuroe"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-hita_ayame",
+      "candidate_name": "日田温泉",
+      "prefecture": "大分県",
+      "character_ids": [
+        "hita_ayame"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-takeo_cecil",
+      "candidate_name": "武雄温泉",
+      "prefecture": "佐賀県",
+      "character_ids": [
+        "takeo_cecil"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-hirado_motoe",
+      "candidate_name": "平戸温泉",
+      "prefecture": "長崎県",
+      "character_ids": [
+        "hirado_motoe"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-unzen_inori",
+      "candidate_name": "雲仙温泉",
+      "prefecture": "長崎県",
+      "character_ids": [
+        "unzen_inori"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-hitoyoshi_aoi",
+      "candidate_name": "人吉温泉",
+      "prefecture": "熊本県",
+      "character_ids": [
+        "hitoyoshi_aoi"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-yunohira_touka",
+      "candidate_name": "湯平温泉",
+      "prefecture": "大分県",
+      "character_ids": [
+        "yunohira_touka"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-tamana_mami",
+      "candidate_name": "玉名温泉",
+      "prefecture": "熊本県",
+      "character_ids": [
+        "tamana_mami"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-obama_amane",
+      "candidate_name": "小浜温泉",
+      "prefecture": "長崎県",
+      "character_ids": [
+        "obama_amane"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式キャラクターの地名に基づく調査候補。公式一覧は温泉地境界を定義しないため独立調査で確定する。",
+      "parent_candidate_id": null,
+      "overlap_note": ""
+    },
+    {
+      "id": "candidate-jianshih_neiwan",
+      "candidate_name": "尖石温泉",
+      "prefecture": "台湾",
+      "character_ids": [
+        "jianshih_neiwan"
+      ],
+      "target_definition_status": "E",
+      "study_status": "E",
+      "availability_status": "E",
+      "availability_note": "全施設・入浴可否の地域単位の確認は未完了。キャラクターの掲載を入浴可能の証明にしない。",
+      "name_derivation_note": "公式個別ページは台湾・新竹県の尖石温泉への対応を明示。内湾はキャラクター名の一部で、複合地域名を作らない。",
+      "parent_candidate_id": null,
+      "overlap_note": "",
+      "mapping_source_url": "https://onsen-musume.jp/character/jianshih_neiwan"
+    }
+  ],
+  "policy": [
+    "現行公式一覧の全温泉キャラクターを取得し、130に合わせた切り捨てをしない。",
+    "有馬輪花・有馬楓花は同じ有馬温泉の対応先へ統合。親地域と下位地区は階層として両方残す。",
+    "候補名は調査対象を整理するための名称。公式名・地理境界・地域全施設の独立検証は未完了。",
+    "台湾の尖石温泉も公式一覧の対象として保持し、国内限定の条件とは分離する。",
+    "閉業・休業・宿泊限定等は根拠と期間を地域/施設/プラン台帳に保存。未調査Eを利用不可に読み替えない。",
+    "指定10地域以外は未調査E、今回の得点候補には追加しない。"
+  ],
+  "overlap_candidates": [
+    {
+      "parent": "hakone",
+      "child": "candidate-gohra_kanna",
+      "status": "C",
+      "note": "階層候補。地理境界と施設重複を確定してから集計する。"
+    },
+    {
+      "parent": "hakone",
+      "child": "candidate-sengokuhara_mikasa",
+      "status": "C",
+      "note": "階層候補。地理境界と施設重複を確定してから集計する。"
+    },
+    {
+      "parent": "candidate-okuhida_isuzu",
+      "child": "candidate-hirayu_mitsuba",
+      "status": "C",
+      "note": "階層候補。地理境界と施設重複を確定してから集計する。"
+    },
+    {
+      "parent": "candidate-okuhida_isuzu",
+      "child": "candidate-fukuji_sango",
+      "status": "C",
+      "note": "階層候補。地理境界と施設重複を確定してから集計する。"
+    }
+  ]
+}

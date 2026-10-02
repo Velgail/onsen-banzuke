@@ -1,5 +1,5 @@
 /**
- * Specification 1.1 scoring for already-normalized, condition-matched plans.
+ * Specification 1.2 scoring for already-normalized, condition-matched plans.
  * Target-band preferences are recalculated from raw facts, before weighting.
  * This module does not parse the metric catalogue, resolve aliases, or search
  * for plans. Missing weighted metrics remain in the denominator as E.

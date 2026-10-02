@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="指定10温泉地の通常日帰り料金を施設単位で確認。地域料金と取得集合の参考値を分け、料金や母集団の未確認を残します。">
+  <title>日帰り料金を確認する — 温泉番付</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./assets/article.css">
+  <link rel="stylesheet" href="./assets/fees.css">
+  <script type="module" src="./assets/fees-app.mjs"></script>
+</head>
+<body>
+  <header class="topbar page-shell">
+    <a class="brand" href="./index.html"><span class="brand-symbol" aria-hidden="true">♨</span><span>温泉番付<small>ONSEN BANZUKE</small></span></a>
+    <nav class="topnav" aria-label="サイト内"><a href="./index.html">番付をつくる</a><a href="./reports/pilot10.html">10温泉地の検証</a><span class="demo-pill">日帰り料金の確認</span></nav>
+  </header>
+  <main class="article-shell fees-shell" id="fees-app">
+    <section class="fees-hero" aria-labelledby="fees-title">
+      <p class="eyebrow">ONE FACILITY, ONE FEE</p>
+      <h1 id="fees-title">日帰りの料金を、<br>施設から確かめる。</h1>
+      <p>安い一湯があることと、手頃な施設の選択肢が多いことを分けて見ます。<br>地域全体を確認できていない値は、取得した範囲の参考値として表示します。</p>
+      <p class="fees-meta" id="fee-release-meta">公開データを読み込んでいます。</p>
+    </section>
+    <div class="demo-notice" role="note"><strong>初回部分調査</strong><span>公開版の料金台帳を使う確認ページです。料金・営業・予約枠をその場で再取得しているわけではありません。特定日の来訪・予約成立は別の確認が必要です。</span></div>
+    <section class="fees-controls" aria-labelledby="fee-controls-title">
+      <h2 id="fee-controls-title">比較する条件</h2>
+      <form id="fee-form">
+        <fieldset id="fee-controls" disabled>
+          <legend class="sr-only">日帰りの曜日と1人分の予算</legend>
+          <label class="filter-field" for="fee-day-type">曜日区分<select id="fee-day-type" name="day_type"><option value="weekday">平日</option><option value="weekend">土日祝</option></select></label>
+          <label class="filter-field" for="fee-budget">入浴の予算（1人・円）<input id="fee-budget" name="budget" type="number" min="0" step="any" value="1000" required inputmode="decimal" aria-describedby="fee-budget-help fee-error"></label>
+          <p id="fee-budget-help">0円以上の予算を入力すると、その予算内と確認できる施設数を更新します。</p>
+        </fieldset>
+      </form>
+      <p class="fees-condition">通常の一般成人1名・非住民非会員・共用浴槽・入浴のみ。入浴時刻は指定せず、公表された入場時間内の通常料金を対象にします。時間帯ごとの販売単位の網羅は施設の内訳で確認できます。税込・入湯税・必須追加費を含み、自前タオルが認められる場合は持参します。割引・貸切・食事必須・休憩パッケージ・宿泊は別系列です。</p>
+      <p id="fee-status" class="fees-status" role="status" aria-live="polite">料金台帳を読み込んでいます。</p>
+      <p id="fee-error" class="fees-error" role="alert" hidden></p>
+    </section>
+    <section aria-labelledby="fee-table-title">
+      <div class="fees-section-heading"><h2 id="fee-table-title">地域別の料金と予算内の選択肢</h2><span>名称順 · 料金の順位なし</span></div>
+      <p id="fee-table-help">「地域」の値は全施設と所属が確定した場合だけ算出します。「取得集合の参考」は所属確認済み施設の取得した料金単位だけの値です。区間の下限0円は無料を確認した意味ではありません。</p>
+      <div class="report-table-wrap fees-table-wrap" role="region" aria-label="地域別料金表（横にスクロールできます）" tabindex="0">
+        <table class="fees-summary-table" aria-describedby="fee-table-help">
+          <caption id="fee-table-caption">日帰り料金を読み込んでいます</caption>
+          <thead><tr><th scope="col">温泉地・施設母集団</th><th scope="col">地域最低料金</th><th scope="col">地域中央値<br><small>Y23</small></th><th scope="col">取得集合の参考<br>最小料金</th><th scope="col">取得集合の参考<br>中央値</th><th scope="col" id="fee-budget-heading">予算内施設数<br><small>Y24</small></th><th scope="col">地域の予算内割合<br><small>Y25</small></th></tr></thead>
+          <tbody id="fee-results"><tr><td colspan="7">公開データを読み込んでいます。</td></tr></tbody>
+        </table>
+      </div>
+      <p class="fees-reading-note">取得した施設・浴槽・プランの数を、温泉地全体の施設数へ置き換えません。料金上限が予算以下なら予算内確認、料金下限が予算を超えるなら予算超過確認、それ以外は未確認です。</p>
+    </section>
+    <section aria-labelledby="fee-details-title">
+      <h2 id="fee-details-title">施設と料金単位の内訳</h2>
+      <p>1施設を1件として集計します。同じ入浴券で複数浴槽へ入れる場合も1施設です。選んだ浴槽・プランの価格が判明していても、その価格を施設や地域の最安とは確定しません。施設の料金選択肢が未網羅なら、取得料金と施設代表料金の区間を分けます。</p>
+      <div id="fee-region-details"></div>
+    </section>
+    <section class="fees-method" aria-labelledby="fee-method-title">
+      <h2 id="fee-method-title">この表を読むための約束</h2>
+      <p>施設代表料金は同条件の通常料金単位の最小です。料金単位の一覧が未網羅なら、未取得の選択肢を含む下限0円と、取得料金から確定できる上限を使います。価格の区間は根拠による外包で、確率や実現可能値の保証ではありません。</p>
+      <p>地域母集団が未確定の場合、地域最低料金・中央値・予算内割合は未算出です。予算内確認済み施設数は下限だけ示し、未知施設数を補いません。母集団が確定して対象施設が0件なら「対象外」とし、無料と表示しません。</p>
+      <p>地域の料金水準と、選んだ一つの浴槽へ入る費用は別の問いです。別施設の安さで、選択プランの予算条件を満たしたことにはなりません。詳しくは<a href="./criteria/scoring-1.2.md#67-日帰り料金の施設別地域別集約">採点基準1.2・日帰り料金の施設別・地域別集約</a>をご覧ください。</p>
+    </section>
+  </main>
+  <footer class="site-footer page-shell"><span>温泉番付 · 料金の独立確認</span><nav aria-label="資料"><a href="./index.html">番付へ戻る</a><a href="./reports/pilot10.html">10温泉地の検証</a><a href="./reports/roster.html">対象一覧</a><a href="./criteria/scoring-1.2.md#67-日帰り料金の施設別地域別集約">採点基準書</a><a href="./data/manifest.json">データ版</a></nav></footer>
+  <noscript><p class="page-shell">料金区間と予算内施設数の計算にはJavaScriptが必要です。<a href="./reports/pilot10.html">検証レポート</a>と<a href="./criteria/scoring-1.2.md">採点基準書</a>はそのまま読めます。</p></noscript>
+</body>
+</html>

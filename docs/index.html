@@ -11,7 +11,7 @@
 <body>
   <header class="topbar page-shell">
     <a class="brand" href="./index.html"><span class="brand-symbol" aria-hidden="true">♨</span><span>温泉番付<small>ONSEN BANZUKE</small></span></a>
-    <nav class="topnav" aria-label="サイト内"><a href="#workspace">番付をつくる</a><a href="./concept.html">設計の考え方</a><span class="demo-pill">10温泉地・初回検証</span></nav>
+    <nav class="topnav" aria-label="サイト内"><a href="#workspace">番付をつくる</a><a href="./fees.html">日帰り料金</a><a href="./concept.html">設計の考え方</a><span class="demo-pill">10温泉地・初回検証</span></nav>
   </header>
   <main class="page-shell">
     <section class="hero" aria-labelledby="hero-title">
@@ -37,6 +37,7 @@
             <label class="filter-field" for="metric-group">分野<select id="metric-group"><option value="">すべての分野</option></select></label>
             <label class="filter-field" for="metric-add">特徴<select id="metric-add" class="metric-selector"><option value="">特徴を選ぶ</option></select></label>
             <p id="metric-picker-note" class="field-note"></p>
+            <label class="filter-field" for="metric-budget" id="metric-budget-field" hidden>通常入浴の予算上限（円）<input id="metric-budget" type="number" min="0" step="any" placeholder="例：1000"></label>
             <label class="filter-field" for="metric-parameters" id="metric-parameters-field" hidden>項目のパラメータ<input id="metric-parameters" type="text" placeholder="odor=sulfur"><small id="metric-parameters-help"></small></label>
             <div class="metric-add-actions"><button id="add-preference" type="button">採点に追加</button><button id="add-requirement" type="button">必須条件に追加</button></div>
             <p class="field-note">追加した特徴は重み0から設定します。正の重みは表示の方向、負の重みは逆の方向。希望帯への近さでも採点できます。</p>
@@ -52,7 +53,7 @@
         </div>
       </details>
       <div class="results-panel">
-        <div class="result-heading"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="result-title">温泉地一覧</h2><p id="result-subtitle" class="result-summary">データを読み込んでいます。</p></div><div class="dataset-meta"><span>採点基準 1.1</span><small>データ版 <span id="snapshot-label">—</span></small></div></div>
+        <div class="result-heading"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="result-title">温泉地一覧</h2><p id="result-subtitle" class="result-summary">データを読み込んでいます。</p></div><div class="dataset-meta"><span>採点基準 1.2</span><small>データ版 <span id="snapshot-label">—</span></small></div></div>
         <div class="active-summary" id="active-summary" aria-live="polite"></div>
         <div class="result-toolbar">
           <div class="result-tabs" role="group" aria-label="必須条件の確認状態"><button class="tab-button active" data-tab="confirmed" type="button" aria-pressed="true">条件適合 <span id="count-confirmed">—</span></button><button class="tab-button" data-tab="unknown" type="button" aria-pressed="false">未確認 <span id="count-unknown">—</span></button><button class="tab-button" data-tab="failed" type="button" aria-pressed="false">条件外 <span id="count-failed">—</span></button></div>
@@ -65,8 +66,8 @@
     </section>
     <section class="principle-strip" aria-label="この番付の考え方"><div><span>01</span><h3>浴槽を選んでから並べる</h3><p>同じ温泉地の別々の浴槽の長所を、架空の一湯にまとめません。</p></div><div><span>02</span><h3>未確認を残す</h3><p>情報のない項目は加点せず、わかる点の範囲を表示します。</p></div><div><span>03</span><h3>好みを変えて比較する</h3><p>香りの強い湯も弱い湯も、あなたの設定で選び分けられます。</p></div></section>
   </main>
-  <footer class="site-footer page-shell"><span>温泉番付 · 独立検証版</span><nav aria-label="資料"><a href="./reports/pilot10.html">10温泉地の検証</a><a href="./reports/roster.html">対象一覧</a><a href="./concept.html">公開設計</a><a href="./criteria/scoring-1.1.md">採点基準書</a><a href="./data/manifest.json">公開データ</a></nav></footer>
+  <footer class="site-footer page-shell"><span>温泉番付 · 独立検証版</span><nav aria-label="資料"><a href="./fees.html">日帰り料金を比較</a><a href="./reports/pilot10.html">10温泉地の検証</a><a href="./reports/roster.html">対象一覧</a><a href="./concept.html">公開設計</a><a href="./criteria/scoring-1.2.md">採点基準書</a><a href="./data/manifest.json">公開データ</a></nav></footer>
   <dialog id="detail-dialog" class="detail-dialog"><div class="dialog-heading"><div><p class="eyebrow">この順番になる理由</p><h2 id="detail-title"></h2></div><button id="close-detail" type="button" aria-label="閉じる">×</button></div><div id="detail-content"></div></dialog>
-  <noscript><p class="page-shell">番付の再計算にはJavaScriptが必要です。<a href="./concept.html">設計の考え方</a>と<a href="./criteria/scoring-1.1.md">採点基準書</a>はそのまま読めます。</p></noscript>
+  <noscript><p class="page-shell">番付の再計算にはJavaScriptが必要です。<a href="./concept.html">設計の考え方</a>と<a href="./criteria/scoring-1.2.md">採点基準書</a>はそのまま読めます。</p></noscript>
 </body>
 </html>
