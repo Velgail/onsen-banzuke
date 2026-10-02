@@ -1,0 +1,50 @@
+{
+  "schema_version": "1",
+  "rubric_version": "1.1",
+  "snapshot_id": "demo-2026-10-03",
+  "dataset_kind": "synthetic_demo",
+  "regions": [
+    {
+      "id": "demo-mountain",
+      "name": "山あいの湯",
+      "kana": "やまあいのゆ",
+      "landscape": "山・森",
+      "summary": "香りのある露天と、静かな内湯。好みで選ぶ浴槽が変わる。"
+    },
+    {
+      "id": "demo-river",
+      "name": "川辺の湯",
+      "kana": "かわべのゆ",
+      "landscape": "渓流",
+      "summary": "手頃な入浴料と露天風呂。湯の使い方には条件がある。"
+    },
+    {
+      "id": "demo-coast",
+      "name": "海辺の湯",
+      "kana": "うみべのゆ",
+      "landscape": "海",
+      "summary": "静かな露天風呂。香りの有無は資料不足として扱う。"
+    },
+    {
+      "id": "demo-town",
+      "name": "町なかの湯",
+      "kana": "まちなかのゆ",
+      "landscape": "温泉街",
+      "summary": "内湯を中心に、料金と静けさを比較できる。"
+    },
+    {
+      "id": "demo-forest",
+      "name": "森かげの湯",
+      "kana": "もりかげのゆ",
+      "landscape": "森",
+      "summary": "湯の個性は確認できる一方、入浴料の情報が不足。"
+    },
+    {
+      "id": "demo-valley",
+      "name": "谷あいの湯",
+      "kana": "たにあいのゆ",
+      "landscape": "谷",
+      "summary": "露天の利用可否を追加確認したい候補。"
+    }
+  ]
+}

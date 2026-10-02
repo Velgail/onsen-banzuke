@@ -1,0 +1,62 @@
+{
+  "schema_version": "1",
+  "rubric_version": "1.1",
+  "snapshot_id": "demo-2026-10-03",
+  "dataset_kind": "synthetic_demo",
+  "views": [
+    {
+      "key": "S06[odor=sulfur]",
+      "name": "硫黄の香り",
+      "group": "湯の体感",
+      "description": "浴槽で感じる香りの強さ",
+      "positive": "強い香り",
+      "negative": "弱い香り",
+      "unit": "強度点"
+    },
+    {
+      "key": "P17",
+      "name": "五条件の無加工時間率",
+      "group": "湯の使い方",
+      "description": "加水・加温・循環・消毒・人工添加を同時に行わない時間率",
+      "positive": "割合が高い",
+      "negative": "割合が低い",
+      "unit": "%"
+    },
+    {
+      "key": "B06",
+      "name": "露天風呂",
+      "group": "入浴の形",
+      "description": "選んだ浴槽が露天かどうか",
+      "positive": "露天がある",
+      "negative": "内湯を選ぶ",
+      "unit": ""
+    },
+    {
+      "key": "Y01",
+      "name": "日帰り入浴料",
+      "group": "費用",
+      "description": "対象プランの必須費用を含む入浴料",
+      "positive": "手頃な料金",
+      "negative": "高い料金",
+      "unit": "円"
+    },
+    {
+      "key": "H18[place=bath]",
+      "name": "浴室の静けさ",
+      "group": "過ごし方",
+      "description": "浴室の騒音についての観測",
+      "positive": "静かな浴室",
+      "negative": "にぎやかな浴室",
+      "unit": "適合点"
+    },
+    {
+      "key": "C01",
+      "name": "酸性の強さ",
+      "group": "湯の成分",
+      "description": "供給対応を確認した分析試料のpHに基づく軸",
+      "positive": "酸性が強い",
+      "negative": "酸性が弱い",
+      "unit": "pH"
+    }
+  ]
+}

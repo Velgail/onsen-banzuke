@@ -1,0 +1,13 @@
+{
+  "schema_version": "1",
+  "rubric_version": "1.1",
+  "snapshot_id": "demo-2026-10-03",
+  "dataset_kind": "synthetic_demo",
+  "published_at": "2026-10-03",
+  "regions_url": "./data/releases/demo-2026-10-03/regions.json",
+  "ranking_url": "./data/releases/demo-2026-10-03/ranking.json",
+  "views_url": "./data/releases/demo-2026-10-03/views.json",
+  "rubric_url": "./data/releases/demo-2026-10-03/rubric-1.1.json",
+  "region_count": 6,
+  "plan_count": 9
+}

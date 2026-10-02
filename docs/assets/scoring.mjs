@@ -1,0 +1,302 @@
+/**
+ * Specification 1.1 scoring for already-normalized, condition-matched plans.
+ * This module does not parse the metric catalogue, resolve aliases, or search
+ * for plans. Missing weighted metrics remain in the denominator as E.
+ */
+const STATES = new Set(['K', 'C', 'Z', 'X', 'U', 'E', 'F', 'A']);
+const UNKNOWN_STATES = new Set(['U', 'E', 'F']);
+const EVIDENCE_STATES = new Set(['K', 'C', 'Z']);
+const UNKNOWN_ROW = Object.freeze({ status: 'E', lower: 0, upper: 100 });
+
+function finite(value, label) {
+  if (typeof value !== 'number' || !Number.isFinite(value)) {
+    throw new TypeError(`${label} must be a finite number`);
+  }
+  return value;
+}
+
+function identifier(value, label) {
+  if (typeof value !== 'string' || !value || value.trim() !== value) {
+    throw new TypeError(`${label} must be a nonempty identifier without surrounding whitespace`);
+  }
+  return value;
+}
+
+function record(value, label) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)
+      || ![Object.prototype, null].includes(Object.getPrototypeOf(value))) {
+    throw new TypeError(`${label} must be a plain object`);
+  }
+  return value;
+}
+
+function weightValue(weight) {
+  finite(weight, 'weight');
+  if (weight < -1 || weight > 1) throw new RangeError('weight must be in [-1, 1]');
+  return weight;
+}
+
+function validateRow(row) {
+  record(row, 'metric row');
+  if (!STATES.has(row.status)) throw new RangeError('unknown metric status');
+  finite(row.lower, 'score lower');
+  finite(row.upper, 'score upper');
+  if (row.lower < 0 || row.upper > 100 || row.lower > row.upper) {
+    throw new RangeError('score interval must satisfy 0 <= lower <= upper <= 100');
+  }
+  for (const field of ['rawLower', 'rawUpper']) {
+    if (row[field] !== undefined && row[field] !== null) finite(row[field], field);
+  }
+  const low = row.rawLower ?? undefined;
+  const high = row.rawUpper ?? undefined;
+  if (low !== undefined && high !== undefined && low > high) {
+    throw new RangeError('raw interval is reversed');
+  }
+  if (row.raw !== undefined && row.raw !== null) {
+    if (!['number', 'string', 'boolean'].includes(typeof row.raw)) {
+      throw new TypeError('raw must be a finite number, string, boolean, or null');
+    }
+    if (typeof row.raw === 'number') {
+      finite(row.raw, 'raw');
+      if ((low !== undefined && row.raw < low) || (high !== undefined && row.raw > high)) {
+        throw new RangeError('raw lies outside its raw interval');
+      }
+    } else if (low !== undefined || high !== undefined) {
+      throw new TypeError('categorical raw cannot have numerical raw bounds');
+    }
+  }
+  return row;
+}
+
+/** Return the contribution interval, before multiplying by |weight|. */
+export function scoreInterval(row, weight) {
+  validateRow(row);
+  weightValue(weight);
+  if (weight === 0 || row.status === 'A') return { lower: 0, upper: 0 };
+  if (UNKNOWN_STATES.has(row.status)) return { lower: 0, upper: 100 };
+  return weight > 0
+    ? { lower: row.lower, upper: row.upper }
+    : { lower: 100 - row.upper, upper: 100 - row.lower };
+}
+
+function validateRequirement(requirement) {
+  record(requirement, 'requirement');
+  identifier(requirement.metricKey, 'requirement metricKey');
+  switch (requirement.operator) {
+    case 'atLeast':
+    case 'atMost':
+      finite(requirement.value, 'requirement value');
+      break;
+    case 'within':
+      finite(requirement.min, 'requirement min');
+      finite(requirement.max, 'requirement max');
+      if (requirement.min > requirement.max) throw new RangeError('requirement range is reversed');
+      break;
+    case 'equals':
+      if (!['number', 'string', 'boolean'].includes(typeof requirement.value)) {
+        throw new TypeError('equals requires a number, string, or boolean');
+      }
+      if (typeof requirement.value === 'number') finite(requirement.value, 'requirement value');
+      break;
+    default:
+      throw new RangeError('unknown requirement operator');
+  }
+  return requirement;
+}
+
+/** Three-state hard constraints use raw facts, never rounded/scaled scores. */
+export function evaluateRequirement(row, requirement) {
+  validateRequirement(requirement);
+  if (row === undefined) return 'unknown';
+  validateRow(row);
+  if (UNKNOWN_STATES.has(row.status) || row.status === 'A') return 'unknown';
+
+  const hasBounds = row.rawLower != null || row.rawUpper != null;
+  if (row.status === 'X' && !hasBounds) return 'unknown';
+  const raw = row.raw;
+  if (requirement.operator === 'equals' && typeof requirement.value !== 'number') {
+    return raw == null || hasBounds ? 'unknown' : raw === requirement.value ? 'pass' : 'fail';
+  }
+  if (raw != null && typeof raw !== 'number') return 'unknown';
+  const lower = row.rawLower ?? (typeof raw === 'number' ? raw : undefined);
+  const upper = row.rawUpper ?? (typeof raw === 'number' ? raw : undefined);
+  if (lower === undefined && upper === undefined) return 'unknown';
+  switch (requirement.operator) {
+    case 'atLeast':
+      if (lower !== undefined && lower >= requirement.value) return 'pass';
+      if (upper !== undefined && upper < requirement.value) return 'fail';
+      return 'unknown';
+    case 'atMost':
+      if (upper !== undefined && upper <= requirement.value) return 'pass';
+      if (lower !== undefined && lower > requirement.value) return 'fail';
+      return 'unknown';
+    case 'within':
+      if (lower !== undefined && upper !== undefined
+          && lower >= requirement.min && upper <= requirement.max) return 'pass';
+      if ((upper !== undefined && upper < requirement.min)
+          || (lower !== undefined && lower > requirement.max)) return 'fail';
+      return 'unknown';
+    case 'equals':
+      if (lower === requirement.value && upper === requirement.value) return 'pass';
+      if ((upper !== undefined && upper < requirement.value)
+          || (lower !== undefined && lower > requirement.value)) return 'fail';
+      return 'unknown';
+  }
+}
+
+function normalizedSettings(settings) {
+  record(settings, 'settings');
+  const weights = record(settings.weights ?? {}, 'weights');
+  for (const [key, weight] of Object.entries(weights)) {
+    identifier(key, 'metricKey');
+    weightValue(weight);
+  }
+  const requirements = settings.requirements ?? [];
+  if (!Array.isArray(requirements)) throw new TypeError('requirements must be an array');
+  requirements.forEach(validateRequirement);
+  const modality = settings.modality ?? 'all';
+  if (!['all', 'daytrip', 'stay'].includes(modality)) throw new RangeError('unknown modality');
+  const regionQuery = settings.regionQuery ?? '';
+  if (typeof regionQuery !== 'string') throw new TypeError('regionQuery must be text');
+  return { weights, requirements, modality, regionQuery };
+}
+
+function validatePlan(plan) {
+  record(plan, 'plan');
+  identifier(plan.id, 'plan id');
+  identifier(plan.regionId, 'regionId');
+  identifier(plan.label, 'plan label');
+  if (!['daytrip', 'stay'].includes(plan.modality)) throw new RangeError('unknown plan modality');
+  record(plan.metrics, 'plan metrics');
+  for (const [key, row] of Object.entries(plan.metrics)) {
+    identifier(key, 'metricKey');
+    validateRow(row);
+    if (row.metricKey !== undefined && row.metricKey !== key) {
+      throw new RangeError('row metricKey disagrees with its unique map key');
+    }
+  }
+}
+
+function evaluateValidatedPlan(plan, settings) {
+  const reasons = [];
+  const decisions = [];
+  if (settings.modality !== 'all' && settings.modality !== plan.modality) {
+    decisions.push('fail');
+    reasons.push(`利用モード不適合: ${plan.modality}`);
+  }
+  for (const requirement of settings.requirements) {
+    const source = Object.hasOwn(plan.metrics, requirement.metricKey)
+      ? plan.metrics[requirement.metricKey] : undefined;
+    const decision = evaluateRequirement(source, requirement);
+    decisions.push(decision);
+    if (decision !== 'pass') {
+      reasons.push(`${requirement.metricKey}: 必須条件${decision === 'fail' ? '不適合' : '未確認'}`);
+    }
+  }
+  const eligibility = decisions.includes('fail') ? 'fail'
+    : decisions.includes('unknown') ? 'unknown' : 'pass';
+  const active = Object.entries(settings.weights).filter(([, weight]) => weight !== 0);
+  const denominator = active.reduce((sum, [, weight]) => sum + Math.abs(weight), 0);
+  if (!denominator) return { eligibility, reasons, score: null, contributions: [] };
+
+  const contributions = active.map(([metricKey, weight]) => {
+    const row = Object.hasOwn(plan.metrics, metricKey) ? plan.metrics[metricKey] : UNKNOWN_ROW;
+    const interval = scoreInterval(row, weight);
+    const coefficient = Math.abs(weight) / denominator;
+    const coverage = EVIDENCE_STATES.has(row.status) ? 100 : 0;
+    return { metricKey, weight, status: row.status, coefficient,
+      lower: interval.lower, upper: interval.upper,
+      weightedLower: coefficient * interval.lower,
+      weightedUpper: coefficient * interval.upper, coverage };
+  });
+  const score = contributions.reduce((sum, row) => ({
+    lower: sum.lower + row.weightedLower,
+    upper: sum.upper + row.weightedUpper,
+    coverage: sum.coverage + row.coefficient * row.coverage,
+  }), { lower: 0, upper: 0, coverage: 0 });
+  return { eligibility, reasons, score: eligibility === 'pass' ? score : null, contributions };
+}
+
+export function evaluatePlan(plan, settings = {}) {
+  validatePlan(plan);
+  return evaluateValidatedPlan(plan, normalizedSettings(settings));
+}
+
+const collator = new Intl.Collator('ja', { numeric: true, sensitivity: 'base' });
+const planOrder = (a, b) => collator.compare(a.plan.label, b.plan.label)
+  || collator.compare(a.plan.id, b.plan.id);
+const regionOrder = (a, b) => collator.compare(a.kana || a.name, b.kana || b.name)
+  || collator.compare(a.name, b.name) || collator.compare(a.id, b.id);
+const queryText = value => value.normalize('NFKC').toLocaleLowerCase('ja');
+
+/**
+ * Rank only confirmed feasible plans. `score` belongs to bestPlan itself;
+ * bestEnvelope is [max(plan lower), max(plan upper)] across feasible plans.
+ * coverage is the specification's weighted evidence-acquisition percentage.
+ * With no preferences, bestPlan is a label-ordered representative, rank is null.
+ */
+export function rankRegions(regions, plans, settings = {}) {
+  if (!Array.isArray(regions) || !Array.isArray(plans)) {
+    throw new TypeError('regions and plans must be arrays');
+  }
+  const config = normalizedSettings(settings);
+  const regionMap = new Map();
+  for (const region of regions) {
+    record(region, 'region');
+    identifier(region.id, 'region id');
+    identifier(region.name, 'region name');
+    if (region.kana !== undefined && typeof region.kana !== 'string') {
+      throw new TypeError('region kana must be text');
+    }
+    if (regionMap.has(region.id)) throw new RangeError(`duplicate region id: ${region.id}`);
+    regionMap.set(region.id, region);
+  }
+  const planIds = new Set();
+  for (const plan of plans) {
+    validatePlan(plan);
+    if (planIds.has(plan.id)) throw new RangeError(`duplicate plan id: ${plan.id}`);
+    planIds.add(plan.id);
+    if (!regionMap.has(plan.regionId)) throw new RangeError(`unknown regionId: ${plan.regionId}`);
+  }
+
+  const query = queryText(config.regionQuery.trim());
+  const selected = new Set(regions.filter(region => !query || [region.name, region.kana ?? '', region.id]
+    .some(value => queryText(value).includes(query))).map(region => region.id));
+  const feasible = new Map();
+  const unknown = [];
+  const failed = [];
+  for (const plan of plans) {
+    if (!selected.has(plan.regionId)) continue;
+    const evaluation = evaluateValidatedPlan(plan, config);
+    const item = { region: regionMap.get(plan.regionId), plan, ...evaluation };
+    if (evaluation.eligibility === 'unknown') unknown.push(item);
+    else if (evaluation.eligibility === 'fail') failed.push(item);
+    else {
+      if (!feasible.has(plan.regionId)) feasible.set(plan.regionId, []);
+      feasible.get(plan.regionId).push(item);
+    }
+  }
+  const hasPreferences = Object.values(config.weights).some(weight => weight !== 0);
+  const confirmed = [...feasible].map(([id, items]) => {
+    items.sort((a, b) => (hasPreferences ? b.score.lower - a.score.lower : 0) || planOrder(a, b));
+    const best = items[0];
+    const region = regionMap.get(id);
+    return { ...region, region, bestPlan: best.plan, score: best.score,
+      bestEnvelope: hasPreferences ? {
+        lower: Math.max(...items.map(item => item.score.lower)),
+        upper: Math.max(...items.map(item => item.score.upper)),
+      } : null,
+      contributions: best.contributions, rank: null, eligiblePlanCount: items.length };
+  });
+  confirmed.sort((a, b) => (hasPreferences ? b.score.lower - a.score.lower : 0) || regionOrder(a, b));
+  if (hasPreferences) {
+    for (let index = 0; index < confirmed.length; index += 1) {
+      confirmed[index].rank = index > 0 && confirmed[index].score.lower === confirmed[index - 1].score.lower
+        ? confirmed[index - 1].rank : index + 1;
+    }
+  }
+  const rejectedOrder = (a, b) => regionOrder(a.region, b.region) || planOrder(a, b);
+  unknown.sort(rejectedOrder);
+  failed.sort(rejectedOrder);
+  return { confirmed, unknown, failed };
+}

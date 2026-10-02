@@ -1,0 +1,15 @@
+.article-shell { max-width: 980px; margin: 3rem auto 5rem; padding: 0 2rem; }
+.article-shell h1 { font-family: 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', serif; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.5; color: #153e35; }
+.article-shell h2 { font-size: 1.55rem; margin: 3rem 0 1.1rem; padding-top: 1rem; border-top: 1px solid #d8d5cc; color: #153e35; }
+.article-shell h3 { font-size: 1.15rem; margin-top: 2rem; }
+.article-shell p, .article-shell li { line-height: 1.95; }
+.article-shell ul, .article-shell ol { padding-left: 1.6rem; }
+.article-shell li { margin: .6rem 0; }
+.article-shell table { width: 100%; border-collapse: collapse; margin: 1.3rem 0; font-size: .9rem; line-height: 1.8; }
+.article-shell th, .article-shell td { padding: .8rem; border-bottom: 1px solid #d8d5cc; text-align: left; vertical-align: top; }
+.article-shell th { background: #eaece3; color: #153e35; }
+.article-shell pre { max-width: 100%; overflow-x: auto; background: #eaece3; padding: 1.2rem; line-height: 1.65; }
+.article-shell code { font-size: .9em; overflow-wrap: anywhere; }
+.article-shell a { color: #153e35; text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
+.article-links { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+@media (max-width: 650px) { .article-shell { padding: 0 1rem; margin-top: 2rem; } .article-shell table { font-size: .8rem; } .article-shell th, .article-shell td { padding: .5rem; } }

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="湯の個性と好みを分けて、自分の条件で並べる温泉番付のコンセプトデモ。">
+  <title>温泉番付 — 好みからつくる番付</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script type="module" src="./assets/app.mjs"></script>
+</head>
+<body>
+  <header class="topbar page-shell">
+    <a class="brand" href="./index.html"><span class="brand-symbol" aria-hidden="true">♨</span><span>温泉番付<small>ONSEN BANZUKE</small></span></a>
+    <nav class="topnav" aria-label="サイト内"><a href="#workspace">番付をつくる</a><a href="./concept.html">設計の考え方</a><span class="demo-pill">コンセプトデモ</span></nav>
+  </header>
+  <main class="page-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div><p class="eyebrow">湯の個性 × あなたの好み</p><h1 id="hero-title">好みからつくる、<br>温泉番付。</h1><p class="hero-copy">香り、湯の使い方、静けさ、料金。<br>気になる特徴を選ぶと、温泉の順番が変わります。</p></div>
+      <div class="hero-note"><span class="hero-note-mark" aria-hidden="true">湯</span><p>ひとつの「良い温泉」ではなく、<br>あなたが選ぶ一湯から。</p><a href="./concept.html#scoring">採点と並べ替えの仕組み <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <div class="demo-notice" role="note"><strong>架空データによる操作デモ</strong><span>6温泉地・9浴槽の設定値です。実在する温泉地の評価ではありません。</span></div>
+    <section class="workspace" id="workspace" aria-label="番付の設定と結果">
+      <details class="settings-panel" id="settings-panel" open>
+        <summary class="panel-heading">番付の条件を選ぶ <span aria-hidden="true">＋</span></summary>
+        <div class="panel-body">
+          <div class="settings-section"><p class="section-label">01 <span>今回の条件</span></p><p class="scope-label">一般外来・日帰りの浴槽を比較</p>
+            <label class="filter-field" for="region-query">温泉地名<input id="region-query" type="search" placeholder="名前で絞り込む" autocomplete="off"></label>
+            <label class="checkbox-label"><input id="require-outdoor" type="checkbox">露天風呂が必須</label>
+            <label class="checkbox-label"><input id="require-budget" type="checkbox">入浴料の上限が必須</label>
+            <label class="filter-field budget-field" for="budget-value">一人あたり <span><input id="budget-value" type="number" min="0" max="100000" step="100" value="1000" disabled> 円以内</span></label>
+            <p class="field-note">必須条件が未確認の候補は、番付に混ぜず別に表示します。</p>
+          </div>
+          <div class="settings-section"><p class="section-label">02 <span>選び方の例</span></p><p class="field-note">運営が用意した好み設定の例です。選んだ後に編集できます。</p><div class="preset-list">
+            <button class="preset-button" type="button" data-preset="aroma">香りを楽しむ</button><button class="preset-button" type="button" data-preset="quiet">静かな一湯</button><button class="preset-button" type="button" data-preset="value">手頃な入浴料</button><button class="preset-button" type="button" data-preset="mild">弱い香りを選ぶ</button>
+          </div></div>
+          <div class="settings-section"><p class="section-label">03 <span>あなたの好み</span></p>
+            <label class="filter-field" for="metric-add">好みを追加（初期は「重視」）<select id="metric-add" class="metric-selector"><option value="">特徴を選ぶ</option></select></label>
+            <div id="metric-controls"><p class="field-note">まだ好みを選んでいません。</p></div>
+          </div>
+          <div class="control-footer"><button id="reset-settings" type="button" class="text-button">好みをリセット</button><button id="share-settings" type="button" class="share-button">設定リンクをコピー</button><p id="settings-message" class="field-note" role="status"></p><input id="share-link" aria-label="共有用リンク" readonly hidden></div>
+        </div>
+      </details>
+      <div class="results-panel">
+        <div class="result-heading"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="result-title">温泉地一覧</h2><p id="result-subtitle" class="result-summary">データを読み込んでいます。</p></div><div class="dataset-meta"><span>採点基準 1.1</span><small>データ版 <span id="snapshot-label">—</span></small></div></div>
+        <div class="active-summary" id="active-summary" aria-live="polite"></div>
+        <div class="result-toolbar">
+          <div class="result-tabs" role="group" aria-label="必須条件の確認状態"><button class="tab-button active" data-tab="confirmed" type="button" aria-pressed="true">条件適合 <span id="count-confirmed">—</span></button><button class="tab-button" data-tab="unknown" type="button" aria-pressed="false">未確認 <span id="count-unknown">—</span></button><button class="tab-button" data-tab="failed" type="button" aria-pressed="false">条件外 <span id="count-failed">—</span></button></div>
+          <label class="sort-control" for="sort-order">表示順<select id="sort-order"><option value="score">適合点順</option><option value="name">名前順</option><option value="coverage">根拠取得率順</option></select></label>
+        </div>
+        <div id="result-message" class="result-message" role="status"></div>
+        <div id="ranking-list" class="ranking-list" aria-live="polite" aria-atomic="false"><div class="empty-state">データを読み込んでいます。</div></div>
+        <p id="ranking-note" class="ranking-note">好みを選ぶまで順位と総合点は算出しません。</p>
+      </div>
+    </section>
+    <section class="principle-strip" aria-label="この番付の考え方"><div><span>01</span><h3>浴槽を選んでから並べる</h3><p>同じ温泉地の別々の浴槽の長所を、架空の一湯にまとめません。</p></div><div><span>02</span><h3>未確認を残す</h3><p>情報のない項目は加点せず、わかる点の範囲を表示します。</p></div><div><span>03</span><h3>好みを変えて比較する</h3><p>香りの強い湯も弱い湯も、あなたの設定で選び分けられます。</p></div></section>
+  </main>
+  <footer class="site-footer page-shell"><span>温泉番付 · コンセプト検討版</span><nav aria-label="資料"><a href="./concept.html">公開設計</a><a href="./criteria/scoring-1.1.md">採点基準書</a><a href="./data/manifest.json">公開データ</a></nav></footer>
+  <dialog id="detail-dialog" class="detail-dialog"><div class="dialog-heading"><div><p class="eyebrow">この順番になる理由</p><h2 id="detail-title"></h2></div><button id="close-detail" type="button" aria-label="閉じる">×</button></div><div id="detail-content"></div></dialog>
+  <noscript><p class="page-shell">番付の再計算にはJavaScriptが必要です。<a href="./concept.html">設計の考え方</a>と<a href="./criteria/scoring-1.1.md">採点基準書</a>はそのまま読めます。</p></noscript>
+</body>
+</html>
